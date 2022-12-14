@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ресторан</title>
+  </head>
+
+  <body>
+    <div class="body">
+      <div class="header">
+        <div class="header__logo">
+          <img
+            src="https://i.ibb.co/6Xc6ST0/rest-logo.png"
+            alt="Our restaurant"
+            class="header__logo_pic"
+          />
+        </div>
+        <div class="menu">
+          <ul class="menu__ul">
+            <li class="menu__li">
+              <a href="#0" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__li"><a href="#1" class="menu__link">Меню</a></li>
+            <li class="menu__li"><a href="#2" class="menu__link">О нас</a></li>
+            <li class="menu__li"><a href="#3" class="menu__link">Бронь</a></li>
+          </ul>
+        </div>
+        <div class="menu__burger" onclick="openMobilMenu()">
+          <div class="menu__line"></div>
+          <div class="menu__line"></div>
+          <div class="menu__line"></div>
+        </div>
+        <div class="mobil">
+          <div class="mobil__box">
+            <ul class="mobil__ul">
+              <li>
+                <a href="#0" class="mobil__link" onclick="closeMobilMenu()"
+                  >Главная</a
+                >
+              </li>
+              <li>
+                <a href="#1" class="mobil__link" onclick="closeMobilMenu()"
+                  >Меню</a
+                >
+              </li>
+              <li>
+                <a href="#2" class="mobil__link" onclick="closeMobilMenu()"
+                  >О нас</a
+                >
+              </li>
+              <li>
+                <a href="#3" class="mobil__link" onclick="closeMobilMenu()"
+                  >Бронь</a
+                >
+              </li>
+            </ul>
+            <div class="mobil__close">
+              <img
+                src="https://i.ibb.co/JvdhdS0/closex.png"
+                alt="закрыть"
+                class="mobil__btn"
+                onclick="closeMobilMenu()"
+              />
+
+              <div class="mobil__language">
+                <a href="indexru.html" class="mobil__link">RU</a>
+                <span class="home__link"> | ENG</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__right">
+          <div class="header__basket">
+            <img
+              src="https://i.ibb.co/VQxmY82/rest-cart.png"
+              alt="корзина"
+              class="header__basket_pic"
+            />
+          </div>
+          <div class="header__info">
+            <img
+              src="https://i.ibb.co/MGLkSvh/rest-phone-call.png"
+              alt="телефон"
+              class="header__phone"
+            />+999-888-76-54
+            <p class="header__note">Свяжитесь с нами для бронирования</p>
+          </div>
+          <div class="header__form_box" id="3">
+            <form action="mailto:astelth17@gmail.com" class="header__form">
+              <button class="header__button">заказ столика</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="welcome" id="0">
+        <h2 class="welcome__title">Добро пожаловать в</h2>
+        <h1 class="welcome__name">Наш ресторан</h1>
+        <div class="welcome__container">
+          <div class="welcome__hr"></div>
+          <div class="welcome__subtitle">ДОМ ЛУЧШЕЙ ЕДЫ</div>
+          <div class="welcome__hr"></div>
+        </div>
+        <div class="welcome__bottom">
+          <div class="welcome__button">
+            <a href="#1" class="welcome__link">VIEW MENU</a>
+          </div>
+        </div>
+      </div>
+      <div class="reasons">
+        <div class="reasons__box">
+          <img
+            src="https://i.ibb.co/bFWrXFd/rest-dish.png"
+            alt="блюдо"
+            class="reasons__pic"
+          />
+          <p class="reasons__head">
+            Магическая <span class="reasons__span">Атмосфера</span>
+          </p>
+          <p class="reasons__note">
+            В нашем заведении царит магическая атмосфера, наполненная вкусными
+            ароматами
+          </p>
+        </div>
+        <div class="reasons__box scroll">
+          <img
+            src="https://i.ibb.co/bFWrXFd/rest-dish.png"
+            alt="блюдо"
+            class="reasons__pic"
+          />
+          <p class="reasons__head">
+            Лучшее качество <span class="reasons__span">Еды</span>
+          </p>
+          <p class="reasons__note">Качество нашей <br />Еды - отменное!</p>
+        </div>
+        <div class="reasons__box">
+          <img
+            src="https://i.ibb.co/bFWrXFd/rest-dish.png"
+            alt="блюдо"
+            class="reasons__pic"
+          />
+          <p class="reasons__head">
+            Недорогая <span class="reasons__span">Еда</span>
+          </p>
+          <p class="reasons__note">
+            Стоимость нашей Еды <br />зависит только от ее количества. Качество
+            <br />всегда на высоте!
+          </p>
+        </div>
+      </div>
+      <div class="white">
+        <div class="story">
+          <h3 class="story__head" id="2">
+            Наша
+            <span class="story__subhead">История</span>
+          </h3>
+          <p class="story__text scroll">
+            Как и у любого другого самобытного места, у нас есть своя, особая
+            история. Идея ресторана пришла основателям неожиданно. Во время
+            прогулки по лесу создатель нашего ресторана застрял в сотнях
+            километров от ближайшего населенного пункта. Вдали от цивилизации и
+            связи им пришлось на время обустровать себе нехитрый быт, добывать и
+            готовить себе еду.
+          </p>
+          <div class="story__boxes">
+            <div class="story__box">
+              <h3 class="story__number">93</h3>
+              <p class="story__note">Напитки</p>
+            </div>
+            <div class="story__box">
+              <h3 class="story__number">206</h3>
+              <p class="story__note">Еда</p>
+            </div>
+            <div class="story__box">
+              <h3 class="story__number">71</h3>
+              <p class="story__note">Закуски</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="story__images">
+          <div class="story__layer0">
+            <div class="story__layer1">
+              <div class="story__layer2">
+                <div class="story__layer3 scroll">
+                  <img
+                    src="https://i.ibb.co/yqnmjPf/rest-233-1.png"
+                    alt="еда"
+                    class="story__dishes"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="invite">
+        <div class="invite__over">
+          <div class="invite__main">
+            <h2 class="invite__head scroll">
+              Отпразднуйте в одном из самых лучших ресторанов.
+            </h2>
+            <p class="invite__note scroll">
+              Только в этом месяце бизнес-ланч от 250 ₽
+            </p>
+          </div>
+          <div class="invite__right">
+            <form action="" class="invite__form scroll">
+              <button class="invite__button">ЗАКАЗ СТОЛИКА</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="dishes">
+        <h2 class="dishes__head">
+          Наши <span class="dishes__subhead">Блюда</span>
+        </h2>
+        <div class="dishes__left"></div>
+        <div class="dishes__right">
+          <div class="dishes__row">
+            <div class="dishes__img">
+              <img
+                src="https://i.ibb.co/hykx4FQ/rest-hamburger-494706-1920-1.png"
+                alt="еда"
+                class="dishes__pic"
+              />
+            </div>
+            <div class="dishes__subrow">
+              <div class="dishes__name">Гамбургер мини</div>
+              <div class="dishes__hyphen"></div>
+              <div class="dishes__price">220 &#8381;</div>
+            </div>
+          </div>
+          <div class="dishes__row">
+            <div class="dishes__img">
+              <img
+                src="https://i.ibb.co/hykx4FQ/rest-hamburger-494706-1920-1.png"
+                alt="еда"
+                class="dishes__pic"
+              />
+            </div>
+            <div class="dishes__subrow">
+              <div class="dishes__name">Гамбургер мини</div>
+              <div class="dishes__hyphen"></div>
+              <div class="dishes__price">220 &#8381;</div>
+            </div>
+          </div>
+          <div class="dishes__row">
+            <div class="dishes__img">
+              <img
+                src="https://i.ibb.co/hykx4FQ/rest-hamburger-494706-1920-1.png"
+                alt="еда"
+                class="dishes__pic"
+              />
+            </div>
+            <div class="dishes__subrow">
+              <div class="dishes__name">
+                Гамбургер мини, с чесночно-томатным соусом и горчицей
+              </div>
+              <div class="dishes__hyphen"></div>
+              <div class="dishes__price">220 &#8381;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ourmenu" id="1">
+        <h2 class="ourmenu__head">Наше меню</h2>
+        <div class="ourmenu__boxes">
+          <div class="ourmenu__box">
+            <div class="ourmenu__recomendation">RECOMMENDED</div>
+            <div class="ourmenu__ring">
+              <div class="ourmenu__price">420</div>
+            </div>
+            <div class="ourmenu__img">
+              <img
+                src="https://i.ibb.co/Bw0LdyK/rest-1238247-1920-1.png"
+                alt="бургер"
+                class="ourmenu__pic"
+              />
+            </div>
+            <h4 class="ourmenu__name">Гамбургер макси</h4>
+            <p class="ourmenu__note">Максимально толстый слой мяса</p>
+            <form action="" class="ourmenu__form">
+              <button class="ourmenu__button">ЗАКАЗАТЬ</button>
+            </form>
+          </div>
+          <div class="ourmenu__box ourmenu__none">
+            <div class="ourmenu__ring">
+              <div class="ourmenu__price">420</div>
+            </div>
+            <div class="ourmenu__img">
+              <img
+                src="https://i.ibb.co/Bw0LdyK/rest-1238247-1920-1.png"
+                alt="бургер"
+                class="ourmenu__pic"
+              />
+            </div>
+            <h4 class="ourmenu__name">Гамбургер макси</h4>
+            <p class="ourmenu__note">Максимально толстый слой мяса</p>
+            <form action="" class="ourmenu__form">
+              <button class="ourmenu__button">ЗАКАЗАТЬ</button>
+            </form>
+          </div>
+          <div class="ourmenu__box ourmenu__none">
+            <div class="ourmenu__ring">
+              <div class="ourmenu__price">420</div>
+            </div>
+            <div class="ourmenu__img">
+              <img
+                src="https://i.ibb.co/Bw0LdyK/rest-1238247-1920-1.png"
+                alt="бургер"
+                class="ourmenu__pic"
+              />
+            </div>
+            <h4 class="ourmenu__name">Гамбургер макси</h4>
+            <p class="ourmenu__note">Максимально толстый слой мяса</p>
+            <form action="" class="ourmenu__form">
+              <button class="ourmenu__button">ЗАКАЗАТЬ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="review">
+        <div class="review__text scroll">
+          Я надолго запомню мой День рождения, проведённый в этом ресторане!
+          Кусочек родной Армении!!! Отдельное спасибо за комплемент в виде
+          фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и
+          родственникам также за рубежом, путешествующих в Санкт-Петербург!!!
+        </div>
+        <div class="review__img">
+          <img
+            src="https://i.ibb.co/px5xkyy/rest-beard-1845166-1920-1.png"
+            alt="посетитель"
+            class="review__pic"
+          />
+        </div>
+        <div class="review__obj">Посетитель</div>
+        <div class="review__name scroll">Николай</div>
+        <div class="review__gap">
+          <div class="review__dot"></div>
+          <div class="review__dot"></div>
+          <div class="review__dot2"></div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery__head scroll">
+          Галерея <span class="gallery__span">Блюд</span>
+        </div>
+        <div class="gallery__area">
+          <div class="gallery__rectangle">
+            <img
+              src="https://i.ibb.co/YkJnZhj/rest-table-71380-1280-1.png"
+              alt="фото"
+              class="gallery__move"
+            />
+          </div>
+          <div class="gallery__square">
+            <img
+              src="https://i.ibb.co/hsCDC1Z/rest-coffee-3120750-1920-1.png"
+              alt="фото"
+            />
+          </div>
+          <div class="gallery__square">
+            <img
+              src="https://i.ibb.co/JK2wBNG/rest-goulash-6054124-1920-2.png"
+              alt="фото"
+            />
+          </div>
+          <div class="gallery__square">
+            <img
+              src="https://i.ibb.co/hsCDC1Z/rest-coffee-3120750-1920-1.png"
+              alt="фото"
+            />
+          </div>
+          <div class="gallery__square">
+            <img
+              src="https://i.ibb.co/JK2wBNG/rest-goulash-6054124-1920-2.png"
+              alt="фото"
+            />
+          </div>
+          <div class="gallery__rectangle">
+            <img
+              src="https://i.ibb.co/YkJnZhj/rest-table-71380-1280-1.png"
+              alt="фото"
+              class="gallery__move"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="cooks">
+        <div class="cooks__head scroll">
+          Наши <spam class="cooks__spam">Повара</spam>
+        </div>
+        <div class="cooks__area">
+          <div class="cooks__chef1"></div>
+          <div class="cooks__chef2"></div>
+          <div class="cooks__chef3"></div>
+        </div>
+      </div>
+
+      <div class="review__gap">
+        <div class="cooks__dot"></div>
+        <div class="review__dot"></div>
+      </div>
+
+      <div class="bottom"></div>
+    </div>
+    <!-- body -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
