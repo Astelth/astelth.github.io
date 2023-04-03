@@ -1,0 +1,211 @@
+.contacts {
+    margin-bottom: 55px;
+}
+
+.contacts__welcome {
+    margin-bottom: 48px;
+}
+
+.contacts__subject {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-brown);
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contacts__item {
+    font-weight: 700;
+}
+
+.contacts__number {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 120%;
+    color: var(--color-green);
+    margin-right: 10px;
+}
+
+.contacts__measure {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+}
+
+.contacts__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--color-dark-grey);
+}
+
+.contacts__container {
+    margin-left: calc(-1 * var(--padding-side));
+    width: calc(100% + var(--padding-side) * 2);
+}
+
+.contacts__aside {
+    background-color: var(--color-brown);
+    padding: 40px 24px;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.contacts__list_details {
+    gap: 12px;
+}
+
+.contacts__icon {
+    color: var(--color-white);
+    margin-right: 8px;
+}
+
+.contacts__note {
+    font-weight: 400;
+    display: inline-block;
+}
+
+.contacts__note_schedule {
+    margin-left: 14px;
+}
+
+.contacts__location {
+    width: 100%;
+    height: 380px;
+}
+
+.contacts__link {
+    color: var(--color-white);
+}
+
+.contacts__map canvas {
+    filter: grayscale(0.9);
+}
+
+.contacts__map .ymaps-2-1-79-user-selection-none {
+    filter: grayscale(.9);
+}
+
+.contacts__map .ymaps-2-1-79-placemark-overlay.ymaps-2-1-79-user-selection-none {
+    filter: grayscale(0);
+}
+
+/*  для файрфокс и апи я.карт версии 2.1.79 */
+
+
+@media screen and (min-width: 768px) {
+    .contacts__subject {
+        font-size: 14px;
+        margin-bottom: 46px;
+    }
+
+    .contacts {
+        margin-bottom: 45px;
+    }
+
+    .contacts__container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .contacts__aside {
+        padding: 38px 36px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contacts__list {
+        flex-direction: row;
+        gap: 24px;
+        justify-content: space-between;
+    }
+
+    .contacts__list_details {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contacts__location {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contacts {
+        margin-bottom: 160px;
+    }
+
+    .contacts__welcome {
+        min-width: 15%;
+        gap: 40px;
+        margin-bottom: 0;
+    }
+
+    .contacts__main {
+        display: flex;
+        gap: 32px;
+    }
+
+    .contacts__subject {
+        font-size: 16px;
+        margin-bottom: 57px;
+    }
+
+    .contacts__list {
+        flex-direction: column;
+    }
+
+    .contacts__number {
+        font-size: 64px;
+        margin-right: 15px;
+    }
+
+    .contacts__measure {
+        font-size: 32px;
+    }
+
+    .contacts__desc {
+        font-size: 18px;
+    }
+
+    .contacts__container {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        /* карта вылезает за поля */
+    }
+
+    .contacts__aside {
+        padding: 40px;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 24px;
+        min-width: 336px;
+        max-height: 264px;
+        z-index: 2;
+    }
+
+    .contacts__location {
+        height: 380px;
+        margin-left: -60px;
+        margin-top: 60px;
+        z-index: 1;
+    }
+
+    .contacts__link:hover {
+        color: var(--color-snow);
+    }
+}

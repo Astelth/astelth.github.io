@@ -1,0 +1,51 @@
+@keyframes active {
+    0% {
+        transform: scale(.6);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.placemark {
+    position: relative;
+    background-image: url(../assets/images/small.svg);
+    background-size: 100%;
+    top: 50%;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    margin: -30px 0 0 -30px;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 1;
+    transition: all .5s;
+}
+
+.placemark:after,
+.placemark:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px var(--color-acid);
+    opacity: 0;
+    animation: active 3s infinite linear;
+    transition: all .5s;
+}
+
+.placemark:after {
+    animation-delay: 1.5s;
+    transition: all .5s;
+}

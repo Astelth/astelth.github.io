@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/vars.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="css/preview.css" />
+    <title>Cafe Buffe</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <script src="js/placemark_layout.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="page__header">
+            <!-- кмпонент header -->
+            <div class="header">
+                <div class="header__bar">
+                    <div class="header__logo">
+                        <span class="icon-buffe"></span>
+                    </div>
+                    <div class="header__burger" onclick="openMenu()" title="Меню">
+                        <div class="header__burger-line"></div>
+                        <div class="header__burger-line"></div>
+                        <div class="header__burger-line"></div>
+                    </div>
+                    <div class="icon-go-back header__go-back" title="В начало" onclick="up()">
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="header__menu-list">
+                        <!-- это компонент menu -->
+                        <div class="menu">
+                            <div class="menu__list">
+                                <div class="menu__item">
+                                    <a href="products.html" class="i-link menu__link" onClick="openMenu()">
+                                        Основное меню
+                                    </a>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="products.html#2" class="i-link menu__link" onClick="openMenu()">
+                                        Барная карта
+                                    </a>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="products.html#3" class="i-link menu__link" onClick="openMenu()">
+                                        Меню десертов
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="menu__list">
+                                <div class="menu__item menu__item_regular_weight">
+                                    <span class="icon-location2 header__icon"></span>
+                                    Москва, Зубовский бул., 29
+                                </div>
+                                <div class="menu__item menu__item_regular_weight">
+                                    <a href="tel:+74959999999" class="i-link">
+                                        <span class="icon-phone header__icon"></span>
+                                        +7 (495) 999-99-99
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /это компонент menu -->
+                    </div>
+                    <div class="header__nets">
+                        <div class="header__nets-list">
+                            <div class="header__nets-item">
+                                <a href="#" class="i-link">
+                                    <span class="icon-vk"></span>
+                                </a>
+                            </div>
+                            <div class="header__nets-item">
+                                <a href="#" class="i-link">
+                                    <span class="icon-telegram"></span>
+                                </a>
+                            </div>
+                            <div class="header__nets-item">
+                                <a href="#" class="i-link">
+                                    <span class="icon-whatsapp"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /кмпонент header -->
+        </div>
+        <div class="page__content">
+            <!-- компонент content -->
+            <a href="tel:+74959999999" class="i-link">
+                <button class="i-button i-button_color_green page__button">
+                    Позвонить
+                </button>
+            </a>
+            <div class="preview preview_fullscreen">
+                <div class="preview__inner" style="background-image: url(assets/images/temp.jpeg)">
+                    <div class="preview__main">
+                        <div class="preview__subject">
+                            <span class="pre-animation-state" style="transition-delay: 0.2s">
+                                ДАВАЙТЕ ЗНАКОМИТЬСЯ
+                            </span>
+                        </div>
+                        <div class="preview__taglines">
+                            <div class="preview__tagline">
+                                <span class="pre-animation-state" style="transition-delay: 0.4s">Место </span>
+                                <span class="pre-animation-state" style="transition-delay: 0.6s">для </span>
+                                <span class="pre-animation-state" style="transition-delay: 0.8s">тёплых </span>
+                                <span class="pre-animation-state" style="transition-delay: 1s">встреч.</span>
+                            </div>
+                            <div class="preview__tagline">
+                                <span class="pre-animation-state" style="transition-delay: 1.2s">У </span>
+                                <span class="pre-animation-state" style="transition-delay: 1.4s">нас </span>
+                                <span class="pre-animation-state" style="transition-delay: 1.6s">вкусно </span>
+                                <span class="pre-animation-state" style="transition-delay: 1.8s">как </span>
+                                <span class="pre-animation-state" style="transition-delay: 2s">дома.</span>
+                            </div>
+                        </div>
+                        <div class="preview__description">
+                            <span class="pre-animation-state" style="transition-delay: 2.2s">Приходите </span>
+                            <span class="pre-animation-state" style="transition-delay: 2.3s">в кафе </span>
+                            <span class="pre-animation-state" style="transition-delay: 2.4s">«Буффе».</span>
+                            <span class="pre-animation-state" style="transition-delay: 2.6s">Работаем </span>
+                            <span class="pre-animation-state" style="transition-delay: 2.7s">ежедневно </span>
+                            <span class="pre-animation-state" style="transition-delay: 2.8s">с 8.00 </span>
+                            <span class="pre-animation-state" style="transition-delay: 2.9s">до 22.00</span>
+                        </div>
+                        <div class="preview__buttons">
+                            <div class="preview__button pre-animation-state" style="transition-delay: 3.1s">
+                                <button class="i-button i-button_color_green">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--preview-->
+            <div class="preview">
+                <div class="preview__inner">
+                    <div class="preview__image" style="background-image: url(assets/images/main-menu.jpg)"></div>
+                    <div class="preview__main">
+                        <div class="preview__subject">
+                            <span class="pre-animation-state">Основное меню</span>
+                        </div>
+                        <div class="preview__taglines">
+                            <div class="preview__tagline pre-animation-state">
+                                Вкусный обед в самом центре города
+                            </div>
+                        </div>
+                        <div class="preview__description pre-animation-state">
+                            Клаб-сэндвич, салат с тунцом, суп-харчо и многое многое
+                            другое. Вы можете полноценно пообедать в центре города по
+                            очень демократичным ценам
+                        </div>
+                        <div class="preview__buttons">
+                            <div class="preview__button">
+                                <button class="i-button">Посмотреть основное меню</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--preview-->
+            <div class="preview preview_reverse">
+                <div class="preview__inner preview__inner_reverse">
+                    <div class="preview__image" style="background-image: url(assets/images/bar-card.jpg)"></div>
+                    <div class="preview__main">
+                        <div class="preview__subject">
+                            <span class="pre-animation-state">напитки и десерты</span>
+                        </div>
+                        <div class="preview__taglines">
+                            <div class="preview__tagline pre-animation-state">
+                                Ароматный кофе и круассан с миндалем
+                            </div>
+                        </div>
+                        <div class="preview__description pre-animation-state">
+                            Если у Вас мало времени, то мы можем быстро приготовить вам
+                            вкусный ароматный кофе, а к нему Вы сможете заказать свежую
+                            выпечку и другие разнообразные десерты
+                        </div>
+                        <div class="preview__buttons">
+                            <div class="preview__button">
+                                <button class="i-button">Меню напитков</button>
+                            </div>
+                            <div class="preview__button">
+                                <button class="i-button i-button_background_none">
+                                    Выбрать десерт
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--preview-->
+            <div class="preview preview_special">
+                <div class="preview__inner">
+                    <div class="preview__image" style="background-image: url(assets/images/promo_image.jpg)"></div>
+                    <div class="preview__main">
+                        <div class="preview__subject">
+                            <span class="pre-animation-state">ВИТАМИННОЕ ПРЕДЛОЖЕНИЕ</span>
+                        </div>
+                        <div class="preview__taglines">
+                            <div class="preview__tagline pre-animation-state">
+                                Для поддержания Вашего иммунитета, свежевыжатый сок на любой вкус
+                            </div>
+                        </div>
+                        <div class="preview__description pre-animation-state">
+                            Каждый день в кафе Буффе Ваш ждет свежевыжатый сок на любой
+                            вкус. В наличии большое количество разнообразных компотов и
+                            прочих освежающих и заряжающих бодростью напитков. Для самых
+                            маленьких наших посетителей – красивые разноцветные трубочки
+                            и игрушки
+                        </div>
+                        <div class="preview__buttons">
+                            <div class="preview__button">
+                                <button class="i-button">Найти себе сок по вкусу</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contacts -->
+            <div class="contacts">
+                <div class="contacts__subject">
+                    <span class="pre-animation-state">ПРИХОДИТЕ В ГОСТИ</span>
+                </div>
+                <div class="contacts__main">
+                    <div class="contacts__welcome">
+                        <div class="contacts__list">
+                            <div class="contacts__item">
+                                <div class="contacts__number pre-animation-state">
+                                    2 <span class="contacts__measure"> мин</span>
+                                </div>
+                                <div class="contacts__desc">пешком до ближайшего метро</div>
+                            </div>
+                            <div class="contacts__item">
+                                <div class="contacts__number pre-animation-state">
+                                    5 <span class="contacts__measure"> мин</span>
+                                </div>
+                                <div class="contacts__desc">
+                                    чтобы сварить Вам вкусный кофе
+                                </div>
+                            </div>
+                            <div class="contacts__item">
+                                <div class="contacts__number pre-animation-state">
+                                    15 <span class="contacts__measure"> мин</span>
+                                </div>
+                                <div class="contacts__desc">
+                                    чтобы приготовить Вам вкусный завтрак
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacts__container">
+                        <div class="contacts__aside">
+                            <div class="contacts__list contacts__list_details">
+                                <div class="contacts__item pre-animation-state">
+                                    <span class="icon-location2 contacts__icon"></span>
+                                    <span class="contacts__note">Москва, Зубовский бул., 29</span>
+                                </div>
+                                <div class="contacts__item pre-animation-state">
+                                    <a href="tel:+74959999999" class="i-link contacts__link">
+                                        <span class="icon-phone contacts__icon"></span>
+                                        <span class="contacts__note">+7 (495) 999-99-99</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contacts__list contacts__list_details">
+                                <div class="contacts__item pre-animation-state">
+                                    Пн-Чт
+                                    <span class="contacts__note contacts__note_schedule">с 10:00 до 22:00</span>
+                                </div>
+                                <div class="contacts__item pre-animation-state">
+                                    Пт-Вс
+                                    <span class="contacts__note contacts__note_schedule">с 11:00 до 23:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__location">
+                            <div id="map" class="contacts__map"></div>
+                            <!--здесь карта-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contacts -->
+        </div>
+        <!-- /компонент content -->
+
+        <div class="page__footer">
+            <div class="page__footer-wrapper">
+                <!-- компонент footer -->
+                <div class="footer">
+                    <div class="footer__section">
+                        <div class="footer__logo-wrapper">
+                            <span class="icon-buffe footer__logo"></span>
+                        </div>
+                        <div class="footer__tagline">
+                            Здесь нужен какой-то слоган или юридическая информация
+                        </div>
+                        <div class="footer__telegram">
+                            <a href="https://t.me/cafebuffe" class="i-link footer__link">
+                                @cafebuffe
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__subject">Меню</div>
+                        <div class="footer__list">
+                            <div class="footer__item">
+                                <a href="products.html" class="i-link footer__link"> Основное меню </a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="products.html#2" class="i-link footer__link"> Кофе и напитки </a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="products.html#3" class="i-link footer__link"> Десерты </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__subject">Доставка</div>
+                        <div class="footer__list">
+                            <div class="footer__item">
+                                <a href="#" class="i-link footer__link">
+                                    <img src="assets/images/logo-yandex-eda.jpg" alt="доставка"
+                                        class="footer__picture" />
+                                </a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="#" class="i-link footer__link">
+                                    <img src="assets/images/logo-delivery-club.jpg" alt="доставка"
+                                        class="footer__picture" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__subject">Контакты</div>
+                        <div class="footer__list">
+                            <div class="footer__item">
+                                <span class="icon-location2 footer__icon"></span>
+                                <span class="footer__note"> Москва, Зубовский бул., 29 </span>
+                            </div>
+                            <div class="footer__item">
+                                <a href="tel:+74959999999" class="i-link footer__link">
+                                    <span class="icon-phone footer__icon"></span>
+                                    <span class="footer__note"> +7 (495) 999-99-99 </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /компонент footer -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>

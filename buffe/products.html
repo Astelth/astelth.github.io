@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/vars.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="css/preview.css" />
+    <link rel="stylesheet" href="css/category.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <title>Cafe Buffe</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <script src="js/placemark_layout.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="page__header">
+            <!-- кмпонент header -->
+            <div class="header">
+                <div class="header__bar">
+                    <div class="header__logo">
+                        <span class="icon-buffe"></span>
+                    </div>
+                    <div class="header__burger" onclick="openMenu()" title="Меню">
+                        <div class="header__burger-line"></div>
+                        <div class="header__burger-line"></div>
+                        <div class="header__burger-line"></div>
+                    </div>
+                    <span class="icon-go-back header__go-back header__go-back_active" title="^ В начало ^"
+                        onclick="up()"></span>
+                </div>
+                <div class="header__menu">
+                    <div class="header__menu-list">
+                        <!-- это компонент menu -->
+                        <div class="menu">
+                            <div class="menu__list">
+                                <div class="menu__item">
+                                    <a href="#1" class="i-link menu__link" onClick="openMenu()">
+                                        Основное меню
+                                    </a>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="#2" class="i-link menu__link" onClick="openMenu()">
+                                        Барная карта
+                                    </a>
+                                </div>
+                                <div class="menu__item">
+                                    <a href="#3" class="i-link menu__link" onClick="openMenu()">
+                                        Меню десертов
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="menu__list">
+                                <div class="menu__item menu__item_regular_weight">
+                                    <span class="icon-location2 header__icon"></span>
+                                    Москва, Зубовский бул., 29
+                                </div>
+                                <div class="menu__item menu__item_regular_weight">
+                                    <a href="tel:+74959999999" class="i-link">
+                                        <span class="icon-phone header__icon"></span>
+                                        +7 (495) 999-99-99
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /это компонент menu -->
+                    </div>
+                    <div class="header__nets">
+                        <div class="header__nets-list">
+                            <div class="header__nets-item">
+                                <a href="#" class="i-link">
+                                    <span class="icon-vk"></span>
+                                </a>
+                            </div>
+                            <div class="header__nets-item">
+                                <a href="#" class="i-link">
+                                    <span class="icon-telegram"></span>
+                                </a>
+                            </div>
+                            <div class="header__nets-item">
+                                <a href="#" class="i-link">
+                                    <span class="icon-whatsapp"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /кмпонент header -->
+        </div>
+        <div class="page__content">
+            <!-- компонент content -->
+            <a href="tel:+74959999999" class="i-link">
+                <button class="i-button i-button_color_green page__button">
+                    Позвонить
+                </button>
+            </a>
+            <div class="preview preview_fullscreen preview_background_contain">
+                <div class="preview__inner" style="background-image: url(assets/images/top_products.jpg)"></div>
+            </div>
+
+            <div class="page__title" id="1">Наше меню</div>
+
+            <!-- category -->
+            <div class="category">
+                <div class="category__title">ОСНОВНОЕ МЕНЮ</div>
+                <div class="category__list">
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish1.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Десерт <span class="product__name">“Хурма-Манго”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish2.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Салат <span class="product__name">“Правильное питание”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish3.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Тост <span class="product__name">“Капрезе”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish1.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Десерт <span class="product__name">“Хурма-Манго”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish2.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Салат <span class="product__name">“Правильное”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish3.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Тост <span class="product__name">“Капрезе”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish1.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Десерт <span class="product__name">“Хурма-Манго”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish2.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Салат <span class="product__name">“Правильное питание”</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- category -->
+            <!-- category -->
+            <div class="category" id="2">
+                <div class="category__title">Барная карта</div>
+                <div class="category__list">
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish4.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Кофе <span class="product__name">“Капуччино”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish5.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Кофе <span class="product__name">“Капуччино Гранде”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish6.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Кофе <span class="product__name">“Американо”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish4.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Кофе <span class="product__name">“Капуччино”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish6.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Кофе <span class="product__name">“Американо”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish5.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Кофе <span class="product__name">“Капуччино Гранде”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish4.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Кофе <span class="product__name">“Капуччино”</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- category -->
+            <!-- category -->
+            <div class="category" id="3">
+                <div class="category__title">Меню десертов</div>
+                <div class="category__list">
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish7.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Десерт <span class="product__name">“Земфиринка”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish8.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Десерт <span class="product__name">“Хурма-Манго”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish9.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Десерт <span class="product__name">“Шокотарт”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish8.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Десерт <span class="product__name">“Хурма-Манго”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish9.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Десерт <span class="product__name">“Шокотарт”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish7.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Десерт <span class="product__name">“Земфиринка”</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="product">
+                            <div class="product__image">
+                                <img src="assets/images/dish7.jpg" alt="фото" class="product__picture">
+                            </div>
+                            <div class="product__item">
+                                Десерт <span class="product__name">“Земфиринка”</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- category -->
+
+            <!-- contacts -->
+            <div class="contacts">
+                <div class="contacts__subject">ПРИХОДИТЕ В ГОСТИ</div>
+                <div class="contacts__main">
+                    <div class="contacts__welcome">
+                        <div class="contacts__list">
+                            <div class="contacts__item">
+                                <div class="contacts__number">
+                                    2 <span class="contacts__measure"> мин</span>
+                                </div>
+                                <div class="contacts__desc">пешком до ближайшего метро</div>
+                            </div>
+                            <div class="contacts__item">
+                                <div class="contacts__number">
+                                    5 <span class="contacts__measure"> мин</span>
+                                </div>
+                                <div class="contacts__desc">
+                                    чтобы сварить Вам вкусный кофе
+                                </div>
+                            </div>
+                            <div class="contacts__item">
+                                <div class="contacts__number">
+                                    15 <span class="contacts__measure"> мин</span>
+                                </div>
+                                <div class="contacts__desc">
+                                    чтобы приготовить Вам вкусный завтрак
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacts__container">
+                        <div class="contacts__aside">
+                            <div class="contacts__list contacts__list_details">
+                                <div class="contacts__item">
+                                    <span class="icon-location2 contacts__icon"></span>
+                                    <span class="contacts__note">Москва, Зубовский бул., 29</span>
+                                </div>
+                                <div class="contacts__item">
+                                    <a href="tel:+74959999999" class="i-link contacts__link">
+                                        <span class="icon-phone contacts__icon"></span>
+                                        <span class="contacts__note">+7 (495) 999-99-99</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contacts__list contacts__list_details">
+                                <div class="contacts__item">
+                                    Пн-Чт
+                                    <span class="contacts__note contacts__note_schedule">с 10:00 до 22:00</span>
+                                </div>
+                                <div class="contacts__item">
+                                    Пт-Вс
+                                    <span class="contacts__note contacts__note_schedule">с 11:00 до 23:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__location">
+                            <div id="map" class="contacts__map"></div>
+                            <!--здесь карта-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contacts -->
+        </div>
+        <!-- /компонент content -->
+
+        <div class="page__footer">
+            <div class="page__footer-wrapper">
+                <!-- компонент footer -->
+                <div class="footer">
+                    <div class="footer__section">
+                        <div class="footer__logo-wrapper">
+                            <span class="icon-buffe footer__logo"></span>
+                        </div>
+                        <div class="footer__tagline">
+                            Здесь нужен какой-то слоган или юридическая информация
+                        </div>
+                        <div class="footer__telegram">
+                            <a href="https://t.me/cafebuffe" class="i-link footer__link">
+                                @cafebuffe
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__subject">Меню</div>
+                        <div class="footer__list">
+                            <div class="footer__item">
+                                <a href="products.html#1" class="i-link footer__link"> Основное меню </a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="products.html#2" class="i-link footer__link"> Кофе и напитки </a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="products.html#3" class="i-link footer__link"> Десерты </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__subject">Доставка</div>
+                        <div class="footer__list">
+                            <div class="footer__item">
+                                <a href="#" class="i-link footer__link">
+                                    <img src="assets/images/logo-yandex-eda.jpg" alt="доставка"
+                                        class="footer__picture" />
+                                </a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="#" class="i-link footer__link">
+                                    <img src="assets/images/logo-delivery-club.jpg" alt="доставка"
+                                        class="footer__picture" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <div class="footer__subject">Контакты</div>
+                        <div class="footer__list">
+                            <div class="footer__item">
+                                <span class="icon-location2 footer__icon"></span>
+                                <span class="footer__note"> Москва, Зубовский бул., 29 </span>
+                            </div>
+                            <div class="footer__item">
+                                <a href="tel:+74959999999" class="i-link footer__link">
+                                    <span class="icon-phone footer__icon"></span>
+                                    <span class="footer__note"> +7 (495) 999-99-99 </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /компонент footer -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>

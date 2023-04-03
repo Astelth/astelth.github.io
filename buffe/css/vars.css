@@ -1,0 +1,34 @@
+:root {
+    --header-height: 48px;
+    --color-green: #80821f;
+    --color-green-hover: #6c6e1a;
+    --color-brown: #cc672c;
+    --color-brown-hover: #ab4b13;
+    --color-snow: #ece1c8;
+    --color-white: #ffffff;
+    --color-dark-grey: #333333;
+    --color-acid: #6bb42c;
+    --background-promo: #f9f8f8;
+    --background-footer: #fcfcfd;
+    --breakpoint-mobile-wide: 375px;
+    --breakpoint-tablet-portrait: 768px;
+    --breakpoint-tablet-landscape: 1024px;
+    --breakpoint-desktop: 1200px;
+    --padding-side: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --header-height: 60px;
+        --padding-side: 48px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --header-height: 205px;
+        --short-header-width: 120px;
+        --wide-header-width: 380px;
+        --content-max-width: 1200px;
+    }
+}
