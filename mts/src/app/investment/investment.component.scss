@@ -1,0 +1,132 @@
+@import 'src/sass/vars';
+@import 'src/sass/mixins';
+
+.investment {
+  padding: 0 16px;
+  color: $red;
+  margin-bottom: 80px;
+
+  &__header {
+    @include text-style(400, 12, 14);
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    height: 64px;
+    color: $red;
+    text-decoration: none;
+    border-top: 1px solid $grey_light;
+    @include text-style(500, 16, 17);
+  }
+
+  &__item:last-child {
+    border-bottom: 1px solid $grey_light;
+  }
+
+  &__picture {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    @include picture(32, 32);
+    transition: 0.3s;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .investment {
+    margin-bottom: 80px;
+
+    &__header {
+      margin-bottom: 20px;
+    }
+
+    &__item {
+      gap: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .investment {
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 81px;
+
+    &__header {
+      @include text-style(400, 18, 25, $MTSText);
+      margin-bottom: 59px;
+    }
+
+    &__item {
+      font-size: 22px;
+      line-height: 24px;
+      height: 77px;
+      gap: 31px;
+    }
+
+    &__picture {
+      width: 44px;
+      height: 44px;
+      background-size: 44px;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .investment {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 66px;
+
+    &__header {
+      @include text-style(400, 16, 24, $MTSText);
+      margin-bottom: 32px;
+    }
+
+    &__item {
+      height: 76px;
+      font-size: 20px;
+      line-height: 24px;
+      transition: .3s color;
+    }
+
+    &__picture {
+      @include picture(36, 36);
+      background-size: 36px;
+      transition: .2s transform;
+    }
+
+    &__item:hover {
+      color: $red_dark;
+    }
+
+    &__item:hover &__picture {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .investment {
+    padding-left: 32px;
+    margin-bottom: 136px;
+
+    &__header {
+      @include text-style(400, 20, 28, $MTSText);
+      margin-bottom: 32px;
+    }
+
+    &__item {
+      height: 97px;
+      @include text-style(500, 32, 36);
+    }
+
+    &__picture {
+      @include picture(52, 52);
+      background-size: 52px;
+    }
+  }
+}

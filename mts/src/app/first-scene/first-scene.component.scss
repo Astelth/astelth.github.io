@@ -1,0 +1,25 @@
+@import 'src/sass/mixins';
+
+.scene {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  height: 3200px;
+
+  &__canvas {
+    display: none;
+    position: sticky;
+    top: 90px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .scene {
+    @include mts-bg;
+
+    &__canvas {
+      display: block;
+    }
+  }
+}

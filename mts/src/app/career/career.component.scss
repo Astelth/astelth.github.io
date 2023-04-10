@@ -1,0 +1,222 @@
+@import 'src/sass/vars';
+@import 'src/sass/mixins';
+@import 'src/sass/animation';
+
+.career {
+  color: $red;
+  background: url('../../assets/images/career/career_bg.jpg') top left / cover no-repeat;
+  padding: 65px 16px 80px;
+  position: relative;
+  margin: 0 auto;
+
+  &__title {
+    text-transform: uppercase;
+    max-width: 322px;
+    @include text-style(500, 20, 22);
+    margin-bottom: 15px;
+  }
+
+  &__title-first {
+    text-indent: 33px;
+  }
+
+  &__text {
+    color: $grey_dark;
+    margin-bottom: 40px;
+  }
+
+  &__vacancies {
+    margin: 0 auto 17px;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    text-align: right;
+    @include text-style(500, 20, 21, $MTSText);
+  }
+
+  &__number {
+    display: inline-block;
+    @include text-style(400, 16, 16, $MTSText);
+    vertical-align: top;
+    margin-top: 3px;
+  }
+
+  &__note {
+    color: $grey_dark;
+    text-align: left;
+  }
+
+  &__vacancies {
+    text-align: right;
+  }
+
+  &__img {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .career {
+    &__title {
+      @include text-style(500, 24, 25);
+    }
+
+    &__title-first {
+      text-indent: 40px;
+    }
+
+    &__img {
+      margin-bottom: 30px;
+    }
+
+    &__subtitle {
+      @include text-style(500, 24, 25);
+    }
+
+    &__vacancies {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .career {
+    padding: 80px 32px;
+
+    &__title {
+      @include text-style(500, 38, 44);
+      max-width: 560px;
+    }
+
+    &__title-first {
+      text-indent: 74px;
+    }
+
+    &__img {
+      margin-bottom: 54px;
+    }
+
+    &__subtitle {
+      @include text-style(500, 38, 44);
+    }
+
+    &__number {
+      @include text-style(400, 20, 24, $MTSText);
+    }
+
+    &__vacancies {
+      margin-bottom: 0;
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__subtitle {
+      order: 1;
+    }
+
+    &__note {
+      order: 0;
+      max-width: 300px
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .career {
+    padding: 52px 24px 93px;
+
+    &__title {
+      @include text-style(500, 48, 49);
+      max-width: 620px;
+      margin-bottom: 24px;
+    }
+
+    &__title-first {
+      text-indent: 82px;
+    }
+
+    &__subtitle {
+      @include text-style(500, 48, 49);
+    }
+
+    &__text {
+      width: 402px;
+    }
+
+    &__img {
+      width: 313px;
+      margin-top: -106px;
+      margin-bottom: 2px;
+    }
+
+    &__note {
+      max-width: 399px;
+      margin-top: 50px;
+      margin-left: 3px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .career {
+    min-height: 900px;
+    font-size: 72px;
+    line-height: 102%;
+    padding-top: 24px;
+    padding-left: 32px;
+
+    &__title {
+      text-transform: uppercase;
+      max-width: 920px;
+      margin: 0 0 38px;
+      @include text-style(500, 72, 73);
+    }
+
+    &__title-first {
+      text-indent: 120px;
+    }
+
+    &__subtitle {
+      @include text-style(500, 72, 73);
+    }
+
+    &__text {
+      color: $grey_dark;
+      width: 450px;
+    }
+
+    &__vacancies {
+      position: absolute;
+      margin-top: -120px;
+      width: calc(100% - 64px);
+      right: 32px;
+      z-index: 90;
+    }
+
+    &__number {
+      display: inline-block;
+      @include text-style(400, 20, 28, $MTSText);
+      margin-top: 11px;
+    }
+
+    &__footer {
+      align-items: flex-end;
+    }
+
+    &__note {
+      color: $grey_dark;
+      max-width: 458px;
+    }
+
+    &__img {
+      width: 464px;
+      margin-top: 4px;
+      margin-bottom: -3px;
+    }
+  }
+}

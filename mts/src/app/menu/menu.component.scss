@@ -1,0 +1,388 @@
+@import 'src/sass/vars';
+@import 'src/sass/mixins';
+
+.menu {
+  display: none;
+
+  &__fullscreen {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background: $black;
+    @include text-style(500, 20, 22);
+    color: $white;
+    padding: 16px;
+    position: fixed;
+    user-select: none;
+    z-index: 1000;
+    margin: 0 auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.99);
+    transition: transform .2s, opacity .2s, visibility 0s;
+  }
+
+  &__fullscreen_active {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__list {
+    margin: 30px 0 0;
+  }
+
+  &__list-item {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  &__list-item:first-child {
+    border-top: 0;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    opacity: 0.5;
+  }
+
+  &__item_active {
+    opacity: 1;
+  }
+
+  &__link {
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__sublist {
+    padding: 10px 0;
+    display: none;
+    margin-bottom: 12px;
+  }
+
+  &__item_active+&__sublist {
+    display: block;
+  }
+
+  &__point {
+    @include text-style(500, 14, 15);
+    margin-bottom: 14px;
+  }
+}
+
+.menu-bar {
+  display: none;
+}
+
+.menu-burger {
+  width: 64px;
+  height: 48px;
+  background: $black;
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  border-radius: 128px;
+  display: flex;
+  transition: opacity .2s, visibility .2s;
+  z-index: 1001;
+
+  &:before,
+  &:after {
+    @include picture(24, 1);
+    background: $white;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -2px;
+  }
+
+  &:before {
+    margin-top: 2px;
+  }
+
+  &_scrolling {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &_active {
+    background: $grey_dark;
+  }
+
+  &_active:before,
+  &_active:after {
+    margin-top: 0;
+  }
+
+  &_active:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &_active:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+@media screen and (min-width: 375px) {
+
+  .menu {
+    &__fullscreen {
+      font-size: 24px;
+      line-height: 25px;
+    }
+
+    &__point {
+      font-size: 16px;
+      line-height: 17px;
+      margin-bottom: 12px;
+      margin-right: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .menu {
+    &__fullscreen {
+      padding: 32px;
+      font-size: 38px;
+      line-height: 42px;
+    }
+
+    &__list {
+      margin: 0;
+    }
+
+    &__item {
+      padding-top: 15px;
+      padding-bottom: 16px;
+    }
+
+    &__sublist {
+      padding: 16px 0;
+      margin-bottom: 10px;
+    }
+
+    &__point {
+      font-size: 22px;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+
+  .menu {
+    &__fullscreen {
+      font-size: 32px;
+      line-height: 102%;
+    }
+
+    &__list {
+      margin: 43px 7.5% 0;
+      position: relative;
+    }
+
+    &__list-item {
+      display: flex;
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    &__item {
+      width: 50%;
+      padding-right: 32px;
+      padding-top: 0;
+      padding-bottom: 24px;
+      cursor: pointer;
+      transition: .3s opacity;
+    }
+
+    &__item:hover {
+      opacity: 1;
+    }
+
+    &__sublist {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      padding: 0;
+      height: 100%;
+      border-left: 1px solid $border;
+      padding-left: 85px;
+    }
+
+    &__point {
+      font-size: 20px;
+      line-height: 22px;
+      margin-bottom: 32px;
+      opacity: 1;
+      cursor: pointer;
+      transition: .3s opacity;
+    }
+
+    &__point:hover {
+      opacity: .5;
+    }
+  }
+
+  .menu-burger {
+    left: 24px;
+    bottom: 32px;
+    cursor: pointer;
+
+    &:hover {
+      background: $grey_dark;
+    }
+  }
+
+  .menu-bar {
+    display: block;
+    position: fixed;
+    bottom: 32px;
+    z-index: 1000;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: normal;
+    @include text-style(500, 18, 21);
+    left: 50%;
+    transform: translateX(-50%);
+    height: 48px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -4px;
+      z-index: 0;
+      height: 100%;
+      width: 732px;
+      background: $grey_dark;
+      border-radius: 200px;
+    }
+
+    &__viewport {
+      width: 724px;
+      overflow: hidden;
+      border-radius: 200px;
+    }
+
+    &__list {
+      position: relative;
+      display: flex;
+      height: 48px;
+      gap: 26px;
+      transition: .3s transform;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin: auto;
+      height: 40px;
+      padding: 0 10px;
+      white-space: nowrap;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      border-radius: 200px;
+      border: 2px solid transparent;
+      transition: .2s color;
+    }
+
+    &__item_selected {
+      border-color: $white;
+      color: $white;
+    }
+
+    &__link {
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu {
+    &__line {
+      content: '';
+      width: 16px;
+      height: 2px;
+      background: $white;
+      margin: 2px 4px;
+    }
+
+    &__fullscreen {
+      font-size: 48px;
+      line-height: 102%;
+    }
+
+    &__list {
+      margin: 66px 6%;
+      position: relative;
+    }
+
+    &__list-item {
+      display: flex;
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    &__item {
+      min-height: 64px;
+      width: 50%;
+    }
+
+    &__sublist {
+      padding-left: 137px;
+    }
+
+    &__point {
+      @include text-style(500, 32, 36);
+    }
+  }
+
+  .menu-burger {
+    margin: auto 0;
+    height: 16px;
+    width: 16px;
+    @include picture(88, 72);
+    bottom: 32px;
+    left: 32px;
+
+    &:before,
+    &:after {
+      @include picture(32, 1.5);
+    }
+
+    &:before {
+      margin-bottom: 4.5px;
+    }
+  }
+
+  .menu-bar {
+    height: 72px;
+
+    &__list {
+      height: 72px;
+    }
+
+    &__item {
+      height: 64px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .menu {
+    &__fullscreen {
+      font-size: 60px;
+    }
+
+    &__item {
+      min-height: 85px;
+    }
+  }
+}

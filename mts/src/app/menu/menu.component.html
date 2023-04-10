@@ -1,0 +1,31 @@
+<div class="menu-bar" [style.margin-left]="customMenuStyle">
+  <div class="menu-bar__viewport">
+    <div class="menu-bar__list">
+      <div class="menu-bar__item" (click)="onClickMenuBarItem($event)" [attr.data-anchor]="item.link" *ngFor="let item of menuBarItems">
+        <div class="menu-bar__link">{{item.title}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="menu-burger"
+     [class.menu-burger_active]="showMenu"
+     [class.menu-burger_scrolling]="hideMenu"
+     (click)="showMenu = !showMenu;
+     onShowMenu(showMenu);"
+></div>
+
+<div class="menu__fullscreen" [class.menu__fullscreen_active]="showMenu">
+  <div class="menu__list">
+    <div class="menu__list-item" *ngFor="let item of items; index as indexElement;">
+      <div class="menu__item" [class.menu__item_active] = "item.active" [attr.data-index]="indexElement" (click)="onClickMenuItem($event)">
+        <a href="{{item.link}}" class="menu__link">{{item.name}}</a>
+      </div>
+      <div class="menu__sublist">
+        <div class="menu__point" *ngFor="let innerItem of item.items;">
+          <a href="{{innerItem.link}}" class="menu__link">{{innerItem.title}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

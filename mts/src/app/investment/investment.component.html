@@ -1,0 +1,11 @@
+<div class="investment">
+  <div class="investment__header">Инвесторам и акционерам</div>
+  <div class="investment__list">
+    <a class="investment__item" [attr.href]="item.link" *ngFor="let item of items;">
+      <span class="investment__icon">
+        <span class="investment__picture" style="background-image: url({{item.picture}})"></span>
+      </span>
+      <span class="investment__text">{{item.title}}</span>
+    </a>
+  </div>
+</div>

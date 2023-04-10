@@ -1,0 +1,276 @@
+@import 'src/sass/vars';
+@import 'src/sass/mixins';
+@import 'src/sass/animation';
+
+@mixin desktop-page {
+  min-height: 900px;
+  margin: auto;
+}
+
+@mixin mobile-page {
+  background: linear-gradient(157.57deg, #FF002D -3.45%, #89AAEA -3.45%, #D18CCA 28.28%, #F2CEFD 85.39%);
+  background-size: contain;
+}
+
+.title-indent {
+  text-indent: 44px;
+}
+
+.mission {
+  @include mobile-page;
+  padding: 64px 16px 16px;
+  position: relative;
+  z-index: 2;
+  @include text-style(500, 20, 22);
+  color: $white;
+  background: url(../../assets/images/mission/mobile_background.jpg) top left / cover no-repeat;
+  overflow: hidden;
+
+  &_animate {
+    animation: onFirstScroll 6s;
+  }
+
+  &__cube {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: $red-bg;
+    position: relative;
+    display: flex;
+    gap: 32px 18px;
+    flex-wrap: wrap;
+    @include text-style(500, 90, 90);
+    transition: .3s transform;
+    animation: fadeLogo 2s 1;
+  }
+
+  &__logo {
+    margin: 10px;
+  }
+
+  &__logo:before {
+    content: 'т';
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__logo:after {
+    content: 'с';
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__mts {
+    background: $primary-bg;
+    width: calc(100% + 32px);
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    display: flex;
+    z-index: 52;
+    position: relative;
+    color: $white;
+    text-transform: uppercase;
+    margin: -64px -16px 20px;
+    transition: opacity .5s;
+  }
+
+  &__mts_hidden {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__container {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  &__container_position_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    margin-bottom: 62px;
+    padding-left: 6%;
+  }
+
+  &__title {
+    max-width: 343px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  &__title {
+    max-width: 343px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    @include text-style(500, 14, 15);
+  }
+
+  &__image {
+    width: 293px;
+    transform: rotate(-5deg);
+    right: -49px;
+    position: relative;
+    margin-bottom: 75px;
+  }
+
+  &__image-pic {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .mission {
+    font-size: 24px;
+    line-height: 25px;
+    padding-bottom: 34px;
+
+    &__container {
+      margin-bottom: 45px;
+    }
+
+    &__container_position_bottom {
+      padding-left: 8%;
+    }
+
+    &__image {
+      width: 340px;
+      right: -50px;
+      margin-bottom: 93px;
+    }
+
+    &__text {
+      @include text-style(500, 16, 17);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title-indent {
+    text-indent: 72px;
+  }
+
+  .mission {
+    background: url(../../assets/images/mission/tablet_bg.jpg) top left / cover no-repeat;
+    font-size: 38px;
+    line-height: 42px;
+    padding: 80px 32px;
+
+    &__mts {
+      margin: -80px -32px 40px;
+      width: calc(100% + 64px);
+    }
+
+    &__title {
+      max-width: 520px;
+      margin-bottom: 6px;
+    }
+
+    &__container {
+      margin-bottom: 0;
+    }
+
+    &__text {
+      @include text-style(500, 22, 24);
+      max-width: 500px;
+    }
+
+    &__image {
+      width: 530px;
+      right: -246px;
+      margin-bottom: 104px;
+      margin-top: -64px;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .title-indent {
+    text-indent: 93px;
+  }
+
+  .mission {
+    font-size: 48px;
+    line-height: 102%;
+    padding: 57px 24px 54px;
+    background: none;
+
+    &__mts {
+      width: calc(100% + 48px);
+      margin: -57px -24px 40px;
+    }
+
+    &__title {
+      max-width: 724px;
+      margin-top: -6px;
+      margin-bottom: 10px;
+    }
+
+    &__title_with_indent {
+      margin-top: 80px;
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__container {
+      margin-bottom: 440px;
+    }
+
+    &__container_position_bottom {
+      margin-bottom: 0;
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 22px;
+      max-width: 316px;
+      margin-bottom: 226px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title-indent {
+    text-indent: 137px;
+  }
+
+  .mission {
+    font-size: 72px;
+    line-height: 102%;
+    padding: 32px;
+
+    &__mts {
+      margin: -32px -32px 20px;
+      width: calc(100% + 64px);
+    }
+
+    &__title {
+      max-width: 1000px;
+    }
+
+    &__container {
+      margin-bottom: 700px;
+    }
+
+    &__container_position_bottom {
+      margin-bottom: 0;
+    }
+
+    &__text {
+      max-width: 750px;
+      @include text-style(400, 34, 35);
+      text-transform: none;
+      margin-bottom: 360px;
+    }
+  }
+}

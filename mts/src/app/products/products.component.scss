@@ -1,0 +1,413 @@
+@import 'src/sass/vars';
+@import 'src/sass/mixins';
+@import 'src/sass/animation';
+
+:root {
+  --product-text: #2f2f2f;
+  --product-title: #ff002d;
+  --pagination-text: #2f2f2f;
+}
+
+.products {
+  z-index: 52;
+  position: relative;
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  &__scene {
+    position: absolute;
+    top: -130px;
+    left: 55%;
+    z-index: 1001;
+    transform: translateX(-50%) scale(0.5);
+  }
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 16px;
+    @include text-style(400, 12, 14);
+    color: $red;
+    position: absolute;
+    z-index: 2;
+    top: 33px;
+  }
+
+  &__slider {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider {
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__item {
+    overflow: hidden;
+    padding: 110px 0 60px;
+  }
+
+  &__title {
+    color: var(--product-title);
+    white-space: nowrap;
+    margin-left: -200px;
+    animation: loopMove 20s infinite linear;
+    margin-bottom: 313px;
+  }
+
+  &__main {
+    padding: 0 16px;
+  }
+
+  &__target {
+    display: flex;
+    flex-wrap: wrap;
+    @include text-style(500, 12, 22);
+    color: $red;
+    margin-bottom: 65px;
+    gap: 8px;
+  }
+
+  &__square {
+    background: $red;
+    width: 33px;
+    height: 33px;
+    user-select: none;
+  }
+
+  &__sticker {
+    width: 100%;
+  }
+
+  &__tagline {
+    min-width: 100px;
+    height: 32px;
+    background: $grey_light;
+    text-align: center;
+    border-radius: 24px;
+    padding: 6px 12px 0 12px;
+  }
+
+  &__text {
+    color: var(--product-text);
+    transition-duration: 0.3s, 0.3s;
+    max-width: 504px;
+    margin-bottom: 80px;
+  }
+
+  &__control {
+    display: flex;
+    gap: 4px;
+    max-width: 180px;
+    position: absolute;
+    z-index: 201;
+    bottom: 80px;
+    left: 16px;
+    user-select: none;
+  }
+
+  &__pagination {
+    font-style: normal;
+    font-weight: 500;
+    color: var(--pagination-text);
+    display: flex;
+    right: 10px;
+    bottom: 96px;
+    position: absolute;
+    z-index: 55;
+  }
+
+  &__pagination-current,
+  &__pagination-total {
+    @include text-style(500, 12, 14);
+  }
+
+  &__pagination-total {
+    width: 20px;
+  }
+
+  &__pagination-current {
+    margin-right: 33px;
+    position: relative;
+    width: 40px;
+    text-align: right;
+  }
+
+  &__pagination-current:after {
+    content: '';
+    position: absolute;
+    height: 32px;
+    width: 1.5px;
+    left: 56px;
+    top: -10px;
+    background-color: var(--pagination-text);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .products {
+
+    &__scene {
+      transform: translateX(-50%) scale(0.6);
+    }
+
+    &__title {
+      margin-bottom: 331px;
+    }
+
+    &__item {
+      padding-bottom: 56px;
+    }
+
+    &__pagination {
+      right: 12px;
+      bottom: 96px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+
+    &__scene {
+      top: 0;
+      transform: translateX(-50%) scale(1);
+    }
+
+    &__header {
+      padding: 0 32px;
+      top: 80px;
+      @include text-style(400, 18, 20, $MTSText);
+    }
+
+    &__title {
+      margin-bottom: 580px;
+    }
+
+    &__main {
+      padding: 0 32px;
+      margin-top: -17px;
+    }
+
+    &__item {
+      padding: 174px 0 94px;
+    }
+
+    &__square {
+      width: 48px;
+      height: 48px;
+    }
+
+    &__tagline {
+      height: 48px;
+      font-size: 18px;
+      line-height: 102%;
+      padding: 13px 16px 0 16px;
+    }
+
+    &__target {
+      margin-bottom: 41px;
+    }
+
+    &__text {
+      margin-bottom: 32px;
+    }
+
+    &__control {
+      bottom: 40px;
+      left: 32px;
+    }
+
+    &__pagination {
+      right: 35px;
+      bottom: 45px;
+    }
+
+    &__pagination-current,
+    &__pagination-total {
+      font-size: 16px;
+      line-height: 102%;
+    }
+
+    &__pagination-current {
+      margin-right: 26px;
+    }
+
+    &__pagination-current:after {
+      left: 69px;
+    }
+
+    &__pagination-total {
+      width: 48px;
+      text-align: right;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .products {
+    &__scene {
+      top: -160px;
+      left: auto;
+      right: 0;
+      transform: inherit;
+    }
+
+    &__header {
+      padding: 0 24px;
+      @include text-style(400, 16, 24, $MTSText);
+      top: 48px;
+    }
+
+    &__title {
+      margin-bottom: 43px;
+    }
+
+    &__item {
+      padding: 84px 0 75px;
+      background-size: 10px;
+    }
+
+    &__target {
+      margin-bottom: 145px;
+      margin-left: -5px;
+    }
+
+    &__square {
+      height: 32px;
+      width: 32px;
+    }
+
+    &__tagline {
+      height: 32px;
+      font-size: 12px;
+      line-height: 14px;
+      padding-top: 8px;
+    }
+
+    &__text {
+      max-width: 343px;
+    }
+
+    &__control {
+      left: 24px;
+      bottom: 45px;
+    }
+
+    &__pagination {
+      right: 27px;
+      bottom: 50px;
+    }
+
+    &__pagination-current:after {
+      left: 71px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products {
+    background: $white;
+
+    &__scene {
+      top: 0;
+    }
+
+    &__header {
+      padding: 0 32px;
+      @include text-style(400, 20, 28, $MTSText);
+      top: 69px;
+    }
+
+    &__control {
+      bottom: 87px;
+      left: 32px;
+    }
+
+    &__item {
+      overflow: hidden;
+      padding: 98px 0 131px;
+    }
+
+    &__title {
+      white-space: nowrap;
+      margin-left: -200px;
+      margin-bottom: 67px;
+    }
+
+    &__target {
+      @include text-style(500, 18, 19);
+      line-height: 102%;
+      margin: 0 0 203px;
+      gap: 4px;
+    }
+
+    &__square {
+      width: 48px;
+      height: 48px;
+    }
+
+    &__sticker {
+      max-width: 48px;
+      max-height: 48px;
+    }
+
+    &__tagline {
+      @include text-style(500, 18, 19);
+      min-width: 209px;
+      height: 48px;
+      padding: 13px 10px 0 10px;
+      margin: 0 2px;
+    }
+
+    &__text {
+      margin: 0 0 32px;
+      max-width: 504px;
+    }
+
+    &__pagination {
+      right: 17px;
+      bottom: 92px;
+    }
+
+    &__pagination-current,
+    &__pagination-total {
+      @include text-style(500, 18, 19);
+      line-height: 102%;
+    }
+
+    &__pagination-current {
+      margin-right: 30px;
+    }
+
+    &__pagination-current:after {
+      top: -9px;
+      left: 71px;
+      width: 2px;
+    }
+
+    &__button {
+      border: 1px solid $red;
+    }
+
+    &__arrow {
+      stroke: $red;
+    }
+
+    &__button:hover {
+      background: $red;
+    }
+
+    &__button:active {
+      border: 1px solid $red_dark;
+      background: $red_dark;
+    }
+
+    &__button:hover &__arrow {
+      stroke: $white;
+    }
+  }
+}

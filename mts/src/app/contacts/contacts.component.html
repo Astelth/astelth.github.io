@@ -1,0 +1,16 @@
+<div class="contacts" data-section="contacts">
+  <div class="contacts__list">
+    <div class="contacts__item" *ngFor="let item of items; index as currentIndex;">
+      <a
+        href="{{item.link}}"
+        class="contacts__link"
+        [attr.data-animation-delay]=".2 * (currentIndex + 1)"
+      >
+        {{item.title}}
+      </a>
+    </div>
+  </div>
+  <div class="contacts__copyright">
+    © 2022 ПАО «МТС» Все права защищены
+  </div>
+</div>

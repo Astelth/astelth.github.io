@@ -1,0 +1,38 @@
+$MTSWide: "MTS Wide", sans-serif;
+$MTSText: "MTS Text", sans-serif;
+
+@mixin mts-bg {
+  background: linear-gradient(147deg,
+      #b5b9fa -22.5%,
+      #b5b9fa 24.87%,
+      rgba(251, 187, 220, 0.745) 52.95%,
+      rgba(251, 187, 220, 0.4) 65.23%);
+  background-size: 100%;
+}
+
+@mixin desktop-page {
+  max-width: 1600px;
+  min-height: 100vh;
+  margin: auto;
+}
+
+@mixin mobile-page {
+  background: linear-gradient(157.57deg,
+      #ff002d -3.45%,
+      #89aaea -3.45%,
+      #d18cca 28.28%,
+      #f2cefd 85.39%);
+  background-size: contain;
+}
+
+@mixin text-style($font-weight-value, $font-size-value, $line-height-value, $family: $MTSWide) {
+  font-family: $family;
+  font-weight: #{$font-weight-value};
+  font-size: #{$font-size-value}px;
+  line-height: #{$line-height-value}px;
+}
+
+@mixin picture($width-value, $height-value) {
+  width: #{$width-value}px;
+  height: #{$height-value}px;
+}

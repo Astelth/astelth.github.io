@@ -1,0 +1,230 @@
+@import 'src/sass/vars';
+@import 'src/sass/mixins';
+@import 'src/sass/animation';
+
+.press {
+  padding: 16px 16px 81px;
+  position: relative;
+  margin: 0 auto;
+  @include text-style(400, 14, 20);
+  color: $grey_dark;
+  font-family: 'MTS Text', sans-serif;
+  background-color: $white;
+
+  &__header {
+    @include text-style(400, 12, 14);
+    color: $red;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    @include text-style(500, 20, 22);
+    color: $red;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-family: 'MTS Wide', sans-serif;
+  }
+
+  &__slider {
+    position: relative;
+    min-height: 100px;
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+    margin-bottom: 31px;
+  }
+
+  &__control {
+    display: flex;
+    gap: 4px;
+    user-select: none;
+    z-index: 90;
+  }
+
+  &__news {
+    @include text-style(500, 20, 22);
+    margin: -20px 0 0 auto;
+    text-align: right;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $red;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .press {
+    &__title {
+      @include text-style(500, 24, 25);
+      margin-bottom: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .press {
+    padding: 10px 32px 75px;
+
+    &__header {
+      @include text-style(400, 18, 28, $MTSText);
+      margin-bottom: 60px;
+    }
+
+    &__slider {
+      margin-bottom: 62px;
+    }
+
+    .swiper-slide {
+      width: 88%;
+      padding: 0 0 0 10px;
+      border-right: 1px solid $grey_light;
+
+      &:last-child {
+        padding-right: 0;
+        border-right: 0;
+      }
+
+      &:first-child {
+        padding: 0 90px 0 0;
+      }
+    }
+
+    .swiper-slide &__text {
+      display: none;
+    }
+
+    .swiper-slide &__title {
+      @include text-style(500, 22, 24);
+      text-transform: initial;
+    }
+
+    .swiper-slide &__link {
+      color: $grey_dark;
+    }
+
+    .swiper-slide:first-child &__link {
+      color: $red;
+    }
+
+    .swiper-slide:first-child &__text {
+      display: inline-block;
+    }
+
+    .swiper-slide:first-child &__title {
+      @include text-style(500, 38, 42);
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+
+  .press {
+    padding-bottom: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    &__slider {
+      margin-bottom: 60px;
+    }
+
+    .swiper-slide {
+      width: 33%;
+    }
+
+    &__link {
+      cursor: pointer;
+      transition: .3s opacity, .3s color;
+    }
+
+    .swiper-slide:first-child {
+      width: 67%;
+    }
+
+    .swiper-slide &__title {
+      @include text-style(500, 20, 22);
+    }
+
+    .swiper-slide:first-child &__title {
+      @include text-style(500, 48, 49);
+      margin-bottom: 28px;
+    }
+
+    .swiper-slide &__link:hover {
+      opacity: .7;
+    }
+
+    .swiper-slide:first-child &__link:hover {
+      color: $red-dark;
+      opacity: 1;
+    }
+
+    &__header {
+      @include text-style(400, 16, 24, $MTSText);
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .press {
+    padding: 32px 32px 120px;
+
+    &__slider {
+      margin-bottom: 135px;
+    }
+
+    &__header {
+      @include text-style(400, 20, 28, $MTSText);
+      margin-bottom: 34px;
+    }
+
+    .swiper-slide &__title {
+      @include text-style(500, 28, 29);
+    }
+
+    .swiper-slide:first-child {
+      padding-right: 40px;
+    }
+
+    .swiper-slide:first-child &__title {
+      @include text-style(500, 52, 53);
+    }
+
+    &__control {
+      position: absolute;
+      bottom: 160px;
+      left: 32px;
+      top: auto;
+    }
+
+    &__news {
+      @include text-style(500, 32, 36);
+      margin-top: -6px;
+      margin-right: 12px;
+      margin-bottom: 36px;
+    }
+
+    .swiper-slide {
+      width: 25%;
+    }
+
+    .swiper-slide:first-child {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .press {
+    .swiper-slide &__title {
+      @include text-style(500, 32, 33);
+    }
+
+    .swiper-slide:first-child &__title {
+      @include text-style(500, 64, 65);
+    }
+  }
+}

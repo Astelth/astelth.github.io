@@ -1,0 +1,177 @@
+@import 'src/sass/vars';
+@import 'src/sass/mixins';
+@import 'src/sass/animation';
+
+.reports {
+  position: relative;
+  z-index: 1;
+  padding: 0 16px;
+  color: $red;
+  background-color: $white;
+
+  &__header {
+    @include text-style(400, 12, 14);
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    width: calc(100% - 8px);
+    height: 254px;
+    background: $white_dark;
+    padding: 12px;
+    color: $white;
+    margin-bottom: 44px;
+  }
+
+  &__title {
+    @include text-style(500, 16, 17);
+  }
+
+  &__slider {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 16px;
+  }
+
+  .swiper-slide {
+    width: 160px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .reports {
+    &__item {
+      padding-top: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .reports {
+    .swiper-slide {
+      width: 180px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reports {
+    padding: 66px 0 22px 32px;
+
+    &__header {
+      @include text-style(400, 18, 25, $MTSText);
+      margin-bottom: 42px;
+    }
+
+    &__item {
+      height: 397px;
+      padding-top: 20px;
+      padding-left: 22px;
+      padding-right: 22px;
+      margin-bottom: 60px;
+    }
+
+    &__title {
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    .swiper-slide {
+      width: 257px;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .reports {
+    padding-left: 24px;
+    padding-bottom: 24px;
+
+    &__slider {
+      padding-bottom: 10px;
+      margin-bottom: 0;
+    }
+
+    &__slide {
+      cursor: pointer;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: background .3s;
+        background: rgba(255, 255, 255, 0);
+      }
+
+      &:hover:before {
+        background: rgba(255, 255, 255, .2);
+      }
+    }
+
+    &__header {
+      @include text-style(400, 16, 24, $MTSText);
+      margin-bottom: 32px;
+    }
+
+    .swiper-slide {
+      width: calc(25% - 8px);
+    }
+
+    &__item {
+      width: 220px;
+      height: 368px;
+      padding-top: 19px;
+      padding-left: 20px;
+      margin-bottom: 80px;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reports {
+    padding: 32px 8px 190px 32px;
+
+    &__header {
+      @include text-style(400, 20, 28, $MTSText);
+      margin-bottom: 34px;
+    }
+
+    &__item {
+      width: calc(100% - 8px);
+      padding-top: 24px;
+      padding-left: 28px;
+      margin-bottom: 0;
+    }
+
+    &__title {
+      @include text-style(500, 28, 32);
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reports {
+
+    .swiper-slide {
+      width: calc(25% - 12px);
+    }
+
+    &__item {
+      @include picture(100%, 580);
+      padding-top: 28px;
+      padding-left: 32px;
+      margin-bottom: 0;
+    }
+
+    &__title {
+      @include text-style(500, 32, 36);
+    }
+  }
+}

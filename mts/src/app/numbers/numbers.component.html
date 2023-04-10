@@ -1,0 +1,33 @@
+<div class="numbers" id="numbersViewport">
+  <div class="numbers__sticky">
+    <div class="numbers__header" data-section="numbers">Наши цифры</div>
+    <div class="numbers__list" id="numbersList">
+      <div class="numbers__item" *ngFor="let item of items;">
+        <img
+          src='{{item.backgroundImage}}'
+          alt='number image'
+          class="numbers__pic"
+          [class.numbers__pic_position_bottom]="item?.position === 'bottom'"
+          style='{{item.text}}'
+        >
+        <div class="numbers__title">{{item.title}}</div>
+        <div class="numbers__note i-text">{{item.note}}</div>
+        <div class="numbers__quote i-text">{{item.subtitle}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="numbers__slider slider">
+    <div class="numbers__header">Наши цифры</div>
+    <div class="swiper-container-numbers">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let item of items;">
+          <img src='{{item.backgroundImage}}' alt="" class="numbers__pic"
+               [class.numbers__pic_position_bottom]="item?.position === 'bottom'" style='{{item.text}}'>
+          <div class="numbers__title">{{item.title}}</div>
+          <div class="numbers__note i-text">{{item.note}}</div>
+          <div class="numbers__quote i-text">{{item.subtitle}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

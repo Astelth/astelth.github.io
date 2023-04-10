@@ -1,0 +1,60 @@
+<div class="society" data-section="society">
+  <div class="society__esg i-font-size-big i-font-size-big_line-height_other">
+    <span
+      class="society__esg-letter"
+      [class.society__esg-letter_active]="slideIndex === 1"
+    >
+      e
+    </span>
+    <span
+      class="society__esg-letter"
+      [class.society__esg-letter_active]="slideIndex === 2"
+    >
+      s
+    </span>
+    <span
+      class="society__esg-letter"
+      [class.society__esg-letter_active]="slideIndex === 3"
+    >
+      g
+    </span>
+  </div>
+  <div class="society__control">
+    <div class="i-button swiper-prev-slide-society">
+      <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="i-arrow">
+        <path d="M28.2607 12.8697H1.76609M13.8715 24.7349L1.38184 12.2452M1.38227 13.4941L13.872 1.00439"
+          stroke-width="1.76631" />
+      </svg>
+    </div>
+    <div class="i-button swiper-next-slide-society">
+      <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="i-arrow">
+        <path d="M0.757324 13.1307L27.2519 13.1307M15.1465 24.9958L27.6362 12.5062M27.6358 13.7551L15.1461 1.26539"
+          stroke-width="1.76631" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="slider">
+    <div class="swiper-container-society">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let item of items;">
+          <div class="society__item">
+            <div class="society__subtitle" data-animation-delay=".4">
+              {{item.title}}
+            </div>
+            <div class="society__text i-text" data-animation-delay=".6">
+              {{item.note_item_one}}<br>
+              {{item.note_item_two}}<br>
+              {{item.note_item_three}}<br>
+              {{item.note_item_four}}<br>
+              {{item.note_item_five}}<br>
+              {{item.note_item_six}}<br>
+              {{item.note_item_seven}}
+            </div>
+          </div>
+        </div>
+        <!-- Additional slides go here -->
+      </div>
+    </div>
+  </div>
+</div>

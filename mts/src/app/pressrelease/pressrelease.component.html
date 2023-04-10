@@ -1,0 +1,39 @@
+<div class="press" data-section="pressrelease">
+    <div class="press__header">Пресс-релизы</div>
+
+  <div class="press__slider">
+    <div class="swiper-container-press">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let item of items;">
+          <div class="press__title">
+            <a href="{{item.link}}" class="press__link">{{item.title}}</a>
+          </div>
+          <div class="press__text i-text">{{item.text}}</div>
+        </div>
+      </div>
+      <!-- Additional slides go here -->
+    </div>
+  </div>
+
+  <div class="press__control">
+    <div class="i-button i-button_color_red swiper-prev-slide-press">
+      <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="i-arrow">
+        <path d="M28.2607 12.8697H1.76609M13.8715 24.7349L1.38184 12.2452M1.38227 13.4941L13.872 1.00439"
+          stroke-width="1.76631" />
+      </svg>
+    </div>
+    <div class="i-button i-button_color_red swiper-next-slide-press">
+      <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="i-arrow">
+        <path d="M0.757324 13.1307L27.2519 13.1307M15.1465 24.9958L27.6362 12.5062M27.6358 13.7551L15.1461 1.26539"
+          stroke-width="1.76631" />
+      </svg>
+    </div>
+  </div>
+  <div class="press__news">
+    <a href="#" class="i-link" target="_blank">
+      Все пресс-релизы
+    </a>
+  </div>
+</div>

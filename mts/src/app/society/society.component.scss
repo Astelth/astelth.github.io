@@ -1,0 +1,183 @@
+@import 'src/sass/vars';
+@import 'src/sass/mixins';
+@import 'src/sass/animation';
+
+.society {
+  position: relative;
+  color: $white;
+  @include text-style(500, 24, 25);
+  background: url(../../assets/images/society/shutter_27.jpg) 50% / cover no-repeat;
+  margin: 0 auto;
+  overflow: hidden;
+
+  &__esg {
+    position: absolute;
+    top: 460px;
+    right: 10px;
+    text-align: right;
+    z-index: 90;
+  }
+
+  &__esg-letter {
+    display: inline-block;
+    opacity: 0.5;
+    transition: opacity .3s;
+  }
+
+  &__esg-letter_active {
+    opacity: 1;
+  }
+
+  &__control {
+    position: absolute;
+    display: flex;
+    gap: 4px;
+    bottom: 80px;
+    left: 16px;
+    user-select: none;
+    z-index: 90;
+  }
+
+  &__item {
+    padding: 33px 16px;
+    min-height: 685px;
+  }
+
+  &__subtitle {
+    @include text-style(500, 20, 22);
+    text-transform: uppercase;
+    text-indent: 44px;
+    margin-bottom: 50px;
+    max-width: 327px;
+  }
+
+  &__text {
+    max-width: 343px;
+  }
+
+  .slider {
+    position: relative;
+    min-height: 100px;
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .society {
+    &__subtitle {
+      @include text-style(500, 24, 25);
+    }
+
+    &__item {
+      min-height: 723px;
+    }
+
+    &__esg {
+      top: 499px;
+      right: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .society {
+    &__subtitle {
+      @include text-style(500, 38, 43);
+      margin-bottom: 38px;
+      max-width: 500px;
+      text-indent: 72px;
+    }
+
+    &__text {
+      max-width: 343px;
+    }
+
+    &__item {
+      min-height: 874px;
+      padding: 81px 32px;
+    }
+
+    &__esg {
+      top: auto;
+      right: 32px;
+      bottom: 112px;
+    }
+
+    &__control {
+      bottom: 40px;
+      left: 32px;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .society {
+    &__item {
+      min-height: 641px;
+      padding: 52px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      flex-direction: column;
+    }
+
+    &__subtitle {
+      @include text-style(500, 48, 49);
+      margin-bottom: 228px;
+      max-width: 760px;
+      text-indent: 79px;
+    }
+
+    &__esg {
+      right: 32px;
+      bottom: 116px;
+    }
+
+    &__control {
+      bottom: auto;
+      left: 24px;
+      top: 242px;
+    }
+
+    &__text {
+      max-width: 100%;
+      margin-left: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .society {
+    font-size: 72px;
+    line-height: 102%;
+
+    &__item {
+      padding: 26px 32px 84px;
+    }
+
+    &__esg {
+      bottom: 128px;
+      right: 40px;
+    }
+
+    &__subtitle {
+      max-width: 1102px;
+      text-indent: 119px;
+      margin-bottom: 402px;
+      font-size: 72px;
+      @include text-style(500, 72, 73);
+    }
+
+    &__text {
+      max-width: 643px;
+      margin-left: 0;
+    }
+
+    &__control {
+      left: 32px;
+      top: 267px;
+    }
+  }
+}

@@ -1,0 +1,226 @@
+/* You can add global styles to this file, and also import other style files */
+@import './vars';
+@import './mixins';
+@import 'swiper/swiper.min.css';
+
+:root {
+  --sliderNumbersTranslate: 0px;
+}
+
+@font-face {
+  font-family: 'MTS Wide';
+  src: url('../assets/fonts/MTSWide-Regular.eot');
+  src:
+    url('../assets/fonts/MTSWide-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/MTSWide-Regular.woff2') format('woff2'),
+    url('../assets/fonts/MTSWide-Regular.woff') format('woff'),
+    url('../assets/fonts/MTSWide-Regular.otf') format('opentype'),
+    url('../assets/fonts/MTSWide-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MTS Wide';
+  src: url('../assets/fonts/MTSWide-Medium.eot');
+  src:
+    url('../assets/fonts/MTSWide-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/MTSWide-Medium.otf') format('opentype'),
+    url('../assets/fonts/MTSWide-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'MTS Text';
+  src: url('../assets/fonts/MTSText-Regular.eot');
+  src:
+    url('../assets/fonts/MTSText-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/MTSText-Regular.woff2') format('woff2'),
+    url('../assets/fonts/MTSText-Regular.woff') format('woff'),
+    url('../assets/fonts/MTSText-Regular.otf') format('opentype'),
+    url('../assets/fonts/MTSText-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MTS Text';
+  src: url('../assets/fonts/MTSText-Medium.eot');
+  src:
+    url('../assets/fonts/MTSText-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/MTSText-Medium.woff2') format('woff2'),
+    url('../assets/fonts/MTSText-Medium.woff') format('woff'),
+    url('../assets/fonts/MTSText-Medium.otf') format('opentype'),
+    url('../assets/fonts/MTSText-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $MTSWide;
+  min-width: 320px;
+  --product-text: $grey_dark;
+  --pagination-text: $grey_dark;
+}
+
+body.showMenu {
+  overflow: hidden;
+}
+
+.i-button {
+  width: 64px;
+  height: 48px;
+  border-radius: 200px;
+  border: 1px solid $white;
+  display: flex;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.i-button_color_red {
+  border: 1px solid $red;
+}
+
+.i-button:hover {
+  background: $white;
+}
+
+.i-button:active {
+  border: 1px solid $white_dark;
+  background: $white_dark;
+}
+
+.i-arrow {
+  margin: auto;
+  stroke: $white;
+  transition: 0.3s;
+}
+
+.i-button:hover .i-arrow {
+  stroke: $red;
+}
+
+.i-button_color_red:hover {
+  background: $red;
+}
+
+.i-button_color_red:active {
+  border: 1px solid $red_dark;
+  background: $red_dark;
+}
+
+.i-button_color_red .i-arrow {
+  margin: auto;
+  stroke: $red;
+  transition: 0.3s;
+}
+
+.i-button_color_red:hover .i-arrow {
+  stroke: $white;
+}
+
+.i-link {
+  text-decoration: none;
+  color: $red;
+  transition: color 0.3s;
+}
+
+.i-text {
+  @include text-style(400, 14, 20, $MTSText);
+}
+
+.i-font-size-big {
+  @include text-style(500, 64, 64);
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 375px) {
+  .i-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .i-text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .i-font-size-big {
+    @include text-style(500, 120, 100);
+    letter-spacing: -0.04em;
+
+    &_line-height_other {
+      line-height: 64px;
+      letter-spacing: -0.01em;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  [data-animation-delay] {
+    display: inline-block;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform .8s, opacity .6s;
+  }
+
+  .i-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .i-link {
+    cursor: pointer;
+
+    &:hover {
+      color: $red_dark;
+    }
+  }
+
+  .i-font-size-big {
+    @include text-style(400, 152, 152);
+
+    &_line-height_other {
+      line-height: 120px;
+      letter-spacing: -0.04em;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .i-button {
+    width: 88px;
+    height: 72px;
+  }
+
+  .i-arrow,
+  .i-arrow_color_red {
+    width: 31px;
+    height: 27px;
+  }
+
+  .i-text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .i-font-size-big {
+    @include text-style(400, 240, 200);
+
+    &_line-height_other {
+      line-height: 200px;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@keyframes loopMove {
+  0% {
+    transform: translateX(0);
+  }
+
+  90% {
+    opacity: .9;
+  }
+
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes onFirstScroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(0);
+  }
+
+  85% {
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLogo {
+  0% {
+    width: 144px;
+    height: 144px;
+    background: $cube-bg;
+    @include text-style(500, 45, 45);
+    transform: scale(.4);
+  }
+
+  20% {
+    width: 144px;
+    height: 144px;
+    background: $cube-bg;
+    @include text-style(500, 45, 45);
+    transform: scale(1.05);
+  }
+
+  25% {
+    width: 144px;
+    height: 144px;
+    background: $cube-bg;
+    @include text-style(500, 45, 45);
+    transform: scale(1);
+  }
+
+  40% {
+    width: 144px;
+    height: 144px;
+    @include text-style(500, 45, 45);
+    background: $red-bg;
+  }
+
+  80% {
+    width: 144px;
+    height: 144px;
+    @include text-style(500, 45, 45);
+  }
+}

@@ -1,0 +1,118 @@
+@import 'src/sass/vars';
+@import 'src/sass/mixins';
+@import 'src/sass/animation';
+
+.contacts {
+  background: url(../../assets/images/mission/mobile_bg.jpg) top left / cover no-repeat;
+  @include text-style(500, 20, 21);
+  color: $white;
+  padding: 60px 16px 16px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+
+  &__link {
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__list {
+    margin-bottom: 395px;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    margin-bottom: 6px;
+    padding-bottom: 10px;
+  }
+
+  &__item:last-child {
+    border-bottom: 0;
+  }
+
+  &__copyright {
+    @include text-style(400, 12, 14);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .contacts {
+    @include text-style(500, 24, 25);
+
+    &__list {
+      margin-bottom: 373px;
+    }
+
+    &__item {
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding: 80px 32px 16px;
+    @include text-style(500, 38, 44);
+
+    &__list {
+      margin-bottom: 346px;
+    }
+
+    &__item {
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      margin-left: 2px;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .contacts {
+    padding: 52px 24px 16px;
+    @include text-style(500, 48, 49);
+
+    &__list {
+      margin-bottom: 216px;
+    }
+
+    &__item {
+      cursor: pointer;
+      transition: opacity .3s;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+
+    &__copyright {
+      @include text-style(400, 14, 16);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    background: url(../../assets/images/reports/fon222.jpg) top left / cover no-repeat;
+    @include text-style(500, 24, 25);
+    padding: 77px 32px 260px;
+
+    &__item {
+      @include text-style(500, 72, 72);
+      border-bottom: 1.5px solid $white;
+      margin-bottom: 7px;
+      padding-bottom: 0;
+    }
+
+    &__list {
+      margin-bottom: 16px;
+    }
+
+    &__copyright {
+      @include text-style(400, 20, 28);
+    }
+  }
+}
