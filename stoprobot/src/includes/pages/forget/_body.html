@@ -1,0 +1,20 @@
+${require('../../components/_breadcrumbs-second-level.html') level1=`Вход и регистрация` level2=`Восстановление пароля`}
+
+<div class="form form_forget">
+    <div class="form__wrapper">
+        <div class="form__title form__title_forget">Восстановление пароля</div>
+
+        <div class="form__inner form__inner_margin_bottom">
+            <div class="form__item form__item_note_forget">
+                <div class="form__note form__note_forget">Введите e-mail, указанный при регистрации</div>
+            </div>
+            <div class="form__item">
+                ${require('../../components/_input.html') id=`forgetPhoneOrEmail` label=`Телефон или e-mail*` classnameModifier=`i-input_forget`}
+            </div>
+            <div class="form__item form__item_justify_center  form__item_button_forget">
+                ${require('../../components/_button.html') value=`Восстановить` classnameModifier=`i-button_forget`}
+            </div>
+        </div>
+    </div>
+</div>
+

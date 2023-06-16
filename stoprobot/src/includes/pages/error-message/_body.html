@@ -1,0 +1,50 @@
+${require('../../components/_breadcrumbs-first-level.html') level1=`Сообщить об ошибке`}
+
+<div class="form">
+    <div class="form__wrapper">
+        <div class="form__title">Сообщить об ошибке</div>
+
+        <div class="form__inner form__inner_margin_bottom">
+            <div class="form__item">
+                ${require('../../components/_input.html') id=`errorName` label=`Имя`}
+            </div>
+            <div class="form__item">
+                ${require('../../components/_input.html') id=`errorEmail` label=`E-mail`}
+            </div>
+            <div class="form__item">
+                ${require('../../components/_input.html') id=`errorMessage` label=`Cообщение*`}
+            </div>
+        </div>
+        <div class="form__inner">
+            <div class="form__item form__item_justify_center">
+                ${require('../../components/_input-file.html')
+                id=`errorMessageFiles`
+                label=`Добавить файл`
+                note=`Выберите файл с расширением (jpg, png, heic) и размером, не превышающим 10 МБ.`
+                value=`Добавить файл`
+                }
+            </div>
+        </div>
+        <div class="form__inner form__inner_flex">
+            <div class="form__item form__item_justify_center">
+                ${require('../../components/_button.html') value=`Отправить`}
+            </div>
+            <div class="form__item form__item_justify_center">
+                <div class="form__note">
+                    <a href="#" class="i-link">
+                        <span class="icon-telegram form__social-net-icon"></span>
+                        <span class="form__span">Написать в Telegram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="form__inner">
+            <div class="form__item form__item_justify_center">
+                <div class="form__note form__note_comment">
+                    Нажимая на кнопки выше, Вы соглашаетесь c
+                    <a href="#" class="i-link i-link_color_accent">Политикой конфиденциальности</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

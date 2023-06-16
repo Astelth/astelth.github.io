@@ -1,0 +1,132 @@
+.account {
+    padding-top: 4px;
+    margin-bottom: 24px;
+
+    &__favorites {
+        padding-top: 0;
+        margin-top: -16px;
+    }
+
+    &_order {
+        padding-top: 12px;
+        margin-bottom: 15px;
+    }
+}
+
+.account-menu {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 23px;
+    margin-top: -4px;
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 22px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 7px;
+        flex-direction: column;
+    }
+
+    &__item_logout {
+        position: absolute;
+        top: -2px;
+        right: 0;
+    }
+
+    &__link {
+        display: inline-block;
+        border-bottom: 2px solid transparent;
+    }
+
+    &__link_active {
+        border-color: $black;
+    }
+}
+
+@media screen and (min-width: $tablet-viewport) {
+    .account {
+        padding-top: 43px;
+        margin-bottom: 12px;
+
+        &__columns {
+            display: flex;
+            gap: 35px;
+        }
+
+        &__col:first-child {
+            width: 130px;
+        }
+
+        &__col:last-child {
+            width: calc(100% - 166px);
+            padding-top: 13px;
+        }
+
+        &__favorites {
+            margin-top: 23px;
+            margin-bottom: -19px;
+        }
+    }
+
+    .account-menu {
+        position: sticky;
+        top: 20px;
+
+        &__title {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 23px;
+        }
+
+        &__item_logout {
+            position: relative;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-viewport) {
+    .account {
+        padding-top: 43px;
+        margin-bottom: 13px;
+
+        &__columns {
+            gap: 0;
+        }
+
+        &__col:first-child {
+            width: var(--logo-width);
+        }
+
+        &__col:last-child {
+            width: calc(100% - var(--logo-width));
+            padding-top: 51px;
+        }
+
+        &__favorites {
+            margin-top: -14px;
+            margin-bottom: -22px;
+        }
+    }
+
+    .account-menu {
+
+        &__title {
+            margin-bottom: 24px;
+        }
+
+        &__item:nth-child(3) {
+            transform: translateY(-1px);
+
+        }
+    }
+}

@@ -1,0 +1,689 @@
+.form {
+    color: $black;
+    max-width: 528px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    padding-top: 8px;
+
+    &_account {
+        padding-top: 0;
+        margin: -1px auto 0;
+    }
+
+    &_authorization {
+        padding-top: 2px;
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    &_registration_success {
+        padding-top: 2px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &_success {
+        margin-top: 0;
+        padding-top: 10px;
+        max-width: 616px;
+    }
+
+    &_confirm_email {
+        padding-top: 7px;
+        margin-top: 0;
+        margin-bottom: 72px;
+    }
+
+    &_confirm_email_success {
+        padding-top: 8px;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+
+    &_forget_success {
+        padding-top: 8px;
+    }
+
+    &_success &__inner {
+        row-gap: 32px;
+    }
+
+    &_certification {
+        margin-top: 2px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    &__wrapper_flex_direction_row {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 8px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    &__title_account {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__title_align_left {
+        text-align: left;
+    }
+
+    &__title_sub {
+        font-size: 16px;
+    }
+
+    &__title_margin_bottom {
+        margin-bottom: 8px;
+    }
+
+    &__title_padding_top_59 {
+        padding-top: 59px;
+    }
+
+    &__title_order {
+        margin-top: -9px;
+    }
+
+    &__title_registration_success {
+        margin-bottom: -24px;
+    }
+
+    &__title_confirm_email_success {
+        margin-bottom: 7px;
+    }
+
+    &__title_forget_success {
+        margin-bottom: 7px;
+    }
+
+    &__title_certification_payment {
+        margin-bottom: 4px;
+    }
+
+    &__title_success {
+        margin-bottom: -24px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    &__inner_registration_success {
+        gap: 16px;
+    }
+
+    &__inner_margin_bottom {
+        margin-bottom: 16px;
+    }
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 14px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    &__item_simple {
+        display: block;
+    }
+
+    &__item_align_left {
+        text-align: left;
+    }
+
+    &__item_margin_bottom {
+        row-gap: 32px;
+        margin-bottom: 16px;
+    }
+
+    &__item_justify_center {
+        justify-content: center;
+    }
+
+    &__item_justify_space_between {
+        column-gap: 24px;
+        row-gap: 6px;
+        justify-content: space-between;
+    }
+
+    &__item_checkbox {
+        max-width: 514px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__item_authorization_secret {
+        margin-bottom: 5px;
+    }
+
+    &__item_authorization_checkbox {
+        transform: translate(-3px, 0);
+    }
+
+    &__item_authorization_checkbox2 {
+        transform: translate(0, 0px);
+    }
+
+    &__item_authorization_captcha {
+        margin-bottom: 4px;
+    }
+
+    &__item_confirm_email_button {
+        margin-top: 8px;
+    }
+
+    &__item_certification_payment {
+        margin-bottom: 2px;
+    }
+
+    &__item_certification_privacy_policy {
+        margin-top: 2px;
+        transform: translate(3px, 0);
+    }
+
+    &__item_success_simple {
+        margin-top: -16px;
+        margin-bottom: -1px;
+    }
+
+    &__payment-types {
+        margin-bottom: -2px;
+        display: flex;
+        column-gap: 16px;
+        justify-content: center;
+    }
+
+    &__note_align_left {
+        text-align: center;
+    }
+
+    &__note_color_grey {
+        color: $grey;
+    }
+
+    &__note_comment {
+        margin-bottom: 16px;
+    }
+
+    &__note_comment:last-child {
+        margin-bottom: 0;
+    }
+
+    &__item_note_forget {
+        display: none;
+    }
+
+    &__item_button_forget {
+        margin-top: 7px;
+    }
+
+    &__item_new_password_caption {
+        margin-bottom: -8px;
+    }
+
+    &__item_new_password_caption2 {
+        margin-bottom: 7px;
+    }
+
+    &__price {
+        margin-left: 8px;
+    }
+
+    &__order-number {
+        color: $accent;
+    }
+
+    &__error {
+        width: 100%;
+        color: $red;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__error_authorization {
+        margin-top: 4px;
+        margin-bottom: 7px;
+    }
+
+    &__error_authorization_email {
+        margin-top: 0;
+        margin-bottom: 7px;
+    }
+
+    &__span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $black;
+    }
+
+    &__social-net-icon {
+        font-size: 16px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__selector {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid $light-grey;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        background-color: $white;
+    }
+
+    &__selector_one_third {
+        width: calc((100% - 48px) / 3);
+    }
+
+    &__caption {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: $grey;
+        width: 100%;
+        text-align: left;
+    }
+
+    &__caption_margin_bottom {
+        margin-bottom: 11px;
+    }
+
+    &__item_margin_bottom_5 {
+        margin-bottom: 5px;
+    }
+
+    &__item_margin_bottom_6 {
+        margin-bottom: 6px;
+    }
+
+    &__item_favorite_empty {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: $tablet-viewport) {
+    .form {
+        row-gap: 32px;
+        margin-bottom: 72px;
+        padding-top: 48px;
+
+        &_authorization {
+            padding-top: 39px;
+            margin-top: 0px;
+            margin-bottom: 36px;
+        }
+
+        &_account {
+            padding-top: 0;
+            margin: 0;
+            max-width: 664px;
+        }
+
+        &_registration_success {
+            padding-top: 39px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        &_confirm_email {
+            padding-top: 39px;
+            margin-top: 0;
+            margin-bottom: 72px;
+        }
+
+        &_confirm_email_success {
+            padding-top: 0;
+            margin-top: 39px;
+            margin-bottom: 0;
+        }
+
+        &_certification {
+            margin-top: 1px;
+        }
+
+        &__wrapper {
+            row-gap: 32px;
+        }
+
+        &__wrapper_flex_direction_row {
+            flex-direction: column;
+            justify-content: start;
+            row-gap: 8px;
+        }
+
+        &__note,
+        &__error {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__error_authorization_email {
+            margin-top: 7px;
+            margin-bottom: 16px;
+        }
+
+        &__note_comment {
+            font-size: 13px;
+            line-height: 16px;
+        }
+
+        &__note_align_left {
+            text-align: left;
+            line-height: 23px;
+        }
+
+        &__item_note_forget {
+            display: inherit;
+            margin-bottom: -1px;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        &__title_registration_success {
+            margin-bottom: -7px;
+        }
+
+        &__title_confirm_email_success {
+            margin-bottom: 8px;
+        }
+
+        &__title_sub {
+            font-size: 18px;
+        }
+
+        &__title_account {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__title_certification_denomination {
+            margin-bottom: -4px;
+        }
+
+        &__title_certification_customer_data {
+            margin-top: 3px;
+            margin-bottom: -3px;
+        }
+
+        &__title_certification_payment {
+            margin-bottom: -7px;
+        }
+
+        &__item {
+            row-gap: 7px;
+        }
+
+        &__item_margin_bottom {
+            row-gap: 32px;
+            margin-bottom: 4px;
+        }
+
+        &__item_margin_bottom_8 {
+            margin-bottom: 8px;
+        }
+
+        &__item_margin_bottom_6 {
+            margin-bottom: 15px;
+        }
+
+        &__item_certification_confirmation_code {
+            margin-top: 4px;
+        }
+
+        &__inner_margin_bottom {
+            margin-bottom: -4px;
+        }
+
+        &__inner_flex {
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 26px;
+            align-items: center;
+        }
+
+        &__inner_registration_success {
+            gap: 24px;
+        }
+
+        &__caption_margin_bottom {
+            margin-bottom: 9px;
+        }
+
+        &__payment-types {
+            margin-bottom: 0;
+            transform: translate(0, -2px);
+        }
+
+        &__item_certification_payment {
+            margin-bottom: 6px;
+        }
+
+        &__item_certification_button {
+            margin-top: -3px;
+        }
+
+        &__item_certification_privacy_policy {
+            margin-top: 1px;
+            transform: translate(0, 0);
+        }
+
+        &_success {
+            margin-bottom: 73px;
+        }
+
+        &__title_success {
+            margin-bottom: 0;
+        }
+
+        &__item_success_simple {
+            margin-top: -8px;
+            margin-bottom: 0;
+        }
+
+        &__item_account {
+            margin-bottom: 1px;
+        }
+
+        &__title_order {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-viewport) {
+    .form {
+        &_authorization {
+            margin-top: 0;
+            padding-top: 39px;
+        }
+
+        &_registration_success {
+            padding-top: 32px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        &_certification {
+            margin-top: -1px;
+        }
+
+        &_confirm_email {
+            padding-top: 39px;
+            margin-top: 0;
+            margin-bottom: 72px;
+        }
+
+        &_forget {
+            padding-top: 39px;
+            margin-top: 0;
+        }
+
+        &_forget_link_sent {
+            padding-top: 39px;
+        }
+
+        &_new_password {
+            padding-top: 39px;
+        }
+
+        &_forget_success {
+            padding-top: 39px;
+        }
+
+        &__title_account {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__title_padding_top_59 {
+            padding-top: 0;
+            margin-bottom: -8px;
+        }
+
+        &__title_registration_success {
+            margin-bottom: 2px;
+        }
+
+        &__title_confirm_email_success {
+            margin-bottom: 0;
+        }
+
+        &__title_forget {
+            margin-bottom: 1px;
+        }
+
+        &__title_forget_success {
+            margin-bottom: 0;
+        }
+
+        &_account {
+            padding-top: 1px;
+            max-width: 800px;
+        }
+
+        &_favorite_empty {
+            padding-top: 0;
+        }
+
+        &__item_margin_bottom_8 {
+            margin-bottom: 0;
+        }
+
+        &__item_margin_bottom_5 {
+            transform: translate(-2px, 0);
+            margin-bottom: 4px;
+        }
+
+        &__item_margin_bottom_6 {
+            margin-top: 1px;
+            margin-bottom: 7px;
+        }
+
+        &__item_authorization_captcha {
+            margin-bottom: 4px;
+        }
+
+        &__item_authorization_checkbox2 {
+            transform: translate(2px, 0);
+        }
+
+        &__item_confirm_email_button {
+            margin-top: -16px;
+        }
+
+        &__item_button_forget {
+            margin-top: 8px;
+        }
+
+        &__item_new_password_caption2 {
+            margin-bottom: 8px;
+        }
+
+        &__note_forget {
+            font-size: 13px;
+            line-height: 16px;
+        }
+
+        &__note_new_password {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+        }
+
+        &__error_authorization_email {
+            transform: translate(2px, 0);
+            margin-top: 7px;
+            margin-bottom: 8px;
+        }
+
+        &__error_authorization {
+            margin-top: 11px;
+            margin-bottom: 8px;
+        }
+
+        &__error_new_password {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        &__error_new_password_short {
+            margin: 0 auto 8px;
+            max-width: 436px;
+        }
+
+        &__caption_margin_bottom {
+            margin-bottom: 11px;
+        }
+
+        &__inner_registration_success {
+            gap: 23px;
+        }
+
+        &__item_account {
+            margin-top: 0;
+            margin-bottom: -1px;
+        }
+
+        &__title_order {
+            margin-top: -47px;
+            margin-bottom: -8px;
+        }
+    }
+}

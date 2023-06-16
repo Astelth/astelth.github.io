@@ -1,0 +1,9 @@
+<div class="i-input ${props.classnameModifier}">
+    <label class="i-input__label" for="${props.id}">${props.label}</label>
+    <div class="i-input__captcha">
+        <img src="/assets/images/temp/captcha.png" alt="captcha" />
+        <span class="icon-reload"></span>
+    </div>
+    <input id="${props.id}" type="text" class="i-input__data" value="${props.value}" />
+    <div class="i-input__error">Обязательное поле</div>
+</div>

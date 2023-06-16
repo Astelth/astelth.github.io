@@ -1,0 +1,40 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px 12px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: $grey;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+    position: relative;
+    z-index: 995;
+    background: $white;
+
+    &__item:not(:first-child):before {
+        position: absolute;
+        content: $icon-arrow;
+        font-family: $icomoon-font-family;
+        font-size: 7px;
+        display: inline-block;
+        transform: scaleX(-1) translateX(8px);
+    }
+}
+
+@media screen and (min-width: $tablet-viewport) {
+    .breadcrumbs {
+        padding-top: 16px;
+    }
+}
+
+@media screen and (min-width: $desktop-viewport) {
+    .breadcrumbs {
+        padding-top: 15px;
+        padding-bottom: 11px;
+    }
+}

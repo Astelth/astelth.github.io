@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+${require('./includes/layout/_HEAD.html') description=`Уведомления`}
+
+<body>
+<div class="page">
+    <div class="page__content">
+        <div class="page__header">
+            ${require('./includes/layout/_header.html')}
+        </div>
+        <div class="page__body" style="display: flex; flex-direction: column; gap: 12px;">
+            <div class="js-call-popup" data-message="signIn">Авторизуйтесь</div>
+            <div class="js-call-popup" data-message="addToFavorite">Добавить в избранное</div>
+            <div class="js-call-popup" data-message="removeFromFavorite">Удалить из избранного</div>
+            <div class="js-call-popup" data-message="removeOutOfStockItem">Удалите распроданное</div>
+            <div class="js-call-popup" data-message="addToCart">Добавить в корзину</div>
+            <div class="js-call-popup" data-message="noMoreItems">Больше нет</div>
+        </div>
+    </div>
+    <div class="page__footer">
+        ${require('./includes/layout/_footer.html')}
+    </div>
+</div>
+
+${require('./includes/layout/_SCRIPT.html')}
+</body>
+</html>

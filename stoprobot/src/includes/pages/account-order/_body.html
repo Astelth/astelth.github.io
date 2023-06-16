@@ -1,0 +1,161 @@
+${require('../../components/_breadcrumbs-third-level.html') level1=`Кабинет` level2=`Мои заказы` level3=`Заказ № 9621`}
+
+<div class="account account_order">
+    <div class="account__columns">
+        <div class="account__col">
+            ${require('../../components/_account-menu.html') listItem1=`` listItem2=`account-menu__link_active`
+            listItem3=``}
+        </div>
+        <div class="account__col">
+            <div class="order order_account-order">
+                <div class="order__subtitle">
+                    <span class="order__icon icon-arrow"></span>
+                    Все заказы
+                </div>
+                <div class="order__wrapper">
+                    <div class="order__inner">
+                        <div class="order__title order__title_main">Заказ № ${props.orderNumber}</div>
+                        <div class="order__rows">
+                            <div class="order__caption">Номер заказа:</div>
+                            <div class="order__note">${props.orderNumber}</div>
+                            <div class="order__caption">Дата:</div>
+                            <div class="order__note">${props.orderDate}</div>
+                            <div class="order__caption">E-mail:</div>
+                            <div class="order__note">${props.orderEmail}</div>
+                            <div class="order__caption">Телефон:</div>
+                            <div class="order__note">${props.orderPhone}</div>
+                        </div>
+                    </div>
+                    <div class="order__inner">
+                        <div class="order__title">Статус заказа</div>
+                        <div class="order__note">${props.orderStatus}</div>
+                    </div>
+                    <div class="order__inner">
+                        <div class="order__title">Способ получения</div>
+                        <div class="order__note">${props.orderDeliveryWay}</div>
+                        <div class="order__rows order__rows_margin_top_minus_4">
+                            <div class="order__caption">Адрес:</div>
+                            <div class="order__note">
+                                ${props.orderAddress}
+                            </div>
+                            <div class="order__caption">Номер отслеживания:</div>
+                            <div class="order__note order__color_accent">${props.orderTrackingNumber}</div>
+                        </div>
+                    </div>
+                    <div class="order__inner">
+                        <div class="order__title">Комментарий покупателя</div>
+                        <div class="order__note">${props.orderCustomerComment}</div>
+                    </div>
+                    <div class="order__inner">
+                        <div class="order__title">Комментарий магазина</div>
+                        <div class="order__note">${props.orderShopComment}</div>
+                    </div>
+                    <div class="order__inner">
+                        <div class="order__title">Оплата</div>
+                        <div class="order__rows">
+                            <div class="order__caption">Оплата:</div>
+                            <div class="order__note">${props.orderPaymentWay}</div>
+                            <div class="order__caption">Стоимость товаров:</div>
+                            <div class="order__note">${props.orderGoodsCost}</div>
+                            <div class="order__caption">Стоимость доставки:</div>
+                            <div class="order__note">${props.orderDeliveryCost}</div>
+                            <div class="order__caption">Подарочные сертификаты:</div>
+                            <div class="order__note">${props.orderGiftCertificate}</div>
+                            <div class="order__caption">Скидка «Постоянный покупатель»:</div>
+                            <div class="order__note">${props.orderRegularCustomerDiscount}</div>
+                            <div class="order__caption">Сумма к оплате:</div>
+                            <div class="order__note">${props.orderAmountPayable}</div>
+                            <div class="order__caption">Статус оплаты:</div>
+                            <div class="order__note order__color_red">${props.orderPaymentState}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__inner order__inner_need_to_pay">
+                    <div class="order__title order__title_constant">Необходимо оплатить заказ в течение: <span
+                            class="order__color_accent js-countdown"></span></div>
+                </div>
+                <div class="order__inner">
+                    <div class="form__title">
+                        ${require('../../components/_button.html') classnameModifier=`i-button_order`
+                        value=`Оплатить заказ`}
+                    </div>
+                    <div class="order__title order__title_padding_top_16">Состав заказа</div>
+                </div>
+            </div>
+
+            <div>
+                ${require('../../components/_album-for-order.html')
+                classModifier=`album_linear album_without_count`
+                src1=`../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg`
+                src2=`../assets/images/temp/2f46aad634acda508162b35fdbe3f7a6.jpg`
+                artist=`Imagine Dragons`
+                title=`It Was Written`
+                format-long=`2LP`
+                label=`XL`
+                genre=`Pop, Hip Hop, Funk/Soul`
+                style=`Hip Hop`
+                format=`2LP`
+                price=`5 290 ₽`
+                sum-price=`10 580 ₽`
+                counter=`2`
+                stock=``
+                }
+
+                ${require('../../components/_album-for-order.html')
+                classModifier=`album_linear album_without_count`
+                src1=`../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg`
+                src2=`../assets/images/temp/2f46aad634acda508162b35fdbe3f7a6.jpg`
+                artist=`Deftones`
+                title=`It Was Written`
+                format-long=`2LP`
+                label=`XL`
+                genre=`Pop, Hip Hop, Funk/Soul`
+                style=`Hip Hop`
+                format=`2LP`
+                price=`5 290 ₽`
+                sum-price=`10 580 ₽`
+                counter=`2`
+                stock=``
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function countDown(clock, ms = 20 * 60 * 1000) {
+        // set our end time
+        const endTime = new Date().getTime() + ms;
+
+        // calculate remaining time from now until deadline
+        function getRemainingTime(deadline) {
+            const currentTime = new Date().getTime();
+            return deadline - currentTime;
+        }
+
+        // pad value with zero
+        function pad(value) {
+            return ('0' + Math.floor(value)).slice(-2);
+        }
+
+        // show time repeatedly
+        function showTime() {
+            const remainingTime = getRemainingTime(endTime);
+            const seconds = pad((remainingTime / 1000) % 60);
+            const minutes = pad((remainingTime / (60 * 1000)) % 60);
+            const hours = pad((remainingTime / (60 * 60 * 1000)) % 24);
+
+            clock.innerHTML = `${hours}:${minutes}:${seconds}`;
+
+            // ensure clock only updates if a second or more is remaining
+            if (remainingTime >= 1000) {
+                requestAnimationFrame(showTime);
+            }
+        }
+
+        // kick it all off
+        requestAnimationFrame(showTime);
+    }
+
+    document.querySelectorAll('.js-countdown').forEach(el => countDown(el, 290000));
+</script>

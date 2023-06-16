@@ -1,0 +1,172 @@
+.i-button {
+    display: inline-flex;
+    text-align: center;
+    padding: 15px 32px;
+    border-radius: 2px;
+    border: 1px solid $black;
+    color: $black;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background-color: $white;
+    white-space: nowrap;
+
+    &_full {
+        width: 100%;
+        justify-content: center;
+    }
+
+    &_disabled {
+        border-color: $grey-card;
+        color: $grey-card;
+    }
+
+    &_account {
+        padding: 7px 15px;
+    }
+
+    &_account2 {
+        padding: 16px 31px;
+    }
+
+    &_favorite_empty {
+        padding: 15px 57px;
+    }
+
+    &_authorization {
+        padding: 15px 70px;
+    }
+
+    &_confirm_email {
+        padding: 15px 42px;
+    }
+
+    &_certification {
+        padding: 15px 31px;
+    }
+
+    &_certification_payment {
+        padding: 15px 31px;
+    }
+
+    &_success {
+        padding: 15px 48px;
+    }
+
+    &_forget {
+        padding: 15px 37px;
+    }
+
+    &_new_password {
+        padding: 15px 31px;
+    }
+}
+
+@media screen and (min-width: $tablet-viewport) {
+    .i-button {
+        padding: 8px 16px;
+
+        &_account,
+        &_account2,
+        &_order {
+            padding: 15px 31px;
+        }
+
+        &_favorite_empty {
+            padding: 15px 57px;
+        }
+
+        &_authorization_registration {
+            padding: 15px 31px;
+        }
+
+        &_certification {
+            padding: 7px 15px;
+        }
+
+        &_certification_confirmation {
+            padding: 7px 15px;
+        }
+
+        &_certification_payment {
+            padding: 7px 39px;
+        }
+
+        &_success {
+            padding: 7px 16px;
+        }
+
+        &_confirm_email_success {
+            padding: 15px 31px;
+        }
+
+        &_orders_empty {
+            padding: 15px 31px;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-viewport) {
+    .i-button {
+        cursor: pointer;
+        user-select: none;
+
+        &_disabled {
+            cursor: initial;
+        }
+
+        &_account {
+            padding: 7px 16px;
+        }
+
+        &_account2 {
+            padding: 7px 15px;
+        }
+
+        &_order {
+            padding: 7px 16px;
+        }
+
+        &_favorite_empty {
+            padding: 7px 15px;
+        }
+
+        &_authorization_registration {
+            padding: 7px 15px;
+        }
+
+        &_authorization {
+            padding: 7px 15px;
+        }
+
+        &_certification_payment {
+            padding: 7px 40px;
+        }
+
+        &_confirm_email {
+            padding: 7px 15px;
+        }
+
+        &_confirm_email_success {
+            padding: 7px 15px;
+        }
+
+        &_forget {
+            padding: 7px 15px;
+        }
+
+        &_forget_success {
+            padding: 7px 16px;
+        }
+
+        &_new_password {
+            padding: 7px 15px;
+        }
+
+        &_orders_empty {
+            padding: 7px 15px;
+        }
+    }
+}

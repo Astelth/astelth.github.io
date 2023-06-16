@@ -1,0 +1,106 @@
+@import 'assets/fonts/iconfont/style';
+
+@import 'scss/common/vars';
+@import 'scss/common/i-link';
+@import 'scss/common/i-select';
+@import 'scss/common/i-input';
+@import 'scss/common/i-textarea';
+@import 'scss/common/i-checkbox';
+@import 'scss/common/i-button';
+@import 'scss/common/i-group';
+@import 'scss/common/i-notification';
+@import 'scss/common/i-tabs';
+@import 'scss/common/i-suggester';
+
+@import 'scss/layout/page';
+@import 'scss/layout/header';
+@import 'scss/layout/catalog';
+@import 'scss/layout/footer';
+
+@import 'scss/components/form';
+@import 'scss/components/sidebar';
+@import 'scss/components/settings';
+@import 'scss/components/album';
+@import 'scss/components/slider';
+@import 'scss/components/breadcrumbs';
+@import 'scss/components/steps';
+@import 'scss/components/pagination';
+@import 'scss/components/preloader';
+
+@import 'scss/pages/map';
+@import 'scss/pages/product';
+@import 'scss/pages/albums';
+@import 'scss/pages/main';
+@import 'scss/pages/static';
+@import 'scss/pages/about';
+@import 'scss/pages/basket';
+@import 'scss/pages/checkout';
+@import 'scss/pages/payment';
+@import 'scss/pages/order';
+@import 'scss/pages/account';
+@import 'scss/pages/search';
+
+html, body {
+    height: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    display: block;
+    overflow-x: hidden;
+    min-width: 360px;
+}
+
+body.menu-show,
+body.filter-show,
+body.menu-show .page,
+body.filter-show .page {
+    overflow: hidden;
+    touch-action: none;
+}
+
+iframe {
+    border: none;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    background-color: initial;
+}
+
+.is-desktop {
+    display: none;
+}
+
+@media screen and (min-width: $desktop-viewport) {
+    button {
+        cursor: pointer;
+    }
+
+    body.menu-show,
+    body.filter-show,
+    body.menu-show .page,
+    body.filter-show .page {
+        overflow: initial;
+        touch-action: initial;
+    }
+
+    .is-desktop {
+        display: inherit;
+    }
+}

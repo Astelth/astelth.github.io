@@ -1,0 +1,131 @@
+.basket {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: $black;
+    margin-bottom: 59px;
+    padding-top: 10px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    &__title_color-grey {
+        color: $grey;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    &__steps {
+        margin-bottom: 25px;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    &__inner_list {
+        row-gap: 12px;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__price {
+        color: $black;
+    }
+
+    &__bottom {
+        margin-bottom: 64px;
+    }
+}
+
+@media screen and (min-width: $tablet-viewport) {
+    .basket {
+        padding-top: 15px;
+        margin-bottom: 51px;
+
+        &__wrapper {
+            row-gap: 32px;
+        }
+
+        &__steps {
+            margin-bottom: 0;
+        }
+
+        &__row_margin_bottom {
+            margin-bottom: 0;
+        }
+
+        &__inner {
+            row-gap: 52px;
+        }
+
+        &__inner_list {
+            row-gap: 0;
+            margin-bottom: 34px;
+            padding-top: 3px;
+        }
+
+        .i-button {
+            padding: 15px 31px;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+}
+
+
+@media screen and (min-width: $desktop-viewport) {
+    .basket {
+        max-width: 1072px;
+        margin: 0 auto 107px;
+        padding-top: 14px;
+
+        &__wrapper {
+            gap: 44px;
+        }
+
+        &__steps {
+            margin-top: -12px;
+        }
+
+        &__inner_list {
+            margin-bottom: 32px;
+        }
+
+        &__row_margin_bottom {
+            margin-bottom: -12px;
+        }
+
+        &__bottom {
+            margin-bottom: 0;
+        }
+    }
+}

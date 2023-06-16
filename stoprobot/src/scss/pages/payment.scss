@@ -1,0 +1,149 @@
+.payment {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: $black;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-top: 24px;
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        max-width: 616px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    &__steps {
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        color: $black;
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 16px;
+    }
+
+    &__text_grey {
+        color: $grey;
+    }
+
+    &__text:last-child {
+        margin-bottom: 0;
+    }
+
+    &__types {
+        width: 98px;
+        display: grid;
+        padding: 6px 8px;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px 14px;
+        margin: 0 auto 8px;
+        border: 1px solid $grey-order-delimiter;
+    }
+
+    &__type {
+        width: 30px;
+    }
+
+    &__type_26 {
+        width: 26px;
+    }
+
+    &__type_34 {
+        width: 34px;
+    }
+
+    &__type_36 {
+        width: 36px;
+    }
+
+    &__action {
+        max-width: 407px;
+        margin: 0 auto -8px;
+        padding: 15px 31px;
+        border: 1px solid $grey-order-delimiter;
+    }
+
+    &__amount {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 10px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+
+    &__price {
+        font-size: 22px;
+    }
+
+    &__button {
+        text-align: center;
+        padding: 16px 32px;
+        border-radius: 2px;
+        color: $white;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        background-color: $green-btn;
+        margin-bottom: 8px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: $tablet-viewport) {
+    .payment {
+        &__wrapper {
+            row-gap: 32px;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 23px;
+        }
+
+        &__text_comment {
+            font-size: 13px;
+            line-height: 16px;
+        }
+
+        &__button {
+            width: 344px;
+        }
+
+        &__action {
+            margin: 0 auto -16px;
+            padding: 15px 30px;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-viewport) {
+    .payment {
+        &__button {
+            padding: 8px 32px;
+        }
+    }
+}

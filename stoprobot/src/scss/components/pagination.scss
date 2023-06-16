@@ -1,0 +1,27 @@
+.pagination {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+
+    &__arrow {
+        height: 18px;
+        transform: translate(-8px, -2px);
+        color: $grey;
+    }
+
+    &__arrow:before {
+        font-size: 16px;
+    }
+
+    &__arrow_reverse {
+        transform: rotate(180deg) translate(-8px, -1px);
+    }
+
+    &__page_current {
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,38 @@
+${require('../../components/_breadcrumbs-second-level.html') level1=`Вход и регистрация` level2=`Восстановление пароля`}
+
+<div class="form form_new_password">
+    <div class="form__wrapper">
+        <div class="form__title">Восстановление пароля</div>
+
+        <div class="form__inner form__inner_margin_bottom">
+            <div class="form__item">
+                <div class="form__note form__note_new_password">Придумайте новый пароль</div>
+            </div>
+            <div class="form__item">
+                ${require('../../components/_input-secret.html') id=`newPassword` label=`Новый пароль*`
+                classnameModifier=`i-input_invalid i-input_authorization`}
+            </div>
+            <div class="form__item">
+                ${require('../../components/_input-secret.html') id=`confirmPassword` label=`Подтверждение пароля*`
+                classnameModifier=`i-input_invalid i-input_authorization`}
+            </div>
+            <div class="form__item form__item_new_password_caption">
+                <div class="form__caption">Введите от 6 до 99 символов</div>
+            </div>
+            <div class="form__item">
+                <div class="form__caption form__item_new_password_caption2">*Обязательные поля</div>
+            </div>
+            <div class="form__item">
+                <div class="form__error form__error_new_password">Срок действия контрольной строки истек.</div>
+            </div>
+            <div class="form__item">
+                <div class="form__error form__error_new_password_short">Необходимо отправить запрос на восстановление 
+                    пароля повторно.</div>
+            </div>
+            <div class="form__item form__item_justify_center">
+                ${require('../../components/_button.html') value=`Изменить пароль`
+                classnameModifier=`i-button_new_password`}
+            </div>
+        </div>
+    </div>
+</div>

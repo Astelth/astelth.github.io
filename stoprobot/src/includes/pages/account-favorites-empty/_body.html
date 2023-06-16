@@ -1,0 +1,21 @@
+${require('../../components/_breadcrumbs-second-level.html') level1=`Кабинет` level2=`Избранное`}
+
+<div class="account">
+    <div class="account__columns">
+        <div class="account__col">
+            ${require('../../components/_account-menu.html')listItem1=``listItem2=``listItem3=`account-menu__link_active}
+        </div>
+        <div class="account__col">
+            <div class="form form_favorite_empty ${props.classModifier}">
+                <div class="form__wrapper">
+                    <div class="form__title form__title_margin_bottom form__title_account form__title_padding_top_59">У вас нет избранных товаров</div>
+                    <div class="form__item form__item_justify_center form__item_favorite_empty">
+                        ${require('../../components/_button-link.html') src=`albums.html` value=`В каталог` classnameModifier=`i-button_favorite_empty`}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

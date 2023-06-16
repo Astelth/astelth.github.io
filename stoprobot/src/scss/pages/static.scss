@@ -1,0 +1,256 @@
+.static {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: $black;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: -8px;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    &__subtitle_flex {
+        display: flex;
+        column-gap: 32px;
+    }
+
+    &__picture {
+        width: 100%;
+    }
+
+    &__location {
+        width: 100%;
+        height: 400px;
+    }
+
+    &_contacts {
+        margin-top: 2px;
+    }
+
+    &__subtitle_contacts_social_nets {
+        margin-bottom: -2px;
+    }
+
+    &__wrapper_contacts_social_nets {
+        margin-bottom: -4px;
+    }
+
+    &__wrapper_contacts_location {
+        margin-top: 16px;
+    }
+
+    &__map {
+        height: 400px;
+    }
+
+    &_delivery {
+        margin-top: 2px;
+        margin-bottom: 56px;
+    }
+
+    &__title_delivery {
+        margin-bottom: -9px;
+    }
+
+    &__subtitle_delivery {
+        margin-bottom: 1px;
+    }
+
+    &__subtitle_delivery_rules {
+        margin-top: 7px;
+        margin-bottom: 1px;
+    }
+
+    &__subtitle_delivery_claims {
+        margin-top: 7px;
+        margin-bottom: 1px;
+    }
+
+    &__subtitle_delivery_order {
+        margin-top: 23px;
+        margin-bottom: 1px;
+    }
+
+    &__subtitle_delivery_disclaimaker {
+        margin-top: 7px;
+        margin-bottom: 1px;
+    }
+
+    &_warranty {
+        margin-top: 2px;
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (min-width: $tablet-viewport) {
+    .static {
+        font-size: 16px;
+        line-height: 23px;
+        margin: 0 auto 72px;
+        max-width: 664px;
+        row-gap: 40px;
+
+        &_align_center {
+            text-align: center;
+        }
+
+        &__wrapper {
+            row-gap: 24px;
+        }
+
+        &__inner {
+            gap: 23px;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        &__location {
+            height: 208px;
+            margin-top: -17px;
+            margin-bottom: -11px;
+        }
+
+        &_contacts {
+            margin-top: 39px;
+            margin-bottom: 6px;
+        }
+
+        &__title_contacts {
+            margin-bottom: -7px;
+        }
+
+        &__subtitle_contacts_address {
+            margin-bottom: -8px;
+        }
+
+        &__subtitle_contacts_mode {
+            margin-bottom: -8px;
+        }
+
+        &__subtitle_contacts_email {
+            margin-top: 2px;
+            margin-bottom: -8px;
+        }
+
+        &__subtitle_contacts_phone {
+            margin-bottom: -8px;
+        }
+
+        &__wrapper_contacts_social_nets {
+            margin-bottom: 0;
+        }
+
+        &__subtitle_contacts_social_nets {
+            margin-top: 2px;
+            margin-bottom: -9px;
+        }
+
+        &__subtitle_flex_contacts {
+            column-gap: 29px;
+        }
+
+        &__subtitle_contacts_requisites {
+            margin-top: -4px;
+            margin-bottom: -9px;
+        }
+
+        &__note_contacts {
+            line-height: 24.2px;
+        }
+
+        &_warranty {
+            margin-top: 39px;
+            margin-bottom: 48px;
+        }
+
+        &__inner_warranty {
+            gap: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-viewport) {
+    .static {
+        max-width: 800px;
+        margin-bottom: 27px;
+
+        &__location {
+            height: 272px;
+            margin-bottom: 7px;
+        }
+
+        &_delivery {
+            margin-top: 39px;
+            margin-bottom: 39px;
+        }
+
+        &__title_delivery {
+            margin-bottom: -8px;
+        }
+
+        &__note_delivery {
+            margin-top: -7px;
+        }
+
+        &__subtitle_delivery_rules {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        &__subtitle_delivery_claims {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        &__subtitle_delivery_order {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        &__subtitle_delivery_disclaimaker {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        &_warranty {
+            margin-bottom: 39px;
+        }
+
+        &__title_warranty {
+            margin-bottom: -7px;
+        }
+    }
+}

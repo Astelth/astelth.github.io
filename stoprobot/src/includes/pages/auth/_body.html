@@ -1,0 +1,88 @@
+${require('../../components/_breadcrumbs-first-level.html') level1=`Вход и регистрация`}
+
+<div class="form form_authorization">
+    <div class="form__wrapper">
+        <div class="form__title">Авторизация</div>
+
+        <div class="i-tabs">
+            <div class="i-tabs__header i-tabs__header_authorization">
+                <div class="i-tabs__header-item">
+                    <div class="i-tabs__header-title i-tabs__header-title_active js-tab-item" data-tabId="1">войти</div>
+                </div>
+                <div class="i-tabs__header-item">
+                    <div class="i-tabs__header-title js-tab-item" data-tabId="2">зарегистрироваться</div>
+                </div>
+            </div>
+            <div class="i-tabs__content">
+                <div class="i-tabs__content-item i-tabs__content-item_visible" data-tabId="1">
+                    <div class="form__inner form__inner_margin_bottom">
+                        <div class="form__item">
+                            ${require('../../components/_input.html') id=`authPhone` label=`Телефон или e-mail*` classnameModifier=``}
+                        </div>
+                        <div class="form__item form__item_authorization_secret">
+                            ${require('../../components/_input-secret.html') id=`authPassword` label=`Пароль*`
+                            classnameModifier=`i-input_invalid i-input_authorization`}
+                        </div>
+                        <div class="form__item form__item_authorization_checkbox">
+                            ${require('../../components/_checkbox.html') id=`authRemember` label=`запомнить меня`}
+                        </div>
+                        <div class="form__item">
+                            <div class="form__error form__error_authorization">
+                                Неверный логин или пароль.
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <div class="i-group i-group_justify_center i-group_align_center i-group_authorization">
+                                <div class="i-group__col">
+                                    ${require('../../components/_button.html') value=`Войти` classnameModifier=`i-button_authorization`}
+                                </div>
+                                <div class="i-group__col">
+                                    <a class="i-link i-link_color_grey i-link_underlined" href="forget.html">Восстановить
+                                        пароль</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="i-tabs__content-item" data-tabId="2">
+                    <div class="form__inner form__inner_margin_bottom">
+                        <div class="form__item">
+                            ${require('../../components/_input.html') id=`registrationName` label=`Имя*` value=`Иван`}
+                        </div>
+                        <div class="form__item">
+                            ${require('../../components/_input.html') id=`registrationSurname` label=`Фамилия*`}
+                        </div>
+                        <div class="form__item">
+                            ${require('../../components/_input.html') id=`registrationEmail` label=`E-mail*`}
+                        </div>
+                        <div class="form__item">
+                            ${require('../../components/_input.html') id=`registrationPhone` label=`Телефон*`}
+                        </div>
+                        <div class="form__item">
+                            ${require('../../components/_input-secret.html') id=`registrationPassword` label=`Пароль*`
+                            classnameModifier=`i-input_invalid i-input_authorization i-input_authorization_secret`}
+                        </div>
+                        <div class="form__item form__item_authorization_captcha">
+                            ${require('../../components/_input-captcha.html') id=`registrationCaptcha` label=`Введите код с картинки*` classnameModifier=`i-input_authorization`}
+                        </div>
+                        <div class="form__item form__item_authorization_checkbox2">
+                            ${require('../../components/_checkbox.html') id=`registrationAgreement`
+                            label=`Я соглашаюсь c <a class="i-link i-link_color_accent" href="#">Условиями заказа и доставки</a>,
+                            на обработку персональных данных в соответствии с
+                            <a class="i-link i-link_color_accent" href="#">Политикой обработки персональных данных</a>
+                            и на получение сообщений в процессе обработки заказа.`}
+                        </div>
+                        <div class="form__item">
+                            <div class="form__error form__error_authorization_email">
+                                Пользователь с e-mail: gnom@yandeх.ru уже существует.
+                            </div>
+                        </div>
+                        <div class="form__item form__item_justify_center">
+                            ${require('../../components/_button.html') value=`Зарегистрироваться`  classnameModifier=`i-button_authorization_registration`}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

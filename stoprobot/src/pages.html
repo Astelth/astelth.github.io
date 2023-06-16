@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+${require('./includes/layout/_HEAD.html') description=`Список страниц`}
+
+<body>
+<div class="page">
+    <div class="page__content">
+        <div class="page__header">
+            ${require('./includes/layout/_header.html')}
+        </div>
+        <div class="page__body" style="display: flex; flex-direction: column; gap: 12px;">
+            <a class="i-link" href="index.html">Главная</a>
+            <a class="i-link" href="albums.html">Каталог</a>
+            <a class="i-link" href="product.html">Карточка товара</a>
+            <a class="i-link" href="search.html">Результаты поиска</a>
+            <a class="i-link" href="basket.html">Корзина</a>
+            <a class="i-link" href="basket-empty.html">Корзина. Пустая</a>
+            <br />
+            <a class="i-link" href="checkout.html">Оформление заказа</a>
+            <a class="i-link" href="checkout-unauth.html">Оформление заказа. Неавторизованный пользователь</a>
+            <a class="i-link" href="payment.html">Оплата заказа</a>
+            <a class="i-link" href="payment-success.html">Оплата заказа. Успешно</a>
+            <br />
+            <a class="i-link" href="about.html">О компании</a>
+            <a class="i-link" href="contacts.html">Контакты</a>
+            <a class="i-link" href="delivery.html">Оплата и доставка</a>
+            <a class="i-link" href="warranty.html">Гарантия и возврат</a>
+            <br />
+            <a class="i-link" href="popups.html">Всплывающие уведомления</a>
+            <br />
+            <a class="i-link" href="account.html">Личный кабинет</a>
+            <a class="i-link" href="account-favorites.html">Личный кабинет. Избранное</a>
+            <a class="i-link" href="account-favorites-empty.html">Личный кабинет. Избранное. Пусто</a>
+            <a class="i-link" href="account-orders.html">Личный кабинет. Заказы</a>
+            <a class="i-link" href="account-orders-empty.html">Личный кабинет. Заказы. Пусто</a>
+            <a class="i-link" href="account-personal.html">Личный кабинет. Данные</a>
+            <a class="i-link" href="account-order.html">Личный кабинет. Заказ</a>
+            <br />
+            <a class="i-link" href="certification.html">Подарочные сертификаты</a>
+            <a class="i-link" href="certification-success.html">Успешная оплата сертификата</a>
+            <a class="i-link" href="order-success.html">Успешная оплата заказа</a>
+            <br />
+            <a class="i-link" href="authorization.html">Авторизация и регистрация</a>
+            <a class="i-link" href="registration-success.html">Успешная регистрация</a>
+            <a class="i-link" href="confirm-email.html">Подтвердить email</a>
+            <a class="i-link" href="confirm-email-success.html">Email подтвержден</a>
+            <br />
+            <a class="i-link" href="error-message.html">Сообщить об ошибке</a>
+            <a class="i-link" href="error-message-success.html">Сообщение об ошибке отправлено</a>
+            <br />
+            <a class="i-link" href="forget.html">Восстановление пароля</a>
+            <a class="i-link" href="forget-link-sent.html">Восстановление пароля. Ссылка отправлена</a>
+            <a class="i-link" href="forget-new-password.html">Восстановление пароля. Новый пароль</a>
+            <a class="i-link" href="forget-success.html">Восстановление пароля. Пароль успешно изменен</a>
+        </div>
+    </div>
+    <div class="page__footer">
+        ${require('./includes/layout/_footer.html')}
+    </div>
+</div>
+
+${require('./includes/layout/_SCRIPT.html')}
+</body>
+</html>

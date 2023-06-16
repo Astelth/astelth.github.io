@@ -1,0 +1,51 @@
+<div class="payment">
+    <div class="payment__title">
+        Оплата заказа
+    </div>
+    <div class="payment__steps">
+        ${require('../../components/_steps.html')
+        classModifier1=`steps__item_preactive`
+        classModifier2=`steps__item_preactive`
+        classModifier3=`steps__item_active`
+        progress-level1=`Корзина`
+        progress-level2=`Оформление заказа`
+        progress-level3=`Оплата заказа`
+        }
+    </div>
+    <div class="payment__wrapper">
+        <div class="payment__about">
+            <div class="payment__text">
+                Ваш заказ <b>№9342</b> от 29.03.2023 17:43 МСК успешно создан и ожидает оплаты.
+            </div>
+            <div class="payment__text">
+                Неоплаченный заказ будет автоматически отменен через 20 минут после его создания.
+            </div>
+        </div>
+        <div class="payment__cards">
+            <div class="payment__types">
+                <img class="payment__type payment__type_36" src="/assets/images/payments/visa_16.svg" alt="card visa">
+                <img class="payment__type payment__type_26" src="/assets/images/payments/mastercard_16.svg" alt="card mastercard">
+                <img class="payment__type payment__type_34" src="/assets/images/payments/mir_16.svg" alt="card mir">
+                <img class="payment__type" src="/assets/images/payments/jcb_16.svg" alt="card jcb">
+            </div>
+            <div class="payment__text">
+                Банковской картой
+            </div>
+        </div>
+
+        <div class="payment__action">
+            <div class="payment__amount">
+                Сумма к оплате: <span class="payment__price">3 000 ₽</span>
+            </div>
+            <div class="payment__button">
+                Оплатить
+            </div>
+            <div class="payment__text payment__text_grey payment__text_comment">
+                Вы будете перенаправлены на страницу оплаты
+            </div>
+        </div>
+        <div class="payment__text payment__text_comment">
+            Для отмены оплаченного заказа и возврата денег необходимо обратиться в магазин.
+        </div>
+    </div>
+</div>

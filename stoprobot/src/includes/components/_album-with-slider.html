@@ -1,0 +1,43 @@
+<div class="album ${props.classModifier}">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <div class="album__picture">
+                <div class="swiper" data-slider="mini">
+                    <div class="swiper-wrapper">
+                        <img class="swiper-slide" src="${props.src1}" alt="фото" />
+                        <img class="swiper-slide" src="${props.src2}" alt="фото" />
+                    </div>
+                    <div class="icon-arrow album__arrow album__arrow_left"></div>
+                    <div class="icon-arrow album__arrow album__arrow_right"></div>
+                </div>
+            </div>
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">${props.artist}</div>
+                <div class="album__title">${props.title}</div>
+                <div class="album__format-long">${props.format-long}</div>
+                <div class="album__label">${props.label}</div>
+                <div class="album__genre">${props.genre}</div>
+                <div class="album__style">${props.style}</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">${props.format}</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        ${props.price}
+                    </div>
+                    <div class="album__price">${props.price}</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        ${require('_button.html') value=`В корзину`}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

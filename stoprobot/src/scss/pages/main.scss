@@ -1,0 +1,35 @@
+.main {
+    &__slider {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 12px;
+        min-width: 360px;
+    }
+
+    &__slider-items {
+        padding: var(--main-padding) 0 12px;
+    }
+}
+
+@media screen and (min-width: $tablet-viewport) {
+    .main {
+        &__slider {
+            margin-bottom: 2px;
+        }
+
+        &__item {
+            grid-template-rows: 400px 400px;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-viewport) {
+    .main {
+        &__slider-items {
+            padding-top: 88px;
+            padding-bottom: 3px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+<div class="album ${props.classModifier}">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img class="album__picture album__picture_front" src="${props.src1}" alt="фото" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">${props.artist}</div>
+                <div class="album__title">${props.title}</div>
+                <div class="album__format-long">${props.format-long}</div>
+                <div class="album__label">${props.label}</div>
+                <div class="album__genre">${props.genre}</div>
+                <div class="album__style">${props.style}</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">${props.format}</div>
+                    <div class="icon-basket album__icon-basket"></div>
+                    <div class="album__price">${props.price}</div>
+                    <div class="album__price-decoding">${props.counter}× ${props.price}</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

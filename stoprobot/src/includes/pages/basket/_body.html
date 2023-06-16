@@ -1,0 +1,73 @@
+<div class="basket">
+    <div class="basket__wrapper">
+        <div class="basket__row">
+            <div class="basket__inner">
+                <div class="basket__title">
+                    Корзина
+                </div>
+            </div>
+        </div>
+        <div class="basket__row">
+            <div class="basket__inner">
+                <div class="basket__steps">
+                    ${require('../../components/_steps.html')
+                    classModifier1=`steps__item_active`
+                    classModifier2=``
+                    classModifier3=``
+                    progress-level1=`Корзина`
+                    progress-level2=`Оформление заказа`
+                    progress-level3=`Оплата заказа`
+                    }
+                </div>
+                <div class="basket__inner basket__inner_list">
+
+                    ${require('../../components/_album-with-count.html')
+                    classModifier=`album_linear album_with_count`
+                    src1=`../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg`
+                    artist=`Deftones`
+                    title=`It Was Written`
+                    format-long=`2LP`
+                    label=`XL`
+                    genre=`Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul`
+                    style=`Hip Hop`
+                    format=`2LP`
+                    price=`5 290 ₽`
+                    sum-price=`100 580 ₽`
+                    counter=`1`
+                    stock=``
+                    }
+
+                    ${require('../../components/_album-out-of-stock.html')
+                    classModifier=`album_linear album_with_count`
+                    src=`../assets/images/temp/2f46aad634acda508162b35fdbe3f7a6.jpg`
+                    artist=`Nas`
+                    title=`It Was Written`
+                    format-long=`Формат: 2LP`
+                    label=`Лэйбл: XL`
+                    genre=`Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul`
+                    style=`Стиль: Hip Hop`
+                    format=`2LP`
+                    price=`5 290 ₽`
+                    sum-price=`0 ₽`
+                    counter=`0`
+                    stock=`Нет в наличии`
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="basket__row">
+            <div class="basket__title basket__title_color-grey">
+                Итого: <span class="basket__price">10 580 ₽</span>
+            </div>
+        </div>
+        <div class="basket__row">
+            <div class="basket__item">
+                ${require('../../components/_button.html') value=`Оформить заказ`}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="basket__bottom">
+    ${require('../../components/_slider-double-item.html') title=`С этим товаром покупают`}
+</div>

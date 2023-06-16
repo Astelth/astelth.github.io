@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+${require('./includes/layout/_HEAD.html') description=`Каталог альбомов`}
+
+<body>
+<div class="page">
+    <div class="page__content">
+        <div class="page__header">
+            ${require('./includes/layout/_header.html')}
+        </div>
+        <div class="page__body">
+            ${require('./includes/pages/albums/_body.html')}
+            <!-- кнопка возврата наверх -->
+            <div class="page__static">
+                <a class="page__go-up" href="#header"></a>
+            </div>
+            <!-- кнопка возврата наверх -->
+        </div>
+    </div>
+
+    <div class="page__footer">
+        ${require('./includes/layout/_footer.html')}
+    </div>
+</div>
+
+${require('./includes/layout/_SCRIPT.html')}
+</body>
+</html>

@@ -1,0 +1,139 @@
+<div class="checkout">
+    <div class="checkout__wrapper">
+        <div class="checkout__row">
+            <div class="checkout__inner">
+                <div class="checkout__title">
+                    Оформление заказа
+                </div>
+            </div>
+        </div>
+        <div class="checkout__row">
+            <div class="checkout__inner">
+                <div class="checkout__steps checkout__steps_unauth">
+                    ${require('../../components/_steps.html')
+                    classModifier1=`steps__item_preactive`
+                    classModifier2=`steps__item_active`
+                    classModifier3=``
+                    progress-level1=`Корзина`
+                    progress-level2=`Оформление заказа`
+                    progress-level3=`Оплата заказа`
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="checkout__row">
+            <div class="form">
+                <div class="form__wrapper">
+                    <div class="i-tabs i-tabs_type_long">
+                        <div class="i-tabs__header">
+                            <div class="i-tabs__header-item">
+                                <div data-tabId="1" class="i-tabs__header-title i-tabs__header-title_active js-tab-item">войти</div>
+                            </div>
+                            <div class="i-tabs__header-item">
+                                <div data-tabId="2" class="i-tabs__header-title js-tab-item">зарегистрироваться</div>
+                            </div>
+                            <div class="i-tabs__header-item">
+                                <div data-tabId="3" class="i-tabs__header-title js-tab-item">продолжить как гость</div>
+                            </div>
+                        </div>
+                        <div class="i-tabs__content">
+                            <div class="i-tabs__content-item i-tabs__content-item_visible" data-tabId="1">
+                                <div class="form__inner form__inner_margin_bottom">
+                                    <div class="form__item">
+                                        ${require('../../components/_input.html') id=`authPhone` label=`Телефон или e-mail*`}
+                                    </div>
+                                    <div class="form__item">
+                                        ${require('../../components/_input-secret.html') id=`authPassword` label=`Пароль*`
+                                        classnameModifier=`i-input_invalid`}
+                                    </div>
+                                    <div class="form__item">
+                                        ${require('../../components/_checkbox.html') id=`authRemember` label=`запомнить меня`}
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__error">
+                                            Неверный логин или пароль.
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="i-group i-group_justify_center i-group_align_center">
+                                            <div class="i-group__col">
+                                                ${require('../../components/_button.html') value=`Войти`}
+                                            </div>
+                                            <div class="i-group__col">
+                                                <a class="i-link i-link_color_grey i-link_underlined" href="forget.html">Восстановить
+                                                    пароль</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="i-tabs__content-item" data-tabId="2">
+                                <div class="form__inner form__inner_margin_bottom">
+                                    <div class="form__item">
+                                        ${require('../../components/_input.html') id=`registrationName` label=`Имя*` value=`Иван`}
+                                    </div>
+                                    <div class="form__item">
+                                        ${require('../../components/_input.html') id=`registrationSurname` label=`Фамилия*`}
+                                    </div>
+                                    <div class="form__item">
+                                        ${require('../../components/_input.html') id=`registrationEmail` label=`E-mail*`}
+                                    </div>
+                                    <div class="form__item">
+                                        ${require('../../components/_input.html') id=`registrationPhone` label=`Телефон*`}
+                                    </div>
+                                    <div class="form__item">
+                                        ${require('../../components/_input-secret.html') id=`registrationPassword` label=`Пароль*`
+                                        classnameModifier=`i-input_invalid`}
+                                    </div>
+                                    <div class="form__item">
+                                        ${require('../../components/_input-captcha.html') id=`registrationCaptcha` label=`Введите код с картинки*`}
+                                    </div>
+                                    <div class="form__item">
+                                        ${require('../../components/_checkbox.html') id=`registrationAgreement`
+                                        label=`Я соглашаюсь c <a class="i-link i-link_color_accent" href="#">Условиями заказа и доставки</a>,
+                                        на обработку персональных данных в соответствии с
+                                        <a class="i-link i-link_color_accent" href="#">Политикой обработки персональных данных</a>
+                                        и на получение сообщений в процессе обработки заказа.`}
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__error">
+                                            Пользователь с таким e-mail: gnom@yandeх.ru уже существует.
+                                        </div>
+                                    </div>
+                                    <div class="form__item form__item_justify_center">
+                                        ${require('../../components/_button.html') value=`Зарегистрироваться`}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="i-tabs__content-item" data-tabId="3">
+                                <div class="form__wrapper">
+                                    <div class="form__inner">
+                                        <div class="form__item form__item_justify_center form__item_margin_bottom">
+                                            ${require('../../components/_input.html') id=`checkoutPhoneOrEmail` label=`Телефон или e-mail*` value=`+79859760429`}
+                                            ${require('../../components/_button.html') value=`Получить код подтверждения` classnameModifier=`i-button_disabled`}
+                                        </div>
+                                        <div class="form__item">
+                                            <div class="i-group i-group_justify_center i-group_align_bottom">
+                                                <div class="i-group__col">
+                                                    ${require('../../components/_input.html') id=`checkoutCode` label=`Код подтверждения*`}
+                                                </div>
+                                                <div class="i-group__col">
+                                                    ${require('../../components/_button.html') value=`Подтвердить`}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__inner">
+                                        <div class="form__item form__item_justify_center">
+                                            ${require('../../components/_button.html') value=`Продолжить`}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

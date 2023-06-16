@@ -1,0 +1,20 @@
+${require('../../components/_breadcrumbs-second-level.html') level1=`Кабинет` level2=`Заказы`}
+
+<div class="account">
+    <div class="account__columns">
+        <div class="account__col">
+            ${require('../../components/_account-menu.html') listItem1=`` listItem2=`account-menu__link_active` listItem3=``}
+        </div>
+        <div class="account__col">
+            <div class="form ${props.classModifier}">
+                <div class="form__wrapper">
+                    <div class="form__title form__title_margin_bottom form__title_account form__title_order">Вы еще ничего не заказывали</div>
+                    <div class="form__item form__item_justify_center">
+                        ${require('../../components/_button-link.html') src=`albums.html` value=`В каталог`
+                        classnameModifier=`i-button_orders_empty`}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

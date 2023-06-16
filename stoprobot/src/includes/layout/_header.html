@@ -1,0 +1,41 @@
+<div class="header" id="header">
+    <div class="header__wrapper">
+        <div class="header-bar">
+            <div class="header-bar__wrapper">
+                <a class="header-bar__logo icon-logo" href="pages.html"></a>
+                <div class="header-bar__actions">
+                    <label class="header-bar__search">
+                        <span class="header-bar__icon icon-search js-search-icon"></span>
+                        <input class="header-bar__search-input" id="headerSearchInput" />
+                        <span class="header-bar__icon header-bar__icon_close icon-close js-close-icon"></span>
+                        <span class="header-bar__search-results" id="headerSearchItems">
+                            <span class="header-bar__search-item">Пластинки: 14</span>
+                            <span class="header-bar__search-item">Оборудование: 2</span>
+                        </span>
+                    </label>
+                    <div class="header-bar__basket">
+                        <div class="header-bar__basket-count">9+</div>
+                        <div class="header-bar__icon icon-basket"></div>
+                    </div>
+                    <div class="header-bar__menu" id="burgerMenu">
+                        <div class="header-bar__burger"></div>
+                    </div>
+                    <div class="header-bar__inner">
+                        <div class="header-bar__favorite">
+                            <span class="header-bar__icon header-bar__icon_color_accent icon-star"></span>
+                        </div>
+                        <div class="header-bar__cabinet">
+                            <span class="header-bar__icon icon-user"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-catalog">
+            <div class="header-catalog__wrapper">
+                ${require('_catalog.html')}
+            </div>
+        </div>
+    </div>
+</div>

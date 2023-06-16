@@ -1,0 +1,66 @@
+<div class="order__card">
+    <div class="order__card-header">
+        <div class="order__title order__title_size_18">
+            Заказ № ${props.orderNumber} от ${props.orderDate}
+        </div>
+        <div class="order__caption order__caption_border_bottom">
+            <a href="account-order.html" class="i-link order__link">Перейти в заказ</a>
+        </div>
+    </div>
+    <div class="order__card-wrapper">
+        <div class="order__inner">
+            <div class="order__rows order__rows_column_96 order__rows_row_gap_16">
+                <div class="order__caption">Статус:</div>
+                <div class="order__note">${props.orderStatus}</div>
+                <div class="order__caption">Сумма:</div>
+                <div class="order__note">${props.orderAmountPayable}</div>
+                <div class="order__caption">Оплата:</div>
+                <div class="order__note">${props.orderPaymentWay}</div>
+                <div class="order__caption">Доставка:</div>
+                <div class="order__note">${props.orderDeliveryWay}</div>
+                <div class="order__caption">Стоимость доставки:</div>
+                <div class="order__note">${props.orderDeliveryCost}</div>
+            </div>
+            <div class="order__note order__note_variable ${props.orderCountdownClassModifier}">
+                Необходимо оплатить заказ в течение:
+                <span class="order__color_accent order__countdown js-countdown"></span>
+            </div>
+        </div>
+        <div class="order__goods">
+
+            <!--миниатюра 1 товара-->
+            <div class="album album_miniature ${props.classModifier1}">
+                <div class="album__album-wrapper">
+                    <div class="album__image album__image_miniature ">
+                        <img src="${props.src1}" alt="фото" class="album__picture album__picture_miniature" />
+                    </div>
+                    <div class="album__inner album__inner_miniature">
+                        <div class="album__artist album__artist_miniature">${props.artist1}</div>
+                        <div class="album__title album__title_miniature">${props.title1}</div>
+                        <div class="album__price-sum album__price-sum_miniature">${props.sum-price1}</div>
+                        <div class="album__price-decoding album__price-decoding_miniature">${props.counter1}×
+                            ${props.price1}</div>
+                    </div>
+                </div>
+            </div>
+            <!--миниатюра 1 товара-->
+
+            <!--миниатюра 2 товара-->
+            <div class="album album_miniature ${props.classModifier2}">
+                <div class="album__album-wrapper">
+                    <div class="album__image album__image_miniature ">
+                        <img src="${props.src2}" alt="фото" class="album__picture album__picture_miniature" />
+                    </div>
+                    <div class="album__inner album__inner_miniature">
+                        <div class="album__artist album__artist_miniature">${props.artist2}</div>
+                        <div class="album__title album__title_miniature">${props.title2}</div>
+                        <div class="album__price-sum album__price-sum_miniature">${props.sum-price2}</div>
+                        <div class="album__price-decoding album__price-decoding_miniature">${props.counter2}×
+                            ${props.price2}</div>
+                    </div>
+                </div>
+            </div>
+            <!--миниатюра 2 товара-->
+        </div>
+    </div>
+</div>

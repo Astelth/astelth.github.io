@@ -1,0 +1,16 @@
+.i-link {
+    text-decoration: none;
+    color: inherit;
+
+    &_color_accent {
+        color: $accent;
+    }
+
+    &_color_grey {
+        color: $link;
+    }
+
+    &_underlined {
+        text-decoration: underline;
+    }
+}

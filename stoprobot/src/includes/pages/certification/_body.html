@@ -1,0 +1,110 @@
+<div class="form form_certification">
+    <div class="form__wrapper">
+        <div class="form__title">Подарочные сертификаты</div>
+        <div class="form__title form__title_sub form__title_certification_denomination">Номинал и получатель сертификата</div>
+        <div class="form__inner form__inner_margin_bottom">
+            <div class="form__item">
+                ${require('../../components/_input.html') id=`certificatePrice` label=`От 1000₽ до 100000₽*` value=`3000`}
+            </div>
+            <div class="form__item">
+                ${require('../../components/_input.html') id=`certificateEmail` label=`E-mail получателя*` value=`gnom@yandex.ru`}
+            </div>
+        </div>
+        <div class="form__title form__title_sub form__title_certification_customer_data">Данные покупателя</div>
+        <div class="form__inner">
+            <div class="form__item form__item_justify_center form__item_margin_bottom form__item_certification_confirmation">
+                ${require('../../components/_input.html') id=`certificatePhoneOrEmail` label=`Телефон или e-mail*` value=`+79859760429`}
+                ${require('../../components/_button.html') value=`Получить код подтверждения` classnameModifier=`i-button_disabled i-button_certification`}
+            </div>
+            <div class="form__item form__item_certification_confirmation_code">
+                <div class="i-group i-group_justify_center i-group_align_bottom i-group_certification_confirmation">
+                    <div class="i-group__col">
+                        ${require('../../components/_input.html') id=`certificateCode` label=`Код подтверждения*` value=`43567` classnameModifier=`i-input_invalid i-input_certification_confirmation`}
+                    </div>
+                    <div class="i-group__col i-group__col_certification_confirmation">
+                        ${require('../../components/_button.html') value=`Подтвердить` classnameModifier=`i-button_certification_confirmation`}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form__wrapper">
+        <div class="form__title form__title_sub form__title_certification_payment">Оплата</div>
+        <div class="form__inner">
+
+            <div class="form__item  form__item_certification_payment">
+                <div class="i-group i-group_justify_center i-group_gap_10 i-group_certification_payment">
+                    <div class="i-group__col i-group__col_certification_payment">
+                        ${require('../../components/_checkbox.html') id=`bank-card` label=`Банковской картой`}
+                    </div>
+                    <div class="i-group__col">
+                        <div class="form__payment-types">
+                            <img src="/assets/images/payments/visa_16.svg" alt="card visa">
+                            <img src="/assets/images/payments/mastercard_16.svg" alt="card mastercard">
+                            <img src="/assets/images/payments/mir_16.svg" alt="card mir">
+                            <img src="/assets/images/payments/jcb_16.svg" alt="card jcb">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__item form__item_justify_center">
+                <div class="form__title form__title_sub form__title_margin_bottom">
+                    К оплате: <span class="form__price">3 000</span>₽
+                </div>
+            </div>
+            <div class="form__item form__item_justify_center form__item_certification_button">
+                ${require('../../components/_button.html') value=`Оплатить` classnameModifier=`i-button_disabled
+                i-button_certification_payment`}
+            </div>
+
+            <div class="form__item form__item_simple form__item_certification_privacy_policy">
+                Нажимая на кнопку «ОПЛАТИТЬ», вы соглашаетесь с <a href="#" class="i-link i-link_color_accent">Условиями
+                    оплаты и доставки</a>, <a href="#" class="i-link i-link_color_accent">Политикой
+                    конфиденциальности</a>
+                , правилами использования подарочных сертификатов. Вы будете перенаправлены на
+                страницу оплаты.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="static">
+    <div class="static__wrapper">
+        <div class="static__subtitle">
+            Правила использования подарочных сертификатов
+        </div>
+        <div class="static__inner">
+            <div class="static__note">
+                Подарочный сертификат автоматически отправляется получателю сразу после его оплаты покупателем в стандартном
+                e-mail от интернет-магазина <a href="https://stoprobotvinyl.ru" class="i-link">stoprobotvinyl.ru</a> в виде
+                цифрово-буквенного кода с указанием даты, до которой действителен данный подарочный сертификат.
+            </div>
+            <div class="static__note">
+                Графический дизайн либо печатная форма у подарочного сертификата отсутствуют.
+            </div>
+            <div class="static__note">
+                Подарочный сертификат может быть использован для получения скидки в размере номинала сертификата при
+                оформлении заказа на сайте <a href="https://stoprobotvinyl.ru" class="i-link">stoprobotvinyl.ru</a> либо
+                в магазине Stoprobot в Москве на весь ассортимент товаров и услуг, кроме приобретения новых подарочных сертификатов.
+            </div>
+            <div class="static__note">
+                Доступные номиналы подарочных сертификатов: от 1000₽ до 100000₽, с точностью до 1₽.
+            </div>
+            <div class="static__note">
+                Подарочные сертификаты могут быть применены на этапе оформления любого заказа на сайте
+                <a href="https://stoprobotvinyl.ru" class="i-link">stoprobotvinyl.ru</a>
+                либо в магазине Stoprobot в Москве на сумму, равную или большую суммы номиналов всех применённых
+                сертификатов.
+            </div>
+            <div class="static__note">
+                Подарочные сертификаты могут быть приобретены только на сайте
+                <a href="https://stoprobotvinyl.ru" class="i-link">stoprobotvinyl.ru</a>.
+            </div>
+            <div class="static__note">
+                Срок действия подарочных сертификатов: 3 года с даты покупки.
+            </div>
+        </div>
+    </div>
+</div>

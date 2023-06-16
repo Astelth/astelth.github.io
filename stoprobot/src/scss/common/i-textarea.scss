@@ -1,0 +1,18 @@
+.i-textarea {
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 3px 7px;
+    letter-spacing: .5px;
+    font-size: 15px;
+    line-height: 24px;
+    width: 100%;
+    outline: none;
+    border: 1px solid $grey-order-delimiter;
+    resize: vertical;
+    max-height: calc(100vw - 16px);
+}
+
+@media screen and (min-width: $tablet-viewport) {
+    .i-textarea {
+        max-height: 616px;
+    }
+}

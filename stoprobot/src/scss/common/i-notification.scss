@@ -1,0 +1,100 @@
+@keyframes slideDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(var(--main-padding));
+    }
+}
+
+@keyframes bubble {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(-50%, -30px);
+    }
+}
+
+.i-notification {
+    position: absolute;
+    max-width: 999px;
+    width: calc(100% - 2 * var(--main-padding));
+    border-radius: 5px;
+    align-items: center;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding: 12px 56px;
+    border: 1px solid $black;
+    color: $black;
+    background-color: $white;
+    transform: translateY(var(--main-padding));
+    animation: slideDown .3s 1;
+
+    &_small {
+        text-transform: initial;
+        top: 0;
+        left: 50%;
+        border: 0;
+        border-radius: 2px;
+        transform: translate(-50%, -30px);
+        width: auto;
+        padding: 3px 8px;
+        background-color: $green-light;
+        animation: bubble .3s 1;
+    }
+
+    &_small:before {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        content: '';
+        width: 0;
+        height: 0;
+        border: 5px solid;
+        border-color: $green-light transparent transparent transparent;
+    }
+
+    &__icon {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+
+    &__icon_color_accent {
+        color: $accent;
+    }
+
+    &__icon_color_red {
+        color: $red;
+    }
+
+    &__close {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__close:before {
+        content: $icon-close;
+        font-family: $icomoon-font-family;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: $tablet-viewport) {
+    .i-notification {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 17px 56px;
+
+        &_small {
+            font-size: 13px;
+            line-height: 16px;
+            padding: 3px 8px;
+        }
+    }
+}

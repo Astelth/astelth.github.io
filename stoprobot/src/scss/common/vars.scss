@@ -1,0 +1,45 @@
+$black: #000000;
+$white: #ffffff;
+$light-grey: #DEDEE0;
+$accent: #6BCFA5;
+$dark-grey: #575961;
+$link: #808080;
+$grey: #8F9095;
+$grey-order: #929398;
+$grey-icon: #979797;
+$grey-delimiter: #A5A6AA;
+$grey-card: #C7C7CA;
+$grey-order-delimiter: #D6DADC;
+$super-light-grey: #F1F1F1;
+$green: #5AA03D;
+$green-btn: #55B145;
+$green-light: #95BF83;
+$red: #E02020;
+
+$tablet-viewport: 960px;
+$tablet-wide-viewport: 1024px;
+$desktop-viewport: 1200px;
+$desktop-wide-viewport: 1400px;
+
+:root {
+    --max-width: 1344px;
+    --main-padding: 8px;
+    --header-height: 55px;
+    --logo-width: 90px;
+    --swiper-theme-color: #000;
+}
+
+@media screen and (min-width: $tablet-viewport) {
+    :root {
+        --main-padding: 40px;
+        --header-height: 88px;
+        --logo-width: 90px;
+    }
+}
+
+@media screen and (min-width: $desktop-viewport) {
+    :root {
+        --header-height: 136px;
+        --logo-width: 273px;
+    }
+}

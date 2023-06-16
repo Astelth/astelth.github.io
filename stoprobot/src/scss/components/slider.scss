@@ -1,0 +1,211 @@
+.slider {
+
+    &__title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__title-text {
+        display: inline-block;
+        border-bottom: 2px solid $black;
+    }
+
+    &_double &__swiper {
+        width: 100%;
+        padding: 0;
+    }
+
+    &__swiper-actions {
+        display: flex;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    &_product &__swiper-actions {
+        padding: 24px 0;
+    }
+
+    &_double &__swiper-actions {
+        padding: 0;
+    }
+
+    &__swiper-pagination.swiper-pagination {
+        position: relative;
+        top: auto;
+        width: auto;
+        bottom: auto;
+        line-height: 0;
+
+        .swiper-pagination-bullet {
+            margin: 0 6px;
+            width: 6px;
+            height: 6px;
+            background: $grey-card;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $black;
+        }
+    }
+
+    &__swiper-button-next,
+    &__swiper-button-prev {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        right: auto;
+        left: auto;
+        height: auto;
+        margin: 0;
+
+        &:after {
+            content: $icon-arrow;
+            font-size: 16px;
+            font-family: $icomoon-font-family;
+            color: $grey-icon;
+        }
+    }
+
+    &__swiper-button-next:after {
+        transform: rotate(180deg);
+    }
+
+    &_product &__swiper {
+        width: 100%;
+        padding: 0;
+    }
+
+    &_product &__swiper-slide {
+        display: flex;
+    }
+
+    &_product &__swiper-slide-image {
+        width: 100%;
+    }
+
+    &_product &__swiper-pagination {
+        text-align: center;
+    }
+
+    &_product &__swiper-bullet_active {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: $tablet-viewport) {
+    .slider {
+
+        &_main &__swiper {
+            padding-top: 0;
+        }
+
+        &_product &__swiper {
+            margin-bottom: 45px;
+        }
+
+        &_product &__swiper-actions {
+            padding: 4px 0;
+        }
+
+        &__title {
+            border-bottom: 1px solid $grey-delimiter;
+        }
+
+        &_product &__slider {
+            margin-bottom: var(--bullet-gap);
+        }
+
+        &_product &__swiper-bullet {
+            width: calc(25% - var(--bullet-gap) * .75);
+            height: auto;
+            margin: 0 !important;
+            border-radius: 0;
+            opacity: .7;
+        }
+
+        &_product &__swiper-bullet_active {
+            opacity: 1;
+        }
+
+        &_product &__swiper-pagination {
+            position: relative;
+            text-align: left;
+            margin: 0;
+            top: var(--bullet-gap) !important;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px 12px;
+        }
+
+        &_simple &__swiper-actions {
+            padding: 60px 0 20px;
+        }
+
+        &_simple &__title,
+        &_double &__title {
+            margin-bottom: 43px;
+        }
+
+        &_double &__swiper-actions {
+            padding: 8px 0;
+        }
+
+        &__swiper-pagination.swiper-pagination {
+            .swiper-pagination-bullet {
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-viewport) {
+    .slider {
+        &__swiper {
+            width: calc(100% + 8px);
+            padding: var(--main-padding) 4px;
+        }
+
+        &_double &__swiper {
+            width: calc(100% + 37px);
+            margin: -18px -18px 0px -18px;
+            padding: 17px 8px 17px 16px;
+        }
+
+        &__swiper-actions {
+            padding: 12px 0 44px;
+        }
+
+        &_product &__swiper-actions {
+            padding: 4px 0 51px;
+        }
+
+        &_main &__swiper {
+            padding: 0;
+            width: 100%;
+        }
+
+        &_product &__swiper-bullet {
+            width: calc(20% - var(--bullet-gap) * .8);
+        }
+
+        &_simple &__swiper {
+            padding: 0 4px;
+        }
+
+        &_simple &__swiper-actions {
+            padding: 8px 0 20px;
+        }
+
+        &_simple &__swiper-slide-item {
+            min-height: 415px;
+        }
+    }
+}

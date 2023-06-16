@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+${require('./includes/layout/_HEAD.html') description=`Заказ`}
+
+<body>
+<div class="page">
+    <div class="page__content">
+        <div class="page__header">
+            ${require('./includes/layout/_header-with-login.html')}
+        </div>
+        <div class="page__body">
+            ${require('./includes/pages/account-order/_body.html')
+            orderNumber=`9621`
+            orderDate=`23.03.2023`
+            orderEmail=`gnom@yandex.ru`
+            orderPhone=`+7916142969`
+            orderStatus=`Оформлен, ожидает оплаты`
+            orderDeliveryWay=`Самовывоз из магазина в Москве`
+            orderAddress=`Москва, Хлебозавод, м. Дмитровская,Новодмитровская ул., 1с9. 12:00-21:00 ежедневно`
+            orderTrackingNumber=`12345667789`
+            orderCustomerComment=`Добавьте, пожалуйста, красивый пакет. А ещё, если можно, упакуйте так,
+            чтобы пластинки не помялись при перелёте в самолёте…`
+            orderShopComment=`Пластинки готовы, ожидают вас`
+            orderPaymentWay=`Банковской картой`
+            orderGoodsCost=`15 290 ₽`
+            orderDeliveryCost=`0 ₽`
+            orderGiftCertificate=`-100 000 ₽`
+            orderRegularCustomerDiscount=`-10 000 ₽`
+            orderAmountPayable=`15 290 ₽`
+            orderPaymentState=`Не оплачен`
+            orderCountdownClassModifier=``
+            }
+        </div>
+    </div>
+    <div class="page__footer">
+        ${require('./includes/layout/_footer.html')}
+    </div>
+</div>
+
+${require('./includes/layout/_SCRIPT.html')}
+</body>
+</html>

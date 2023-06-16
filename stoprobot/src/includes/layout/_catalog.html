@@ -1,0 +1,59 @@
+<div class="catalog">
+    <div class="catalog__mobile">
+        <div class="catalog__list catalog__list_align_center" data-section="main">
+            <div class="catalog__item catalog__item_entrance">
+                <span class="icon-user catalog__icon"></span><span class="catalog__note">войти</span>
+            </div>
+            <div class="catalog__item" data-action="vinyl">Винил</div>
+            <div class="catalog__item" data-action="novinyl">Не винил</div>
+            <div class="catalog__item">
+                <span class="icon-star catalog__icon catalog__icon_color_accent"></span>
+                <span class="catalog__note">Избранное</span>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__social-nets">
+                    <a href="#" class="i-link catalog__social-net">
+                        <span class="icon-instagram"></span>
+                    </a>
+                    <a href="#" class="i-link catalog__social-net">
+                        <span class="icon-vk"></span>
+                    </a>
+                    <a href="#" class="i-link catalog__social-net">
+                        <span class="icon-fb"></span>
+                    </a>
+                    <a href="#" class="i-link catalog__social-net">
+                        <span class="icon-telegram"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="catalog__item"><a href="#" class="i-link">О компании</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Контакты</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Гарантия и возрват</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Оплата и доставка</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Сообщить об ошибке</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Подарочные сетификаты</a></div>
+        </div>
+        <div class="catalog__list catalog__list_hide catalog__list_padding_10_5" data-section="vinyl">
+            <div class="catalog__item catalog__item_back" data-action="main">Назад</div>
+            ${require('_vinyl.html')}
+        </div>
+        <div class="catalog__list catalog__list_hide catalog__list_padding_10_5" data-section="novinyl">
+            <div class="catalog__item catalog__item_back" data-action="main">Назад</div>
+            ${require('_novinyl.html')}
+        </div>
+    </div>
+    <div class="catalog__desktop">
+        <div class="catalog__wrapper">
+            <div class="catalog__title">Винил</div>
+            <div class="catalog__list">
+                ${require('_vinyl.html')}
+            </div>
+        </div>
+        <div class="catalog__wrapper">
+            <div class="catalog__title">Не винил</div>
+            <div class="catalog__list">
+                ${require('_novinyl.html')}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,151 @@
+<div class="i-suggester js-suggester">
+    <div class="i-suggester__title">
+        <div class="i-suggester__row">
+
+        </div>
+    </div>
+    <div class="i-suggester__list js-suggester-list">
+        <div class="i-suggester__row">
+            <input type="checkbox" name="Aboriginal" id="Aboriginal" value="no" class="settings__checkbox">
+            <label for="Aboriginal" class="settings__checkbox-label">
+                <span class="i-suggester__item">Aboriginal</span>
+            </label>
+        </div>
+        <div class="i-suggester__row">
+            <input type="checkbox" name="Abstract" id="Abstract" value="no" class="settings__checkbox">
+            <label for="Abstract" class="settings__checkbox-label">
+                <span class="i-suggester__item">Abstract</span>
+            </label>
+        </div>
+        <div class="i-suggester__row">
+            <input type="checkbox" name="Acid" id="Acid" value="no" class="settings__checkbox">
+            <label for="Acid" class="settings__checkbox-label">
+                <span class="i-suggester__item">Acid</span>
+            </label>
+        </div>
+        <div class="i-suggester__row">
+            <input type="checkbox" name="Acid House" id="Acid House" value="no" class="settings__checkbox">
+            <label for="Acid House" class="settings__checkbox-label">
+                <span class="i-suggester__item">Acid House</span>
+            </label>
+        </div>
+        <div class="i-suggester__row">
+            <input type="checkbox" name="Acid Jazz" id="Acid Jazz" value="no" class="settings__checkbox">
+            <label for="Acid Jazz" class="settings__checkbox-label">
+                <span class="i-suggester__item">Acid Jazz</span>
+            </label>
+        </div>
+        <div class="i-suggester__row">
+            <input type="checkbox" name="Acid Rock" id="Acid Rock" value="no" class="settings__checkbox">
+            <label for="Acid Rock" class="settings__checkbox-label">
+                <span class="i-suggester__item">Acid Rock</span>
+            </label>
+        </div>
+        <div class="i-suggester__row">
+            <input type="checkbox" name="Acoustic" id="Acoustic" value="no" class="settings__checkbox">
+            <label for="Acoustic" class="settings__checkbox-label">
+                <span class="i-suggester__item">Acoustic</span>
+            </label>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.js-suggester').forEach(el => el.addEventListener('click', evt => selectHandler(evt)));
+
+	function selectHandler(e) {
+		e.currentTarget.querySelector('.i-suggester__additional').classList.add('i-suggester__additional_active');
+
+		['Aboriginal', 'Abstract', 'Acid', 'Acid House', 'Acid Jazz', 'Acid Rock', 'Acoustic'].forEach(item => {
+			e.currentTarget.querySelector('.i-suggester__list').innerHTML += `<div class="i-suggester__row">
+                <input type="checkbox" name="${item}" id="${item}" value="no" class="settings__checkbox">
+                <label for="${item}" class="settings__checkbox-label">
+                    <span class="i-suggester__item">${item}</span>
+                </label>
+            </div>`;
+		});
+	}
+	function changeHandler(e, el) {
+		el.update('ef')
+	}
+
+</script>
+
+<script>
+	function Suggester(props = {}) {
+		const state = {
+			name: props.name || '',
+			items: props.items || [],
+		};
+
+		this.update = (value) => {
+			this.render()
+		}
+
+		const renderSearch = () => {
+			const wrapper = document.createElement('div');
+			const input = document.createElement('input');
+			input.setAttribute('type', 'text');
+			input.addEventListener('input', e => changeHandler(e, this))
+
+			wrapper.classList.add('i-suggester__search');
+			input.classList.add('i-suggester__search-input');
+			wrapper.appendChild(input);
+
+			return wrapper;
+        }
+
+		const renderTitle = () => {
+			const wrapper = document.createElement('div');
+			const title = document.createElement('div');
+
+			title.classList.add('i-suggester__row');
+			title.innerText = state.name;
+			wrapper.classList.add('i-suggester__title');
+			wrapper.appendChild(title);
+
+			return wrapper;
+		}
+
+		const renderList = () => {
+			const el = document.createElement('div');
+			el.classList.add('i-suggester__list');
+
+			state.items.forEach(item => {
+				el.innerHTML += `<div class="i-suggester__row">
+                                    <input type="checkbox" name="${item}" id="${item}" value="no" class="settings__checkbox">
+                                    <label for="${item}" class="settings__checkbox-label">
+                                        <span class="i-suggester__item">${item}</span>
+                                    </label>
+                                </div>`;
+			});
+
+			return el;
+		}
+
+		this.render = () => {
+			const wrapper = document.createElement('div');
+			const additional = document.createElement('div');
+
+			wrapper.classList.add('i-suggester');
+			additional.classList.add('i-suggester__additional');
+
+			wrapper.addEventListener('click', e => selectHandler(e))
+
+			wrapper.appendChild(renderTitle());
+			additional.appendChild(renderSearch());
+			additional.appendChild(renderList());
+			wrapper.appendChild(additional);
+
+			document.querySelector('.breadcrumbs').appendChild(wrapper);
+		}
+
+		this.render();
+	}
+
+	new Suggester({
+		name: 'Исполнитель',
+		items: ['Aboriginal', 'Abstract', 'Acid', 'Acid House', 'Acid Jazz', 'Acid Rock', 'Acoustic'],
+	});
+
+</script>

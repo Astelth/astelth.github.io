@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover'/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <title>Личные данные</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="page">
+    <div class="page__content">
+        <div class="page__header">
+            <div class="header" id="header">
+    <div class="header__wrapper">
+        <div class="header-bar">
+            <div class="header-bar__wrapper">
+                <a class="header-bar__logo icon-logo" href="pages.html"></a>
+                <div class="header-bar__actions">
+                    <label class="header-bar__search">
+                        <span class="header-bar__icon icon-search js-search-icon"></span>
+                        <input class="header-bar__search-input" id="headerSearchInput" />
+                        <span class="header-bar__icon header-bar__icon_close icon-close js-close-icon"></span>
+                        <span class="header-bar__search-results" id="headerSearchItems">
+                            <span class="header-bar__search-item">Пластинки: 14</span>
+                            <span class="header-bar__search-item">Оборудование: 2</span>
+                        </span>
+                    </label>
+                    <div class="header-bar__basket">
+                        <div class="header-bar__basket-count">9+</div>
+                        <div class="header-bar__icon icon-basket"></div>
+                    </div>
+                    <div class="header-bar__menu" id="burgerMenu">
+                        <div class="header-bar__burger"></div>
+                    </div>
+                    <div class="header-bar__inner">
+                        <div class="header-bar__favorite">
+                            <span class="header-bar__icon header-bar__icon_color_accent icon-star"></span>
+                        </div>
+                        <div class="header-bar__cabinet header-bar__cabinet_authorized">
+                            <span class="header-bar__icon icon-user"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-catalog">
+            <div class="header-catalog__wrapper">
+                <div class="catalog">
+    <div class="catalog__mobile">
+        <div class="catalog__list catalog__list_align_center" data-section="main">
+            <div class="catalog__item catalog__item_entrance">
+                <span class="icon-user catalog__icon"></span><span class="catalog__note">войти</span>
+            </div>
+            <div class="catalog__item" data-action="vinyl">Винил</div>
+            <div class="catalog__item" data-action="novinyl">Не винил</div>
+            <div class="catalog__item">
+                <span class="icon-star catalog__icon catalog__icon_color_accent"></span>
+                <span class="catalog__note">Избранное</span>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__social-nets">
+                    <a href="#" class="i-link catalog__social-net">
+                        <span class="icon-instagram"></span>
+                    </a>
+                    <a href="#" class="i-link catalog__social-net">
+                        <span class="icon-vk"></span>
+                    </a>
+                    <a href="#" class="i-link catalog__social-net">
+                        <span class="icon-fb"></span>
+                    </a>
+                    <a href="#" class="i-link catalog__social-net">
+                        <span class="icon-telegram"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="catalog__item"><a href="#" class="i-link">О компании</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Контакты</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Гарантия и возрват</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Оплата и доставка</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Сообщить об ошибке</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Подарочные сетификаты</a></div>
+        </div>
+        <div class="catalog__list catalog__list_hide catalog__list_padding_10_5" data-section="vinyl">
+            <div class="catalog__item catalog__item_back" data-action="main">Назад</div>
+            <div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">hip-hop</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">electronic</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">rock</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">funk/soul</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">pop</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">reggae</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">rus</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">Показать все</a></div>
+        </div>
+        <div class="catalog__list catalog__list_hide catalog__list_padding_10_5" data-section="novinyl">
+            <div class="catalog__item catalog__item_back" data-action="main">Назад</div>
+            <div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">Аксессуары</a></div>
+        </div>
+    </div>
+    <div class="catalog__desktop">
+        <div class="catalog__wrapper">
+            <div class="catalog__title">Винил</div>
+            <div class="catalog__list">
+                <div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">hip-hop</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">electronic</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">rock</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">funk/soul</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">pop</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">reggae</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">rus</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">Показать все</a></div>
+            </div>
+        </div>
+        <div class="catalog__wrapper">
+            <div class="catalog__title">Не винил</div>
+            <div class="catalog__list">
+                <div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">Аксессуары</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="page__body">
+            <div class="breadcrumbs">
+    <a class="breadcrumbs__item" href="index.html">
+        ГЛАВНАЯ
+    </a>
+    <a class="breadcrumbs__item" href="#">
+        Кабинет
+    </a>
+    <div class="breadcrumbs__item">
+        Личные данные
+    </div>
+</div>
+
+<div class="account">
+    <div class="account__columns">
+        <div class="account__col">
+            <div class="account-menu">
+    <div class="account-menu__wrapper">
+        <div class="account-menu__title">
+            <a href="account.html" class="i-link">Кабинет</a>
+        </div>
+        <div class="account-menu__list">
+            <div class="account-menu__item">
+                <a href="account-personal.html" class="i-link account-menu__link account-menu__link_active">Личные данные</a>
+            </div>
+            <div class="account-menu__item">
+                <a href="account-orders.html" class="i-link account-menu__link ">Мои заказы</a>
+            </div>
+            <div class="account-menu__item">
+                <a href="account-favorites.html" class="i-link account-menu__link ">Избранное</a>
+            </div>
+            <div class="account-menu__item account-menu__item_logout">
+                <a href="authorization.html" class="i-link">Выход</a>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="account__col">
+            <div class="form form_account">
+                <div class="form__inner form__inner_margin_bottom">
+                    <div class="form__item">
+                        <div class="i-input i-input_account">
+    <label class="i-input__label" for="registrationName">Имя*</label>
+    <input id="registrationName" type="text" class="i-input__data" value="" placeholder="Ваня"/>
+    <div class="i-input__error">Обязательное поле</div>
+</div>
+                    </div>
+                    <div class="form__item">
+                        <div class="i-input i-input_account">
+    <label class="i-input__label" for="registrationSurname">Фамилия*</label>
+    <input id="registrationSurname" type="text" class="i-input__data" value="" placeholder="Иванов"/>
+    <div class="i-input__error">Обязательное поле</div>
+</div>
+                    </div>
+                    <div class="form__item">
+                        <div class="i-input i-input_account">
+    <label class="i-input__label" for="registrationPatronymic">Отчество</label>
+    <input id="registrationPatronymic" type="text" class="i-input__data" value="" placeholder=""/>
+    <div class="i-input__error">Обязательное поле</div>
+</div>
+                    </div>
+                    <div class="form__item form__item_justify_space_between form__item_account">
+                        <div class="form__caption form__caption_margin_bottom">Дата рождения</div>
+                        <select name="day" id="day" class="i-selector form__selector form__selector_one_third">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select name="month" id="month" class="i-selector form__selector form__selector_one_third">
+                            <option value=""></option>
+                            <option value="1">Январь</option>
+                            <option value="2">Февраль</option>
+                            <option value="3">Март</option>
+                            <option value="4">Апрель</option>
+                            <option value="5">Май</option>
+                            <option value="6">Июнь</option>
+                            <option value="7">Июль</option>
+                            <option value="8">Август</option>
+                            <option value="9">Сентябрь</option>
+                            <option value="10">Октябрь</option>
+                            <option value="11">Ноябрь</option>
+                            <option value="12">Декабрь</option>
+                        </select>
+                        <select name="year" id="year" class="i-selector form__selector form__selector_one_third">
+                            <option value=""></option>
+                            <option value="1900">1900</option>
+                            <option value="1901">1901</option>
+                            <option value="1902">1902</option>
+                            <option value="1903">1903</option>
+                            <option value="1904">1904</option>
+                            <option value="1905">1905</option>
+                            <option value="1906">1906</option>
+                            <option value="1907">1907</option>
+                            <option value="1908">1908</option>
+                            <option value="1909">1909</option>
+                            <option value="1910">1910</option>
+                            <option value="1911">1911</option>
+                            <option value="1912">1912</option>
+                            <option value="1913">1913</option>
+                            <option value="1914">1914</option>
+                            <option value="1915">1915</option>
+                            <option value="1916">1916</option>
+                            <option value="1917">1917</option>
+                            <option value="1918">1918</option>
+                            <option value="1919">1919</option>
+                            <option value="1920">1920</option>
+                            <option value="1921">1921</option>
+                            <option value="1922">1922</option>
+                            <option value="1923">1923</option>
+                            <option value="1924">1924</option>
+                            <option value="1925">1925</option>
+                            <option value="1926">1926</option>
+                            <option value="1927">1927</option>
+                            <option value="1928">1928</option>
+                            <option value="1929">1929</option>
+                            <option value="1930">1930</option>
+                            <option value="1931">1931</option>
+                            <option value="1932">1932</option>
+                            <option value="1933">1933</option>
+                            <option value="1934">1934</option>
+                            <option value="1935">1935</option>
+                            <option value="1936">1936</option>
+                            <option value="1937">1937</option>
+                            <option value="1938">1938</option>
+                            <option value="1939">1939</option>
+                            <option value="1940">1940</option>
+                            <option value="1941">1941</option>
+                            <option value="1942">1942</option>
+                            <option value="1943">1943</option>
+                            <option value="1944">1944</option>
+                            <option value="1945">1945</option>
+                            <option value="1946">1946</option>
+                            <option value="1947">1947</option>
+                            <option value="1948">1948</option>
+                            <option value="1949">1949</option>
+                            <option value="1950">1950</option>
+                            <option value="1951">1951</option>
+                            <option value="1952">1952</option>
+                            <option value="1953">1953</option>
+                            <option value="1954">1954</option>
+                            <option value="1955">1955</option>
+                            <option value="1956">1956</option>
+                            <option value="1957">1957</option>
+                            <option value="1958">1958</option>
+                            <option value="1959">1959</option>
+                            <option value="1960">1960</option>
+                            <option value="1961">1961</option>
+                            <option value="1962">1962</option>
+                            <option value="1963">1963</option>
+                            <option value="1964">1964</option>
+                            <option value="1965">1965</option>
+                            <option value="1966">1966</option>
+                            <option value="1967">1967</option>
+                            <option value="1968">1968</option>
+                            <option value="1969">1969</option>
+                            <option value="1970">1970</option>
+                            <option value="1971">1971</option>
+                            <option value="1972">1972</option>
+                            <option value="1973">1973</option>
+                            <option value="1974">1974</option>
+                            <option value="1975">1975</option>
+                            <option value="1976">1976</option>
+                            <option value="1977">1977</option>
+                            <option value="1978">1978</option>
+                            <option value="1979">1979</option>
+                            <option value="1980">1980</option>
+                            <option value="1981">1981</option>
+                            <option value="1982">1982</option>
+                            <option value="1983">1983</option>
+                            <option value="1984">1984</option>
+                            <option value="1985">1985</option>
+                            <option value="1986">1986</option>
+                            <option value="1987">1987</option>
+                            <option value="1988">1988</option>
+                            <option value="1989">1989</option>
+                            <option value="1990">1990</option>
+                            <option value="1991">1991</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1994">1994</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="1998">1998</option>
+                            <option value="1999">1999</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </div>
+                    <div class="form__item">
+                        <div class="i-input i-input_account">
+    <label class="i-input__label" for="registrationEmail">E-mail*</label>
+    <input id="registrationEmail" type="text" class="i-input__data" value="" placeholder="gnom@yandex.ru"/>
+    <div class="i-input__error">Обязательное поле</div>
+</div>
+                    </div>
+                    <div class="form__item form__item_margin_bottom_8">
+                        <div class="i-input i-input_account">
+    <label class="i-input__label" for="registrationPhone">Телефон*</label>
+    <input id="registrationPhone" type="text" class="i-input__data" value="" placeholder="+79859760529"/>
+    <div class="i-input__error">Обязательное поле</div>
+</div>
+                    </div>
+
+                    <div class="form__item form__item_margin_bottom_5">
+                        <a class="i-button i-button_account" href="">
+    Изменить пароль
+</a>
+                    </div>
+                    <div class="form__item form__item_checkbox form__item_margin_bottom_6">
+                        <div class="i-checkbox">
+    <input class="i-checkbox__input" type="checkbox" id="registrationAgreement" checked />
+    <label class="i-checkbox__label" for="registrationAgreement">Я соглашаюсь c <a class="i-link i-link_color_accent" href="#">Условиями заказа и доставки</a>,
+                        на обработку персональных данных в соответствии с
+                        <a class="i-link i-link_color_accent" href="#">Политикой обработки персональных данных</a>
+                        и на получение сообщений в процессе обработки заказа.</label>
+</div>
+                    </div>
+                    <div class="form__item form__item_justify_center">
+                        <div class="i-button i-button_account2">
+    Сохранить изменения
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="page__footer">
+        <div class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__inner">
+            <div class="footer__section">
+                <div class="footer__phone">
+                    <span class="icon-phone footer__icon is-mobile"></span>
+                    <span class="footer__phone-number">+7 (916) 213-49-93</span>
+                </div>
+                <div class="footer__address is-desktop">Москва, Новодмитровская ул. 1с9, Хлебозавод</div>
+                <div class="footer__email is-desktop">info@stoprobotvinyl.ru</div>
+            </div>
+            <div class="footer__section">
+                <a class="footer__item is-desktop" href="about.html">О КОМПАНИИ</a>
+                <a class="footer__item is-desktop" href="contacts.html">КОНТАКТЫ</a>
+                <a class="footer__item is-desktop" href="warranty.html">ГАРАНТИЯ И ВОЗВРАТ</a>
+                <div class="footer__item footer__item_group_columns">
+                    <img src="../assets/images/payments/visa.svg" alt="visa" class="footer__credit-card-icon">
+                    <img src="../assets/images/payments/mastercard.svg" alt="mastercard" class="footer__credit-card-icon">
+                    <img src="../assets/images/payments/mir.svg" alt="mir" class="footer__credit-card-icon">
+                    <img src="../assets/images/payments/jcb.svg" alt="jcb" class="footer__credit-card-icon">
+                </div>
+            </div>
+            <div class="footer__section is-desktop">
+                <a class="footer__item is-desktop" href="delivery.html">ОПЛАТА И ДОСТАВКА</a>
+                <a class="footer__item is-desktop" href="error-message.html">СООБЩИТЬ ОБ ОШИБКЕ</a>
+                <a class="footer__item is-desktop" href="certification.html">ПОДАРОЧНЫЕ СЕРТИФИКАТЫ</a>
+            </div>
+            <div class="footer__section">
+                <div class="footer__social-nets">
+                    <a href="#" class="i-link"><span class="icon-instagram footer__social-net-icon"></span></a>
+                    <a href="#" class="i-link"><span class="icon-vk footer__social-net-icon"></span></a>
+                    <a href="#" class="i-link"><span class="icon-fb footer__social-net-icon"></span></a>
+                    <a href="#" class="i-link"><span class="icon-telegram footer__social-net-icon"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__inner">
+            <div class="footer__copyright">2019-2023 Stoprobot Vinyl</div>
+            <div class="footer__privacy-policy">
+                Находясь на этом сайте вы соглашаетесь
+                с&nbsp;использованием нами файлов cookie в&nbsp;соответствии с&nbsp;нашей Политикой конфиденциальности
+            </div>
+        </div>
+    </div>
+    <!-- область для уведомлений -->
+    <div class="footer__popup-wrapper js-popup-wrapper"></div>
+    <!-- область для уведомлений -->
+</div>
+    </div>
+</div>
+
+<!-- Initialize React -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- Initialize Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
