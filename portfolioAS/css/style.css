@@ -19,6 +19,10 @@
     overflow: hidden;
 }
 
+.i-link {
+    color: #828282;
+}
+
 .home {
     display: flex;
     flex-wrap: wrap;
@@ -88,6 +92,9 @@
 .skills__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 8px;
 }
 
 .skills__picture {
@@ -105,6 +112,7 @@
 .skills__item {
     max-width: 112px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .skills__rating {
@@ -127,12 +135,18 @@
 }
 
 .portfolio__item {
+    display: flex;
+    flex-direction: column;
     gap: 12px;
 }
 
 .portfolio__text {
     font-size: 16px;
     text-align: center;
+}
+
+.portfolio__picture {
+    width: 100%;
 }
 
 .menu__wrapper {
@@ -268,21 +282,35 @@ a {
 }
 
 .contacts__item {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 24px;
     color: #424242;
     transition: .3s color .3s, .3s background-color .1s;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-radius: 25px;
-}
-
-.i-icon {
-    font-size: 32px;
 }
 
 .contacts__note {
     margin-bottom: 100px;
+}
+
+.contacts__input {
+    width: 180px;
+    height: 42px;
+    border-radius: 21px;
+    background: #070707;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+    margin-bottom: 64px;
+    transition: .3s;
+}
+
+.contacts__title,
+.contacts__text {
+    margin-bottom: 32px;
 }
 
 .menu__burger {
@@ -436,7 +464,8 @@ a {
 
     .home__name {
         max-width: 350px;
-        font-size: 48px;
+        font-size: 40px;
+        line-height: 40px;
     }
 
     .home__link {
@@ -476,8 +505,6 @@ a {
 
     .skills__list {
         display: flex;
-        flex-wrap: wrap;
-        max-width: 100%;
         justify-content: space-between;
         gap: 32px;
     }
@@ -504,11 +531,6 @@ a {
         margin-bottom: 32px;
     }
 
-    .contacts__title,
-    .contacts__text {
-        margin-bottom: 32px;
-    }
-
     .portfolio {
         padding-top: 64px;
         padding-bottom: 64px;
@@ -520,26 +542,7 @@ a {
     }
 
     .portfolio__item {
-        display: flex;
-        flex-direction: column;
         gap: 16px;
-    }
-
-    .portfolio__picture {
-        width: 100%;
-    }
-
-    .contacts__input {
-        width: 180px;
-        height: 42px;
-        border-radius: 21px;
-        background: #070707;
-        color: #fff;
-        font-size: 18px;
-        line-height: 22px;
-        cursor: pointer;
-        margin-bottom: 64px;
-        transition: .3s;
     }
 
     .menu__burger {
@@ -550,6 +553,12 @@ a {
         font-size: 34px;
         line-height: 42px;
         gap: 16px;
+    }
+
+    .contacts__item {
+        font-size: 32px;
+        width: 36px;
+        height: 36px;
     }
 }
 
