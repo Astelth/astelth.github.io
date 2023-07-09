@@ -312,6 +312,9 @@ a {
 .contacts__text {
     margin-bottom: 32px;
 }
+.contacts__icon {
+    color: #070707;
+}
 
 .menu__burger {
     position: fixed;
@@ -570,6 +573,10 @@ a {
         text-decoration: underline double gray;
         text-shadow: 3px 3px 2px #f35;
     }
+    .contacts .i-link:hover {
+        text-shadow: 2px 2px 1px #f35;
+        color: #e7e7e7;
+    }
 
     .mobil__link:hover {
         color: #070707;
@@ -584,10 +591,6 @@ a {
         color: #828282;
     }
 
-    .contacts__item:hover .i-icon {
-        color: #cacaca;
-    }
-
     .home a:hover {
         text-shadow: 3px 3px 2px #f35;
     }
@@ -599,7 +602,6 @@ a {
     }
 
     .contacts__item:hover {
-        color: #cacaca;
         background-color: #1290f0;
     }
 }
