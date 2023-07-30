@@ -117,9 +117,41 @@ console.log(names)
 names.shift()
 names.pop()
 console.log(names)
-*/ 
+*/
 
-/* Задание 4*/
+/* Задание 4
 //const names = ['Eva', 'Dilan', 'Channing', 'Bob', 'April']
 const names = ['Bob', 'Klar', 'Petya', 'Ilya', 'Victoriya']
+console.log(names)
+const container = document.querySelector('.container')
+const createListButton = document.getElementById('createList')
+createListButton.onclick = function () {
+    container.insertAdjacentHTML('beforeend', `<div class='names'>Имена:<ul class='names__list'></ul></div>`)
+    const namesList = document.querySelector('.names__list')
+    for (let name in names) {
+        namesList.insertAdjacentHTML('beforeend', `<li class='names__item'>${names[name]}</li>`)
+    }
+}
+*/
 
+
+/* Задание 5 */
+
+const obj = {age: 22, favColor: 'red', height: 188, pet: 'dog', money: 12300}
+let {age, favColor, height, pet, money} = obj
+console.log(age, favColor, height, pet, money)
+
+/* Задание 6 
+
+const obj = {age: 22, favColor: 'red', height: 188, pet: 'dog', money: 12300}
+const updateObj = {age: 23, favColor: 'blue', money: 11450}
+const obj2 = {}
+    for (const [key, value] of Object.entries(obj)) {
+        obj2[key] = ''
+      }
+    for (const [key, value] of Object.entries(updateObj)) {
+        obj2[key] = value
+      }
+    console.log(obj2)
+
+*/
