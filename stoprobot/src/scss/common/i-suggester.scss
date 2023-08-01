@@ -30,7 +30,6 @@
         transform: rotate(-90deg);
         display: inline-block;
         font-size: 9px;
-        transition: transform .1s;
         height: 14px;
     }
 
@@ -97,6 +96,61 @@
         gap: 16px;
         display: flex;
     }
+
+    &__checkbox {
+        height: 30px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+
+    &__checkbox-list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    &__checkbox-input {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+    }
+
+    &__checkbox-label {
+        display: inline-flex;
+        user-select: none;
+        align-items: center;
+    }
+
+    &__checkbox-label_uppercase {
+        text-transform: uppercase;
+    }
+
+    &__checkbox-label:before {
+        content: '';
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid $light-grey;
+        border-radius: 4px;
+        margin-right: 9px;
+        margin-left: 1px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+    }
+
+    &__checkbox-input:checked + &__checkbox-label:before {
+        content: $icon-check;
+        font-family: $icomoon-font-family;
+        font-size: 15px;
+        border-color: $black;
+        line-height: 28px;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: $tablet-viewport) {
@@ -128,11 +182,13 @@
 
         &__title:after {
             position: absolute;
-            transform: translate(3px, 2px) rotate(-90deg);
+            top: 0;
+            left: 100%;
+            transform: translate(3px, 3px) rotate(-90deg) scaleX(1);
         }
 
         &_active &__title:after {
-            transform: translate(4px, 3px) rotate(90deg);
+            transform: translate(2px, 4px) rotate(-90deg) scaleX(-1);
         }
 
         &__wrapper {
@@ -187,6 +243,29 @@
 
         &__title {
             padding: 1px 0;
+        }
+
+        &__checkbox {
+            display: flex;
+            align-items: center;
+            height: auto;
+            font-size: 13px;
+        }
+
+        &__checkbox-label {
+            align-items: flex-start;
+        }
+
+        &__checkbox-label:before {
+            width: 13px;
+            height: 13px;
+            line-height: 14px;
+            font-size: 9px;
+        }
+
+        &__checkbox-input:checked + &__checkbox-label:before {
+            line-height: 13px;
+            font-size: 7px;
         }
     }
 }

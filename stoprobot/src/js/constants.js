@@ -2,22 +2,22 @@ export const NOTIFICATION = {
 	addToCart: `
 		<span class="i-notification__icon i-notification__icon_color_accent icon-check"></span>
 		<span class="i-notification__text">
-			Товар добавлен в вашу <a class="i-link i-link_color_accent" href="#">Корзину</a>.
+			Товар добавлен в вашу <a class="i-link i-link_color_accent" href="#">Корзину.</a>
 		</span>
 	`,
 	signIn: `
 		<span class="i-notification__text">
-			Чтобы добавить товар в избранное – <a class="i-link i-link_color_accent" href="#">войдите в аккаунт</a>.
+			Чтобы добавить товар в избранное – <a class="i-link i-link_color_accent" href="#">войдите в аккаунт.</a>
 		</span>
 	`,
 	addToFavorite: `
 		<span class="i-notification__text">
-			Товар добавлен в <a class="i-link i-link_color_accent" href="#">Избранное</a>.
+			Товар добавлен в <a class="i-link i-link_color_accent" href="#">Избранное.</a>
 		</span>
 	`,
 	removeFromFavorite: `
 		<span class="i-notification__text">
-			Товар удален из <a class="i-link i-link_color_accent" href="#">Избранного</a>.
+			Товар удален из <a class="i-link i-link_color_accent" href="#">Избранного.</a>
 		</span>
 	`,
 	removeOutOfStockItem: `
@@ -35,8 +35,16 @@ export const NOTIFICATION = {
 };
 
 export const SUGGESTS_LABEL = [
-	{name: '2 Soul Records', checked: false},
-	{name: '2 Tone', checked: false},
+	{name: '2 Soul Records', checked: true},
+	{name: '2 Tone', checked: true},
+	{name: 'Ahead Of Our Time', checked: true},
+	{name: 'Bang Ya Head', checked: true},
+	{name: 'BBE', checked: true},
+	{name: 'Beatillz Produktion', checked: true},
+	{name: 'Beatsqueeze', checked: true},
+	{name: 'Big Dada Recordings', checked: true},
+	{name: 'Blue Collar Gang', checked: true},
+	{name: 'Capitol Records', checked: true},
 ];
 export const SUGGESTS_FORMAT = [
 	{name: 'LP', checked: false},
@@ -44,14 +52,14 @@ export const SUGGESTS_FORMAT = [
 	{name: '4AD', checked: true},
 	{name: '100% Electronica', checked: false},
 	{name: '88rising', checked: false},
-	{name: 'A Band Apart', checked: false},
-	{name: 'A&M Records', checked: false},
-	{name: 'Akashik Records', checked: false},
-	{name: 'Animal63', checked: false},
-	{name: 'Anti', checked: false},
-	{name: 'Anti-Ghost Moon Ray Records', checked: false},
-	{name: 'Apple', checked: false},
-	{name: 'Arctic Poppy', checked: false},
+	{name: 'A Band Apart', checked: true},
+	{name: 'A&M Records', checked: true},
+	{name: 'Akashik Records', checked: true},
+	{name: 'Animal63', checked: true},
+	{name: 'Anti', checked: true},
+	{name: 'Anti-Ghost Moon Ray Records', checked: true},
+	{name: 'Apple', checked: true},
+	{name: 'Arctic Poppy', checked: true},
 	{name: 'Arista', checked: false},
 	{name: 'Artistry Music', checked: false},
 	{name: 'Astralwerks', checked: true},
@@ -64,25 +72,25 @@ export const SUGGESTS_FORMAT = [
 export const SUGGESTS_ARTIST = [
 	{name: 'Agnes Obel', checked: false},
 	{name: 'Amy Winehouse', checked: false},
-	{name: 'Beenie man', checked: false},
-	{name: 'Bob Marley & The Wailers', checked: false},
-	{name: 'Bounty Killer', checked: false},
-	{name: 'Damian Marley', checked: false},
-	{name: 'Dj Khaled', checked: false},
+	{name: 'Beenie man', checked: true},
+	{name: 'Bob Marley & The Wailers', checked: true},
+	{name: 'Bounty Killer', checked: true},
+	{name: 'Damian Marley', checked: true},
+	{name: 'Dj Khaled', checked: true},
 	{name: 'Dj Vadim', checked: false},
 	{name: 'Frank Sinatra', checked: false},
 	{name: 'Frank Zappa', checked: false},
 	{name: 'Franz Ferdinand', checked: false},
 	{name: 'Freddie Mercury', checked: false},
 	{name: 'Freddie Mercury & Montserrat Caballe', checked: false},
-	{name: 'Garbage', checked: false},
-	{name: 'Gazelle Twin', checked: false},
-	{name: 'George Michael', checked: false},
-	{name: 'Girl In Red', checked: false},
-	{name: 'Glass Animals', checked: false},
-	{name: 'Glass Animals, Denzel Curry', checked: false},
-	{name: 'Goldfrapp', checked: false},
-	{name: 'Gorillaz', checked: false},
+	{name: 'Garbage', checked: true},
+	{name: 'Gazelle Twin', checked: true},
+	{name: 'George Michael', checked: true},
+	{name: 'Girl In Red', checked: true},
+	{name: 'Glass Animals', checked: true},
+	{name: 'Glass Animals, Denzel Curry', checked: true},
+	{name: 'Goldfrapp', checked: true},
+	{name: 'Gorillaz', checked: true},
 	{name: 'Grey October Sound', checked: false},
 	{name: 'Grimes', checked: false},
 	{name: 'Groove Armada', checked: false},
@@ -106,15 +114,15 @@ export const SUGGESTS_STYLE = [
 	{name: 'Acid Rock', checked: false},
 	{name: 'Acoustic', checked: false},
 	{name: 'Boom Bap', checked: false},
-	{name: 'Bossa nova', checked: false},
-	{name: 'Breakbeat', checked: false},
-	{name: 'Breaks', checked: false},
-	{name: 'Brit Pop', checked: false},
-	{name: 'Broken Beat', checked: false},
-	{name: 'Country Rock', checked: false},
-	{name: 'Crust', checked: false},
-	{name: 'Cumbia', checked: false},
-	{name: 'Cut-Up/DJ', checked: false},
+	{name: 'Bossa nova', checked: true},
+	{name: 'Breakbeat', checked: true},
+	{name: 'Breaks', checked: true},
+	{name: 'Brit Pop', checked: true},
+	{name: 'Broken Beat', checked: true},
+	{name: 'Country Rock', checked: true},
+	{name: 'Crust', checked: true},
+	{name: 'Cumbia', checked: true},
+	{name: 'Cut-Up/DJ', checked: true},
 	{name: 'Dance-pop', checked: false},
 	{name: 'Dancehall', checked: false},
 	{name: 'Electroclash', checked: false},

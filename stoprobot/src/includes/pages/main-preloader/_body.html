@@ -1,0 +1,26 @@
+<script>
+	// TODO: TEST SCRIPT FOR PRELOADING
+	function testCallback() {
+		const preloader = document.querySelector('.preloader');
+		const testContent = document.querySelector('.main__slider-items');
+
+		preloader.style.display = 'none';
+		testContent.classList.add('main__slider-items_active');
+	}
+
+	new Promise((resolve, reject) => setTimeout(() => resolve(), 1000)).then(testCallback);
+</script>
+
+<div class="main">
+    <div class="main__slider">
+        ${require('../../components/_slider-main.html')}
+    </div>
+
+    <div class="preloader">
+        <img src="/assets/images/preloader.gif" alt="preloader">
+    </div>
+
+    <div class="main__slider-items">
+        ${require('../../components/_slider-double-item.html') title=`Рекомендации`}
+    </div>
+</div>

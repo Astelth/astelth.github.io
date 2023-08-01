@@ -70,6 +70,7 @@
         border-radius: 5px;
         border: none;
         height: 38px;
+        width: calc(100% - 36px);
         right: 36px;
         left: 0;
         background-color: $light-grey;
@@ -252,6 +253,7 @@
             height: 100%;
             padding: 7px;
             right: -11px;
+            width: calc(100% + 11px);
             opacity: 1;
             visibility: visible;
             z-index: -1;

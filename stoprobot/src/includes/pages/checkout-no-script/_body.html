@@ -1,0 +1,290 @@
+<div class="checkout">
+    <div class="checkout__title">
+        Оформление заказа
+    </div>
+    <div class="checkout__steps">
+        ${require('../../components/_steps.html')
+        classModifier1=`steps__item_preactive`
+        classModifier2=`steps__item_active`
+        classModifier3=``
+        progress-level1=`Корзина`
+        progress-level2=`Оформление заказа`
+        progress-level3=`Оплата заказа`
+        }
+    </div>
+    <div class="checkout__wrapper">
+        <div class="checkout__form">
+            <div class="checkout__subtitle">Получатель заказа</div>
+            <div class="checkout__form-wrapper">
+                <div class="checkout__form-item">
+                    ${require('../../components/_input.html') id=`checkoutCustomerName` label=`ФИО*`}
+                </div>
+                <div class="checkout__form-item">
+                    ${require('../../components/_input.html') id=`checkoutCustomerPhone`
+                    label=`Телефон*`}
+                </div>
+                <div class="checkout__form-item">
+                    ${require('../../components/_input.html') id=`checkoutCustomerEmail`
+                    label=`E-mail*`}
+                </div>
+            </div>
+        </div>
+        <div class="checkout__delivery">
+            <div class="checkout__subtitle">Способ получения заказа</div>
+            <div class="checkout__delivery-header">
+                <div class="checkout__delivery-header-item checkout__delivery-header-item_active" data-id="1">
+                    <div class="checkout__delivery-image">
+                        <img src="../assets/images/delivery/stoprobot.png" alt="stoprobot" class="checkout__delivery-logo">
+                    </div>
+                    <div class="checkout__text checkout__text_small checkout__text_light">
+                        Самовывоз из магазина в Москве
+                    </div>
+                </div>
+                <div class="checkout__delivery-header-item" data-id="2">
+                    <div class="checkout__delivery-image">
+                        <img src="../assets/images/delivery/sdek.png" alt="sdek" class="checkout__delivery-logo">
+                    </div>
+                    <div class="checkout__text checkout__text_small checkout__text_light">
+                        СДЭК (в пункт выдачи / до адреса)
+                    </div>
+                </div>
+                <div class="checkout__delivery-header-item" data-id="3">
+                    <div class="checkout__delivery-image">
+                        <img src="../assets/images/delivery/post.png" alt="post" class="checkout__delivery-logo">
+                    </div>
+                    <div class="checkout__text checkout__text_small checkout__text_light">
+                        Почта России
+                    </div>
+                </div>
+            </div>
+            <div class="checkout__delivery-content">
+                <div class="checkout__delivery-content-item checkout__delivery-content-item_active" data-id="1">
+                    <div class="checkout__delivery-title">
+                        Самовывоз из магазина в Москве
+                    </div>
+                    <div class="checkout__delivery-cols">
+                        <div class="checkout__delivery-col">
+                            <div class="checkout__delivery-image checkout__delivery-image_content">
+                                <img src="../assets/images/delivery/stoprobot.png" alt="stoprobot" class="checkout__delivery-logo checkout__delivery-logo_content">
+                            </div>
+                        </div>
+                        <div class="checkout__delivery-col">
+                            <div class="checkout__delivery-row">
+                                <div class="checkout__text checkout__text_black">
+                                    Stoprobot Vinyl, Хлебозавод, м. Дмитровская, Новодмитровская ул., 1с9.
+                                </div>
+                            </div>
+                            <div class="checkout__delivery-row">
+                                <div class="checkout__text checkout__text_black">12:00-21:00 ежедневно</div>
+                            </div>
+                            <div class="checkout__delivery-row">
+                                <div class="checkout__text">Стоимость самовывоза:</div>
+                                <div class="checkout__text checkout__text_black">0 ₽</div>
+                            </div>
+                            <div class="checkout__delivery-row">
+                                <div class="checkout__text">Сборка заказа может занимать до 3 рабочих дней</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__delivery-content-item" data-id="2">
+                    <div class="checkout__delivery-title">
+                        СДЭК (в пункт выдачи / до адреса)
+                    </div>
+                    <div class="checkout__delivery-cols">
+                        <div class="checkout__delivery-col">
+                            <div class="checkout__delivery-image checkout__delivery-image_content">
+                                <img src="../assets/images/delivery/sdek.png" alt="sdek" class="checkout__delivery-logo checkout__delivery-logo_content">
+                            </div>
+                        </div>
+                        <div class="checkout__delivery-col">
+                            <div class="checkout__delivery-row">
+                                <div class="checkout__text checkout__text_black">
+                                    Доставка в пункт выдачи заказов СДЭК, либо курьером СДЭК до вашего адреса.
+                                </div>                                                        </div>
+                            <div class="checkout__delivery-row">
+                                ${require('../../components/_button.html') value=`изменить адрес доставки`}
+                            </div>
+                            <div class="checkout__delivery-row">
+                                <div class="checkout__text">Выбранный вариант доставки:</div>
+                                <div class="checkout__text checkout__text_big checkout__text_black">
+                                    В пункт выдачи заказа СДЭК по адресу: Россия, Комсомольск-на-Амуре, ул. Татарская 12Б, корп. 1 #KMS7
+                                </div>
+                            </div>
+                            <div class="checkout__delivery-row">
+                                <div class="checkout__text">Стоимость доставки:</div>
+                                <div class="checkout__text checkout__text_black">135 ₽</div>
+                            </div>
+                            <div class="checkout__delivery-row">
+                                <div class="checkout__text">
+                                    Приблизительный срок доставки заказа, после его сборки и передачи в службу доставки:
+                                </div>
+                                <div class="checkout__text checkout__text_black">от 2 дней</div>
+                            </div>
+                            <div class="checkout__delivery-row">
+                                <div class="checkout__text">
+                                    Сборка заказа может занимать до 3 рабочих дней
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__delivery-content-item" data-id="3">
+                    <div class="checkout__delivery-title">
+                        Почта России
+                    </div>
+                    <div class="checkout__delivery-cols">
+                        <div class="checkout__delivery-col">
+                            <div class="checkout__delivery-image checkout__delivery-image_content">
+                                <img src="../assets/images/delivery/post.png" alt="post" class="checkout__delivery-logo checkout__delivery-logo_content">
+                            </div>
+                        </div>
+                        <div class="checkout__delivery-col">
+                            <div class="checkout__delivery-row">
+                                <div class="checkout__text checkout__text_black">
+                                    Доставка почтой России.
+                                </div>                                                        </div>
+                            <div class="checkout__delivery-row">
+                                ${require('../../components/_button.html') value=`Выбрать Вариант доставки`}
+                            </div>
+                            <div class="checkout__delivery-row">
+                                <div class="checkout__text">Стоимость доставки:</div>
+                                <div class="checkout__text checkout__text_black">281 ₽</div>
+                            </div>
+                            <div class="checkout__delivery-row">
+                                <div class="checkout__text">
+                                    Приблизительный срок доставки заказа, после его сборки и передачи в службу доставки:
+                                </div>
+                                <div class="checkout__text checkout__text_black">от 2 дней</div>
+                            </div>
+                            <div class="checkout__delivery-row">
+                                <div class="checkout__text">
+                                    Сборка заказа может занимать до 3 рабочих дней
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout__delivery-comment">
+                <div class="checkout__delivery-comment-title">Комментарий к заказу:</div>
+                <textarea class="checkout__delivery-comment-textarea i-textarea">Я хочу, чтобы мне привезли весь заказ вовремя, потому что у друга день рождение, а еще я живу за городом, так что там будет частный дом...</textarea>
+            </div>
+        </div>
+        <div class="checkout__order">
+            <div class="checkout__subtitle checkout__subtitle_centered">Детали заказа</div>
+            <div class="checkout__order-wrapper">
+                <div class="checkout__order-item">
+                    <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg" alt="image" class="checkout__order-image">
+                    <div class="checkout__order-content">
+                        <div class="checkout__order-title">[53646] Uratsakidogi - Black Hop. Epos (LP)</div>
+                        <div class="checkout__order-count">1 шт</div>
+                        <div class="checkout__order-price">5 290 ₽</div>
+                    </div>
+                </div>
+                <div class="checkout__order-item">
+                    <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c31d.jpg" alt="image" class="checkout__order-image">
+                    <div class="checkout__order-content">
+                        <div class="checkout__order-title">[53647] Imagine Dragons - It Was Written. Epos (LP)</div>
+                        <div class="checkout__order-count">1 шт</div>
+                        <div class="checkout__order-price">5 290 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout__payment">
+            <div class="checkout__subtitle">Способ оплаты</div>
+            <div class="checkout__payment-wrapper">
+                <div class="i-group i-group_justify_center i-group_gap_10">
+                    <div class="i-group__col">
+                        ${require('../../components/_checkbox-disabled.html') id=`bank-card` label=`Банковской картой`}
+                    </div>
+                    <div class="i-group__col">
+                        <div class="checkout__payment-types">
+                            <img src="/assets/images/payments/visa_16.svg" alt="card visa">
+                            <img src="/assets/images/payments/mastercard_16.svg" alt="card mastercard">
+                            <img src="/assets/images/payments/mir_16.svg" alt="card mir">
+                            <img src="/assets/images/payments/jcb_16.svg" alt="card jcb">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout__text checkout__text_light">
+                Неоплаченный заказ будет автоматически отменен через 20 минут после его оформления.
+            </div>
+        </div>
+        <div class="checkout__certification">
+            <div class="checkout__subtitle">Использовать подарочный сертификат</div>
+            <div class="checkout__certification-wrapper">
+                <div class="i-group i-group_justify_center i-group_align_bottom">
+                    <div class="i-group__col">
+                        ${require('../../components/_input.html') id=`checkoutCertification` label=`Код сертификата:` value=`SL-82U44-63DEIO4`}
+                    </div>
+                    <div class="i-group__col">
+                        ${require('../../components/_button.html') value=`Применить`}
+                    </div>
+                </div>
+                <div class="checkout__error">
+                    Такой код уже добавлен в этот заказ.
+                </div>
+                <div class="checkout__certification-list">
+                    <div class="checkout__certification-item checkout__certification-item_success js-call-small-popup" data-message="applied">
+                        SL-82U44-63DEIO4 НА 1000₽ ДО 11.10.2023
+                        <span class="checkout__certification-item-icon icon-close"></span>
+                    </div>
+                    <div class="checkout__certification-item">
+                        SL-82U44-63DEIO4 НА 1000₽ ДО 11.10.2023
+                        <span class="checkout__certification-item-icon icon-close"></span>
+                    </div>
+                    <div class="checkout__certification-item checkout__certification-item_error">
+                        SL-82U78-63DEI34
+                        <span class="checkout__certification-item-icon icon-close"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout__amount">
+            <div class="checkout__subtitle checkout__subtitle_centered">Оплата</div>
+            <div class="checkout__amount-wrapper">
+                <div class="checkout__amount-row checkout__amount-row_with_underline checkout__amount-row_with_padding">
+                    <div class="checkout__amount-col">Стоимость товаров:</div>
+                    <div class="checkout__amount-col">1 000 000 ₽</div>
+                </div>
+                <div class="checkout__amount-row checkout__amount-row_with_underline checkout__amount-row_with_padding">
+                    <div class="checkout__amount-col">Стоимость доставки:</div>
+                    <div class="checkout__amount-col">Самовывоз 0 ₽</div>
+                </div>
+                <div class="checkout__amount-row checkout__amount-row_total">
+                    <div class="checkout__amount-col">Итого:</div>
+                    <div class="checkout__amount-col checkout__amount-col_line-through">1 000 600 ₽</div>
+                </div>
+
+                <div class="checkout__amount-row checkout__amount-row_with_padding">
+                    <div class="checkout__amount-col">Скидки:</div>
+                    <div class="checkout__amount-col"></div>
+                </div>
+
+                <div class="checkout__amount-row">
+                    <div class="checkout__amount-col">Постоянный покупатель:</div>
+                    <div class="checkout__amount-col">− 100 000 ₽</div>
+                </div>
+                <div class="checkout__amount-row">
+                    <div class="checkout__amount-col">Подарочный сертификат:</div>
+                    <div class="checkout__amount-col">− 1 000 ₽</div>
+                </div>
+                <div class="checkout__amount-row checkout__amount-row_summary">
+                    <div class="checkout__amount-col">К оплате:</div>
+                    <div class="checkout__amount-col">890 600 ₽</div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout__action">
+            <div class="checkout__action-back">Назад</div>
+            ${require('../../components/_button.html') value=`Оплатить заказ`}
+        </div>
+        <div class="checkout__text checkout__text_light">
+            Нажимая на кнопку «ОПЛАТИТЬ ЗАКАЗ», Вы соглашаетесь с <a href="#" class="i-link i-link_color_accent">Условиями оплаты
+            и доставки</a> и <a href="#" class="i-link i-link_color_accent">Политикой конфиденциальности</a>.
+        </div>
+    </div>
+</div>

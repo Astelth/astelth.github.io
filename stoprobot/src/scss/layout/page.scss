@@ -26,11 +26,10 @@
     }
 
     &__static {
-        display: none;
         position: absolute;
         z-index: 99999;
         top: 0;
-        height: 100%;
+        height: calc(100% - 56px);
         width: 40px;
         left: 100%;
     }
@@ -39,8 +38,8 @@
         position: sticky;
         display: inline-block;
         right: 0;
-        top: 150px;
-        margin-left: -80px;
+        top: calc(100% - 60px);
+        margin-left: -60px;
         margin-bottom: 40px;
         color: $black;
         border: 2px solid;
@@ -55,6 +54,10 @@
         visibility: hidden;
     }
 
+    &__go-up_main {
+        display: none;
+    }
+
     &__go-up:before {
         content: $icon-go-up;
         font-family: $icomoon-font-family;
@@ -63,6 +66,12 @@
     &__go-up_visible {
         opacity: 1;
         visibility: visible;
+    }
+
+    &__footer {
+        /* для стрелки прокрутки в начало страницы */
+        padding-top: 300px;
+        margin-top: -300px;
     }
 }
 
@@ -81,8 +90,12 @@
             width: calc(100% - var(--logo-width));
         }
 
-        &__static {
-            display: block;
+        &__go-up {
+            margin-left: -80px;
+        }
+
+        &__go-up_main {
+            display: inline-block;
         }
     }
 }

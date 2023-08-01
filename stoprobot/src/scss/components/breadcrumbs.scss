@@ -16,13 +16,13 @@
     z-index: 995;
     background: $white;
 
-    &__item:not(:first-child):before {
+    &__item:not(:last-child):after {
         position: absolute;
         content: $icon-arrow;
         font-family: $icomoon-font-family;
-        font-size: 7px;
+        font-size: 8px;
         display: inline-block;
-        transform: scaleX(-1) translateX(8px);
+        transform: scaleX(-1) translateX(-3px);
     }
 }
 

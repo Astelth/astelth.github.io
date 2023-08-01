@@ -362,6 +362,7 @@
 
     &__amount-col_line-through {
         text-decoration: line-through;
+        color: $grey-order;
     }
 
     &__amount-col:first-child {
@@ -397,6 +398,11 @@
     &__action-back:before {
         content: $icon-arrow;
         font-family: $icomoon-font-family;
+    }
+
+    .i-button {
+        min-width: 192px;
+        justify-content: center;
     }
 }
 

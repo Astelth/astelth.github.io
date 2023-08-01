@@ -3,7 +3,7 @@
         <div class="slider__title-text">${props.title}</div>
     </div>
 
-    <div class="slider__swiper swiper" data-slider="simple">
+    <div class="slider__swiper swiper" data-slider="${props.name}">
         <div class="slider__swiper-wrapper swiper-wrapper">
             <div class="slider__swiper-slide swiper-slide">
                 <div class="slider__swiper-slide-item">
@@ -252,9 +252,16 @@
         </div>
 
         <div class="slider__swiper-actions">
-            <div class="slider__swiper-button-prev swiper-button-prev"></div>
+            <div class="slider__swiper-button-prev slider__swiper-button-prev_${props.name} swiper-button-prev"></div>
             <div class="slider__swiper-pagination swiper-pagination"></div>
-            <div class="slider__swiper-button-next swiper-button-next"></div>
+            <div class="slider__swiper-button-next slider__swiper-button-next_${props.name} swiper-button-next"></div>
+        </div>
+
+        <div class="slider__additional-actions js-slider-additional-actions">
+            <div class="slider__swiper-button-prev slider__swiper-button-prev_${props.name} swiper-button-prev slider__swiper-button-prev_double-full"></div>
+            <div class="slider__swiper-button-next slider__swiper-button-next_${props.name} swiper-button-next slider__swiper-button-next_double-full"></div>
         </div>
     </div>
+
+    <div class="js-slider-additional-wrapper"></div>
 </div>

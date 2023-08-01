@@ -117,56 +117,30 @@
             cursor: initial;
         }
 
-        &_account {
+        &_full {
+            padding: 3px 32px;
+        }
+
+        &_account,
+        &_order,
+        &_forget_success {
             padding: 7px 16px;
         }
 
-        &_account2 {
-            padding: 7px 15px;
-        }
-
-        &_order {
-            padding: 7px 16px;
-        }
-
-        &_favorite_empty {
-            padding: 7px 15px;
-        }
-
-        &_authorization_registration {
-            padding: 7px 15px;
-        }
-
-        &_authorization {
+        &_account2,
+        &_favorite_empty,
+        &_authorization_registration,
+        &_authorization,
+        &_confirm_email,
+        &_confirm_email_success,
+        &_forget,
+        &_new_password,
+        &_orders_empty {
             padding: 7px 15px;
         }
 
         &_certification_payment {
             padding: 7px 40px;
-        }
-
-        &_confirm_email {
-            padding: 7px 15px;
-        }
-
-        &_confirm_email_success {
-            padding: 7px 15px;
-        }
-
-        &_forget {
-            padding: 7px 15px;
-        }
-
-        &_forget_success {
-            padding: 7px 16px;
-        }
-
-        &_new_password {
-            padding: 7px 15px;
-        }
-
-        &_orders_empty {
-            padding: 7px 15px;
         }
     }
 }

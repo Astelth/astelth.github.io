@@ -27,6 +27,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-close2 {
+  &:before {
+    content: $icon-close2;
+  }
+}
 .icon-go-up {
   &:before {
     content: $icon-go-up;

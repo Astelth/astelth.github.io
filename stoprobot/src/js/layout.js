@@ -67,4 +67,4 @@ function onFooterInViewport([observer]) {
 }
 
 const observer = new IntersectionObserver(onFooterInViewport, { threshold: 0.1 });
-observer.observe(document.querySelector('.footer'))
+observer.observe(document.querySelector('.page__footer'))

@@ -30,9 +30,14 @@
                 </div>
                 <div class="album__different">
                     <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
-                    <div class="album__button js-call-popup" data-message="addToCart">
-                        ${require('_button.html') value=`В корзину`}
-                    </div>
+                </div>
+
+                <div class="album__stock-wrapper">
+                    <span class="icon-minus album__icon-minus"></span>
+                    <span class="album__counter">${props.counter}</span>
+                    <span class="icon-plus album__icon-plus"></span>
+                    <div class="album__stock album__stock_inline">${props.stock}</div>
+                    <span class="icon-delete album__icon-delete"></span>
                 </div>
             </div>
         </div>

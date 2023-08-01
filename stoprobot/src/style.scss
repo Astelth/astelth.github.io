@@ -68,6 +68,7 @@ iframe {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -81,10 +82,26 @@ select,
 textarea {
     font-family: inherit;
     background-color: initial;
+    border-radius: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+
+button {
+    color: $black;
 }
 
 .is-desktop {
     display: none;
+}
+
+.swiper-vertical,
+.swiper-horizontal {
+    touch-action: auto;
 }
 
 @media screen and (min-width: $desktop-viewport) {
@@ -96,7 +113,8 @@ textarea {
     body.filter-show,
     body.menu-show .page,
     body.filter-show .page {
-        overflow: initial;
+        overflow-y: initial;
+        overflow-x: hidden;
         touch-action: initial;
     }
 

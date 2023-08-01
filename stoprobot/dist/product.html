@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover'/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <title>Карточка альбома</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -204,7 +204,7 @@
                         2LP
                     </div>
                     <div class="product__lable">
-                        XL
+                        Spinefarm Records
                     </div>
                 </div>
                 <div class="product__row product__row_padding_bottom_22 product__row_actions">
@@ -301,7 +301,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product__row">
+                <div class="product__row product__row_share">
                     <div class="product__share">
                         <div class="product__button js-show-share-buttons">Поделиться</div>
                         <div class="product__share-buttons">
@@ -320,7 +320,7 @@
         <div class="slider__title-text">Другие релизы исполнителя</div>
     </div>
 
-    <div class="slider__swiper swiper" data-slider="simple">
+    <div class="slider__swiper swiper" data-slider="moreFromAuthor">
         <div class="slider__swiper-wrapper swiper-wrapper">
             <div class="slider__swiper-slide swiper-slide">
                 <div class="slider__swiper-slide-item">
@@ -937,11 +937,18 @@
         </div>
 
         <div class="slider__swiper-actions">
-            <div class="slider__swiper-button-prev swiper-button-prev"></div>
+            <div class="slider__swiper-button-prev slider__swiper-button-prev_moreFromAuthor swiper-button-prev"></div>
             <div class="slider__swiper-pagination swiper-pagination"></div>
-            <div class="slider__swiper-button-next swiper-button-next"></div>
+            <div class="slider__swiper-button-next slider__swiper-button-next_moreFromAuthor swiper-button-next"></div>
+        </div>
+
+        <div class="slider__additional-actions js-slider-additional-actions">
+            <div class="slider__swiper-button-prev slider__swiper-button-prev_moreFromAuthor swiper-button-prev slider__swiper-button-prev_double-full"></div>
+            <div class="slider__swiper-button-next slider__swiper-button-next_moreFromAuthor swiper-button-next slider__swiper-button-next_double-full"></div>
         </div>
     </div>
+
+    <div class="js-slider-additional-wrapper"></div>
 </div>
 
         </div>
@@ -951,7 +958,7 @@
         <div class="slider__title-text">ДРУГИЕ РЕЛИЗЫ ЛЕЙБЛА</div>
     </div>
 
-    <div class="slider__swiper swiper" data-slider="simple">
+    <div class="slider__swiper swiper" data-slider="moreFromLabel">
         <div class="slider__swiper-wrapper swiper-wrapper">
             <div class="slider__swiper-slide swiper-slide">
                 <div class="slider__swiper-slide-item">
@@ -1568,11 +1575,18 @@
         </div>
 
         <div class="slider__swiper-actions">
-            <div class="slider__swiper-button-prev swiper-button-prev"></div>
+            <div class="slider__swiper-button-prev slider__swiper-button-prev_moreFromLabel swiper-button-prev"></div>
             <div class="slider__swiper-pagination swiper-pagination"></div>
-            <div class="slider__swiper-button-next swiper-button-next"></div>
+            <div class="slider__swiper-button-next slider__swiper-button-next_moreFromLabel swiper-button-next"></div>
+        </div>
+
+        <div class="slider__additional-actions js-slider-additional-actions">
+            <div class="slider__swiper-button-prev slider__swiper-button-prev_moreFromLabel swiper-button-prev slider__swiper-button-prev_double-full"></div>
+            <div class="slider__swiper-button-next slider__swiper-button-next_moreFromLabel swiper-button-next slider__swiper-button-next_double-full"></div>
         </div>
     </div>
+
+    <div class="js-slider-additional-wrapper"></div>
 </div>
 
         </div>
@@ -1594,7 +1608,7 @@
                 <div class="footer__email is-desktop">info@stoprobotvinyl.ru</div>
             </div>
             <div class="footer__section">
-                <a class="footer__item is-desktop" href="about.html">О КОМПАНИИ</a>
+                <a class="footer__item is-desktop" href="about.html">О компании</a>
                 <a class="footer__item is-desktop" href="contacts.html">КОНТАКТЫ</a>
                 <a class="footer__item is-desktop" href="warranty.html">ГАРАНТИЯ И ВОЗВРАТ</a>
                 <div class="footer__item footer__item_group_columns">
@@ -1637,7 +1651,7 @@
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <!-- Initialize Swiper -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

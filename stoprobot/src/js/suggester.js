@@ -30,7 +30,7 @@ export const Suggester = memo(({setting, items, onChange}) => {
 		if (isHovered.current) {
 			event.preventDefault();
 
-			listRef.current.scrollTop += event.deltaY;
+			listRef.current.scrollTop += event.deltaY / 1.2;
 		}
 	}
 
@@ -75,16 +75,16 @@ export const Suggester = memo(({setting, items, onChange}) => {
 				</div>
 				<div className='i-suggester__list' ref={listRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
 					{filteredItems.map(item => (
-						<div className='settings__checkbox' key={item.name}>
+						<div className='i-suggester__checkbox' key={item.name}>
 							<input
-								className='settings__checkbox-input'
+								className='i-suggester__checkbox-input'
 								id={`filter-${setting}-${item.name}`}
 								name={item.name}
 								checked={item.checked}
 								onChange={changeHandler}
 								type='checkbox'
 							/>
-							<label className='settings__checkbox-label' htmlFor={`filter-${setting}-${item.name}`}>{item.name}</label>
+							<label className='i-suggester__checkbox-label' htmlFor={`filter-${setting}-${item.name}`}>{item.name}</label>
 						</div>
 					))}
 				</div>

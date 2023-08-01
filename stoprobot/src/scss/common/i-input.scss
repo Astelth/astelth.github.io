@@ -43,14 +43,15 @@
         line-height: 14px;
         text-align: right;
         bottom: -14px;
-        right: 0;
+        right: 8px;
     }
 
     &__secret {
         position: absolute;
         right: 0;
         bottom: 8px;
-        width: 25px;
+        width: 40px;
+        font-size: 11px;
     }
 
     &_authorization &__secret {
@@ -62,11 +63,11 @@
     &__secret:after {
         content: '';
         position: absolute;
-        height: 22px;
-        border-right: 2px solid $black;
-        transform: rotate(50deg);
-        left: 12px;
-        bottom: -4px;
+        height: 21px;
+        border-right: 1px solid $black;
+        transform: rotate(60deg);
+        left: 20px;
+        bottom: -5px;
     }
 
     &__captcha {

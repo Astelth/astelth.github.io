@@ -21,9 +21,10 @@
     }
 
     &__stock-wrapper {
+        margin-top: 6px;
         display: flex;
         width: 100%;
-        height: 30px;
+        height: 20px;
         align-items: center;
         justify-content: center;
     }
@@ -67,6 +68,7 @@
         margin-top: -7px;
         color: $white;
         cursor: pointer;
+        transform: translate3d(0,0,0);
 
         &.swiper-button-disabled {
             display: none;
@@ -76,6 +78,7 @@
     &__arrow:after {
         content: '';
         position: absolute;
+        z-index: 1;
         left: -10px;
         top: -7px;
         width: 30px;
@@ -89,7 +92,7 @@
 
     &__arrow_right {
         right: 16px;
-        transform: rotate(180deg);
+        transform: rotate(180deg) translate3d(0,0,0);
     }
 
     &__invisible {
@@ -192,7 +195,7 @@
     }
 
     &_main &__price-wrapper {
-        gap: 16px;
+        gap: 14px;
         padding-top: 6px;
     }
 
@@ -218,7 +221,12 @@
         line-height: 24px;
     }
 
+    &_not_available:not(&_linear) &__stock-wrapper {
+        display: none;
+    }
+
     &__stock {
+        display: none;
         font-size: 14px;
         line-height: 18px;
         letter-spacing: 0.5px;
@@ -301,7 +309,6 @@
 
     &_linear &__label {
         display: inline;
-        color: $accent;
     }
 
     &_linear &__genre {
@@ -376,6 +383,7 @@
     }
 
     &_linear &__stock {
+        display: block;
         margin-bottom: 18px;
     }
 
@@ -408,6 +416,14 @@
         right: 0;
         top: -23px;
         font-size: 15px;
+    }
+
+    &_not_available &__icon-star {
+        top: -24px;
+    }
+
+    &_not_available &__icon-sound {
+        top: -21px;
     }
 
     &_mini &__artist {
@@ -486,14 +502,14 @@
 
     &_with_count &__icon-minus {
         margin-right: 30px;
-        font-size: 12px;
+        font-size: 14px;
         align-items: center;
         display: inherit;
-        margin-left: 6px;
+        margin-left: 5px;
     }
 
     &_with_count &__counter {
-        margin-right: 30px;
+        margin-right: 28px;
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
@@ -502,10 +518,10 @@
     }
 
     &_with_count &__icon-plus {
-        font-size: 12px;
+        font-size: 14px;
         align-items: center;
         display: inherit;
-        margin-right: 7px;
+        margin-right: 6px;
     }
 
     &_with_count &__icon-delete {
@@ -613,11 +629,6 @@
         height: 24px;
     }
 
-    &_favorite &__icon-star {
-        position: relative;
-        transform: translate(224px, -96px);
-    }
-
     &_favorite &__label {
         color: $accent;
     }
@@ -715,7 +726,6 @@
 
         &_main {
             width: 100%;
-            max-width: 208px;
         }
 
         &_main &__album-wrapper {
@@ -728,7 +738,14 @@
 
         &_main &__add-to-basket,
         &_main &__price {
-            font-size: 16px;
+            font-size: 18px;
+        }
+
+        &_not_available:not(&_linear) &__stock-wrapper {
+            display: inline-block;
+        }
+        &__stock {
+            display: block;
         }
 
         &__album-wrapper {
@@ -1105,6 +1122,12 @@
             padding-bottom: 16px;
         }
 
+        &__picture {
+            .swiper-slide {
+                width: 100%!important;
+            }
+        }
+
         &_main &__album-wrapper {
             row-gap: 0;
         }
@@ -1114,7 +1137,7 @@
         }
 
         &:hover &__stock-wrapper {
-            margin-top: 3px;
+            margin-top: 6px;
         }
 
         &_linear:hover &__stock-wrapper {
@@ -1197,10 +1220,6 @@
             margin-bottom: 2px;
         }
 
-        //&:hover {
-        //    z-index: 10;
-        //}
-
         &:not(&_not_available):not(&_linear):not(&_with_count):hover &__icon-basket {
             display: inherit;
         }
@@ -1233,12 +1252,22 @@
             cursor: pointer;
         }
 
+        &_main.album_not_available &__icon-star {
+            transform: translate(-115px, -22px);
+        }
+
+        &_main.album_not_available &__icon-sound {
+            transform: translate(115px, -22px);
+        }
+
         &:hover &__album-wrapper {
             padding: 8px;
             box-shadow: 0 0 9px rgba(0, 0, 0, 0.17);
             transform: translate(-14px, -1px);
             width: calc(100% + 28px);
             margin-bottom: -28px;
+            position: relative;
+            z-index: 1;
         }
 
         &_mini:hover &__price-wrapper {
@@ -1269,7 +1298,7 @@
         }
 
         &_main:hover &__album-wrapper {
-            transform: translate(-19px, -9px);
+            transform: translate(-15px, -9px);
         }
 
         &_miniature:hover &__stock-wrapper {
@@ -1280,7 +1309,7 @@
             width: 100%;
         }
 
-        &_linear:not(&_with_count) &__album-wrapper {
+        &_linear:not(&_with_count):not(&_without_count) &__album-wrapper {
             padding-bottom: 8px;
         }
 
@@ -1294,7 +1323,7 @@
         }
 
         &_linear:hover &__album-wrapper,
-        &_linear.album_not_available:not(&_with_count):hover &__album-wrapper {
+        &_linear.album_not_available:not(&_with_count):not(&_without_count):hover &__album-wrapper {
             transform: translate(0);
             box-shadow: none;
             width: 100%;
@@ -1338,7 +1367,7 @@
         }
 
         &_with_count &__icon-star {
-            transform: translate(-35px, -82px);
+            transform: translate(-5px, 2px);
         }
 
         &_with_count:hover &__album-wrapper {
@@ -1391,7 +1420,7 @@
 
         &_without_count &__album-wrapper,
         &_without_count:hover &__album-wrapper {
-            padding: 32px 0 8px;
+            padding: 32px 0;
         }
 
         &_without_count &__button_order {

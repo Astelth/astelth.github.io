@@ -37,8 +37,25 @@
                     stock=``
                     }
 
-                    ${require('../../components/_album-out-of-stock.html')
+                    ${require('../../components/_album-with-count-and-slider.html')
                     classModifier=`album_linear album_with_count`
+                    src1=`../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg`
+                    src2=`../assets/images/temp/2f46aad634acda508162b35fdbe3f7a6.jpg`
+                    artist=`Deftones`
+                    title=`It Was Written`
+                    format-long=`2LP`
+                    label=`XL`
+                    genre=`Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul`
+                    style=`Hip Hop`
+                    format=`2LP`
+                    price=`5 290 ₽`
+                    sum-price=`100 580 ₽`
+                    counter=`1`
+                    stock=``
+                    }
+
+                    ${require('../../components/_album-out-of-stock.html')
+                    classModifier=`album_linear album_with_count album_out-of-stock`
                     src=`../assets/images/temp/2f46aad634acda508162b35fdbe3f7a6.jpg`
                     artist=`Nas`
                     title=`It Was Written`
@@ -60,7 +77,7 @@
                 Итого: <span class="basket__price">10 580 ₽</span>
             </div>
         </div>
-        <div class="basket__row">
+        <div class="basket__row basket__row_submit">
             <div class="basket__item">
                 ${require('../../components/_button.html') value=`Оформить заказ`}
             </div>

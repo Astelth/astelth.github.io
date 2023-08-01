@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover'/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <title>Список страниц</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -135,13 +135,18 @@
         </div>
         <div class="page__body" style="display: flex; flex-direction: column; gap: 12px;">
             <a class="i-link" href="index.html">Главная</a>
+            <a class="i-link" href="index-preloader.html">Главная с прелоадером</a>
             <a class="i-link" href="albums.html">Каталог</a>
+            <a class="i-link" href="albums-preloader.html">Каталог с прелоадером</a>
             <a class="i-link" href="product.html">Карточка товара</a>
+            <a class="i-link" href="product-preloader.html">Карточка товара c прелоадерами</a>
             <a class="i-link" href="search.html">Результаты поиска</a>
             <a class="i-link" href="basket.html">Корзина</a>
+            <a class="i-link" href="basket-preloader.html">Корзина с прелоадером</a>
             <a class="i-link" href="basket-empty.html">Корзина. Пустая</a>
             <br />
             <a class="i-link" href="checkout.html">Оформление заказа</a>
+            <a class="i-link" href="checkout-no-script.html">Оформление заказа. Без скриптов</a>
             <a class="i-link" href="checkout-unauth.html">Оформление заказа. Неавторизованный пользователь</a>
             <a class="i-link" href="payment.html">Оплата заказа</a>
             <a class="i-link" href="payment-success.html">Оплата заказа. Успешно</a>
@@ -192,7 +197,7 @@
                 <div class="footer__email is-desktop">info@stoprobotvinyl.ru</div>
             </div>
             <div class="footer__section">
-                <a class="footer__item is-desktop" href="about.html">О КОМПАНИИ</a>
+                <a class="footer__item is-desktop" href="about.html">О компании</a>
                 <a class="footer__item is-desktop" href="contacts.html">КОНТАКТЫ</a>
                 <a class="footer__item is-desktop" href="warranty.html">ГАРАНТИЯ И ВОЗВРАТ</a>
                 <div class="footer__item footer__item_group_columns">
@@ -235,7 +240,7 @@
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <!-- Initialize Swiper -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

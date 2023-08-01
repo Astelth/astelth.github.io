@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover'/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <title>Карточка альбома</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="page">
+    <div class="page__content">
+        <div class="page__header">
+            <div class="header" id="header">
+    <div class="header__wrapper">
+        <div class="header-bar">
+            <div class="header-bar__wrapper">
+                <a class="header-bar__logo icon-logo" href="pages.html"></a>
+                <div class="header-bar__actions">
+                    <label class="header-bar__search">
+                        <span class="header-bar__icon icon-search js-search-icon"></span>
+                        <input class="header-bar__search-input" id="headerSearchInput" />
+                        <span class="header-bar__icon header-bar__icon_close icon-close js-close-icon"></span>
+                        <span class="header-bar__search-results" id="headerSearchItems">
+                            <span class="header-bar__search-item">Пластинки: 14</span>
+                            <span class="header-bar__search-item">Оборудование: 2</span>
+                        </span>
+                    </label>
+                    <div class="header-bar__basket">
+                        <div class="header-bar__basket-count">9+</div>
+                        <div class="header-bar__icon icon-basket"></div>
+                    </div>
+                    <div class="header-bar__menu" id="burgerMenu">
+                        <div class="header-bar__burger"></div>
+                    </div>
+                    <div class="header-bar__inner">
+                        <div class="header-bar__favorite">
+                            <span class="header-bar__icon header-bar__icon_color_accent icon-star"></span>
+                        </div>
+                        <div class="header-bar__cabinet">
+                            <span class="header-bar__icon icon-user"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-catalog">
+            <div class="header-catalog__wrapper">
+                <div class="catalog">
+    <div class="catalog__mobile">
+        <div class="catalog__list catalog__list_align_center" data-section="main">
+            <div class="catalog__item catalog__item_entrance">
+                <span class="icon-user catalog__icon"></span><span class="catalog__note">войти</span>
+            </div>
+            <div class="catalog__item" data-action="vinyl">Винил</div>
+            <div class="catalog__item" data-action="novinyl">Не винил</div>
+            <div class="catalog__item">
+                <span class="icon-star catalog__icon catalog__icon_color_accent"></span>
+                <span class="catalog__note">Избранное</span>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__social-nets">
+                    <a href="#" class="i-link catalog__social-net">
+                        <span class="icon-instagram"></span>
+                    </a>
+                    <a href="#" class="i-link catalog__social-net">
+                        <span class="icon-vk"></span>
+                    </a>
+                    <a href="#" class="i-link catalog__social-net">
+                        <span class="icon-fb"></span>
+                    </a>
+                    <a href="#" class="i-link catalog__social-net">
+                        <span class="icon-telegram"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="catalog__item"><a href="#" class="i-link">О компании</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Контакты</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Гарантия и возрват</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Оплата и доставка</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Сообщить об ошибке</a></div>
+            <div class="catalog__item"><a href="#" class="i-link">Подарочные сетификаты</a></div>
+        </div>
+        <div class="catalog__list catalog__list_hide catalog__list_padding_10_5" data-section="vinyl">
+            <div class="catalog__item catalog__item_back" data-action="main">Назад</div>
+            <div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">hip-hop</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">electronic</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">rock</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">funk/soul</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">pop</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">reggae</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">rus</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">Показать все</a></div>
+        </div>
+        <div class="catalog__list catalog__list_hide catalog__list_padding_10_5" data-section="novinyl">
+            <div class="catalog__item catalog__item_back" data-action="main">Назад</div>
+            <div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">Аксессуары</a></div>
+        </div>
+    </div>
+    <div class="catalog__desktop">
+        <div class="catalog__wrapper">
+            <div class="catalog__title">Винил</div>
+            <div class="catalog__list">
+                <div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">hip-hop</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">electronic</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">rock</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">funk/soul</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">pop</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">reggae</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">rus</a></div>
+<div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">Показать все</a></div>
+            </div>
+        </div>
+        <div class="catalog__wrapper">
+            <div class="catalog__title">Не винил</div>
+            <div class="catalog__list">
+                <div class="catalog__item catalog__item_padding_left_14"><a href="#" class="i-link">Аксессуары</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="page__body">
+            <div class="breadcrumbs">
+    <a class="breadcrumbs__item" href="index.html">
+        ГЛАВНАЯ
+    </a>
+    <a class="breadcrumbs__item" href="#">
+        КАТАЛОГ ВИНИЛА
+    </a>
+    <a class="breadcrumbs__item" href="#">
+        ANTi-flag
+    </a>
+    <div class="breadcrumbs__item">
+        Lies They Tell Our Children
+    </div>
+</div>
+
+<div class="product">
+    <div class="product__wrapper">
+        <div class="product__columns">
+            <div class="product__col">
+                <div class="product__slide">
+                    <div class="slider slider_product">
+    <div class="slider__swiper swiper" data-slider="product">
+        <div class="slider__swiper-wrapper swiper-wrapper">
+            <div class="slider__swiper-slide swiper-slide">
+                <img class="slider__swiper-slide-image" src="../assets/images/temp/9fff32d7811dcb8d30eaab9c50e4d3b91.png" alt="фото"/>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <img class="slider__swiper-slide-image" src="../assets/images/temp/30a997d0df676c8fc8af1aeba8a6700b.jpg" alt="фото"/>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <img class="slider__swiper-slide-image" src="../assets/images/temp/19695860d33c37d8358d9e2cb38e8d861.jpg" alt="фото"/>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <img class="slider__swiper-slide-image" src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg" alt="фото"/>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <img class="slider__swiper-slide-image" src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c30c.jpg" alt="фото"/>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <img class="slider__swiper-slide-image" src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c31d.jpg" alt="фото"/>
+            </div>
+        </div>
+
+        <div class="slider__swiper-actions">
+            <div class="slider__swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <div class="product__music-embed product__music-embed_desktop">
+                    <iframe
+                        style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
+                        src="https://embed.music.apple.com//album//https://music.apple.com/ru/album/16%D0%BF%D0%BB%D1%8E%D1%81/1314886761?app=music"
+                        height="450px"
+                    ></iframe>
+                </div>
+            </div>
+            <div class="product__col">
+                <div class="product__row product__row_padding_bottom_22">
+                    <div class="product__artist">
+                        Anti-Flag
+                    </div>
+                    <div class="product__title">
+                        Lies They Tell Our Children
+                    </div>
+                    <div class="product__format">
+                        2LP
+                    </div>
+                    <div class="product__lable">
+                        Spinefarm Records
+                    </div>
+                </div>
+                <div class="product__row product__row_padding_bottom_22 product__row_actions">
+                    <div class="product__price">5 290 ₽</div>
+                    <span class="icon-star product__icon product__icon-star js-add-to-favorite"></span>
+                    <div class="product__actions">
+                        <button class="product__button product__button_basket js-call-popup" data-message="addToCart">В корзину</button>
+                        <div class="product__quantity">
+                            <span class="icon-minus product__icon product__icon-minus"></span>
+                            <span class="product__goods-count">1</span>
+                            <span class="icon-plus product__icon  product__icon_active product__icon-plus"></span>
+                        </div>
+                    </div>
+                    <div class="product__status product__status_available">В наличии</div>
+                </div>
+                <div class="product__row">
+                    <div class="product__music-embed">
+                        <div class="product__accordion product__accordion_active">
+                            <div class="product__accordion-title">Треклист</div>
+                            <div class="product__accordion-content">
+                                <iframe
+                                        style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
+                                        src="https://embed.music.apple.com//album//https://music.apple.com/ru/album/16%D0%BF%D0%BB%D1%8E%D1%81/1314886761?app=music"
+                                        height="450px"
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__row">
+                    <div class="product__accordion product__accordion_active">
+                        <div class="product__accordion-title">Описание</div>
+                        <div class="product__accordion-content">
+                            <div class="product__accordion-list-note">
+                                Includes double sided poster with lyrics.
+                            </div>
+                            <div class="product__accordion-list">
+                                <div class="product__accordion-list-item">A1</div>
+                                <div class="product__accordion-list-item">Solid Everything</div>
+                                <div class="product__accordion-list-item">A2</div>
+                                <div class="product__accordion-list-item">Modern Meta Medicine</div>
+                                <div class="product__accordion-list-item">A3</div>
+                                <div class="product__accordion-list-item">Laugh. Cry. Smile. Die.</div>
+                                <div class="product__accordion-list-item">A4</div>
+                                <div class="product__accordion-list-item">The Fight Of Our Lives</div>
+                                <div class="product__accordion-list-item">A5</div>
+                                <div class="product__accordion-list-item">Imperialism</div>
+                                <div class="product__accordion-list-item">A6</div>
+                                <div class="product__accordion-list-item">VIctory Or Death (We Gave 'Em Hell)</div>
+                                <div class="product__accordion-list-item">B7</div>
+                                <div class="product__accordion-list-item">The Hazardous</div>
+                                <div class="product__accordion-list-item">B8</div>
+                                <div class="product__accordion-list-item">Shallow Graves</div>
+                                <div class="product__accordion-list-item">B9</div>
+                                <div class="product__accordion-list-item">Work & Struggle</div>
+                                <div class="product__accordion-list-item">B10</div>
+                                <div class="product__accordion-list-item">Nvrevr</div>
+                                <div class="product__accordion-list-item">B11</div>
+                                <div class="product__accordion-list-item">Only In My Head</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__row product__row_padding_bottom_22">
+                    <div class="product__accordion product__accordion_active">
+                        <div class="product__accordion-title">Характеристики</div>
+                        <div class="product__accordion-content">
+                            <div class="product__accordion-list product__accordion-list_equal-parts">
+                                <div class="product__accordion-list-item">Каталожный номер</div>
+                                <div class="product__accordion-list-item">2000000077918</div>
+                                <div class="product__accordion-list-item">Исполнитель</div>
+                                <div class="product__accordion-list-item" style="color: #6BCFA5">Anti-Flag</div>
+                                <div class="product__accordion-list-item">Альбом</div>
+                                <div class="product__accordion-list-item">Lies They Tell Our Children</div>
+                                <div class="product__accordion-list-item">Год выхода</div>
+                                <div class="product__accordion-list-item">2023</div>
+                                <div class="product__accordion-list-item">Год релиза</div>
+                                <div class="product__accordion-list-item">2023</div>
+                                <div class="product__accordion-list-item">Лейбл</div>
+                                <div class="product__accordion-list-item" style="color: #6BCFA5">Spinefarm Records</div>
+                                <div class="product__accordion-list-item">Формат</div>
+                                <div class="product__accordion-list-item">LP</div>
+                                <div class="product__accordion-list-item">Состояние</div>
+                                <div class="product__accordion-list-item">New</div>
+                                <div class="product__accordion-list-item">Жанр</div>
+                                <div class="product__accordion-list-item">Rock</div>
+                                <div class="product__accordion-list-item">Стиль</div>
+                                <div class="product__accordion-list-item">Pop Punk / Punk</div>
+                                <div class="product__accordion-list-item">Цвет</div>
+                                <div class="product__accordion-list-item">Black</div>
+                                <div class="product__accordion-list-item">Цена</div>
+                                <div class="product__accordion-list-item">4 390 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__row product__row_share">
+                    <div class="product__share">
+                        <div class="product__button js-show-share-buttons">Поделиться</div>
+                        <div class="product__share-buttons">
+                            <a class="product__share-button icon-instagram" href="#"></a>
+                            <a class="product__share-button icon-telegram" href="#"></a>
+                            <a class="product__share-button icon-vk" href="#"></a>
+                            <a class="product__share-button icon-fb" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product__slider">
+            <div class="preloader">
+                <img src="/assets/images/preloader.gif" alt="preloader">
+            </div>
+
+            <div class="test" style="display: none">
+                <div class="slider slider_simple">
+    <div class="slider__title">
+        <div class="slider__title-text">Другие релизы исполнителя</div>
+    </div>
+
+    <div class="slider__swiper swiper" data-slider="moreFromAuthor">
+        <div class="slider__swiper-wrapper swiper-wrapper">
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/30a997d0df676c8fc8af1aeba8a6700b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Kaytranada</div>
+                <div class="album__title">99.9%</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 490 ₽
+                    </div>
+                    <div class="album__price">5 490 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <div class="album__picture">
+                <div class="swiper" data-slider="mini">
+                    <div class="swiper-wrapper">
+                        <img class="swiper-slide" src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c31d.jpg" alt="фото" />
+                        <img class="swiper-slide" src="../assets/images/temp/2f46aad634acda508162b35fdbe3f7a6.jpg" alt="фото" />
+                    </div>
+                    <div class="icon-arrow album__arrow album__arrow_left"></div>
+                    <div class="icon-arrow album__arrow album__arrow_right"></div>
+                </div>
+            </div>
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Alva Noto + Ryuichi Sakamoto K</div>
+                <div class="album__title"> It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Nas</div>
+                <div class="album__title">It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Nas</div>
+                <div class="album__title">It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/19695860d33c37d8358d9e2cb38e8d861.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Maneskin</div>
+                <div class="album__title">Rush! (With Signed Photo)</div>
+                <div class="album__format-long">Формат: LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        4 990 ₽
+                    </div>
+                    <div class="album__price">4 990 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/30a997d0df676c8fc8af1aeba8a6700b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Kaytranada</div>
+                <div class="album__title">99.9%</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 490 ₽
+                    </div>
+                    <div class="album__price">5 490 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c31d.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Alva Noto + Ryuichi Sakamoto K</div>
+                <div class="album__title"> It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Nas</div>
+                <div class="album__title">It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Nas</div>
+                <div class="album__title">It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Nas</div>
+                <div class="album__title">It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/19695860d33c37d8358d9e2cb38e8d861.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Maneskin</div>
+                <div class="album__title">Rush! (With Signed Photo)</div>
+                <div class="album__format-long">Формат: LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        4 990 ₽
+                    </div>
+                    <div class="album__price">4 990 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c31d.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Alva Noto + Ryuichi Sakamoto K</div>
+                <div class="album__title"> It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/30a997d0df676c8fc8af1aeba8a6700b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Kaytranada</div>
+                <div class="album__title">99.9%</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 490 ₽
+                    </div>
+                    <div class="album__price">5 490 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/2f46aad634acda508162b35fdbe3f7a6.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Schoolboy Q</div>
+                <div class="album__title">Habits & Contradictions</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        4 990 ₽
+                    </div>
+                    <div class="album__price">4 990 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/30a997d0df676c8fc8af1aeba8a6700b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Kaytranada</div>
+                <div class="album__title">99.9%</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 490 ₽
+                    </div>
+                    <div class="album__price">5 490 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider__swiper-actions">
+            <div class="slider__swiper-button-prev slider__swiper-button-prev_moreFromAuthor swiper-button-prev"></div>
+            <div class="slider__swiper-pagination swiper-pagination"></div>
+            <div class="slider__swiper-button-next slider__swiper-button-next_moreFromAuthor swiper-button-next"></div>
+        </div>
+
+        <div class="slider__additional-actions js-slider-additional-actions">
+            <div class="slider__swiper-button-prev slider__swiper-button-prev_moreFromAuthor swiper-button-prev slider__swiper-button-prev_double-full"></div>
+            <div class="slider__swiper-button-next slider__swiper-button-next_moreFromAuthor swiper-button-next slider__swiper-button-next_double-full"></div>
+        </div>
+    </div>
+
+    <div class="js-slider-additional-wrapper"></div>
+</div>
+
+            </div>
+        </div>
+        <div class="product__slider">
+            <div class="preloader">
+                <img src="/assets/images/preloader.gif" alt="preloader">
+            </div>
+
+            <div class="test" style="display: none">
+                <div class="slider slider_simple">
+    <div class="slider__title">
+        <div class="slider__title-text">ДРУГИЕ РЕЛИЗЫ ЛЕЙБЛА</div>
+    </div>
+
+    <div class="slider__swiper swiper" data-slider="moreFromLabel">
+        <div class="slider__swiper-wrapper swiper-wrapper">
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/30a997d0df676c8fc8af1aeba8a6700b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Kaytranada</div>
+                <div class="album__title">99.9%</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 490 ₽
+                    </div>
+                    <div class="album__price">5 490 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <div class="album__picture">
+                <div class="swiper" data-slider="mini">
+                    <div class="swiper-wrapper">
+                        <img class="swiper-slide" src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c31d.jpg" alt="фото" />
+                        <img class="swiper-slide" src="../assets/images/temp/2f46aad634acda508162b35fdbe3f7a6.jpg" alt="фото" />
+                    </div>
+                    <div class="icon-arrow album__arrow album__arrow_left"></div>
+                    <div class="icon-arrow album__arrow album__arrow_right"></div>
+                </div>
+            </div>
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Alva Noto + Ryuichi Sakamoto K</div>
+                <div class="album__title"> It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Nas</div>
+                <div class="album__title">It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Nas</div>
+                <div class="album__title">It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/19695860d33c37d8358d9e2cb38e8d861.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Maneskin</div>
+                <div class="album__title">Rush! (With Signed Photo)</div>
+                <div class="album__format-long">Формат: LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        4 990 ₽
+                    </div>
+                    <div class="album__price">4 990 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/30a997d0df676c8fc8af1aeba8a6700b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Kaytranada</div>
+                <div class="album__title">99.9%</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 490 ₽
+                    </div>
+                    <div class="album__price">5 490 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c31d.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Alva Noto + Ryuichi Sakamoto K</div>
+                <div class="album__title"> It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Nas</div>
+                <div class="album__title">It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Nas</div>
+                <div class="album__title">It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c29b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Nas</div>
+                <div class="album__title">It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/19695860d33c37d8358d9e2cb38e8d861.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Maneskin</div>
+                <div class="album__title">Rush! (With Signed Photo)</div>
+                <div class="album__format-long">Формат: LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        4 990 ₽
+                    </div>
+                    <div class="album__price">4 990 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/b662ef09934a5c98ce3b930204f4c31d.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Alva Noto + Ryuichi Sakamoto K</div>
+                <div class="album__title"> It Was Written</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 290 ₽
+                    </div>
+                    <div class="album__price">5 290 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/30a997d0df676c8fc8af1aeba8a6700b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Kaytranada</div>
+                <div class="album__title">99.9%</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 490 ₽
+                    </div>
+                    <div class="album__price">5 490 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/2f46aad634acda508162b35fdbe3f7a6.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Schoolboy Q</div>
+                <div class="album__title">Habits & Contradictions</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        4 990 ₽
+                    </div>
+                    <div class="album__price">4 990 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="slider__swiper-slide swiper-slide">
+                <div class="slider__swiper-slide-item">
+                    <div class="album album_main">
+    <div class="album__album-wrapper">
+        <div class="album__image">
+            <img src="../assets/images/temp/30a997d0df676c8fc8af1aeba8a6700b.jpg" alt="фото" class="album__picture" />
+        </div>
+        <div class="album__wrapper">
+            <div class="album__inner">
+                <div class="album__artist">Kaytranada</div>
+                <div class="album__title">99.9%</div>
+                <div class="album__format-long">Формат: 2LP</div>
+                <div class="album__label">Лэйбл: XL</div>
+                <div class="album__genre">Жанр: Pop, Hip Hop, Funk/Soul</div>
+                <div class="album__style">Стиль: Hip Hop</div>
+            </div>
+            <div class="album__inner">
+                <div class="album__price-wrapper">
+                    <div class="album__format">2LP</div>
+                    <div class="album__add-to-basket js-call-popup" data-message="addToCart">
+                        <div class="icon-basket album__icon-basket"></div>
+                        5 490 ₽
+                    </div>
+                    <div class="album__price">5 490 ₽</div>
+                </div>
+                <div class="album__different">
+                    <div class="icon-sound album__icon-sound js-call-preview-window"></div>
+                    <div class="icon-star album__icon-star js-call-popup js-add-to-favorite" data-message="addToFavorite"></div>
+                    <div class="album__button js-call-popup" data-message="addToCart">
+                        <div class="i-button ">
+    В корзину
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider__swiper-actions">
+            <div class="slider__swiper-button-prev slider__swiper-button-prev_moreFromLabel swiper-button-prev"></div>
+            <div class="slider__swiper-pagination swiper-pagination"></div>
+            <div class="slider__swiper-button-next slider__swiper-button-next_moreFromLabel swiper-button-next"></div>
+        </div>
+
+        <div class="slider__additional-actions js-slider-additional-actions">
+            <div class="slider__swiper-button-prev slider__swiper-button-prev_moreFromLabel swiper-button-prev slider__swiper-button-prev_double-full"></div>
+            <div class="slider__swiper-button-next slider__swiper-button-next_moreFromLabel swiper-button-next slider__swiper-button-next_double-full"></div>
+        </div>
+    </div>
+
+    <div class="js-slider-additional-wrapper"></div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+	// TODO: TEST SCRIPT FOR PRELOADING
+	function testCallback() {
+		const preloader = document.querySelectorAll('.preloader');
+		const testContent = document.querySelectorAll('.test');
+
+		preloader.forEach(preloader => preloader.style.display = 'none');
+		testContent.forEach(testContent => testContent.style.display = 'block');
+	}
+
+	new Promise((resolve, reject) => setTimeout(() => resolve(), 3000)).then(testCallback);
+</script>
+
+        </div>
+    </div>
+    <div class="page__footer">
+        <div class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__inner">
+            <div class="footer__section">
+                <div class="footer__phone">
+                    <span class="icon-phone footer__icon is-mobile"></span>
+                    <span class="footer__phone-number">+7 (916) 213-49-93</span>
+                </div>
+                <div class="footer__address is-desktop">Москва, Новодмитровская ул. 1с9, Хлебозавод</div>
+                <div class="footer__email is-desktop">info@stoprobotvinyl.ru</div>
+            </div>
+            <div class="footer__section">
+                <a class="footer__item is-desktop" href="about.html">О компании</a>
+                <a class="footer__item is-desktop" href="contacts.html">КОНТАКТЫ</a>
+                <a class="footer__item is-desktop" href="warranty.html">ГАРАНТИЯ И ВОЗВРАТ</a>
+                <div class="footer__item footer__item_group_columns">
+                    <img src="../assets/images/payments/visa.svg" alt="visa" class="footer__credit-card-icon">
+                    <img src="../assets/images/payments/mastercard.svg" alt="mastercard" class="footer__credit-card-icon">
+                    <img src="../assets/images/payments/mir.svg" alt="mir" class="footer__credit-card-icon">
+                    <img src="../assets/images/payments/jcb.svg" alt="jcb" class="footer__credit-card-icon">
+                </div>
+            </div>
+            <div class="footer__section is-desktop">
+                <a class="footer__item is-desktop" href="delivery.html">ОПЛАТА И ДОСТАВКА</a>
+                <a class="footer__item is-desktop" href="error-message.html">СООБЩИТЬ ОБ ОШИБКЕ</a>
+                <a class="footer__item is-desktop" href="certification.html">ПОДАРОЧНЫЕ СЕРТИФИКАТЫ</a>
+            </div>
+            <div class="footer__section">
+                <div class="footer__social-nets">
+                    <a href="#" class="i-link"><span class="icon-instagram footer__social-net-icon"></span></a>
+                    <a href="#" class="i-link"><span class="icon-vk footer__social-net-icon"></span></a>
+                    <a href="#" class="i-link"><span class="icon-fb footer__social-net-icon"></span></a>
+                    <a href="#" class="i-link"><span class="icon-telegram footer__social-net-icon"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__inner">
+            <div class="footer__copyright">2019-2023 Stoprobot Vinyl</div>
+            <div class="footer__privacy-policy">
+                Находясь на этом сайте вы соглашаетесь
+                с&nbsp;использованием нами файлов cookie в&nbsp;соответствии с&nbsp;нашей Политикой конфиденциальности
+            </div>
+        </div>
+    </div>
+    <!-- область для уведомлений -->
+    <div class="footer__popup-wrapper js-popup-wrapper"></div>
+    <!-- область для уведомлений -->
+</div>
+    </div>
+</div>
+
+<!-- Initialize React -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- Initialize Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

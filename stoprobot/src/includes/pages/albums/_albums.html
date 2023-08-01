@@ -1,27 +1,10 @@
-<script>
-	// TODO: TEST SCRIPT FOR PRELOADING
-	function testCallback() {
-		const preloader = document.querySelector('.preloader');
-		const testContent = document.querySelector('.albums__content');
-
-		preloader.style.display = 'none';
-		testContent.style.display = 'initial';
-	}
-
-	new Promise((resolve, reject) => setTimeout(() => resolve(), 3000)).then(testCallback);
-</script>
-
 <div class="albums albums_mini">
 
     <div class="albums__settings">
         ${require('../../components/_settings.html') html=`Pop Rock <span class="settings__number">5419</span>`}
     </div>
 
-    <div class="preloader">
-        <img src="/assets/images/preloader.gif" alt="preloader">
-    </div>
-
-    <div class="albums__content" style="display: none">
+    <div class="albums__content">
         <div class="albums__list">
 
             <div class="albums__list-item">

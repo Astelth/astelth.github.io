@@ -1,0 +1,272 @@
+<script>
+	// TODO: TEST SCRIPT FOR PRELOADING
+	function testCallback() {
+		const preloader = document.querySelector('.preloader');
+		const testContent = document.querySelector('.albums__content');
+
+		preloader.style.display = 'none';
+		testContent.style.display = 'initial';
+	}
+
+	new Promise((resolve, reject) => setTimeout(() => resolve(), 1500)).then(testCallback);
+</script>
+
+<div class="albums albums_mini">
+
+    <div class="albums__settings">
+        ${require('../../components/_settings.html') html=`Pop Rock <span class="settings__number">5419</span>`}
+    </div>
+
+    <div class="preloader">
+        <img src="/assets/images/preloader.gif" alt="preloader">
+    </div>
+
+    <div class="albums__content" style="display: none">
+        <div class="albums__list">
+
+            <div class="albums__list-item">
+                ${require('../../components/_album-with-stock.html')
+                classModifier=`album_mini album_not_available`
+                src=`../assets/images/temp/30a997d0df676c8fc8af1aeba8a6700b.jpg`
+                artist=`Kaytranada`
+                title=`99.9%`
+                format-long=`Формат: 2LP`
+                label=`Лэйбл: XL`
+                genre=`Жанр: Pop, Hip Hop, Funk/Soul`
+                style=`Стиль: Hip Hop`
+                format=`2LP`
+                price=`513 490 ₽`
+                stock=`Нет в наличии`
+                }
+            </div>
+
+            <div class="albums__list-item">
+                ${require('../../components/_album-with-slider.html')
+                classModifier=`album_mini`
+                src1=`../assets/images/temp/b662ef09934a5c98ce3b930204f4c30c.jpg`
+                src2=`../assets/images/temp/2f46aad634acda508162b35fdbe3f7a6.jpg`
+                artist=`Nas`
+                title=`It Was Written`
+                format-long=`Формат: 2LP`
+                label=`Лэйбл: XL`
+                genre=`Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul`
+                style=`Стиль: Hip Hop`
+                format=`2LP`
+                price=`15 290 ₽`
+                stock=``
+                }
+            </div>
+
+            <div class="albums__list-item">
+                ${require('../../components/_album.html')
+                classModifier=`album_mini`
+                src=`../assets/images/temp/b662ef09934a5c98ce3b930204f4c31d.jpg`
+                artist=`Nas`
+                title=`It Was Written`
+                format-long=`Формат: 2LP`
+                label=`Лэйбл: XL`
+                genre=`Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul`
+                style=`Стиль: Hip Hop`
+                format=`2LP`
+                price=`5 290 ₽`
+                stock=``
+                }
+            </div>
+
+            <div class="albums__list-item">
+                ${require('../../components/_album.html')
+                classModifier=`album_mini`
+                src=`../assets/images/temp/b662ef09934a5c98ce3b930204f4c34e.jpg`
+                artist=`Alva Noto + Ryuichi Sakamoto K`
+                title=`It Was Written`
+                format-long=`Формат: 2LP`
+                label=`Лэйбл: XL`
+                genre=`Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul`
+                style=`Стиль: Hip Hop`
+                format=`2LP`
+                price=`5 290 ₽`
+                stock=``
+                }
+            </div>
+
+            <div class="albums__list-item">
+                ${require('../../components/_album.html')
+                classModifier=`album_mini`
+                src=`../assets/images/temp/30a997d0df676c8fc8af1aeba8a6700b.jpg`
+                artist=`Nas`
+                title=`It Was Written`
+                format-long=`Формат: 2LP`
+                label=`Лэйбл: XL`
+                genre=`Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul`
+                style=`Стиль: Hip Hop`
+                format=`2LP`
+                price=`290 ₽`
+                stock=``
+                }
+            </div>
+
+            <div class="albums__list-item">
+                ${require('../../components/_album.html')
+                classModifier=`album_mini`
+                src=`../assets/images/temp/b662ef09934a5c98ce3b930204f4c30c.jpg`
+                artist=`Nas`
+                title=`It Was Written`
+                format-long=`Формат: 2LP`
+                label=`Лэйбл: XL`
+                genre=`Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul`
+                style=`Стиль: Hip Hop`
+                format=`2LP`
+                price=`5 290 ₽`
+                stock=``
+                }
+            </div>
+
+            <div class="albums__list-item">
+                ${require('../../components/_album.html')
+                classModifier=`album_mini`
+                src=`../assets/images/temp/19695860d33c37d8358d9e2cb38e8d861.jpg`
+                artist=`Maneskin`
+                title=`Rush! (With Signed Photo)`
+                format-long=`Формат: LP`
+                label=`Лэйбл: XL`
+                genre=`Жанр: Pop, Hip Hop, Funk/Soul`
+                style=`Стиль: Hip Hop`
+                format=`LP`
+                price=`1 990 ₽`
+                stock=``
+                }
+            </div>
+
+            <div class="albums__list-item">
+                ${require('../../components/_album.html')
+                classModifier=`album_mini`
+                src=`../assets/images/temp/b662ef09934a5c98ce3b930204f4c31d.jpg`
+                artist=`Schoolboy Q`
+                title=`Habits & Contradictions`
+                format-long=`Формат: 2LP`
+                label=`Лэйбл: XL`
+                genre=`Жанр: Pop, Hip Hop, Funk/Soul`
+                style=`Стиль: Hip Hop`
+                format=`2LP`
+                price=`4 990 ₽`
+                stock=``
+                }
+            </div>
+
+            <div class="albums__list-item">
+                ${require('../../components/_album.html')
+                classModifier=`album_mini`
+                src=`../assets/images/temp/30a997d0df676c8fc8af1aeba8a6700b.jpg`
+                artist=`Kaytranada`
+                title=`99.9%`
+                format-long=`Формат: 2LP`
+                label=`Лэйбл: XL`
+                genre=`Жанр: Pop, Hip Hop, Funk/Soul`
+                style=`Стиль: Hip Hop`
+                format=`2LP`
+                price=`5 490 ₽`
+                stock=``
+                }
+            </div>
+
+            <div class="albums__list-item">
+                ${require('../../components/_album.html')
+                classModifier=`album_mini`
+                src=`../assets/images/temp/b662ef09934a5c98ce3b930204f4c30c.jpg`
+                artist=`Nas`
+                title=`It Was Written`
+                format-long=`Формат: 2LP`
+                label=`Лэйбл: XL`
+                genre=`Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul`
+                style=`Стиль: Hip Hop`
+                format=`2LP`
+                price=`5 290 ₽`
+                stock=``
+                }
+            </div>
+
+            <div class="albums__list-item">
+                ${require('../../components/_album.html')
+                classModifier=`album_mini`
+                src=`../assets/images/temp/19695860d33c37d8358d9e2cb38e8d861.jpg`
+                artist=`Maneskin`
+                title=`Rush! (With Signed Photo)`
+                format-long=`Формат: LP`
+                label=`Лэйбл: XL`
+                genre=`Жанр: Pop, Hip Hop, Funk/Soul`
+                style=`Стиль: Hip Hop`
+                format=`LP`
+                price=`4 990 ₽`
+                stock=``
+                }
+            </div>
+
+            <div class="albums__list-item">
+                ${require('../../components/_album-with-stock.html')
+                classModifier=`album_mini album_not_available`
+                src=`../assets/images/temp/30a997d0df676c8fc8af1aeba8a6700b.jpg`
+                artist=`Kaytranada`
+                title=`99.9%`
+                format-long=`Формат: 2LP`
+                label=`Лэйбл: XL`
+                genre=`Жанр: Pop, Hip Hop, Funk/Soul`
+                style=`Стиль: Hip Hop`
+                format=`2LP`
+                price=`5 490 ₽`
+                stock=`Нет в наличии`
+                }
+            </div>
+
+            <div class="albums__list-item">
+                ${require('../../components/_album.html')
+                classModifier=`album_mini`
+                src=`../assets/images/temp/b662ef09934a5c98ce3b930204f4c31d.jpg`
+                artist=`Schoolboy Q`
+                title=`Habits & Contradictions`
+                format-long=`Формат: 2LP`
+                label=`Лэйбл: XL`
+                genre=`Жанр: Pop, Hip Hop, Funk/Soul`
+                style=`Стиль: Hip Hop`
+                format=`2LP`
+                price=`4 990 ₽`
+                stock=``
+                }
+            </div>
+
+            <div class="albums__list-item">
+                ${require('../../components/_album.html')
+                classModifier=`album_mini`
+                src=`../assets/images/temp/b662ef09934a5c98ce3b930204f4c30c.jpg`
+                artist=`Nas`
+                title=`It Was Written`
+                format-long=`Формат: 2LP`
+                label=`Лэйбл: XL`
+                genre=`Жанр: Pop, Hip Hop, Funk/Soul, Pop, Hip Hop, Funk/Soul`
+                style=`Стиль: Hip Hop`
+                format=`2LP`
+                price=`5 290 ₽`
+                stock=``
+                }
+            </div>
+
+
+        </div>
+        <!--.albums__list-->
+        <div class="albums__show-more">
+            <button class="albums__show-more-button">
+                показать ещё
+            </button>
+        </div>
+        <div class="albums__footer">
+            <div class="albums__pages-list">
+                Товаров на странице:
+                <span class="albums__pages-button albums__pages-button_active">96</span>
+                <a class="albums__pages-button" href="#">192</a>
+                <a class="albums__pages-button" href="#">384</a>
+            </div>
+            <div class="albums__pages">
+                ${require('../../components/_pagination.html')}
+            </div>
+        </div>
+    </div>
+</div>

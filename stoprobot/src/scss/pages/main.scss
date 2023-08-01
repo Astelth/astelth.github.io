@@ -1,4 +1,6 @@
 .main {
+    padding-bottom: 40px;
+
     &__slider {
         width: 100vw;
         position: relative;
@@ -9,7 +11,17 @@
     }
 
     &__slider-items {
+        position: absolute;
+        opacity: 0;
         padding: var(--main-padding) 0 12px;
+        transition: opacity;
+        transition-duration: .2s;
+        transition-delay: .2s;
+    }
+
+    &__slider-items_active {
+        position: relative;
+        opacity: 1;
     }
 }
 
@@ -27,6 +39,8 @@
 
 @media screen and (min-width: $desktop-viewport) {
     .main {
+        padding-bottom: 0;
+
         &__slider-items {
             padding-top: 88px;
             padding-bottom: 3px;
