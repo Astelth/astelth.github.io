@@ -258,17 +258,17 @@ function createCounter(value) {
   */
 
 
-  //Задание 8.1 
-  /*
-  const birthDate = new Date('1975-08-17');
+//Задание 8.1 
+/*
+const birthDate = new Date('1975-08-17');
 const age = calculateAge(birthDate);
 
 function calculateAge(a) {
-    const x = (Date.now() - a) / 365.25 / 24 / 60 / 60 / 1000
-    const xy = Math.floor(x)
-    const xm = (Math.floor((x - xy) * 12))
-    const xd = Math.floor((x - xy) * 365.25 - xm * 30.4375)
-    return xy + ' лет, ' + xm + ' месяцев, ' + xd + ' дней'
+  const x = (Date.now() - a) / 365.25 / 24 / 60 / 60 / 1000
+  const xy = Math.floor(x)
+  const xm = (Math.floor((x - xy) * 12))
+  const xd = Math.floor((x - xy) * 365.25 - xm * 30.4375)
+  return xy + ' лет, ' + xm + ' месяцев, ' + xd + ' дней'
 }
 console.log(age);
 
@@ -278,9 +278,9 @@ const date2 = new Date('2023-08-17');
 const difference = getDateDifference(date1, date2);
 console.log(difference); // 9
 function getDateDifference (a, b) {
-    return Math.floor((b - a) / 1000 / 24 / 60 / 60)
+  return Math.floor((b - a) / 1000 / 24 / 60 / 60)
 }
-*/
+
 
 // 8.3
 
@@ -290,16 +290,16 @@ console.log(timeUntilTargetDate);
 // { days: 100, hours: 20, minutes: 45, seconds: 31 }
 
 function getTimeUntilDate (a) {
-    const x = new Object
-    x.days = Math.floor((a - Date.now()) / 1000 / 24 / 60 / 60)
-    var q = (a - Date.now()) / 1000 / 24 / 60 / 60
-    x.hours = Math.floor((q - x.days) * 24)
-    q = (q - x.days) * 24
-    x.minutes = Math.floor((q - x.hours) * 60)
-    q = ((q - x.hours) * 60)
-    x.seconds = Math.floor((q - x.minutes) * 60)
-    q = ((q - x.minutes) * 60)
-    return x
+  const x = new Object
+  x.days = Math.floor((a - Date.now()) / 1000 / 24 / 60 / 60)
+  var q = (a - Date.now()) / 1000 / 24 / 60 / 60
+  x.hours = Math.floor((q - x.days) * 24)
+  q = (q - x.days) * 24
+  x.minutes = Math.floor((q - x.hours) * 60)
+  q = ((q - x.hours) * 60)
+  x.seconds = Math.floor((q - x.minutes) * 60)
+  q = ((q - x.minutes) * 60)
+  return x
 }
 
 // 8.4
@@ -309,22 +309,22 @@ const date2 = new Date('2027-07-12');  // Понедельник
 console.log(isWeekend(date1));  // true
 console.log(isWeekend(date2));  // false
 function isWeekend (a) {
-    return a.getDay() === 0 || a.getDay() === 6
+  return a.getDay() === 0 || a.getDay() === 6
 }
 
 // 8.5
 console.log(isLeapYear(2023)); // false
 console.log(isLeapYear(2104)); // true
 function isLeapYear (a) {
-    if (a % 400 === 0) {
-        return true
-    } else if (a % 100 === 0) {
-        return false
-    } else if (a % 4 === 0) {
-        return true
-    } else {
-        return false
-    }
+  if (a % 400 === 0) {
+      return true
+  } else if (a % 100 === 0) {
+      return false
+  } else if (a % 4 === 0) {
+      return true
+  } else {
+      return false
+  }
 }
 
 // 8.6
@@ -337,13 +337,49 @@ console.log(getLastDayOfMonth(2104, 1)); // 28
 // январь 2027
 console.log(getLastDayOfMonth(2027, 0)); // 31
 function getLastDayOfMonth(y, m) {
-    if (isLeapYear(y) === true && m === 1) {
-        return 29
-    } else if (m === 1) {
-        return 28
-    } else if (m === 1 || m === 3 || m === 5 || m === 8 || m === 10) {
-        return 30
-    } else {
-        return 31
+  if (isLeapYear(y) === true && m === 1) {
+      return 29
+  } else if (m === 1) {
+      return 28
+  } else if (m === 1 || m === 3 || m === 5 || m === 8 || m === 10) {
+      return 30
+  } else {
+      return 31
+  }
+}
+*/
+
+
+// 9.1
+//
+//
+//console.log(circle.name);
+
+
+class Circle {
+    constructor(radius) {
+        this.radius = radius;
+    }
+    getArea() {
+        return (this.radius ** 2 * Math.PI).toFixed(2)
     }
 }
+const circle = new Circle(7);
+console.log(circle.getArea()); // "78.54"
+
+
+// 9.2
+class Product {
+    constructor (name, price) {
+        this.name = name
+        this.price = price
+    }
+    priceWithDiscout() {
+      //  return (price * (100 - d) / 100).toFixed(2)
+        return price
+    }
+}
+const product = new Product("Phone", 1000);
+console.log(product.name); // 900
+console.log(product.priceWithDiscount(10)); // 900
+console.log(product.priceWithDiscount(20)); // 800
