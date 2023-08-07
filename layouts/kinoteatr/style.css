@@ -1,0 +1,612 @@
+* {
+   padding: 0;
+   margin: 0;
+ }
+ html {
+   background: #5f7ad3;
+ }
+ .body {
+   max-width: 1300px;
+   margin: 0 auto;
+   background: #ffffff;
+   min-height: 300px;
+ }
+ 
+ .header {
+   min-height: 80px;
+   display: flex;
+   max-width: 1300px;
+   justify-content: space-between;
+ }
+ .header__left {
+   height: 80px;
+   width: 198px;
+ }
+ .header__logo {
+   height: 70px;
+   width: 100px;
+   margin: 9px 0 0 37px;
+   background: url("https://i.ibb.co/Z1VKSCd/Logo.png");
+ }
+ .header__red {
+   width: 110px;
+   background: #ea4737;
+ }
+ .header__array {
+   background: url("https://i.ibb.co/9b1TSkH/Shape.png");
+   width: 12px;
+   height: 20px;
+   margin: 53px 0 0 93px;
+ }
+ .header__rtr {
+  width: 15px; height: 15px; box-sizing: border-box; border: 15px solid; 
+   position: absolute; top: 20px; left: 20px; border-color: transparent transparent transparent #ffac19; border-radius: 5px 0 0 5px;
+ }
+ .header__right {
+   display: flex;
+   width: 360px;
+   align-items: flex-end;
+   justify-content: space-between;
+ }
+ .header__form {
+   margin: auto 32px auto 0;
+   width: 260px;
+   display: flex;
+ }
+ .header__search {
+   border: 0 solid #fff000;
+   font-family: "ProximaNova";
+   font-size: 16px;
+   line-height: 19px;
+   height: 19px;
+   width: 205px;
+   display: inline-block;
+   margin: auto 10px auto 5px;
+   color: rgba(0, 0, 0, 0.698398);
+ }
+ .header__submit {
+   width: 32px;
+   height: 32px;
+   background: url(https://i.ibb.co/QbYgZVg/Search.png);
+   background-repeat: no-repeat;
+   border: 0 solid #000;
+   display: inline-block;
+ }
+ 
+ .header__user {
+   align-self: flex-end;
+   margin: auto 35px auto 0;
+   position: relative;
+ }
+ .header__img {
+   margin: auto;
+   width: 42px;
+   height: 42px;
+   border-radius: 24px;
+   background: url(https://i.ibb.co/7tpQ3mw/Oval.png);
+ }
+ .header__white {
+   width: 18px;
+   height: 18px;
+   border-radius: 12px;
+   background: #00c853;
+   position: absolute;
+   right: -10px;
+   top: -10px;
+   display: flex;
+   border: 3px solid #fff;
+ }
+ .header__green {
+   margin: auto;
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   color: #ffffff;
+   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.0988451);
+ }
+ .first {
+   position: relative;
+   overflow: hidden;
+   max-width: 100%;
+ }
+ .first__selector {
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: flex-start;
+   width: 3000px;
+ }
+ .first__1 {
+   height: 368px;
+   width: 252px;
+   background: url(https://i.ibb.co/2tx4dHM/Assasin-s.png) 0 0 no-repeat, #0068a9;
+   margin: 0 2px 4px;
+ }
+ .first__2 {
+   height: 368px;
+   width: 252px;
+   background: url(https://i.ibb.co/R960pVS/Fantastic.png) 0 0 no-repeat, #6800a9;
+   margin: 0 2px 4px;
+ }
+ .first__3 {
+   height: 368px;
+   width: 252px;
+   background: url(https://i.ibb.co/7tVtJ78/Strange.png) 0 0 no-repeat, #0068a9;
+   margin: 0 2px 4px;
+ }
+ .first__4 {
+   height: 368px;
+   width: 252px;
+   background: rgba(255, 0, 0, 0.5);
+   margin: 0 2px 4px;
+ }
+ .first__4a {
+   background: rgba(0, 0, 0, 0.0826257);
+   height: 122px;
+   display: flex;
+ }
+ .first__text {
+   text-align: center;
+ }
+ .first__4b {
+   background: rgba(255, 255, 255, 0.373302);
+   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.057971);
+   height: 124px;
+   display: flex; position: relative;
+ }
+ .first__array {
+   position: absolute;
+   left: 180px;
+   bottom: -7px;
+ }
+ .first__5 {
+   height: 368px;
+   width: 252px;
+   background: url(https://i.ibb.co/GTpP9T3/WW.png) 0px, #0608a9;
+   margin: 0 2px 4px;
+ }
+ .first__6 {
+   height: 368px;
+   width: 252px;
+   background: url(https://i.ibb.co/2tx4dHM/Assasin-s.png) 0 0 no-repeat, #6008a9;
+   margin: 0 2px 4px;
+ }
+ .first__7 {
+   height: 368px;
+   width: 252px;
+   background: url(https://i.ibb.co/2tx4dHM/Assasin-s.png) 0 0 no-repeat, #680a09;
+   margin: 0 2px 4px;
+ }
+ .first__lf {
+   height: 368px;
+   width: 35px;
+   background: #2998e2;
+   position: absolute;
+   opacity: 0.8;
+   display: flex;
+   z-index: 10;
+   left: 0;
+   top: 0;
+ }
+ .first__la {
+   margin: auto;
+   opacity: 0.8;
+   display: none;
+ }
+ .first__rf {
+   height: 368px;
+   width: 35px;
+   background: rgba(0, 0, 0, 0.33);
+   right: 0;
+   display: flex;
+   position: absolute;
+   top: 0;
+ }
+ .first__ra {
+   margin: auto;
+   opacity: 0.8;
+ }
+ .first__icon {
+   margin: auto;
+ }
+ .second {
+   display: flex;
+   position: relative;
+ }
+ .second__preview {
+   width: 543px;
+   height: 409px;
+   background: #07131b;
+ }
+ .second__view {
+   width: 758px;
+   height: 409px;
+   background: url(https://i.ibb.co/JvHRXKs/Play.png) 50% no-repeat,
+     url(https://i.ibb.co/GQrdcyt/Jason-Bourne-2016.png);
+   position: relative;
+ }
+ .second__lf {
+   height: 409px;
+   width: 35px;
+   background: #ea4737;
+   position: absolute;
+   opacity: 0.8;
+   display: flex;
+   z-index: 10;
+   left: 0;
+   top: 0;
+ }
+ .second__rf {
+   height: 409px;
+   width: 35px;
+   background: rgba(0, 0, 0, 0.33);
+   right: 0;
+   display: flex;
+   position: absolute;
+   top: 0;
+ }
+ .second__ra {
+   margin: auto;
+   opacity: 0.8;
+ }
+ .second__la {
+   margin: auto;
+   opacity: 0.8;
+   display: none;
+ }
+ .second__container {
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .second__poster {
+   width: 156px;
+   height: 221px;
+   background: url(https://i.ibb.co/L1pYy0y/Bourne.png);
+   margin: 16px 132px 88px 52px;
+ }
+ .second__yellowflag {
+   width: 19px;
+   height: 22px;
+   border: 10px solid;
+   box-sizing: border-box;
+   border-radius: 4px 4px 0 0;
+   border-color: #ffac19 #ffac19 transparent;
+   margin: 0 5px;
+ }
+ .second__rbox {
+   width: 52px;
+   height: 20px;
+   background: rgba(255, 255, 255, 0.185292);
+   border-radius: 2px;
+   box-sizing: border-box;
+   border-left: 3px solid #e74c3c;
+   margin: 155px 10px 0 0;
+ }
+ .second__bbox {
+   width: 52px;
+   height: 20px;
+   background: rgba(255, 255, 255, 0.185292);
+   border-radius: 2px;
+   box-sizing: border-box;
+   border-left: 3px solid #3498db;
+   margin: 155px 0 0 0;
+ }
+ .second__board1 {
+   width: 80px;
+   height: 80px;
+   background: url(https://i.ibb.co/cbPD3vy/Rectangle-2-Copy.png);
+   margin: 2px 2px 2px 38px;
+ }
+ .second__board2 {
+   width: 80px;
+   height: 80px;
+   margin: 2px;
+   background: url(https://i.ibb.co/qFnHC5x/Rectangle-2-Copy-9.png);
+ }
+ .second__board3 {
+   width: 80px;
+   height: 80px;
+   margin: 2px;
+   background: url(https://i.ibb.co/0hFFK49/Rectangle-2-Copy-6.png);
+ }
+ .second__board4 {
+   width: 80px;
+   height: 80px;
+   margin: 2px;
+   background: url(https://i.ibb.co/qdFYPjd/Rectangle-2-Copy-7.png);
+ }
+ .second__board5 {
+   width: 80px;
+   height: 80px;
+   margin: 2px;
+   background: url(https://i.ibb.co/hfyxjvr/Rectangle-2-Copy-8.png);
+ }
+ .second__board6 {
+   width: 80px;
+   height: 80px;
+   margin: 2px;
+   background: url(https://i.ibb.co/y0pdHvB/Rectangle-2-Copy-5.png);
+ }
+ .second__bar {
+   display: flex;
+   position: absolute;
+   bottom: 20px;
+   right: 63px;
+ }
+ .second__dot {
+   width: 6px;
+   height: 6px;
+   margin: 0 0 0 7px;
+   background: rgba(255, 255, 255, 0.9);
+   border-radius: 3px;
+ }
+ .second__ring {
+   box-sizing: border-box;
+   width: 10px;
+   height: 10px;
+   border: 3px solid #e2e2e2;
+   border-radius: 5px;
+   margin: -2px -1px 0 7px;
+ }
+ .white {
+   margin: 67px 16px 30px;
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .white__l1 {
+   width: 138px;
+   height: 101px;
+   background: url(https://i.ibb.co/RD38Qgn/Rectangle-9-1.png);
+   margin-bottom: 20px;
+ }
+ .white__l2 {
+   width: 138px;
+   height: 101px;
+   background: url(https://i.ibb.co/Q9vq63T/MV5-BN2-E4-ZDgx-N2-Yt-Zj-Ex-MS00-MWE5-LTg3-Nj-Qt-NTkx-Mz-Jh-OTA3-MDQ4-Xk-Ey-Xk-Fqc-Gde-QXVy-MTQx-Nz.png);
+   margin-bottom: 20px;
+ }
+ .white__l3 {
+   width: 138px;
+   height: 101px;
+   background: url(https://i.ibb.co/J352zk7/Rectangle-9.png);
+ }
+ .white__middle {
+   margin: 0 10px 0 292px;
+   max-width: 410px;
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .white__m01 {
+   width: 80px;
+   height: 112px;
+   margin: 0 1px 44px 1px;
+   background: url("https://i.ibb.co/S6236yw/Rectangle-12-9.png");
+ }
+ .white__m02 {
+   width: 80px;
+   height: 112px;
+   margin: 0 1px 44px 1px;
+   background: url("https://i.ibb.co/j3HKV8V/Rectangle-12-8.png");
+ }
+ .white__m03 {
+   width: 80px;
+   height: 112px;
+   margin: 0 1px 44px 1px;
+   background: url("https://i.ibb.co/HXh4MKV/Rectangle-12-7.png");
+ }
+ .white__m04 {
+   width: 80px;
+   height: 112px;
+   margin: 0 1px 44px 1px;
+   background: url("https://i.ibb.co/2SxMrHj/Rectangle-12-6.png");
+ }
+ .white__m05 {
+   width: 80px;
+   height: 112px;
+   margin: 0 1px 44px 1px;
+   background: url("https://i.ibb.co/nC0jBCC/Rectangle-12-5.png");
+ }
+ .white__m06 {
+   width: 80px;
+   height: 112px;
+   margin: 44px 1px 0 1px;
+   background: url("https://i.ibb.co/jWTK0VT/Rectangle-12-4.png");
+ }
+ .white__m07 {
+   width: 80px;
+   height: 112px;
+   margin: 44px 1px 0 1px;
+   background: url("https://i.ibb.co/KW9cBBz/Rectangle-12-3.png");
+ }
+ .white__m08 {
+   width: 80px;
+   height: 112px;
+   margin: 44px 1px 0 1px;
+   background: url("https://i.ibb.co/MsNRCxR/Rectangle-12-2.png");
+ }
+ .white__m09 {
+   width: 80px;
+   height: 112px;
+   margin: 44px 1px 0 1px;
+   background: url("https://i.ibb.co/JyrtctR/Rectangle-12-1.png");
+ }
+ .white__m10 {
+   width: 80px;
+   height: 112px;
+   margin: 44px 1px 0 1px;
+   background: url("https://i.ibb.co/z8Bg76D/Rectangle-12.png");
+ }
+ .white__r1 {
+   width: 406px;
+   height: 101px;
+   background: url("https://i.ibb.co/FmBNwNR/Stranger-Things-Wallpaper-1024x576.png");
+   margin-bottom: 20px;
+ }
+ .white__r2 {
+   max-width: 406px;
+   height: 101px;
+   background: url("https://i.ibb.co/5hR19jq/Squad-Wallpaper-HD-Download-7.png");
+   margin-bottom: 20px;
+ }
+ .white__r3 {
+   max-width: 406px;
+   height: 101px;
+   background: url("https://i.ibb.co/SRPCLZ6/Star-Trek-Beyond-2016-Poster.png");
+ }
+ .white_hr {
+   color: rgba(0, 0, 0, 0.149994);
+ }
+ .four {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 65px 36px 0;
+ }
+ .four__middle {
+   margin: 0 24px 0 368px;
+   width: 408px;
+   min-height: 222px;
+   background: url("https://i.ibb.co/0j26Y3Y/guardians-of-the-galaxy-poster.png")
+       no-repeat,
+     #07131b;
+   display: flex;
+ }
+ .four__grid {
+   display: grid;
+   grid-template-rows: 22px; /* 1 строка */
+   grid-template-columns: 52px 10px 76px 8px 44px 8px 63px 8px 70px 8px 70px; /* 11 блоков, в т.ч. 5 - промежутки */
+   margin: 242px 0 0 12px;
+ }
+ .four__b1 {
+   width: 52px;
+   height: 22px;
+   box-sizing: border-box;
+   border-left: 3px solid #e74c3c;
+   background: rgba(255, 255, 255, 0.185292);
+   border-radius: 2px 0px 0px 2px;
+ }
+ .four__b2 {
+   width: 76px;
+   height: 22px;
+   box-sizing: border-box;
+   border-left: 3px solid #00c853;
+   background: rgba(255, 255, 255, 0.185292);
+   border-radius: 2px 0px 0px 2px;
+ }
+ .four__b3 {
+   width: 44px;
+   height: 22px;
+   box-sizing: border-box;
+   border-left: 3px solid #bd10e0;
+   background: rgba(255, 255, 255, 0.185292);
+   border-radius: 2px 0px 0px 2px;
+ }
+ 
+ .four__b4 {
+   width: 63px;
+   height: 20px;
+   box-sizing: border-box;
+   border-left: 3px solid rgba(255, 255, 255, 0.0755491);
+   background: rgba(255, 255, 255, 0.10544);
+   border-radius: 2px 0px 0px 2px;
+   margin: 1px 0 0;
+ }
+ .four__b5 {
+   width: 70px;
+   height: 20px;
+   box-sizing: border-box;
+   border-left: 3px solid rgba(255, 255, 255, 0.0755491);
+   background: rgba(255, 255, 255, 0.10544);
+   border-radius: 2px 0px 0px 2px;
+   margin: 1px 0 0;
+ }
+ .four__b6 {
+   width: 70px;
+   height: 20px;
+   box-sizing: border-box;
+   border-left: 3px solid rgba(255, 255, 255, 0.0755491);
+   background: rgba(255, 255, 255, 0.10544);
+   border-radius: 2px 0px 0px 2px;
+   margin: 1px 0 0;
+ }
+ .four__b7 {
+   width: 384px;
+   height: 53px;
+   margin: 17px 12px 0;
+   background: rgba(255, 255, 255, 0.187302);
+ }
+ .five {
+   margin: 64px 0 17px;
+   position: relative;
+ }
+ .five__flex {
+   display: flex;
+   flex: nowrap;
+   margin-left: 16px;
+   overflow: hidden;
+ }
+ .five__img {
+   width: 80px;
+   height: 112px;
+   margin-right: 2px;
+   background: #a4a4a4;
+   border-radius: 4px;
+ }
+ .five__pic {
+   width: 80px;
+   height: 112px;
+ }
+ .five__lf {
+   height: 112px;
+   width: 35px;
+   background: #ea4737;
+   position: absolute;
+   opacity: 0.4;
+   display: flex;
+   left: 0;
+   top: 0;
+ }
+ .five__rf {
+   height: 112px;
+   width: 35px;
+   background: rgba(0, 0, 0, 0.4);
+   right: 0;
+   display: flex;
+   position: absolute;
+   top: 0;
+ }
+ .amazon {
+   margin: 66px 0 11px 40px;
+ }
+ .footer {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 66px 0 0 16px;
+ }
+ .footer__stores {
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .footer__google {
+   margin: 0 9px;
+ }
+ .footer__nets {
+   display: grid;
+   grid-template-rows: 68px 54px; /* 2 стр */
+   grid-template-columns: 54px 15px 54px 15px 54px;
+   margin: 0 37px 0 32px;
+ }
+ .footer__sn {
+   width: 54px;
+   height: 54px;
+   border-radius: 27px;
+ }
+ .footer__icons {
+   display: grid;
+   grid-template-rows: 66px 66px; /* 2 стр */
+   grid-template-columns: 66px 66px 66px;
+ }
+ .footer__box {
+   width: 63px;
+   height: 63px;
+ }
+ 

@@ -1,0 +1,885 @@
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  max-width: 1440px;
+  background: url("https://i.ibb.co/vcG9YyS/rest-header.png");
+  background-repeat: no-repeat;
+  margin: auto;
+  display: block;
+  font-family: Open Sans, Tinos, serif;
+  overflow: hidden;
+}
+.header,
+.menu,
+.menu__ul,
+.header__right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #fff;
+}
+.header {
+  margin: 0 165px;
+  padding: 50px 0;
+}
+.menu__ul {
+  list-style: none;
+  margin: 21px 0 auto 205px;
+}
+.menu__link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 12px;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+.header__right {
+  margin: 4px 0 0;
+}
+.header__basket {
+  display: flex;
+  width: 52px;
+  border-right: 1px solid #ffffff;
+  height: 51px;
+}
+.header__basket_pic {
+  margin: auto;
+}
+.header__phone {
+  margin: 0 8px 0 0;
+  float: left;
+}
+.header__info {
+  vertical-align: center;
+  font-size: 18px;
+  margin: 0 48px 0 34px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+.header__note {
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 154px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: Open Sans;
+  margin: -1px 0 0 6px;
+}
+.header__button {
+  width: 157px;
+  height: 47px;
+  background: #ff7400;
+  color: #fff;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 4px 0 0 0;
+  border: 0;
+  cursor: pointer;
+}
+.welcome {
+  margin: 148px 175px 127px;
+  max-width: 488px;
+  color: #d67e35;
+}
+.welcome__container {
+  display: flex;
+  justify-content: center;
+  margin: -9px 1px 0 12px;
+}
+.welcome__hr {
+  background: #c4c4c4;
+  width: 61px;
+  height: 2px;
+  margin: auto 8px;
+}
+.welcome__subtitle {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.welcome__title {
+  font-family: Tinos;
+  font-size: 50px;
+  line-height: 57px;
+  text-align: center;
+  font-weight: 400;
+}
+.welcome__name {
+  font-family: Tinos;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 92px;
+  color: #d67e35;
+  text-align: center;
+  margin: -40px 0 12px;
+}
+
+.welcome__bottom {
+  display: flex;
+}
+.welcome__button {
+  width: 137px;
+  height: 47px;
+  background: #ff7400;
+  margin: 21px 0 0 180px;
+  display: flex;
+}
+.welcome__link {
+  margin: auto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.reasons {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1109px;
+}
+.reasons__box {
+  width: 349px;
+  height: 328px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+  padding: 45px 0 0 0;
+  box-sizing: border-box;
+}
+.reasons__head {
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #2c2c2c;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 20px;
+}
+.reasons__span {
+  color: rgba(188, 144, 96, 1);
+  padding: 0;
+}
+.reasons__note {
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #656363;
+  padding: 0;
+  margin: 1px 0;
+}
+.white {
+  display: flex;
+  flex-wrap: wrap;
+}
+.story {
+  max-width: 444px;
+  margin: 166px 125px 0 166px;
+}
+.story__head {
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 62px;
+  color: #000000;
+  text-align: center;
+  margin: 0 0 21px 0;
+}
+.story__subhead {
+  color: rgba(214, 126, 52, 1);
+}
+.story__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #656363;
+}
+.story__boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.story__box {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  margin: 30px 20px;
+}
+.story__number {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  text-align: center;
+  color: #bc9060;
+  margin: 33px auto 8px;
+}
+.story__note {
+  margin: -8px auto;
+}
+.story__images {
+  margin: 151px 0 0 0;
+}
+.story__layer0 {
+  background: url("https://i.ibb.co/hLkwy8Z/rest-design-box.png");
+  background-repeat: no-repeat;
+  background-position-x: 285px;
+  background-position-y: 33px;
+}
+.story__layer1 {
+  background: url("https://i.ibb.co/tzJhBxW/rest-430-1.png");
+  background-repeat: no-repeat;
+  background-position-x: 190px;
+}
+.story__layer2 {
+  background: url("https://i.ibb.co/XDgzz2q/rest-255-1.png");
+  background-repeat: no-repeat;
+  background-position-x: 284px;
+  background-position-y: 197px;
+  width: 539px;
+  height: 497px;
+}
+.invite {
+  background: url("https://i.ibb.co/gDXcg1k/rest-delicious-1866631-1920-1.png");
+  margin: 122px 0 88px;
+}
+.invite__over {
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 80px 0 0 165px;
+  min-height: 357px;
+}
+.invite__main {
+  max-width: 601px;
+}
+.invite__head {
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 60px;
+  color: #d67e34;
+  margin: -0px 0 20px;
+}
+.invite__note {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+  margin: -0px 0 0 0;
+}
+.invite__button {
+  margin: 75px 0 0 331px;
+  width: 157px;
+  height: 47px;
+  background: #ff7400;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  border: 0;
+  cursor: pointer;
+}
+.dishes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dishes__head {
+  width: 100%;
+  color: #000000;
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 62px;
+  text-align: center;
+}
+.dishes__subhead {
+  color: #d67e34;
+}
+.dishes__left {
+  background: url("https://i.ibb.co/JkBy8t6/rest-pizza-4968645-1920-1-1.png");
+  min-height: 474px;
+  width: 445px;
+  margin: 139px 30px 152px 165px;
+}
+.dishes__right {
+  margin: 139px 146px 0 0;
+  max-width: 654px;
+}
+.dishes__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 654px;
+  min-height: 140px;
+  margin: 0 0 25px;
+}
+.dishes__subrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.dishes__name {
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #000000;
+  margin: auto 0 auto 30px;
+  width: 200px;
+}
+.dishes__hyphen {
+  margin: auto 11px auto 7px;
+  width: 176px;
+  height: 1px;
+  border-top: 1px dashed #000;
+}
+.dishes__price {
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #000000;
+  margin: auto;
+  width: 70px;
+}
+.ourmenu {
+  background: url("https://i.ibb.co/pbDqYMD/rest-bar-1869656-1920-2.png");
+  background-repeat: no-repeat;
+  min-height: 937px;
+  padding: 97px 0 0;
+}
+.ourmenu__head {
+  width: 100%;
+  text-align: center;
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 62px;
+  color: #ffffff;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  margin: 1px auto 138px;
+}
+.ourmenu__boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ourmenu__box {
+  width: 350px;
+  height: 510px;
+  background: #fff;
+  position: relative;
+  margin: 0 25px 0 5px;
+}
+.ourmenu__recomendation {
+  background: #d67e34;
+  width: 124px;
+  height: 36px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  position: absolute;
+}
+.ourmenu__img {
+  margin: 80px 62px 22px;
+}
+.ourmenu__pic {
+  border-radius: 120px;
+}
+.ourmenu__name {
+  text-align: center;
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  margin: 0 0;
+}
+.ourmenu__note {
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 17px 0 20px;
+}
+.ourmenu__button {
+  width: 220px;
+  height: 50px;
+  background: #d67e34;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border: 0;
+  margin: 0 65px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+.ourmenu__ring {
+  position: absolute;
+  top: 205px;
+  left: 189px;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  border: 7px solid #fff;
+  background: #d67e34;
+}
+.ourmenu__price {
+  margin: auto;
+  font-family: "Cookie";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+  color: #ffffff;
+}
+.review {
+  min-height: 550px;
+  background: #e6e5e5;
+  padding: 104px 0 0;
+}
+.review__text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 820px;
+}
+.review__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 17px auto;
+}
+.review__pic {
+  border-radius: 50px;
+}
+.review__obj {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+.review__name {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  margin: 9px auto 25px;
+}
+.review__gap {
+  margin: auto;
+  display: flex;
+  max-width: 21px;
+}
+.review__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background: #c4c4c4;
+  margin: 1px;
+}
+.review__dot2 {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  border: 1px solid #ff7400;
+  margin: 0 1px;
+}
+.gallery__head {
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 62px;
+  text-align: center;
+  margin: 101px auto 60px;
+}
+.gallery__span {
+  color: #d67e34;
+}
+.gallery__area {
+  max-width: 1106px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto 87px;
+}
+.gallery__rectangle {
+  margin: 0 0 13px;
+}
+.cooks__head {
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 62px;
+  text-align: center;
+}
+.cooks__spam {
+  color: #d67e34;
+}
+.cooks__area {
+  display: flex;
+  margin: 107px auto 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1110px;
+}
+.cooks__chef1 {
+  background: url("https://i.ibb.co/hXTG6XY/rest-196932-1920.png");
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 462px;
+}
+.cooks__chef2 {
+  background: url("https://i.ibb.co/CJBQd32/rest-pizza-366111-1280-1.png");
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 462px;
+}
+.cooks__chef3 {
+  background: url("https://i.ibb.co/8D28w5R/rest-image4.png");
+  background-repeat: no-repeat;
+  width: 348px;
+  height: 462px;
+}
+.cooks__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  border: 1px solid #ffd5d5;
+  margin: 0 1px;
+}
+.bottom {
+  background: url("https://i.ibb.co/Wg3qm5F/rest-st-826688-1920-1.png");
+  background-repeat: no-repeat;
+  min-height: 780px;
+  margin: 50px auto;
+}
+.mobil {
+  display: none;
+}
+.mobil__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 66px 26px;
+}
+.mobil__close {
+  background: #fff;
+  border: 1px solid #fff;
+  width: 32px;
+  height: 32px;
+}
+.mobil__ul {
+  list-style: none;
+}
+.mobil__ul li {
+  margin: 0 0 40px 0;
+  font-size: 34px;
+  line-height: 42px;
+}
+.mobil__link {
+  color: #828282;
+}
+.mobil__link:hover {
+  color: #000;
+  box-shadow: 3px 3px 5px gray;
+}
+.mobil__language {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 34px;
+  line-height: 42px;
+  height: 100px;
+  margin: 360px 0 0;
+  text-align: right;
+}
+.mobil__btn {
+  cursor: pointer;
+}
+.menu__burger {
+  width: 33px;
+  height: 28px;
+  cursor: pointer;
+  display: none;
+  transition: 0.3s;
+}
+.menu__burger:hover {
+  box-shadow: 3px 3px 5px gray;
+}
+.menu__line {
+  width: 31px;
+  height: 3px;
+  background: #ff7400;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  margin: 10px auto;
+  width: 320px;
+  background: #aaa;
+  display: flex;
+}
+.scroll {
+  opacity: 0;
+  transform: translate(401px, -500px) rotate(-540deg);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  overflow: hidden;
+}
+.scroll.animation {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition-delay: 50ms;
+}
+
+@media screen and (max-width: 420px) {
+  .body {
+    max-width: 320px;
+    background-position-x: -560px;
+  }
+  .header {
+    margin: 0 14px;
+    padding: 20px 0;
+  }
+  .header__logo_pic {
+    width: 46px;
+  }
+  .mobil {
+    position: fixed;
+    z-index: 51;
+    top: 1px;
+    left: 1px;
+    width: 100%;
+    background: #ffffff;
+  }
+  .menu__burger {
+    display: block;
+    margin: 6px 0;
+  }
+  .menu__ul,
+  .header__right,
+  .welcome__hr {
+    display: none;
+  }
+  .welcome {
+    margin: 222px auto 0;
+  }
+  .welcome__title {
+    font-size: 30px;
+    line-height: 34px;
+    max-width: 320px;
+  }
+  .welcome__name {
+    font-size: 40px;
+    line-height: 46px;
+    margin: -32px auto 10px;
+  }
+  .welcome__subtitle {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .welcome__button {
+    margin: 41px auto 172px;
+  }
+  .reasons__box {
+    width: 290px;
+    height: 276px;
+    padding: 20px 0 0;
+    margin: 7px auto;
+  }
+  .reasons__head {
+    margin: 10px auto;
+  }
+  .reasons__pic {
+    margin: -1px auto;
+  }
+  .reasons__note {
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .story {
+    margin: 75px auto 45px;
+  }
+  .story__box {
+    width: 160px;
+    margin: 11px 20px;
+  }
+  .story__images {
+    margin: auto;
+  }
+  .story__dishes {
+    width: 50%;
+    height: 50%;
+  }
+  .story__layer0 {
+    background: url("https://i.ibb.co/JBk1KHk/rest-beg-box.png");
+    background-position-x: 153px;
+    background-position-y: 17px;
+    background-repeat: no-repeat;
+  }
+  .story__layer1 {
+    background: url("https://i.ibb.co/t2GB2tX/rest-4301.png");
+    background-repeat: no-repeat;
+    background-position-x: 102px;
+  }
+  .story__layer2 {
+    background: url("https://i.ibb.co/PFH38v1/rest-2551.png");
+    background-repeat: no-repeat;
+    background-position-x: 152px;
+    background-position-y: 103px;
+    width: 290px;
+    height: 257px;
+  }
+  .story__layer3 {
+    padding: 33px 0 0;
+  }
+  .invite {
+    background-position-x: -560px;
+  }
+  .invite__over {
+    padding: 20px 15px;
+  }
+  .invite__head {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    margin: 5px 0;
+  }
+  .invite__note {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .invite__button {
+    margin: 41px 76px;
+    width: 139px;
+    height: 43px;
+  }
+  .dishes__left {
+    width: 320px;
+    margin: 72px 0 49px;
+  }
+  .dishes__right {
+    margin: 0;
+    max-width: 320px;
+  }
+  .dishes__row {
+    min-height: 114px;
+    margin: 0 0 87px;
+  }
+  .dishes__pic {
+    height: 114px;
+    width: 130px;
+  }
+  .dishes__hyphen {
+    display: none;
+  }
+  .dishes__subrow {
+    display: block;
+    margin: auto 0 auto 10px;
+  }
+  .dishes__name {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    margin: auto;
+    width: 180px;
+  }
+  .ourmenu {
+    margin: 40px auto 11px;
+    min-height: 836px;
+    padding: 60px 0 0;
+  }
+  .ourmenu__box {
+    width: 290px;
+    height: 510px;
+    margin: auto;
+  }
+  .ourmenu__none {
+    display: none;
+  }
+  .ourmenu__img {
+    margin: 80px 32px 12px;
+  }
+  .ourmenu__ring {
+    left: 164px;
+  }
+  .ourmenu__button {
+    margin: 0 35px;
+  }
+  .review {
+    margin: -21px 0 0;
+    padding: 5px 0 0;
+  }
+  .gallery__head {
+    margin: 71px auto;
+    width: 270px;
+  }
+  .gallery__square,
+  .gallery__rectangle {
+    max-width: 290px;
+    margin: 10px auto;
+    overflow: hidden;
+  }
+  .cooks__chef2 {
+    margin: 17px auto 19px;
+  }
+  .bottom {
+    background: url("https://i.ibb.co/YLFGySY/rest-826688-19201.png");
+    background-repeat: no-repeat;
+  }
+  .gallery__move {
+    margin: 0 0 0 -124px;
+  }
+}

@@ -1,0 +1,412 @@
+@font-face {
+   font-family: Lato;
+   src: url(/fonts/Lato-Regular.ttf) format(truetype);
+}
+@font-face {
+   font-family: Georgia;
+   src: url(/fonts/georgia.ttf) format(truetype);
+}
+@font-face {
+   font-family: Avenir;
+   src: url(avenir-heavy2.ttf) format(truetype);
+}
+
+ * {
+   margin: 0;
+   padding: 0;
+ }
+ a {
+   text-decoration: none;
+   transition: 0.3s;
+   color: #ffffff;
+ }
+ a:hover {
+   text-decoration: underline double gray;
+   text-shadow: 3px 3px 2px #f35;
+ }
+ .body {
+   max-width: 1920px;
+   min-height: 300px;
+   margin: 0 auto;
+   background: url("https://i.ibb.co/zrVRx6B/alivio-radu-florin.png"), #e5e5e5;
+   background-position: top 85px left;
+   background-repeat: no-repeat;
+   font-family: Lato, Georgia, 'Times New Roman', Times, serif;
+ }
+ .header {
+   min-height: 260px;
+ }
+ .header__top {
+   max-width: 1369px;
+   margin: 0 auto;
+   min-height: 85px;
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .header__logo {
+   margin: auto 0;
+ }
+ .header__ul {
+   display: flex;
+   flex-wrap: wrap;
+   list-style-type: none;
+   font-size: 20px;
+   font-weight: 500;
+   margin: auto 136px;
+ }
+ .header__link {
+   text-decoration: none;
+   margin: auto 36px;
+   color: #292929;
+   border: 1px;
+   padding: 3px;
+   box-sizing: border-box;
+ }
+ .header__right {
+   display: flex;
+   flex-wrap: wrap;
+   font-size: 20px;
+   font-weight: 500;
+   margin: auto 0 auto 80px;
+ }
+ .header__button {
+   width: 183px;
+   height: 51px;
+   font-size: 20px;
+   color: #ffffff;
+   background: #01996d;
+   border: 1px solid #01996d;
+   border-radius: 4px;
+   margin: 0 0 0 35px;
+ }
+ .header__sign {
+   color: #000000;
+   font-weight: 400;
+   font-size: 20px;
+ }
+ .first {
+   margin-left: 275px;
+   max-width: 1369px;
+ }
+ .first__aware {
+   font-family: Georgia;
+   font-weight: 700;
+   font-size: 65px;
+   line-height: 74px;
+   color: #01996d;
+ }
+ .first__about {
+   max-width: 420px;
+   min-height: 123px;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 31px;
+   color: #484848;
+   margin: 30px 0 18px;
+ }
+ .first__button {
+   width: 227px;
+   height: 65px;
+   font-size: 20px;
+   color: #ffffff;
+   background: #01996d;
+   border: 1px solid #01996d;
+   border-radius: 4px;
+ }
+ .first__how {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 157%;
+   color: #424242;
+   margin: 505px 0 0 0;
+ }
+ .first__understand {
+   font-family: "Georgia";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 50px;
+   line-height: 157%;
+   color: #01996d;
+   max-width: 584px;
+ }
+ .first__flex {
+   display: flex; flex-wrap: wrap;
+ }
+ .first__offers {
+   font-weight: 500;
+ font-size: 20px;
+ line-height: 150%;
+ max-width: 671px;
+ margin:20px 0 0 136px;
+ color: #424242;
+ }
+ .steps {
+   max-width: 1370px;margin: 52px auto 51px;background: #E5E5E5; display: flex;flex-wrap: wrap; justify-content: space-between;
+}
+.steps__1 {
+}
+.steps__step {
+ position: relative; max-width: 392px;
+}
+.steps__number {font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 150px;
+line-height: 150%;
+color: rgba(1, 153, 109, 0.2);
+}
+.steps__subhead {font-family: 'Georgia';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 150%;
+position: absolute;
+ left: 88px;
+ top: 132px;
+color: #000000;
+}
+.steps__note {
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+color: #424242; margin: 10px 0 60px;
+}
+.steps__img1 {
+max-width: 390px;
+height: 492px;
+border-radius: 12px;
+   background: url(https://i.ibb.co/KV3Mdy2/image-30.png) 205px 225px no-repeat, url(https://i.ibb.co/V3r8Bw6/Rectangle-30-2.png) left top no-repeat;
+}
+.steps__img2 {
+width: 390px;
+height: 492px;
+border-radius: 12px;
+ background: url(https://i.ibb.co/dQyqMNF/Rectangle-30-1.png) left top no-repeat;
+}
+.steps__img3 {
+width: 390px;
+height: 492px;
+border-radius: 12px;
+ background: url(https://i.ibb.co/rkBygt0/Rectangle-30.png) 0 0 no-repeat;
+}
+.steps__2 {
+ margin: 264px 0 0;
+}
+.steps__3 {
+ margin: 54px 0 0;
+}
+.video {
+height: 922px;
+background: #245852; display: flex;
+}
+.video__flex {
+ max-width: 1506px;margin: auto; display: flex;flex-wrap: wrap; 
+}
+.video__info {
+ max-width: 580px;
+}
+.video__head {
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 157%;
+color: #FFFFFF;
+ margin: 80px 31px 30px 0;
+ max-width: 580px;
+}
+.video__note {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 157%;
+color: #FFFFFF;
+ margin: 0 31px 57px 0;
+ max-width: 580px;
+}
+.video_btn {
+width: 240px;
+height: 65px;
+background: #01996D;
+border: 1px solid #01996D;
+border-radius: 4px; box-sizing: border-box;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+color: #FFFFFF;
+}
+.video__window {
+ width: 896px;
+height: 516px;
+background: url(https://i.ibb.co/xGZkZzg/Group.png) 50% 50% no-repeat, url(https://i.ibb.co/RydNfYk/Rectangle-8.png) no-repeat, rgba(0, 0, 0, 0.2);
+border-radius: 16px;
+}
+.our {
+ min-height: 936px;
+}
+.our__flex {
+ margin: 120px auto 0;max-width: 1370px; display: flex;flex-wrap: wrap;
+}
+.our__left {
+ position: relative;min-width: 360px; margin: 0 87px 0 0; color:#E5E5E5;max-width: 638px; font-size: 12px;
+}
+.our__img {
+ background: url(https://i.ibb.co/1ZynF3R/court-cook-TSZo17r3m0s-unsplash-removebg-1.png) 97px 0 no-repeat, rgba(1, 153, 109, 0.2);
+max-width: 638px;
+height: 573px;
+border-radius: 18px; margin: 0 0 0 60px;
+}
+.our__card {
+width: 296px;
+height: 294px;
+position: absolute;
+background: #FFFFFF;
+border-radius: 4px; color: #000; top:354px;
+}
+.our__top {
+ margin: 23px auto 8px; text-align: center;
+font-weight: 600;
+font-size: 14.49px;
+line-height: 157%;
+color: #000000;
+}
+.our__line {
+width: 110px;
+height: 1px;
+ background: #000; margin: auto;
+}
+.our__photo {
+width: 58px;
+height: 58px; border-radius: 29px;background: url(https://i.ibb.co/NjHqJcY/court-cook-TSZo17r3m0s-unsplash-removebg-2.png), rgba(1, 153, 109, 0.2); margin: 14px auto 10px;
+}
+.our__name {
+font-weight: 400;
+font-size: 11.9351px;
+line-height: 157%;
+text-align: center;
+color: #000000; margin-bottom: 20px;
+}
+.our__title {
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 700;
+font-size: 15.9292px;
+line-height: 157%;
+ text-align: center; m
+color: #000000;
+}
+.our__li {
+font-weight: 400;
+font-size: 11px;
+line-height: 157%;
+color: #000000; margin: 15px 0 0 72px;
+}
+.our__right {
+ max-width: 584px;
+}
+.our__prefix {
+font-weight: 600;
+font-size: 25px;
+line-height: 157%;
+color: #424242;
+}
+.our__head {
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 157%;
+color: #01996D;
+ max-width: 560px;
+ margin: 10px 0 20px;
+}
+.our__note {
+font-weight: 400;
+font-size: 20px;
+line-height: 31px;
+color: #484848;
+}
+.our_btn {
+width: 227px;
+height: 65px;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+color: #FFFFFF;
+background: #01996D;
+border: 1px solid #01996D;
+border-radius: 4px;
+ margin: 40px 0;
+}
+.footer {
+ min-height: 654px;background: #245852;box-sizing: border-box;border: 1px solid #245852;color: #FFFFFF;
+}
+.footer__container {
+ margin: 95px auto;max-width: 1370px;
+}
+.footer__head {
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 55px;
+}
+.footer__ul {
+ list-style: none;
+}
+.footer__li {
+ margin-top: 60px;
+}
+.footer__link {
+font-weight: 600;
+font-size: 25px;
+line-height: 30px;
+color: #FFFFFF;
+}
+
+ 
+ 
+ 
+ 
+@media screen and (max-width: 1366px) {
+ .video__window {
+ width: 560px;
+ height: 324px;
+ background-size: auto, contain;
+ }
+ .header__ul {
+   margin: auto 24px;
+ }
+   .header__right {
+     margin: auto 10px;
+   }
+}
+ 
+ 
+ @media screen and (max-width: 922px) {
+   .header__ul {
+     max-width: 250px;
+     margin: auto;
+   }
+   .header__link {
+     margin: auto 12px;
+   }
+   .video__window {
+     max-width: 480px; max-height: 280px;
+     background-size: auto, contain;
+   }
+ }
+ 
+ @media screen and (max-width: 500px) {
+   .first {
+     margin-left: 10px;
+   }
+   
+   .video__window {
+     max-width: 360px; max-height: 208px;
+   }
+ }
+ 
