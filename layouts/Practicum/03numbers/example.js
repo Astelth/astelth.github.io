@@ -256,8 +256,6 @@ function createCounter(value) {
   console.log(get());
   console.log(createCounter(7));
   */
-
-
 //Задание 8.1 
 /*
 const birthDate = new Date('1975-08-17');
@@ -374,12 +372,42 @@ class Product {
         this.name = name
         this.price = price
     }
-    priceWithDiscout() {
-      //  return (price * (100 - d) / 100).toFixed(2)
-        return price
+    priceWithDiscount(d) {
+        return (this.price * (100 - d) / 100)
     }
 }
 const product = new Product("Phone", 1000);
 console.log(product.name); // 900
 console.log(product.priceWithDiscount(10)); // 900
 console.log(product.priceWithDiscount(20)); // 800
+
+// 9.3
+class Person {
+    constructor (...friends) {
+        this.friends = friends
+    }
+    addFriend (a) {
+        this.friends.push(a)
+    }
+    showFriends () {
+        console.log(this.friends.join(', '))
+    }
+}
+const person = new Person();
+person.addFriend("Иван");
+person.addFriend("Сергей");
+person.addFriend("Игорь");
+person.showFriends();
+
+// 9.4
+const dog = new Dog('Rex', 'Meat');
+const cat = new Cat('Barsik', 'Fish');
+
+cat.makeSound(); // Meow
+dog.makeSound(); // Gav!
+
+dog.sayName(); // My name is Rex
+cat.sayName(); // My name is Barsik
+
+dog.sayInfo(); // Rex's favorite food is Meat
+cat.sayInfo(); // Barsik's favorite food is Fish
