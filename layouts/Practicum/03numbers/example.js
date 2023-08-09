@@ -400,6 +400,31 @@ person.addFriend("Игорь");
 person.showFriends();
 
 // 9.4
+class Animal {
+    constructor (name, favoriteFood) {
+        this.name = name
+        this.favoriteFood = favoriteFood
+    }
+    makeSound(a) {
+        console.log(a)
+    }
+    sayName() {
+        console.log(`My name is ${this.name}`)
+    }
+    sayInfo() {
+        console.log(`${this.name}'s favorite food is ${this.favoriteFood}`)
+    }
+}
+class Dog extends Animal {
+    makeSound() {
+        console.log('Gav!')
+    }
+}
+class Cat extends Animal {
+    makeSound() {
+        console.log('Meow')
+    }
+}
 const dog = new Dog('Rex', 'Meat');
 const cat = new Cat('Barsik', 'Fish');
 
@@ -411,3 +436,36 @@ cat.sayName(); // My name is Barsik
 
 dog.sayInfo(); // Rex's favorite food is Meat
 cat.sayInfo(); // Barsik's favorite food is Fish
+
+// 9.5
+const foo = {
+    a: 5,
+    bar() {
+        console.log(this.a)
+    },
+    baz: () => {
+        console.log(this)
+    }
+}
+foo.bar();
+foo.baz();
+
+// 9.6
+const boxFactory = {
+	type: 'box',
+    count: 0,
+	produce() {
+		this.count++;
+		return this.count;
+	},
+}
+console.log(boxFactory.produce())
+
+const produceBox = (produceFn) => {
+	const boxName = produceFn();
+	console.log(boxName);
+}
+
+for(let i = 0; i < 25; i++) {
+	produceBox(boxFactory.produce);
+}
