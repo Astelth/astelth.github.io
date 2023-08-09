@@ -456,10 +456,9 @@ const boxFactory = {
     count: 0,
 	produce() {
 		this.count++;
-		return this.count;
+		return 'Box №' + this.count;
 	},
 }
-console.log(boxFactory.produce())
 
 const produceBox = (produceFn) => {
 	const boxName = produceFn();
@@ -467,5 +466,5 @@ const produceBox = (produceFn) => {
 }
 
 for(let i = 0; i < 25; i++) {
-	produceBox(boxFactory.produce);
+	produceBox(boxFactory.produce.bind(boxFactory));
 }
