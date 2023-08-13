@@ -11,6 +11,7 @@
 
 const list = document.querySelector('#list')
 const filter = document.querySelector('#filter')
+const btn = document.querySelector('.btn-dark')
 let USERS = []
 
 filter.addEventListener('input', (event) => {
@@ -20,6 +21,12 @@ filter.addEventListener('input', (event) => {
   )
   render(filteredUsers)
 })
+
+btn.onclick = function() {
+    let item = filter.value
+filter.value = ''
+document.querySelector('.element').insertAdjacentHTML("beforeend", `<li class="list-group-item">${item}</li>`)
+}
 
 async function start() {
   list.innerHTML = 'Loading...'
