@@ -127,4 +127,16 @@ console.log(calc(1, 2, "-")); // -1
 console.log(calc(2, 2, "*")); // 4
 console.log(calc(4, 2, "/")); // 2
 // 2.6
+let age = 24;
+let category;
+if (age < 18) {
+  category = 'Детский'
+} else {
+  category = 'Взрослый'
+}
+console.log(age, category);
 // 2.7
+let a = 13;
+let b = 18;
+let c = Math.max(a, b);
+console.log(c);
