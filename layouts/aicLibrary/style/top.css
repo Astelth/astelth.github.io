@@ -1,0 +1,31 @@
+.top {
+    display: flex;
+    flex-direction: column;
+
+}
+.top__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.top__section_center {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .top {
+padding: 10px 64px;
+    }
+    .top__list {
+        display: flex;
+        flex-direction: row;
+        column-gap: 40px;
+    }
+    .top__section_center {
+        display: inherit;
+    }
+    .burger {
+        display: none;
+    }
+}

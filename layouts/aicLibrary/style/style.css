@@ -1,0 +1,18 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Suisse Intl', 'Suisse Intl Regular', sans-serif;
+}
+
+.i-button {
+    cursor:pointer;
+}
+.i-link {
+    text-decoration: none;
+    color: #000000;
+    font-feature-settings: 'clig' off, 'liga' off;
+}
+.i-link_menu {
+    color: rgba(20, 20, 20, 0.30);
+}
