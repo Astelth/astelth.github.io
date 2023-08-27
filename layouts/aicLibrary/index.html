@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="stylesheet" href="style/top.css" />
+    <link rel="stylesheet" href="style/burger.css" />
+    <script src="js/main.js"></script>
     <title>aic</title>
 </head>
 
@@ -14,11 +16,13 @@
     <div class="top">
         <div class="top__wrapper">
             <div class="top__section top__section_left">
-                <a href="#" class="i-link">
-                    <span class="icon-logo"></span>
-                </a>
+                <div class="top__logo">
+                    <a href="#" class="i-link">
+                        <span class="icon-logo"></span>
+                    </a>
+                </div>
             </div>
-            <div class="top__section top__section_center">
+            <div class="top__section top__section_desktop">
                 <div class="top__list">
                     <div class="top__list-item">
                         <a href="#" class="i-link">библиотека</a>
@@ -31,13 +35,15 @@
                     </div>
                 </div>
             </div>
-            <div class="top__section">
+            <div class="top__section top__section_desktop">
                 <a href="#" class="i-link">
                     <button class="i-button i-button_orange">ранний доступ</button>
                 </a>
             </div>
-            <div class="top__section burger">
-
+            <div class="top__section top__section_right">
+                <div class="burger" onclick="burgerClick()">
+                    <div class="burger__line"></div>
+                </div>
             </div>
         </div>
     </div>
