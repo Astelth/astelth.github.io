@@ -1,0 +1,30 @@
+.mobile {
+    background: #ffffff;
+    color: #FFFFFF;
+    transition: transform 0.3s, background-color 0.3s;
+    transform: translateY(-100vh);
+    z-index: 0;
+}
+
+.mobile_active {
+    transform: translateY(0);
+    background: #000000;
+}
+
+.mobile__list {
+    font-size: 52px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 65px);
+    padding: 32px;
+}
+
+.mobile__link {
+    color: #FFFFFF;
+}
+
+.mobile_active .mobile__item_color_orange .mobile__link {
+    color: #FF7033;
+}

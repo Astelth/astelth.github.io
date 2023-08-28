@@ -2,6 +2,15 @@
     display: flex;
     flex-direction: column;
     padding: 15px 20px 16px;
+    z-index: 1;
+}
+
+.top_active {
+    background-color: #000;
+}
+
+.top_active .top__link {
+    color: #fff;
 }
 
 .top__wrapper {
