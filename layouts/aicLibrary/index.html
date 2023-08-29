@@ -1,76 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/fonts.css" />
     <link rel="stylesheet" href="style/top.css" />
     <link rel="stylesheet" href="style/burger.css" />
     <link rel="stylesheet" href="style/mobile.css" />
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="style/slider.css" />
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
     <title>aic</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="top">
-        <div class="top__wrapper">
-            <div class="top__section top__section_left">
-                <div class="top__logo">
-                    <a href="#" class="i-link top__link">
-                        <span class="icon-logo"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="top__section top__section_desktop">
-                <div class="top__list">
-                    <div class="top__list-item">
-                        <a href="#" class="i-link">библиотека</a>
-                    </div>
-                    <div class="top__list-item">
-                        <a href="#" class="i-link">трендвотчинг</a>
-                    </div>
-                    <div class="top__list-item">
-                        <a href="#" class="i-link">курсы</a>
-                    </div>
-                </div>
-            </div>
-            <div class="top__section top__section_desktop">
-                <a href="#" class="i-link">
-                    <button class="i-button i-button_orange">ранний доступ</button>
-                </a>
-            </div>
-            <div class="top__section top__section_right">
-                <div class="burger" onclick="burgerClick()">
-                    <div class="burger__line"></div>
-                </div>
-            </div>
+      <div class="top__wrapper">
+        <div class="top__section top__section_left">
+          <div class="top__logo">
+            <a href="#" class="i-link top__link">
+              <span class="icon-logo"></span>
+            </a>
+          </div>
         </div>
+        <div class="top__section top__section_desktop">
+          <div class="top__list">
+            <div class="top__list-item">
+              <a href="#" class="i-link">библиотека</a>
+            </div>
+            <div class="top__list-item">
+              <a href="#" class="i-link">трендвотчинг</a>
+            </div>
+            <div class="top__list-item">
+              <a href="#" class="i-link">курсы</a>
+            </div>
+          </div>
+        </div>
+        <div class="top__section top__section_desktop">
+          <a href="#" class="i-link">
+            <div class="i-button i-button_orange">ранний доступ</div>
+          </a>
+        </div>
+        <div class="top__section top__section_right">
+          <div class="burger" onclick="burgerClick()">
+            <div class="burger__line"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="mobile">
-        <div class="mobile__list">
-            <div class="mobile__section">
-                <div class="mobile__item">
-                    <a href="#" class="i-link mobile__link">библиотека</a>
-                </div>
-                <div class="mobile__item">
-                    <a href="#" class="i-link mobile__link">трендвотчинг</a>
-                </div>
-                <div class="mobile__item">
-                    <a href="#" class="i-link mobile__link">курсы</a>
-                </div>
-            </div>
-            <div class="mobile__section">
-                <div class="mobile__item mobile__item_color_orange">
-                    <a href="#" class="i-link mobile__link">ранний доступ</a>
-                </div>
-                <div class="mobile__item">
-                    <a href="#" class="i-link mobile__link"></a>
-                </div>
-            </div>
+      <div class="mobile__list">
+        <div class="mobile__section">
+          <div class="mobile__item">
+            <a href="#" class="i-link mobile__link">библиотека</a>
+          </div>
+          <div class="mobile__item">
+            <a href="#" class="i-link mobile__link">трендвотчинг</a>
+          </div>
+          <div class="mobile__item">
+            <a href="#" class="i-link mobile__link">курсы</a>
+          </div>
         </div>
+        <div class="mobile__section">
+          <div class="mobile__item mobile__item_color_orange">
+            <a href="#" class="i-link mobile__link">ранний доступ</a>
+          </div>
+          <div class="mobile__item">
+            <a href="#" class="i-link mobile__link"></a>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
 
+    <section class="slider">
+      <div class="container">
+        <div class="slider__flex">
+          <div class="slider__col">
+            <div class="slider__prev">Prev</div>
+            <!-- Кнопка для переключения на предыдущий слайд -->
+
+            <div class="slider__thumbs">
+              <div class="swiper-container">
+                <!-- Slider main container / Основной контейнер -->
+                <div class="swiper-wrapper">
+                  <!-- Additional required wrapper / Дополнительный обязательный оборачивающий блок -->
+                  <div class="swiper-slide">
+                    <div class="slider__image">Слайд 1</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__image">Слайд 2</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__image">Слайд 3</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__image">Слайд 4</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__image">Слайд 5</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__next">Next</div>
+            <!-- Кнопка для переключения на следующий слайд -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

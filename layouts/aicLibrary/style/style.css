@@ -7,6 +7,10 @@
 
 .i-button {
     cursor: pointer;
+    padding: 16px;
+}
+.i-button_orange {
+    background: center / contain no-repeat url('../img/Rectangle9194.png');
 }
 
 .i-link {
