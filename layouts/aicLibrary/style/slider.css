@@ -74,6 +74,30 @@
     -o-object-fit: cover;
     object-fit: cover;
   }
+  .slider__banner {
+    width: 500px;
+    height: 400px;
+    padding: 200px 16px 32px;
+  }
+  .slider__date {
+    font-size: 12px;
+    display: inline-block;
+  }
+  .slider__tagline {
+    color: #FF6633;
+    font-size: 12px;
+    display: inline-block;
+  }
+  .slider__title {
+    font-size: 24px;
+  }
+  .slider__button {
+    height: 36px;
+    width: 160px;
+    font-size: 16px;
+    background: #fff;
+    color: #141414;
+  }
   @media (max-width: 767.98px) {
     .slider__flex {
       flex-direction: column-reverse;
