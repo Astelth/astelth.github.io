@@ -3,7 +3,9 @@
   color: #ffffff;
   transition: transform 0.3s, background-color 0.3s;
   transform: translateY(-100vh);
-  z-index: 0;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
 }
 
 .mobile_active {
