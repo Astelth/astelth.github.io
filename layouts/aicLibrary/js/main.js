@@ -4,7 +4,7 @@ function burgerClick() {
     document.querySelector('.mobile').classList.toggle('mobile_active');
     document.querySelector('.top').classList.toggle('top_active');
 }
-var swiper = new Swiper(".mySwiper2", {
+var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     navigation: {
       nextEl: ".swiper-button-next",
