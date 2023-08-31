@@ -4,10 +4,15 @@ function burgerClick() {
     document.querySelector('.mobile').classList.toggle('mobile_active');
     document.querySelector('.top').classList.toggle('top_active');
 }
-const swiper = new Swiper('.swiper', {
-    speed: 400,
-    spaceBetween: 100,
-    autoplay: {
-        delay: 5000,
-      },
+var swiper = new Swiper(".mySwiper2", {
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
   });
