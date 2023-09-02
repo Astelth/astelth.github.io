@@ -153,11 +153,50 @@
         <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper__buttons">
+            <div class="swiper__button-prev">
+                <span class="icon-left swiper__arrow"></span>
+            </div>
+            <div class="swiper__button-next">
+                <span class="icon-right swiper__arrow"></span>
+            </div>
+        </div>
+        
 
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="panel">
+        <select name="select">
+            <!--Supplement an id here instead of using 'name'-->
+            <option value="value1" selected>все</option>
+            <option value="value2">по дате</option>
+            <option value="value3">популярное</option>
+          </select>
+    </div>
+    <div class="setting">
+        <div class="setting__wrapper">
+            <div class="setting__type-form">
+                <label for="viewType1">
+                    <input type="radio" id="viewType1" name="viewType" value="all" class="settings__view-type" checked>
+                    все
+                </label>
+                <label for="viewType3">
+                    <input type="radio" id="viewType3" name="viewType" value="date" class="settings__view-type">
+                    по дате
+                </label>
+                <label for="viewType2">
+                    <input type="radio" id="viewType2" name="viewType" value="populal" class="settings__view-type">
+                    популярное
+                </label>
+            </div>
+            <div class="setting__filters">
+                
+            </div>
+        </div>
+        <div class="setting__wrapper">
+            <div class="setting__row"></div>
+        </div>
     </div>
 </body>
 

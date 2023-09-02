@@ -7,8 +7,8 @@ function burgerClick() {
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper__button-next",
+      prevEl: ".swiper__button-prev",
     },
     pagination: {
       el: ".swiper-pagination",
