@@ -168,50 +168,82 @@
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
         </div>
-        <div class="panel">
-            <select name="select">
-                <!--Supplement an id here instead of using 'name'-->
-                <option value="value1" selected>все</option>
-                <option value="value2">по дате</option>
-                <option value="value3">популярное</option>
-            </select>
-        </div>
+
         <div class="setting">
             <div class="setting__wrapper">
                 <div class="setting__type-form">
-                    <label for="viewType1">
-                        <input type="radio" id="viewType1" name="viewType" value="all" class="settings__view-type"
-                            checked>
+                    <input type="radio" id="viewType1" name="viewType" value="all" class="setting__view-type" checked>
+                    <label for="viewType1" class="setting__view-type-label">
                         все
                     </label>
-                    <label for="viewType3">
-                        <input type="radio" id="viewType3" name="viewType" value="date" class="settings__view-type">
+                    <input type="radio" id="viewType2" name="viewType" value="date" class="setting__view-type">
+                    <label for="viewType2" class="setting__view-type-label">
                         по дате
                     </label>
-                    <label for="viewType2">
-                        <input type="radio" id="viewType2" name="viewType" value="populal" class="settings__view-type">
+                    <input type="radio" id="viewType3" name="viewType" value="populal" class="setting__view-type">
+                    <label for="viewType3" class="setting__view-type-label">
                         популярное
                     </label>
                 </div>
                 <div class="setting__filters">
-                    <div class="setting__filter">
+                    <div class="setting__filter setting__filter_active">
                         <div class="setting__filter-title">сектор</div>
-                        <div class="setting__triangle"></div>
-                        <div class="setting__filter-content"></div>
+                        <div class="setting__filter-triangle"></div>
+                        <div class="setting__filter-content">
+                            <input type="radio" id="filterSector1" name="filterSector" value="retail" class="setting__filter-input"
+                                checked>
+                            <label for="filterSector1" class="setting__filter-label">
+                                <span class="setting__filter-item">ритейл</span>
+                                <span class="setting__filter-counter">79</span>
+                            </label>
+                            <input type="radio" id="filterSector2" name="filterSector" value="finance" class="setting__filter-input">
+                            <label for="filterSector2" class="setting__filter-label">
+                                <span class="setting__filter-item">финансовый сектор</span>
+                                <span class="setting__filter-counter">23</span>
+                            </label>
+                            <input type="radio" id="filterSector3" name="filterSector" value="food" class="setting__filter-input">
+                            <label for="filterSector3" class="setting__filter-label">
+                                <span class="setting__filter-item">еда и напитки</span>
+                                <span class="setting__filter-counter">2</span>
+                            </label>
+                            <input type="radio" id="filterSector4" name="filterSector" value="education" class="setting__filter-input">
+                            <label for="filterSector4" class="setting__filter-label">
+                                <span class="setting__filter-item">образование</span>
+                                <span class="setting__filter-counter">13</span>
+                            </label>
+                            <input type="radio" id="filterSector5" name="filterSector" value="cripto" class="setting__filter-input">
+                            <label for="filterSector5" class="setting__filter-label">
+                                <span class="setting__filter-item">криптовалюты и nft</span>
+                                <span class="setting__filter-counter">7</span>
+                            </label>
+                            <input type="radio" id="filterSector6" name="filterSector" value="technologie" class="setting__filter-input">
+                            <label for="filterSector6" class="setting__filter-label">
+                                <span class="setting__filter-item">технологии</span>
+                                <span class="setting__filter-counter">44</span>
+                            </label>
+                            <input type="radio" id="filterSector0" name="filterSector" value="reset" class="setting__filter-input">
+                            <label for="filterSector0" class="setting__filter-label setting__filter-label_reset">
+                                <span class="setting__filter-item">сбросить</span>
+                            </label>
+                        </div>
                     </div>
                     <div class="setting__filter">
                         <div class="setting__filter-title">страна</div>
-                        <div class="setting__triangle"></div>
+                        <div class="setting__filter-triangle"></div>
                         <div class="setting__filter-content"></div>
                     </div>
                     <div class="setting__filter">
                         <div class="setting__filter-title">бизнес-модель</div>
-                        <div class="setting__triangle setting__triangle_active"></div>
+                        <div class="setting__filter-triangle"></div>
                         <div class="setting__filter-content"></div>
                     </div>
                     <div class="setting__filter">
                         <div class="setting__filter-title">технологии</div>
-                        <div class="setting__triangle"></div>
+                        <div class="setting__filter-triangle"></div>
+                        <div class="setting__filter-content"></div>
+                    </div>
+                    <div class="setting__filter">
+                        <div class="setting__filter-title">исследования ↗</div>
                         <div class="setting__filter-content"></div>
                     </div>
                 </div>

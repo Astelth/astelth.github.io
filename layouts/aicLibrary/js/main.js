@@ -16,3 +16,6 @@ var swiper = new Swiper(".mySwiper", {
     mousewheel: true,
     keyboard: true,
   });
+
+  const filter = document.querySelectorAll('setting__filter')
+  const triangle = document.querySelectorAll('setting__filter-triangle')

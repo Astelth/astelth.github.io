@@ -1,9 +1,41 @@
 .setting {
     font-size: 20px;
+    user-select: none;
 }
+
 .setting__wrapper {
     display: flex;
     justify-content: space-between;
+}
+
+.setting__type-form {
+    display: flex;
+    column-gap: 32px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 32px;
+    text-transform: lowercase;
+}
+
+.setting__view-type {
+    display: none;
+}
+
+.setting__view-type-label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px;
+    border-radius: 6px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    transition: color 0.3s;
+}
+
+.setting__view-type-label:hover {
+    color: rgba(20, 20, 20, 0.50);
+}
+
+.setting__view-type:checked+.setting__view-type-label {
+    color: #F63;
 }
 
 @media screen and (min-width: 768px) {
@@ -18,10 +50,11 @@
 
     .setting__filter {
         display: flex;
-        column-gap: 4px;align-items: center;
+        column-gap: 4px;
+        align-items: center;
     }
 
-    .setting__triangle {
+    .setting__filter-triangle {
         width: 0;
         height: 0;
         border-left: 6px solid transparent;
@@ -30,12 +63,66 @@
         cursor: pointer;
     }
 
-    .setting__triangle_active {
-        width: 0;
-        height: 0;
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
+    .setting__filter_active .setting__filter-triangle {
         border-bottom: 6px solid #141414;
         border-top: 0;
+    }
+
+    .setting__filter-content {
+        display: none;
+    }
+
+    .setting__filter_active {
+        position: relative;
+    }
+
+    .setting__filter_active .setting__filter-content {
+        position: absolute;
+        top: 28px;
+        display: flex;
+        flex-direction: column;
+        background-color: #141414;
+        color: #ffffff;
+        row-gap: 6px;
+        padding: 15px 22px;
+        min-width: 314px;
+    }
+
+    .setting__filter-input {
+        display: none;
+    }
+
+    .setting__filter-label {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        column-gap: 6px;
+    }
+
+    .setting__filter-label_reset {
+        margin-top: 18px;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        padding: 12px 0 3px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .setting__filter-item {
+        display: block;
+    }
+
+    .setting__filter-counter {
+        display: block;
+        border-radius: 100px;
+        background: rgba(255, 255, 255, 0.10);
+        padding: 4px 12px;
+    }
+
+    .setting__filter-input:checked + .setting__filter-label {
+        color: #f63;
+    }
+
+    .setting__filter-input:checked + .setting__filter-label .setting__filter-counter {
+        background-color: #f63;
+        color: #fff;
     }
 }

@@ -1,5 +1,6 @@
 .swiper-slide {
     height: 650px;
+    margin-bottom: 16px;
 }
 
 .swiper__banner {
@@ -49,11 +50,18 @@
     color: #141414;
     border: 0;
 }
+
 .swiper__buttons {
     display: none;
+    z-index: 50;
+    transform: translateY(-12px);
 }
 
 @media (min-width: 768px) {
+    .swiper {
+        margin-bottom: 32px;
+    }
+
     .swiper-slide {
         max-height: 682px;
     }
@@ -82,6 +90,7 @@
         max-width: 256px;
         font-size: 24px;
     }
+
     .swiper__button-prev {
         width: 68px;
         height: 48px;
@@ -90,6 +99,7 @@
         display: flex;
         cursor: pointer;
     }
+
     .swiper__button-next {
         width: 68px;
         height: 48px;
@@ -98,15 +108,18 @@
         display: flex;
         cursor: pointer;
     }
+
     .swiper__buttons {
         display: flex;
         margin-left: auto;
         margin-right: 32px;
     }
+
     .swiper__arrow {
         margin: auto;
         font-size: 28px;
         color: #141414;
         opacity: 0.5;
+        cursor: pointer;
     }
 }
