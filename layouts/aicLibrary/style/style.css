@@ -1,14 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Suisse Intl', 'Suisse Intl Regular', sans-serif;
     box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Suisse Intl', 'Suisse Intl Regular', sans-serif;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .i-button {
     cursor: pointer;
     padding: 16px;
 }
+
 .i-button_orange {
     background: center / contain no-repeat url('../img/Rectangle9194.png');
 }

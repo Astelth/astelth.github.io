@@ -11,191 +11,214 @@
     <link rel="stylesheet" href="style/burger.css" />
     <link rel="stylesheet" href="style/mobile.css" />
     <link rel="stylesheet" href="style/swiper.css" />
+    <link rel="stylesheet" href="style/setting.css" />
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js" defer></script>
     <title>aic</title>
 </head>
 
 <body>
-    <div class="top">
-        <div class="top__wrapper">
-            <div class="top__section top__section_left">
-                <div class="top__logo">
-                    <a href="#" class="i-link top__link">
-                        <span class="icon-logo"></span>
+    <div class="body">
+        <div class="top">
+            <div class="top__wrapper">
+                <div class="top__section top__section_left">
+                    <div class="top__logo">
+                        <a href="#" class="i-link top__link">
+                            <span class="icon-logo"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="top__section top__section_desktop">
+                    <div class="top__list">
+                        <div class="top__list-item">
+                            <a href="#" class="i-link">библиотека</a>
+                        </div>
+                        <div class="top__list-item">
+                            <a href="#" class="i-link">трендвотчинг</a>
+                        </div>
+                        <div class="top__list-item">
+                            <a href="#" class="i-link">курсы</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top__section top__section_desktop">
+                    <a href="#" class="i-link">
+                        <div class="i-button i-button_orange">ранний доступ</div>
                     </a>
                 </div>
-            </div>
-            <div class="top__section top__section_desktop">
-                <div class="top__list">
-                    <div class="top__list-item">
-                        <a href="#" class="i-link">библиотека</a>
+                <div class="top__section top__section_right">
+                    <div class="burger" onclick="burgerClick()">
+                        <div class="burger__line"></div>
                     </div>
-                    <div class="top__list-item">
-                        <a href="#" class="i-link">трендвотчинг</a>
-                    </div>
-                    <div class="top__list-item">
-                        <a href="#" class="i-link">курсы</a>
-                    </div>
-                </div>
-            </div>
-            <div class="top__section top__section_desktop">
-                <a href="#" class="i-link">
-                    <div class="i-button i-button_orange">ранний доступ</div>
-                </a>
-            </div>
-            <div class="top__section top__section_right">
-                <div class="burger" onclick="burgerClick()">
-                    <div class="burger__line"></div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="mobile">
-        <div class="mobile__list">
-            <div class="mobile__section">
-                <div class="mobile__item">
-                    <a href="#" class="i-link mobile__link">библиотека</a>
+        <div class="mobile">
+            <div class="mobile__list">
+                <div class="mobile__section">
+                    <div class="mobile__item">
+                        <a href="#" class="i-link mobile__link">библиотека</a>
+                    </div>
+                    <div class="mobile__item">
+                        <a href="#" class="i-link mobile__link">трендвотчинг</a>
+                    </div>
+                    <div class="mobile__item">
+                        <a href="#" class="i-link mobile__link">курсы</a>
+                    </div>
                 </div>
-                <div class="mobile__item">
-                    <a href="#" class="i-link mobile__link">трендвотчинг</a>
-                </div>
-                <div class="mobile__item">
-                    <a href="#" class="i-link mobile__link">курсы</a>
-                </div>
-            </div>
-            <div class="mobile__section">
-                <div class="mobile__item mobile__item_color_orange">
-                    <a href="#" class="i-link mobile__link">ранний доступ</a>
-                </div>
-                <div class="mobile__item">
-                    <a href="#" class="i-link mobile__link"></a>
+                <div class="mobile__section">
+                    <div class="mobile__item mobile__item_color_orange">
+                        <a href="#" class="i-link mobile__link">ранний доступ</a>
+                    </div>
+                    <div class="mobile__item">
+                        <a href="#" class="i-link mobile__link"></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Slider main container -->
-    <div class="swiper mySwiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <div class="swiper__banner" style="
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="swiper__banner" style="
               background: center / 180% no-repeat url('img/image2.0.png'), center / 180% no-repeat url('img/Group2802586.png'),
                 #000 100%;
             ">
-                    <div class="swiper__content">
-                        <div class="swiper__row">
-                            <div class="swiper__date">15.03.23</div>
-                            <div class="swiper__tagline">исследование ↗</div>
+                        <div class="swiper__content">
+                            <div class="swiper__row">
+                                <div class="swiper__date">15.03.23</div>
+                                <div class="swiper__tagline">исследование ↗</div>
+                            </div>
+                            <div class="swiper__title">
+                                future banking 2.0: каким может быть банк через 5-10 лет
+                            </div>
+                            <button class="swiper__button">читать</button>
                         </div>
-                        <div class="swiper__title">
-                            future banking 2.0: каким может быть банк через 5-10 лет
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper__banner" style="
+              background: center / 180% no-repeat url('img/image20.png'),
+                #000 90%;
+            ">
+                        <div class="swiper__content">
+                            <div class="swiper__row">
+                                <div class="swiper__date">15.03.23</div>
+                                <div class="swiper__tagline">исследование ↗</div>
+                            </div>
+                            <div class="swiper__title">
+                                Слайд 2.0: каким только не может быть банк через 5-10 лет, никто этого не знает
+                            </div>
+                        </div>
+                        <button class="swiper__button">читать</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper__banner" style="
+              background: center / 180% no-repeat url('img/image20.png'),
+                #000 90%;
+            ">
+                        <div class="swiper__content">
+                            <div class="swiper__row">
+                                <div class="swiper__date">15.03.23</div>
+                                <div class="swiper__tagline">исследование ↗</div>
+                            </div>
+                            <div class="swiper__title">
+                                Слайд 3: Сорок тысяч обезьян в жопу сунули банан
+                            </div>
+                        </div>
+                        <button class="swiper__button">читать</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper__banner" style="
+              background: center / 180% no-repeat url('img/image20.png'),
+                #000 90%;
+            ">
+                        <div class="swiper__content">
+                            <div class="swiper__row">
+                                <div class="swiper__date">15.03.23</div>
+                                <div class="swiper__tagline">исследование ↗</div>
+                            </div>
+                            <div class="swiper__title">
+                                Слайд 4: бла бла бла
+                            </div>
                         </div>
                         <button class="swiper__button">читать</button>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="swiper__banner" style="
-              background: center / 180% no-repeat url('img/image20.png'),
-                #000 90%;
-            ">
-                    <div class="swiper__content">
-                        <div class="swiper__row">
-                            <div class="swiper__date">15.03.23</div>
-                            <div class="swiper__tagline">исследование ↗</div>
-                        </div>
-                        <div class="swiper__title">
-                            Слайд 2.0: каким только не может быть банк через 5-10 лет, никто этого не знает
-                        </div>
-                    </div>
-                    <button class="swiper__button">читать</button>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper__banner" style="
-              background: center / 180% no-repeat url('img/image20.png'),
-                #000 90%;
-            ">
-                    <div class="swiper__content">
-                        <div class="swiper__row">
-                            <div class="swiper__date">15.03.23</div>
-                            <div class="swiper__tagline">исследование ↗</div>
-                        </div>
-                        <div class="swiper__title">
-                            Слайд 3: Сорок тысяч обезьян в жопу сунули банан
-                        </div>
-                    </div>
-                    <button class="swiper__button">читать</button>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper__banner" style="
-              background: center / 180% no-repeat url('img/image20.png'),
-                #000 90%;
-            ">
-                    <div class="swiper__content">
-                        <div class="swiper__row">
-                            <div class="swiper__date">15.03.23</div>
-                            <div class="swiper__tagline">исследование ↗</div>
-                        </div>
-                        <div class="swiper__title">
-                            Слайд 4: бла бла бла
-                        </div>
-                    </div>
-                    <button class="swiper__button">читать</button>
-                </div>
-            </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper__buttons">
-            <div class="swiper__button-prev">
-                <span class="icon-left swiper__arrow"></span>
+            <!-- If we need navigation buttons -->
+            <div class="swiper__buttons">
+                <div class="swiper__button-prev">
+                    <span class="icon-left swiper__arrow"></span>
+                </div>
+                <div class="swiper__button-next">
+                    <span class="icon-right swiper__arrow"></span>
+                </div>
             </div>
-            <div class="swiper__button-next">
-                <span class="icon-right swiper__arrow"></span>
-            </div>
-        </div>
-        
 
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
-    <div class="panel">
-        <select name="select">
-            <!--Supplement an id here instead of using 'name'-->
-            <option value="value1" selected>все</option>
-            <option value="value2">по дате</option>
-            <option value="value3">популярное</option>
-          </select>
-    </div>
-    <div class="setting">
-        <div class="setting__wrapper">
-            <div class="setting__type-form">
-                <label for="viewType1">
-                    <input type="radio" id="viewType1" name="viewType" value="all" class="settings__view-type" checked>
-                    все
-                </label>
-                <label for="viewType3">
-                    <input type="radio" id="viewType3" name="viewType" value="date" class="settings__view-type">
-                    по дате
-                </label>
-                <label for="viewType2">
-                    <input type="radio" id="viewType2" name="viewType" value="populal" class="settings__view-type">
-                    популярное
-                </label>
-            </div>
-            <div class="setting__filters">
-                
-            </div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
         </div>
-        <div class="setting__wrapper">
-            <div class="setting__row"></div>
+        <div class="panel">
+            <select name="select">
+                <!--Supplement an id here instead of using 'name'-->
+                <option value="value1" selected>все</option>
+                <option value="value2">по дате</option>
+                <option value="value3">популярное</option>
+            </select>
+        </div>
+        <div class="setting">
+            <div class="setting__wrapper">
+                <div class="setting__type-form">
+                    <label for="viewType1">
+                        <input type="radio" id="viewType1" name="viewType" value="all" class="settings__view-type"
+                            checked>
+                        все
+                    </label>
+                    <label for="viewType3">
+                        <input type="radio" id="viewType3" name="viewType" value="date" class="settings__view-type">
+                        по дате
+                    </label>
+                    <label for="viewType2">
+                        <input type="radio" id="viewType2" name="viewType" value="populal" class="settings__view-type">
+                        популярное
+                    </label>
+                </div>
+                <div class="setting__filters">
+                    <div class="setting__filter">
+                        <div class="setting__filter-title">сектор</div>
+                        <div class="setting__triangle"></div>
+                        <div class="setting__filter-content"></div>
+                    </div>
+                    <div class="setting__filter">
+                        <div class="setting__filter-title">страна</div>
+                        <div class="setting__triangle"></div>
+                        <div class="setting__filter-content"></div>
+                    </div>
+                    <div class="setting__filter">
+                        <div class="setting__filter-title">бизнес-модель</div>
+                        <div class="setting__triangle setting__triangle_active"></div>
+                        <div class="setting__filter-content"></div>
+                    </div>
+                    <div class="setting__filter">
+                        <div class="setting__filter-title">технологии</div>
+                        <div class="setting__triangle"></div>
+                        <div class="setting__filter-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="setting__wrapper">
+                <div class="setting__row"></div>
+            </div>
         </div>
     </div>
 </body>
