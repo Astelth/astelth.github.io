@@ -17,5 +17,17 @@ var swiper = new Swiper(".mySwiper", {
     keyboard: true,
   });
 
-  const filter = document.querySelectorAll('setting__filter')
-  const triangle = document.querySelectorAll('setting__filter-triangle')
+  const filter = document.querySelectorAll('.setting__filter');
+  const triangle = document.querySelectorAll('.setting__filter-triangle');
+
+  triangle.forEach((item, index) => {
+    item.addEventListener('click', e => {
+      for(let i = 0;i < filter.length;i++) {
+        if (i == index) {
+          filter[i].classList.toggle('setting__filter_active');
+        } else {
+          filter[i].classList.remove('setting__filter_active');
+        }
+      }
+    });
+});
