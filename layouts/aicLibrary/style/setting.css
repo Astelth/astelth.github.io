@@ -1,6 +1,7 @@
 .setting {
     font-size: 20px;
     user-select: none;
+    padding: 32px 21px 48px;
 }
 
 .setting__wrapper {
@@ -42,11 +43,17 @@
     margin-left: 8px;
     vertical-align: middle;
 }
+.setting__filters {
+    display: none;
+}
+.setting__row {
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
     .setting {
         font-size: 18px;
-        padding: 16px 64px;
+        padding: 64px;
     }
 
     .setting__filters {
@@ -133,7 +140,7 @@
         color: #fff;
     }
     .setting__row {
-        display: flex; column-gap: 16px;
+        display: flex; column-gap: 16px; flex-wrap: wrap;row-gap: 8px;
     }
     .setting__tag {
         padding: 8px 24px;
