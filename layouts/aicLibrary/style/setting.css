@@ -37,10 +37,16 @@
 .setting__view-type:checked+.setting__view-type-label {
     color: #F63;
 }
+.setting__icon-close {
+    color: rgba(20, 20, 20, 0.30);
+    margin-left: 8px;
+    vertical-align: middle;
+}
 
 @media screen and (min-width: 768px) {
     .setting {
         font-size: 18px;
+        padding: 16px 64px;
     }
 
     .setting__filters {
@@ -125,5 +131,18 @@
     .setting__filter-input:checked + .setting__filter-label .setting__filter-counter {
         background-color: #f63;
         color: #fff;
+    }
+    .setting__row {
+        display: flex; column-gap: 16px;
+    }
+    .setting__tag {
+        padding: 8px 24px;
+        border:  2px solid rgba(20, 20, 20, 0.10);
+        border-radius: 24px;
+        cursor: pointer;
+    }
+    .setting__tag:hover {
+        border: 2px solid rgba(20, 20, 20, 0.10);
+        background: rgba(20, 20, 20, 0.10);        
     }
 }

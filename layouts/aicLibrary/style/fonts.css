@@ -1,22 +1,10 @@
-@font-face{
-    font-family: "Suisse Intl Regular";
-    src: url("../fonts/Suisse Intl Regular.eot");
-    src: url("../fonts/Suisse Intl Regular.eot?#iefix")format("embedded-opentype"),
-        url("../fonts/Suisse Intl Regular.woff")format("woff"),
-        url("../fonts/Suisse Intl Regular.woff2")format("woff2"),
-        url("../fonts/Suisse Intl Regular.ttf")format("truetype"),
-    font-weight:normal;
-    font-style:normal;
-    font-display:swap;
-}
-
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?p7159q');
-  src:  url('../fonts/icomoon.eot?p7159q#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?p7159q') format('truetype'),
-    url('../fonts/icomoon.woff?p7159q') format('woff'),
-    url('../fonts/icomoon.svg?p7159q#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?kt5ys5');
+  src:  url('../fonts/icomoon.eot?kt5ys5#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?kt5ys5') format('truetype'),
+    url('../fonts/icomoon.woff?kt5ys5') format('woff'),
+    url('../fonts/icomoon.svg?kt5ys5#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -37,20 +25,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-close:before {
+  content: "\e910";
+}
 .icon-big_finger:before {
   content: "\e900";
 }
 .icon-share:before {
   content: "\e901";
 }
-.icon-chain1:before {
+.icon-chain:before {
   content: "\e902";
 }
 .icon-flag:before {
   content: "\e90b";
-}
-.icon-chain:before {
-  content: "\e903";
 }
 .icon-output:before {
   content: "\e904";
