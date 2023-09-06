@@ -117,6 +117,7 @@
 @media screen and (min-width: 768px) {
   .preview {
     padding: 0 64px 128px;
+    border-bottom: 1px solid #141414;
   }
   .preview__wrapper {
     row-gap: 64px;
