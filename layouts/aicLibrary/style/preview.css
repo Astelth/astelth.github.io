@@ -1,111 +1,188 @@
 .preview {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    flex-wrap: wrap;
+  padding: 20px;
+}
+.preview__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 48px;
+  padding-bottom: 64px;
 }
 
 .preview__picture {
-    width: 100%;
+  width: 100%;
 }
 
 .preview__item {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
 }
-
+.preview__item_box {
+  background: 45% 45% / 200% no-repeat url("../img/image20.png"),
+    30% center / 250% no-repeat url("../img/Group2802586.png"), #000 100%;
+  padding: 16px;
+  justify-content: flex-end;
+  min-height: 400px;
+}
 .preview__picture {
-    border-radius: 2px;
-    margin-bottom: 20px;
+  border-radius: 2px;
+  margin-bottom: 20px;
 }
 
 .preview__title {
-    color: #141414;
-    font-variant-numeric: oldstyle-nums proportional-nums;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: 26px;
-    letter-spacing: -0.2px;
-    text-transform: lowercase;
+  color: #141414;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  text-transform: lowercase;
 }
 
 .preview__short {
-    color: rgba(20, 20, 20, 0.50);
-    font-variant-numeric: slashed-zero;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: lowercase;
-    margin-bottom: 16px;
+  color: rgba(20, 20, 20, 0.5);
+  font-variant-numeric: slashed-zero;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: lowercase;
+  margin-bottom: 16px;
 }
 
 .preview__tag {
-    color: #F63;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: 24px;
+  color: #f63;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
 }
 
 .preview__date {
-    color: rgba(20, 20, 20, 0.50);
-    text-align: right;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: lowercase;
+  color: rgba(20, 20, 20, 0.5);
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: lowercase;
 }
 
 .preview__inner {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(20, 20, 20, 0.30);
-    padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(20, 20, 20, 0.3);
+  padding-bottom: 5px;
+}
+
+.preview__item_box .preview__title {
+  color: #fff;
+}
+
+.preview__item_box .preview__short {
+  color: rgba(255, 255, 255, 0.5);
+}
+.preview__item_box .preview__date {
+  color: rgba(255, 255, 255, 0.5);
+}
+.preview__item_box .preview__inner {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.preview__control-desktop {
+  display: none;
+}
+.preview__control-mobile {
+  text-align: center;
+}
+.preview__button {
+  width: 100%;
+  max-width: 360px;
+  height: 64px;
+  color: #141414;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+  border: 1px solid rgba(20, 20, 20, 0.3);
 }
 
 @media screen and (min-width: 768px) {
-    .preview {
-        padding: 0 64px;
-        row-gap: 64px;
-        column-gap: 16px;
-    }
+  .preview {
+    padding: 0 64px 128px;
+  }
+  .preview__wrapper {
+    row-gap: 64px;
+    column-gap: 16px;
+    padding-bottom: 96px;
+  }
+  .preview__item {
+    max-width: 448px;
+  }
+  .preview__item_box {
+    background: 40% -25% / 160% no-repeat url("../img/image2.0.png"),
+      75% center / 280% no-repeat url("../img/Group2802586.png"), #000 100%;
+    padding: 28px 29px;
+  }
+  .preview__picture {
+    margin-bottom: 16px;
+  }
+  .preview__title {
+    line-height: 140%;
+  }
+  .preview__short {
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.2px;
+    margin-bottom: 24px;
+  }
 
-    .preview__item {
-        max-width: 448px;
-    }
-    .preview__picture {
-        margin-bottom: 16px;
-    }
-    .preview__title {
-        line-height: 140%;
-    }
-        .preview__short {
-        font-size: 20px;
-        line-height: 140%;
-        letter-spacing: -0.2px;
-        margin-bottom: 24px;
-    }
-
-    .preview__inner {
-        border-bottom: 2px solid rgba(20, 20, 20, 0.10);
-        padding-bottom: 14px;
-    }
-    .preview__tag {
-        font-size: 16px;
-        line-height: 22px;
-    }
-    .preview__date {
-        font-size: 16px;
-        line-height: 22px;
-    }
-
+  .preview__inner {
+    border-bottom: 2px solid rgba(20, 20, 20, 0.1);
+    padding-bottom: 14px;
+  }
+  .preview__tag {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .preview__date {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .preview__control-mobile {
+    display: none;
+  }
+  .preview__control-desktop {
+    display: flex;
+    justify-content: center;
+    gap: 83px;
+    color: rgba(20, 20, 20, 0.3);
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 36px;
+    letter-spacing: -0.32px;
+  }
+  .preview__control-section {
+    display: flex;
+    gap: 35px;
+  }
+  .preview__control-item {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .preview__control-item:hover {
+    color: rgba(20, 20, 20, 0.5);
+  }
+  .preview__control-item_active {
+    color: #141414;
+  }
 }
