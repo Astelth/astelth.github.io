@@ -2,6 +2,7 @@
     font-size: 20px;
     user-select: none;
     padding: 32px 21px 48px;
+    background: #F5F5F5;
 }
 
 .setting__wrapper {
@@ -31,21 +32,20 @@
     transition: color 0.3s;
 }
 
-.setting__view-type-label:hover {
-    color: rgba(20, 20, 20, 0.50);
-}
-
 .setting__view-type:checked+.setting__view-type-label {
     color: #F63;
 }
+
 .setting__icon-close {
     color: rgba(20, 20, 20, 0.30);
     margin-left: 8px;
     vertical-align: middle;
 }
+
 .setting__filters {
     display: none;
 }
+
 .setting__row {
     display: none;
 }
@@ -131,25 +131,35 @@
         padding: 4px 12px;
     }
 
-    .setting__filter-input:checked + .setting__filter-label {
+    .setting__filter-input:checked+.setting__filter-label {
         color: #f63;
     }
 
-    .setting__filter-input:checked + .setting__filter-label .setting__filter-counter {
+    .setting__filter-input:checked+.setting__filter-label .setting__filter-counter {
         background-color: #f63;
         color: #fff;
     }
+
     .setting__row {
-        display: flex; column-gap: 16px; flex-wrap: wrap;row-gap: 8px;
+        display: flex;
+        column-gap: 16px;
+        flex-wrap: wrap;
+        row-gap: 8px;
     }
+
     .setting__tag {
         padding: 8px 24px;
-        border:  2px solid rgba(20, 20, 20, 0.10);
+        border: 2px solid rgba(20, 20, 20, 0.10);
         border-radius: 24px;
         cursor: pointer;
     }
+
     .setting__tag:hover {
         border: 2px solid rgba(20, 20, 20, 0.10);
-        background: rgba(20, 20, 20, 0.10);        
+        background: rgba(20, 20, 20, 0.10);
+    }
+
+    .setting__view-type-label:hover {
+        color: rgba(20, 20, 20, 0.50);
     }
 }
