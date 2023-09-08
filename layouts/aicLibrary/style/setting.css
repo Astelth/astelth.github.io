@@ -54,7 +54,8 @@
     .setting {
         font-size: 18px;
         padding: 64px;
-    }
+    overflow: hidden;
+}
 
     .setting__filters {
         display: flex;

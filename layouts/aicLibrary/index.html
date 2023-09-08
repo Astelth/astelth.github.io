@@ -1,559 +1,712 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/fonts.css" />
+    <link rel="stylesheet" href="style/top.css" />
+    <link rel="stylesheet" href="style/burger.css" />
+    <link rel="stylesheet" href="style/mobile.css" />
+    <link rel="stylesheet" href="style/swiper.css" />
+    <link rel="stylesheet" href="style/setting.css" />
+    <link rel="stylesheet" href="style/preview.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <title>aic</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="style/style.css" />
-  <link rel="stylesheet" href="style/fonts.css" />
-  <link rel="stylesheet" href="style/top.css" />
-  <link rel="stylesheet" href="style/burger.css" />
-  <link rel="stylesheet" href="style/mobile.css" />
-  <link rel="stylesheet" href="style/swiper.css" />
-  <link rel="stylesheet" href="style/setting.css" />
-  <link rel="stylesheet" href="style/preview.css" />
-  <link rel="stylesheet" href="style/footer.css" />
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/main.js" defer></script>
-  <title>aic</title>
-</head>
-
-<body>
-  <div class="body">
-    <div class="top">
-      <div class="top__wrapper">
-        <div class="top__section top__section_left">
-          <div class="top__logo">
-            <a href="#" class="i-link top__link">
-              <span class="icon-logo"></span>
+  <body>
+    <div class="body">
+      <div class="top">
+        <div class="top__wrapper">
+          <div class="top__section top__section_left">
+            <div class="top__logo">
+              <a href="#" class="i-link top__link">
+                <span class="icon-logo"></span>
+              </a>
+            </div>
+          </div>
+          <div class="top__section top__section_desktop">
+            <div class="top__list">
+              <div class="top__list-item">
+                <a href="#" class="i-link">библиотека</a>
+              </div>
+              <div class="top__list-item">
+                <a href="#" class="i-link">трендвотчинг</a>
+              </div>
+              <div class="top__list-item">
+                <a href="#" class="i-link">курсы</a>
+              </div>
+            </div>
+          </div>
+          <div class="top__section top__section_desktop">
+            <a href="#" class="i-link">
+              <div class="i-button i-button_orange">ранний доступ</div>
             </a>
           </div>
-        </div>
-        <div class="top__section top__section_desktop">
-          <div class="top__list">
-            <div class="top__list-item">
-              <a href="#" class="i-link">библиотека</a>
+          <div class="top__section top__section_right">
+            <div class="burger" onclick="burgerClick()">
+              <div class="burger__line"></div>
             </div>
-            <div class="top__list-item">
-              <a href="#" class="i-link">трендвотчинг</a>
-            </div>
-            <div class="top__list-item">
-              <a href="#" class="i-link">курсы</a>
-            </div>
-          </div>
-        </div>
-        <div class="top__section top__section_desktop">
-          <a href="#" class="i-link">
-            <div class="i-button i-button_orange">ранний доступ</div>
-          </a>
-        </div>
-        <div class="top__section top__section_right">
-          <div class="burger" onclick="burgerClick()">
-            <div class="burger__line"></div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="mobile">
-      <div class="mobile__list">
-        <div class="mobile__section">
-          <div class="mobile__item">
-            <a href="#" class="i-link mobile__link">библиотека</a>
+      <div class="mobile">
+        <div class="mobile__list">
+          <div class="mobile__section">
+            <div class="mobile__item">
+              <a href="#" class="i-link mobile__link">библиотека</a>
+            </div>
+            <div class="mobile__item">
+              <a href="#" class="i-link mobile__link">трендвотчинг</a>
+            </div>
+            <div class="mobile__item">
+              <a href="#" class="i-link mobile__link">курсы</a>
+            </div>
           </div>
-          <div class="mobile__item">
-            <a href="#" class="i-link mobile__link">трендвотчинг</a>
-          </div>
-          <div class="mobile__item">
-            <a href="#" class="i-link mobile__link">курсы</a>
-          </div>
-        </div>
-        <div class="mobile__section">
-          <div class="mobile__item mobile__item_color_orange">
-            <a href="#" class="i-link mobile__link">ранний доступ</a>
-          </div>
-          <div class="mobile__item">
-            <a href="#" class="i-link mobile__link"></a>
+          <div class="mobile__section">
+            <div class="mobile__item mobile__item_color_orange">
+              <a href="#" class="i-link mobile__link">ранний доступ</a>
+            </div>
+            <div class="mobile__item">
+              <a href="#" class="i-link mobile__link"></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Slider main container -->
-    <div class="swiper mySwiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <div class="swiper__banner" style="
+      <!-- Slider main container -->
+      <div class="swiper mySwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div
+              class="swiper__banner"
+              style="
                 background: center / 180% no-repeat url('img/image2.0.png'),
                   center / 180% no-repeat url('img/Group2802586.png'), #000 100%;
-              ">
-            <div class="swiper__content">
-              <div class="swiper__row">
-                <div class="swiper__date">15.03.23</div>
-                <div class="swiper__tagline">исследование ↗</div>
+              "
+            >
+              <div class="swiper__content">
+                <div class="swiper__row">
+                  <div class="swiper__date">15.03.23</div>
+                  <div class="swiper__tagline">исследование ↗</div>
+                </div>
+                <div class="swiper__title">
+                  future banking 2.0: каким может быть банк через 5-10 лет
+                </div>
+                <button class="swiper__button">читать</button>
               </div>
-              <div class="swiper__title">
-                future banking 2.0: каким может быть банк через 5-10 лет
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="swiper__banner"
+              style="
+                background: center / 180% no-repeat url('img/image20.png'),
+                  #000 90%;
+              "
+            >
+              <div class="swiper__content">
+                <div class="swiper__row">
+                  <div class="swiper__date">15.03.23</div>
+                  <div class="swiper__tagline">исследование ↗</div>
+                </div>
+                <div class="swiper__title">
+                  Слайд 2.0: каким только не может быть банк через 5-10 лет,
+                  никто этого не знает
+                </div>
+              </div>
+              <button class="swiper__button">читать</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="swiper__banner"
+              style="
+                background: center / 180% no-repeat url('img/image20.png'),
+                  #000 90%;
+              "
+            >
+              <div class="swiper__content">
+                <div class="swiper__row">
+                  <div class="swiper__date">15.03.23</div>
+                  <div class="swiper__tagline">исследование ↗</div>
+                </div>
+                <div class="swiper__title">
+                  Слайд 3: Сорок тысяч обезьян в жопу сунули банан
+                </div>
+              </div>
+              <button class="swiper__button">читать</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="swiper__banner"
+              style="
+                background: center / 180% no-repeat url('img/image20.png'),
+                  #000 90%;
+              "
+            >
+              <div class="swiper__content">
+                <div class="swiper__row">
+                  <div class="swiper__date">15.03.23</div>
+                  <div class="swiper__tagline">исследование ↗</div>
+                </div>
+                <div class="swiper__title">Слайд 4: бла бла бла</div>
               </div>
               <button class="swiper__button">читать</button>
             </div>
           </div>
         </div>
-        <div class="swiper-slide">
-          <div class="swiper__banner" style="
-                background: center / 180% no-repeat url('img/image20.png'),
-                  #000 90%;
-              ">
-            <div class="swiper__content">
-              <div class="swiper__row">
-                <div class="swiper__date">15.03.23</div>
-                <div class="swiper__tagline">исследование ↗</div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper__buttons">
+          <div class="swiper__button-prev">
+            <span class="icon-left swiper__arrow"></span>
+          </div>
+          <div class="swiper__button-next">
+            <span class="icon-right swiper__arrow"></span>
+          </div>
+        </div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+      <div class="setting">
+        <div class="setting__wrapper">
+          <div class="setting__type-form">
+            <input
+              type="radio"
+              id="viewType1"
+              name="viewType"
+              value="all"
+              class="setting__view-type"
+              checked
+            />
+            <label for="viewType1" class="setting__view-type-label">
+              все
+            </label>
+            <input
+              type="radio"
+              id="viewType2"
+              name="viewType"
+              value="date"
+              class="setting__view-type"
+            />
+            <label for="viewType2" class="setting__view-type-label">
+              по дате
+            </label>
+            <input
+              type="radio"
+              id="viewType3"
+              name="viewType"
+              value="populal"
+              class="setting__view-type"
+            />
+            <label for="viewType3" class="setting__view-type-label">
+              популярное
+            </label>
+          </div>
+          <div class="setting__filters">
+            <div class="setting__filter">
+              <div class="setting__filter-title">сектор</div>
+              <div class="setting__filter-triangle"></div>
+              <div class="setting__filter-content">
+                <input
+                  type="radio"
+                  id="filterSector1"
+                  name="filterSector"
+                  value="retail"
+                  class="setting__filter-input"
+                  checked
+                />
+                <label for="filterSector1" class="setting__filter-label">
+                  <span class="setting__filter-item">ритейл</span>
+                  <span class="setting__filter-counter">79</span>
+                </label>
+                <input
+                  type="radio"
+                  id="filterSector2"
+                  name="filterSector"
+                  value="finance"
+                  class="setting__filter-input"
+                />
+                <label for="filterSector2" class="setting__filter-label">
+                  <span class="setting__filter-item">финансовый сектор</span>
+                  <span class="setting__filter-counter">23</span>
+                </label>
+                <input
+                  type="radio"
+                  id="filterSector3"
+                  name="filterSector"
+                  value="food"
+                  class="setting__filter-input"
+                />
+                <label for="filterSector3" class="setting__filter-label">
+                  <span class="setting__filter-item">еда и напитки</span>
+                  <span class="setting__filter-counter">2</span>
+                </label>
+                <input
+                  type="radio"
+                  id="filterSector4"
+                  name="filterSector"
+                  value="education"
+                  class="setting__filter-input"
+                />
+                <label for="filterSector4" class="setting__filter-label">
+                  <span class="setting__filter-item">образование</span>
+                  <span class="setting__filter-counter">13</span>
+                </label>
+                <input
+                  type="radio"
+                  id="filterSector5"
+                  name="filterSector"
+                  value="cripto"
+                  class="setting__filter-input"
+                />
+                <label for="filterSector5" class="setting__filter-label">
+                  <span class="setting__filter-item">криптовалюты и nft</span>
+                  <span class="setting__filter-counter">7</span>
+                </label>
+                <input
+                  type="radio"
+                  id="filterSector6"
+                  name="filterSector"
+                  value="technologie"
+                  class="setting__filter-input"
+                />
+                <label for="filterSector6" class="setting__filter-label">
+                  <span class="setting__filter-item">технологии</span>
+                  <span class="setting__filter-counter">44</span>
+                </label>
+                <input
+                  type="radio"
+                  id="filterSector0"
+                  name="filterSector"
+                  value="reset"
+                  class="setting__filter-input"
+                />
+                <label
+                  for="filterSector0"
+                  class="setting__filter-label setting__filter-label_reset"
+                >
+                  <span class="setting__filter-item">сбросить</span>
+                </label>
               </div>
-              <div class="swiper__title">
-                Слайд 2.0: каким только не может быть банк через 5-10 лет,
-                никто этого не знает
+            </div>
+            <div class="setting__filter">
+              <div class="setting__filter-title">страна</div>
+              <div class="setting__filter-triangle"></div>
+              <div class="setting__filter-content">
+                <input
+                  type="radio"
+                  id="filterCountry1"
+                  name="filterCountry"
+                  value="technologie"
+                  class="setting__filter-input"
+                />
+                <label for="filterCountry1" class="setting__filter-label">
+                  <span class="setting__filter-item">Россия</span>
+                  <span class="setting__filter-counter">24</span>
+                </label>
+                <input
+                  type="radio"
+                  id="filterCountry2"
+                  name="filterCountry"
+                  value="technologie"
+                  class="setting__filter-input"
+                />
+                <label for="filterCountry2" class="setting__filter-label">
+                  <span class="setting__filter-item">Германия</span>
+                  <span class="setting__filter-counter">15</span>
+                </label>
+                <input
+                  type="radio"
+                  id="filterCountry0"
+                  name="filterCountry"
+                  value="reset"
+                  class="setting__filter-input"
+                />
+                <label
+                  for="filterCountry0"
+                  class="setting__filter-label setting__filter-label_reset"
+                >
+                  <span class="setting__filter-item">сбросить</span>
+                </label>
               </div>
             </div>
-            <button class="swiper__button">читать</button>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="swiper__banner" style="
-                background: center / 180% no-repeat url('img/image20.png'),
-                  #000 90%;
-              ">
-            <div class="swiper__content">
-              <div class="swiper__row">
-                <div class="swiper__date">15.03.23</div>
-                <div class="swiper__tagline">исследование ↗</div>
+            <div class="setting__filter">
+              <div class="setting__filter-title">бизнес-модель</div>
+              <div class="setting__filter-triangle"></div>
+              <div class="setting__filter-content">
+                <input
+                  type="radio"
+                  id="filterBusiness1"
+                  name="filterBusiness"
+                  value="technologie"
+                  class="setting__filter-input"
+                />
+                <label for="filterBusiness1" class="setting__filter-label">
+                  <span class="setting__filter-item">Реклама</span>
+                  <span class="setting__filter-counter">24</span>
+                </label>
+                <input
+                  type="radio"
+                  id="filterBusiness2"
+                  name="filterBusiness"
+                  value="technologie"
+                  class="setting__filter-input"
+                />
+                <label for="filterBusiness2" class="setting__filter-label">
+                  <span class="setting__filter-item">Партнерство</span>
+                  <span class="setting__filter-counter">15</span>
+                </label>
+                <input
+                  type="radio"
+                  id="filterBusiness0"
+                  name="filterBusiness"
+                  value="reset"
+                  class="setting__filter-input"
+                />
+                <label
+                  for="filterBusiness0"
+                  class="setting__filter-label setting__filter-label_reset"
+                >
+                  <span class="setting__filter-item">сбросить</span>
+                </label>
               </div>
-              <div class="swiper__title">
-                Слайд 3: Сорок тысяч обезьян в жопу сунули банан
+            </div>
+            <div class="setting__filter">
+              <div class="setting__filter-title">технологии</div>
+              <div class="setting__filter-triangle"></div>
+              <div class="setting__filter-content">
+                <input
+                  type="radio"
+                  id="filterTechno1"
+                  name="filterTechno"
+                  value="technologie"
+                  class="setting__filter-input"
+                />
+                <label for="filterTechno1" class="setting__filter-label">
+                  <span class="setting__filter-item">Технология 1</span>
+                  <span class="setting__filter-counter">124</span>
+                </label>
+                <input
+                  type="radio"
+                  id="filterTechno2"
+                  name="filterTechno"
+                  value="technologie"
+                  class="setting__filter-input"
+                />
+                <label for="filterTechno2" class="setting__filter-label">
+                  <span class="setting__filter-item">Технология 3</span>
+                  <span class="setting__filter-counter">13</span>
+                </label>
+                <input
+                  type="radio"
+                  id="filterTechno0"
+                  name="filterTechno"
+                  value="reset"
+                  class="setting__filter-input"
+                />
+                <label
+                  for="filterTechno0"
+                  class="setting__filter-label setting__filter-label_reset"
+                >
+                  <span class="setting__filter-item">сбросить</span>
+                </label>
               </div>
             </div>
-            <button class="swiper__button">читать</button>
+            <div class="setting__filter">
+              <div class="setting__filter-title">исследования ↗</div>
+            </div>
           </div>
         </div>
-        <div class="swiper-slide">
-          <div class="swiper__banner" style="
-                background: center / 180% no-repeat url('img/image20.png'),
-                  #000 90%;
-              ">
-            <div class="swiper__content">
-              <div class="swiper__row">
-                <div class="swiper__date">15.03.23</div>
-                <div class="swiper__tagline">исследование ↗</div>
+        <div class="setting__wrapper">
+          <div class="setting__row">
+            <span class="setting__tag"
+              >образование<span class="icon-close setting__icon-close"></span
+            ></span>
+            <span class="setting__tag"
+              >криптовалюты и nft<span
+                class="icon-close setting__icon-close"
+              ></span
+            ></span>
+            <span class="setting__tag"
+              >технологии<span class="icon-close setting__icon-close"></span
+            ></span>
+            <span class="setting__tag"
+              >финансовый сектор<span
+                class="icon-close setting__icon-close"
+              ></span
+            ></span>
+            <span class="setting__tag"
+              >жизнь - боль<span class="icon-close setting__icon-close"></span
+            ></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="preview">
+        <div class="preview__wrapper">
+          <div class="preview__item">
+            <a href="#" class="i-link preview__link">
+              <img src="img/image213.jpg" alt="фото" class="preview__picture" />
+              <div class="preview__title">
+                Первая в мире блокчейн для предварительного приобретенных
+                углеродных кредитов
               </div>
-              <div class="swiper__title">Слайд 4: бла бла бла</div>
+            </a>
+            <div class="preview__short">
+              Компания, возглавляемая женщинами, стремится стать крупнейшим
+              устойчивым банком в Европе
             </div>
-            <button class="swiper__button">читать</button>
+            <div class="preview__inner">
+              <div class="preview__tag">образование ↗</div>
+              <div class="preview__date">15 марта 2022</div>
+            </div>
+          </div>
+
+          <div class="preview__item">
+            <a href="#" class="i-link preview__link">
+              <img src="img/image182.jpg" alt="фото" class="preview__picture" />
+              <div class="preview__title">
+                Первая в мире блокчейн для предварительного приобретенных
+                углеродных кредитов
+              </div>
+            </a>
+            <div class="preview__short">
+              DAO развивает инфраструктуру, чтобы сделать торговлю форвардными
+              углеродными...
+            </div>
+            <div class="preview__inner">
+              <div class="preview__tag">образование ↗</div>
+              <div class="preview__date">15 марта 2022</div>
+            </div>
+          </div>
+
+          <div class="preview__item">
+            <a href="#" class="i-link preview__link">
+              <img src="img/image183.jpg" alt="фото" class="preview__picture" />
+              <div class="preview__title">
+                Приложение позволяет микромерчантам превращать свои телефоны в
+                системы точек продаж
+              </div>
+            </a>
+            <div class="preview__short">
+              Стартап предлагает ряд платежных систем, адаптированных для МСП...
+            </div>
+            <div class="preview__inner">
+              <div class="preview__tag">образование ↗</div>
+              <div class="preview__date">15 марта 2022</div>
+            </div>
+          </div>
+
+          <div class="preview__item">
+            <a href="#" class="i-link preview__link">
+              <img src="img/image184.jpg" alt="фото" class="preview__picture" />
+              <div class="preview__title">
+                Необанк борется с изменениями климата
+              </div>
+            </a>
+            <div class="preview__short">
+              DAO развивает инфраструктуру, чтобы сделать торговлю форвардными
+              углеродными...
+            </div>
+            <div class="preview__inner">
+              <div class="preview__tag">образование ↗</div>
+              <div class="preview__date">15 марта 2022</div>
+            </div>
+          </div>
+
+          <div class="preview__item preview__item_box">
+            <a href="#" class="i-link preview__link">
+              <div class="preview__title">future banking 2.0</div>
+            </a>
+            <div class="preview__short">
+              попробуем спрогнозировать, каким может быть банк через 5-10 лет
+            </div>
+            <div class="preview__inner">
+              <div class="preview__tag">исследование ↗</div>
+              <div class="preview__date">15 марта 2022</div>
+            </div>
+          </div>
+
+          <div class="preview__item">
+            <a href="#" class="i-link preview__link">
+              <img src="img/image170.jpg" alt="фото" class="preview__picture" />
+              <div class="preview__title">
+                Приложение позволяет микромерчантам превращать свои телефоны в
+                системы точек продаж
+              </div>
+            </a>
+            <div class="preview__short">
+              Стартап предлагает ряд платежных систем, адаптированных для МСП...
+            </div>
+            <div class="preview__inner">
+              <div class="preview__tag">образование ↗</div>
+              <div class="preview__date">15 марта 2022</div>
+            </div>
+          </div>
+
+          <div class="preview__item">
+            <a href="#" class="i-link preview__link">
+              <img src="img/image171.jpg" alt="фото" class="preview__picture" />
+              <div class="preview__title">
+                Первая в мире блокчейн для предварительного приобретенных
+                углеродных кредитов
+              </div>
+            </a>
+            <div class="preview__short">
+              Компания, возглавляемая женщинами, стремится стать крупнейшим
+              устойчивым банком в Европе
+            </div>
+            <div class="preview__inner">
+              <div class="preview__tag">образование ↗</div>
+              <div class="preview__date">15 марта 2022</div>
+            </div>
+          </div>
+
+          <div class="preview__item">
+            <a href="#" class="i-link preview__link">
+              <img src="img/image172.jpg" alt="фото" class="preview__picture" />
+              <div class="preview__title">
+                Первая в мире блокчейн для предварительного приобретенных
+                углеродных кредитов
+              </div>
+            </a>
+            <div class="preview__short">
+              DAO развивает инфраструктуру, чтобы сделать торговлю форвардными
+              углеродными...
+            </div>
+            <div class="preview__inner">
+              <div class="preview__tag">образование ↗</div>
+              <div class="preview__date">15 марта 2022</div>
+            </div>
+          </div>
+
+          <div class="preview__item">
+            <a href="#" class="i-link preview__link">
+              <img src="img/image173.jpg" alt="фото" class="preview__picture" />
+              <div class="preview__title">
+                Приложение позволяет микромерчантам превращать свои телефоны в
+                системы точек продаж
+              </div>
+            </a>
+            <div class="preview__short">
+              Стартап предлагает ряд платежных систем, адаптированных для МСП...
+            </div>
+            <div class="preview__inner">
+              <div class="preview__tag">образование ↗</div>
+              <div class="preview__date">15 марта 2022</div>
+            </div>
+          </div>
+
+          <div class="preview__item">
+            <a href="#" class="i-link preview__link">
+              <img src="img/image184.jpg" alt="фото" class="preview__picture" />
+              <div class="preview__title">
+                Необанк борется с изменениями климата
+              </div>
+            </a>
+            <div class="preview__short">
+              DAO развивает инфраструктуру, чтобы сделать торговлю форвардными
+              углеродными...
+            </div>
+            <div class="preview__inner">
+              <div class="preview__tag">образование ↗</div>
+              <div class="preview__date">15 марта 2022</div>
+            </div>
+          </div>
+
+          <div class="preview__item">
+            <a href="#" class="i-link preview__link">
+              <img src="img/image181.jpg" alt="фото" class="preview__picture" />
+              <div class="preview__title">
+                Первая в мире блокчейн для предварительного приобретенных
+                углеродных кредитов
+              </div>
+            </a>
+            <div class="preview__short">
+              Компания, возглавляемая женщинами, стремится стать крупнейшим
+              устойчивым банком в Европе
+            </div>
+            <div class="preview__inner">
+              <div class="preview__tag">образование ↗</div>
+              <div class="preview__date">15 марта 2022</div>
+            </div>
+          </div>
+
+          <div class="preview__item">
+            <a href="#" class="i-link preview__link">
+              <img src="img/image170.jpg" alt="фото" class="preview__picture" />
+              <div class="preview__title">
+                Приложение позволяет микромерчантам превращать свои телефоны в
+                системы точек продаж
+              </div>
+            </a>
+            <div class="preview__short">
+              Стартап предлагает ряд платежных систем, адаптированных для МСП...
+            </div>
+            <div class="preview__inner">
+              <div class="preview__tag">образование ↗</div>
+              <div class="preview__date">15 марта 2022</div>
+            </div>
+          </div>
+        </div>
+        <div class="preview__control">
+          <div class="preview__control-mobile">
+            <button class="preview__button">Показать больше</button>
+          </div>
+          <div class="preview__control-desktop">
+            <div class="preview__control-section">
+              <span class="preview__control-item icon-left"></span>
+            </div>
+            <div class="preview__control-section">
+              <span class="preview__control-item preview__control-item_active"
+                >1</span
+              >
+              <span class="preview__control-item">2</span>
+              <span class="preview__control-item">3</span>
+              <span class="preview__control-item">4</span>
+              <span class="preview__control-item">5</span>
+            </div>
+            <div class="preview__control-section">
+              <span class="preview__control-item icon-right"></span>
+            </div>
           </div>
         </div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper__buttons">
-        <div class="swiper__button-prev">
-          <span class="icon-left swiper__arrow"></span>
-        </div>
-        <div class="swiper__button-next">
-          <span class="icon-right swiper__arrow"></span>
-        </div>
-      </div>
-
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
-    </div>
-
-    <div class="setting">
-      <div class="setting__wrapper">
-        <div class="setting__type-form">
-          <input type="radio" id="viewType1" name="viewType" value="all" class="setting__view-type" checked />
-          <label for="viewType1" class="setting__view-type-label">
-            все
-          </label>
-          <input type="radio" id="viewType2" name="viewType" value="date" class="setting__view-type" />
-          <label for="viewType2" class="setting__view-type-label">
-            по дате
-          </label>
-          <input type="radio" id="viewType3" name="viewType" value="populal" class="setting__view-type" />
-          <label for="viewType3" class="setting__view-type-label">
-            популярное
-          </label>
-        </div>
-        <div class="setting__filters">
-          <div class="setting__filter">
-            <div class="setting__filter-title">сектор</div>
-            <div class="setting__filter-triangle"></div>
-            <div class="setting__filter-content">
-              <input type="radio" id="filterSector1" name="filterSector" value="retail" class="setting__filter-input"
-                checked />
-              <label for="filterSector1" class="setting__filter-label">
-                <span class="setting__filter-item">ритейл</span>
-                <span class="setting__filter-counter">79</span>
-              </label>
-              <input type="radio" id="filterSector2" name="filterSector" value="finance"
-                class="setting__filter-input" />
-              <label for="filterSector2" class="setting__filter-label">
-                <span class="setting__filter-item">финансовый сектор</span>
-                <span class="setting__filter-counter">23</span>
-              </label>
-              <input type="radio" id="filterSector3" name="filterSector" value="food" class="setting__filter-input" />
-              <label for="filterSector3" class="setting__filter-label">
-                <span class="setting__filter-item">еда и напитки</span>
-                <span class="setting__filter-counter">2</span>
-              </label>
-              <input type="radio" id="filterSector4" name="filterSector" value="education"
-                class="setting__filter-input" />
-              <label for="filterSector4" class="setting__filter-label">
-                <span class="setting__filter-item">образование</span>
-                <span class="setting__filter-counter">13</span>
-              </label>
-              <input type="radio" id="filterSector5" name="filterSector" value="cripto" class="setting__filter-input" />
-              <label for="filterSector5" class="setting__filter-label">
-                <span class="setting__filter-item">криптовалюты и nft</span>
-                <span class="setting__filter-counter">7</span>
-              </label>
-              <input type="radio" id="filterSector6" name="filterSector" value="technologie"
-                class="setting__filter-input" />
-              <label for="filterSector6" class="setting__filter-label">
-                <span class="setting__filter-item">технологии</span>
-                <span class="setting__filter-counter">44</span>
-              </label>
-              <input type="radio" id="filterSector0" name="filterSector" value="reset" class="setting__filter-input" />
-              <label for="filterSector0" class="setting__filter-label setting__filter-label_reset">
-                <span class="setting__filter-item">сбросить</span>
-              </label>
-            </div>
-          </div>
-          <div class="setting__filter">
-            <div class="setting__filter-title">страна</div>
-            <div class="setting__filter-triangle"></div>
-            <div class="setting__filter-content">
-              <input type="radio" id="filterCountry1" name="filterCountry" value="technologie"
-                class="setting__filter-input" />
-              <label for="filterCountry1" class="setting__filter-label">
-                <span class="setting__filter-item">Россия</span>
-                <span class="setting__filter-counter">24</span>
-              </label>
-              <input type="radio" id="filterCountry2" name="filterCountry" value="technologie"
-                class="setting__filter-input" />
-              <label for="filterCountry2" class="setting__filter-label">
-                <span class="setting__filter-item">Германия</span>
-                <span class="setting__filter-counter">15</span>
-              </label>
-              <input type="radio" id="filterCountry0" name="filterCountry" value="reset"
-                class="setting__filter-input" />
-              <label for="filterCountry0" class="setting__filter-label setting__filter-label_reset">
-                <span class="setting__filter-item">сбросить</span>
-              </label>
-            </div>
-          </div>
-          <div class="setting__filter">
-            <div class="setting__filter-title">бизнес-модель</div>
-            <div class="setting__filter-triangle"></div>
-            <div class="setting__filter-content">
-              <input type="radio" id="filterBusiness1" name="filterBusiness" value="technologie"
-                class="setting__filter-input" />
-              <label for="filterBusiness1" class="setting__filter-label">
-                <span class="setting__filter-item">Реклама</span>
-                <span class="setting__filter-counter">24</span>
-              </label>
-              <input type="radio" id="filterBusiness2" name="filterBusiness" value="technologie"
-                class="setting__filter-input" />
-              <label for="filterBusiness2" class="setting__filter-label">
-                <span class="setting__filter-item">Партнерство</span>
-                <span class="setting__filter-counter">15</span>
-              </label>
-              <input type="radio" id="filterBusiness0" name="filterBusiness" value="reset"
-                class="setting__filter-input" />
-              <label for="filterBusiness0" class="setting__filter-label setting__filter-label_reset">
-                <span class="setting__filter-item">сбросить</span>
-              </label>
-            </div>
-          </div>
-          <div class="setting__filter">
-            <div class="setting__filter-title">технологии</div>
-            <div class="setting__filter-triangle"></div>
-            <div class="setting__filter-content">
-              <input type="radio" id="filterTechno1" name="filterTechno" value="technologie"
-                class="setting__filter-input" />
-              <label for="filterTechno1" class="setting__filter-label">
-                <span class="setting__filter-item">Технология 1</span>
-                <span class="setting__filter-counter">124</span>
-              </label>
-              <input type="radio" id="filterTechno2" name="filterTechno" value="technologie"
-                class="setting__filter-input" />
-              <label for="filterTechno2" class="setting__filter-label">
-                <span class="setting__filter-item">Технология 3</span>
-                <span class="setting__filter-counter">13</span>
-              </label>
-              <input type="radio" id="filterTechno0" name="filterTechno" value="reset" class="setting__filter-input" />
-              <label for="filterTechno0" class="setting__filter-label setting__filter-label_reset">
-                <span class="setting__filter-item">сбросить</span>
-              </label>
-            </div>
-          </div>
-          <div class="setting__filter">
-            <div class="setting__filter-title">исследования ↗</div>
-          </div>
-        </div>
-      </div>
-      <div class="setting__wrapper">
-        <div class="setting__row">
-          <span class="setting__tag">образование<span class="icon-close setting__icon-close"></span></span>
-          <span class="setting__tag">криптовалюты и nft<span class="icon-close setting__icon-close"></span></span>
-          <span class="setting__tag">технологии<span class="icon-close setting__icon-close"></span></span>
-          <span class="setting__tag">финансовый сектор<span class="icon-close setting__icon-close"></span></span>
-          <span class="setting__tag">жизнь - боль<span class="icon-close setting__icon-close"></span></span>
-        </div>
-      </div>
-    </div>
-
-    <div class="preview">
-      <div class="preview__wrapper">
-        <div class="preview__item">
-          <a href="#" class="i-link preview__link">
-            <img src="img/image213.jpg" alt="фото" class="preview__picture" />
-            <div class="preview__title">
-              Первая в мире блокчейн для предварительного приобретенных
-              углеродных кредитов
-            </div>
-          </a>
-          <div class="preview__short">
-            Компания, возглавляемая женщинами, стремится стать крупнейшим
-            устойчивым банком в Европе
-          </div>
-          <div class="preview__inner">
-            <div class="preview__tag">образование ↗</div>
-            <div class="preview__date">15 марта 2022</div>
-          </div>
-        </div>
-
-        <div class="preview__item">
-          <a href="#" class="i-link preview__link">
-            <img src="img/image182.jpg" alt="фото" class="preview__picture" />
-            <div class="preview__title">
-              Первая в мире блокчейн для предварительного приобретенных
-              углеродных кредитов
-            </div>
-          </a>
-          <div class="preview__short">
-            DAO развивает инфраструктуру, чтобы сделать торговлю форвардными
-            углеродными...
-          </div>
-          <div class="preview__inner">
-            <div class="preview__tag">образование ↗</div>
-            <div class="preview__date">15 марта 2022</div>
-          </div>
-        </div>
-
-        <div class="preview__item">
-          <a href="#" class="i-link preview__link">
-            <img src="img/image183.jpg" alt="фото" class="preview__picture" />
-            <div class="preview__title">
-              Приложение позволяет микромерчантам превращать свои телефоны в
-              системы точек продаж
-            </div>
-          </a>
-          <div class="preview__short">
-            Стартап предлагает ряд платежных систем, адаптированных для МСП...
-          </div>
-          <div class="preview__inner">
-            <div class="preview__tag">образование ↗</div>
-            <div class="preview__date">15 марта 2022</div>
-          </div>
-        </div>
-
-        <div class="preview__item">
-          <a href="#" class="i-link preview__link">
-            <img src="img/image184.jpg" alt="фото" class="preview__picture" />
-            <div class="preview__title">
-              Необанк борется с изменениями климата
-            </div>
-          </a>
-          <div class="preview__short">
-            DAO развивает инфраструктуру, чтобы сделать торговлю форвардными
-            углеродными...
-          </div>
-          <div class="preview__inner">
-            <div class="preview__tag">образование ↗</div>
-            <div class="preview__date">15 марта 2022</div>
-          </div>
-        </div>
-
-        <div class="preview__item preview__item_box">
-          <a href="#" class="i-link preview__link">
-            <div class="preview__title">future banking 2.0</div>
-          </a>
-          <div class="preview__short">
-            попробуем спрогнозировать, каким может быть банк через 5-10 лет
-          </div>
-          <div class="preview__inner">
-            <div class="preview__tag">исследование ↗</div>
-            <div class="preview__date">15 марта 2022</div>
-          </div>
-        </div>
-
-        <div class="preview__item">
-          <a href="#" class="i-link preview__link">
-            <img src="img/image170.jpg" alt="фото" class="preview__picture" />
-            <div class="preview__title">
-              Приложение позволяет микромерчантам превращать свои телефоны в
-              системы точек продаж
-            </div>
-          </a>
-          <div class="preview__short">
-            Стартап предлагает ряд платежных систем, адаптированных для МСП...
-          </div>
-          <div class="preview__inner">
-            <div class="preview__tag">образование ↗</div>
-            <div class="preview__date">15 марта 2022</div>
-          </div>
-        </div>
-
-        <div class="preview__item">
-          <a href="#" class="i-link preview__link">
-            <img src="img/image171.jpg" alt="фото" class="preview__picture" />
-            <div class="preview__title">
-              Первая в мире блокчейн для предварительного приобретенных
-              углеродных кредитов
-            </div>
-          </a>
-          <div class="preview__short">
-            Компания, возглавляемая женщинами, стремится стать крупнейшим
-            устойчивым банком в Европе
-          </div>
-          <div class="preview__inner">
-            <div class="preview__tag">образование ↗</div>
-            <div class="preview__date">15 марта 2022</div>
-          </div>
-        </div>
-
-        <div class="preview__item">
-          <a href="#" class="i-link preview__link">
-            <img src="img/image172.jpg" alt="фото" class="preview__picture" />
-            <div class="preview__title">
-              Первая в мире блокчейн для предварительного приобретенных
-              углеродных кредитов
-            </div>
-          </a>
-          <div class="preview__short">
-            DAO развивает инфраструктуру, чтобы сделать торговлю форвардными
-            углеродными...
-          </div>
-          <div class="preview__inner">
-            <div class="preview__tag">образование ↗</div>
-            <div class="preview__date">15 марта 2022</div>
-          </div>
-        </div>
-
-        <div class="preview__item">
-          <a href="#" class="i-link preview__link">
-            <img src="img/image173.jpg" alt="фото" class="preview__picture" />
-            <div class="preview__title">
-              Приложение позволяет микромерчантам превращать свои телефоны в
-              системы точек продаж
-            </div>
-          </a>
-          <div class="preview__short">
-            Стартап предлагает ряд платежных систем, адаптированных для МСП...
-          </div>
-          <div class="preview__inner">
-            <div class="preview__tag">образование ↗</div>
-            <div class="preview__date">15 марта 2022</div>
-          </div>
-        </div>
-
-        <div class="preview__item">
-          <a href="#" class="i-link preview__link">
-            <img src="img/image184.jpg" alt="фото" class="preview__picture" />
-            <div class="preview__title">
-              Необанк борется с изменениями климата
-            </div>
-          </a>
-          <div class="preview__short">
-            DAO развивает инфраструктуру, чтобы сделать торговлю форвардными
-            углеродными...
-          </div>
-          <div class="preview__inner">
-            <div class="preview__tag">образование ↗</div>
-            <div class="preview__date">15 марта 2022</div>
-          </div>
-        </div>
-
-        <div class="preview__item">
-          <a href="#" class="i-link preview__link">
-            <img src="img/image181.jpg" alt="фото" class="preview__picture" />
-            <div class="preview__title">
-              Первая в мире блокчейн для предварительного приобретенных
-              углеродных кредитов
-            </div>
-          </a>
-          <div class="preview__short">
-            Компания, возглавляемая женщинами, стремится стать крупнейшим
-            устойчивым банком в Европе
-          </div>
-          <div class="preview__inner">
-            <div class="preview__tag">образование ↗</div>
-            <div class="preview__date">15 марта 2022</div>
-          </div>
-        </div>
-
-        <div class="preview__item">
-          <a href="#" class="i-link preview__link">
-            <img src="img/image170.jpg" alt="фото" class="preview__picture" />
-            <div class="preview__title">
-              Приложение позволяет микромерчантам превращать свои телефоны в
-              системы точек продаж
-            </div>
-          </a>
-          <div class="preview__short">
-            Стартап предлагает ряд платежных систем, адаптированных для МСП...
-          </div>
-          <div class="preview__inner">
-            <div class="preview__tag">образование ↗</div>
-            <div class="preview__date">15 марта 2022</div>
-          </div>
-        </div>
-      </div>
-      <div class="preview__control">
-        <div class="preview__control-mobile">
-          <button class="preview__button">Показать больше</button>
-        </div>
-        <div class="preview__control-desktop">
-          <div class="preview__control-section"><span class="preview__control-item icon-left"></span></div>
-          <div class="preview__control-section">
-            <span class="preview__control-item preview__control-item_active">1</span>
-            <span class="preview__control-item">2</span>
-            <span class="preview__control-item">3</span>
-            <span class="preview__control-item">4</span>
-            <span class="preview__control-item">5</span>
-          </div>
-          <div class="preview__control-section"><span class="preview__control-item icon-right"></span></div>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__inner">
-          <div class="footer__section">
+      <div class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__section footer__section_floating">
             <div class="footer__title">о новых курсах, скидках и промкодах</div>
             <div class="footer__description">
-              Избранные материалы, которые не стоит пропускать — в наших рассылках.
+              Избранные материалы, которые не стоит пропускать — в наших
+              рассылках.
             </div>
             <div class="footer__form">
-              <input type="text" type="email" id="email" placeholder="почта" class="footer__email">
+              <input
+                type="text"
+                type="email"
+                id="email"
+                placeholder="почта"
+                class="footer__email"
+              />
               <span class="icon-right footer__icon-right"></span>
             </div>
-
+            <div class="footer__info">
+              продолжив, вы даете <a href="#" class="i-link footer__link_info"> согласие </a> на обработку персональных данных
+            </div>
           </div>
-        </div>
-        <div class="footer__inner">
           <div class="footer__section">
             <div class="footer__item">
               <a href="#" class="i-link footer__link">библиотека</a>
@@ -564,7 +717,7 @@
             <div class="footer__item">
               <a href="#" class="i-link footer__link">курсы</a>
             </div>
-        </div>
+          </div>
           <div class="footer__section">
             <div class="footer__item">
               <a href="#" class="i-link footer__link">вконтакте</a>
@@ -575,27 +728,32 @@
             <div class="footer__item">
               <a href="#" class="i-link footer__link">youtube</a>
             </div>
-
-        </div>
-        </div>
-      </div>
-      <div class="footer__container">
-        <div class="footer__section"><span class="icon-logo footer__logo"></span></div>
-        <div class="footer__section">© 2023</div>
-        <div class="footer__section">
-          <div class="footer__item">
-            <a href="#" class="i-link footer__link">информация об оказании услуг</a>
           </div>
-          <div class="footer__item">
-            <a href="#" class="i-link footer__link">политика конфиденциальности</a>
+        </div>
+        <div class="footer__container">
+          <div class="footer__section">
+            <a href="#" class="i-link footer__link">
+              <span class="icon-logo footer__logo"></span>
+            </a>
           </div>
-          <div class="footer__item">
-            <a href="#" class="i-link footer__link">публичная оферта</a>
+          <div class="footer__section">© 2023</div>
+          <div class="footer__section footer__section_desktop">
+            <div class="footer__item">
+              <a href="#" class="i-link footer__link">
+                информация об оказании услуг
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="#" class="i-link footer__link">
+                политика конфиденциальности
+              </a>
+            </div>
+            <div class="footer__item">
+              <a href="#" class="i-link footer__link">публичная оферта</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
