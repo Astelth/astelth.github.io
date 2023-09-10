@@ -31,3 +31,7 @@ var swiper = new Swiper(".mySwiper", {
       }
     });
 });
+
+function filtersActive() {
+  document.querySelector('.setting__filters').classList.toggle('setting__filters_active');
+}
