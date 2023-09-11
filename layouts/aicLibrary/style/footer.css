@@ -9,15 +9,15 @@
   padding-bottom: 64px;
 }
 .footer__section {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
 }
 .footer__section_floating {
-    max-width: 100%;
-    row-gap: 8px;
-    padding-bottom: 64px;
-    border-bottom: 1px solid #141414;
+  max-width: 100%;
+  row-gap: 8px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid #141414;
 }
 .footer__title {
   color: #141414;
@@ -61,7 +61,7 @@
   color: rgba(20, 20, 20, 0.5);
 }
 .footer__info {
-    display: none;
+  display: none;
 }
 .footer__item {
   color: #141414;
@@ -74,12 +74,13 @@
   letter-spacing: -0.2px;
 }
 .footer__link {
-    color: #141414;
+  color: #141414;
 }
 .footer__container {
   display: flex;
-  justify-content: space-between;color: rgba(20, 20, 20, 0.50);
-  font-feature-settings: 'clig' off, 'liga' off;
+  justify-content: space-between;
+  color: rgba(20, 20, 20, 0.5);
+  font-feature-settings: "clig" off, "liga" off;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -87,9 +88,9 @@
   text-transform: lowercase;
 }
 .footer__logo {
-    font-size: 29px;
-    line-height: 29px;
-    color: #141414;
+  font-size: 29px;
+  line-height: 29px;
+  color: #141414;
 }
 .footer__section_desktop {
   display: none;
@@ -99,8 +100,8 @@
     padding: 64px;
   }
   .footer__wrapper {
-  justify-content: space-between;
-  flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     padding-bottom: 56px;
     column-gap: 32px;
   }
@@ -109,15 +110,15 @@
   .footer__section {
     margin: auto 0 0;
   }
-.footer__section_floating {
+  .footer__section_floating {
     max-width: 448px;
     row-gap: 12px;
     order: 3;
     padding-bottom: 0;
     border-bottom: 0;
-}
-    .footer__title {
-        margin-bottom: 6px;
+  }
+  .footer__title {
+    margin-bottom: 6px;
   }
   .footer__description {
     display: none;
@@ -126,20 +127,20 @@
   }
   .footer__email {
   }
-  
+
   .footer__icon-right {
     cursor: pointer;
   }
   .footer__info {
-      display: block;
-      color: #141414;
-      font-variant-numeric: oldstyle-nums proportional-nums;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px;
-      letter-spacing: -0.14px;
-      opacity: 0.6;
+    display: block;
+    color: #141414;
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.14px;
+    opacity: 0.6;
   }
   .footer__item {
     font-variant-numeric: oldstyle-nums proportional-nums slashed-zero;

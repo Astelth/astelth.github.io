@@ -1,125 +1,125 @@
 .swiper-slide {
-    height: 650px;
-    margin-bottom: 16px;
+  height: 650px;
+  margin-bottom: 16px;
 }
 
 .swiper__banner {
-    width: 100%;
-    height: 100%;
-    padding: 200px 32px 32px;
-    color: #ffffff;
-    overflow: hidden;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
+  width: 100%;
+  height: 100%;
+  padding: 200px 32px 32px;
+  color: #ffffff;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
 }
 
 .swiper__content {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .swiper__row {
-    display: flex;
-    flex-direction: row;
-    column-gap: 16px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
 }
 
 .swiper__date {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .swiper__tagline {
-    color: #ff6633;
-    font-size: 16px;
+  color: #ff6633;
+  font-size: 16px;
 }
 
 .swiper__title {
-    font-size: 30px;
-    max-width: 640px;
+  font-size: 30px;
+  max-width: 640px;
 }
 
 .swiper__button {
-    height: 36px;
-    width: 100%;
-    max-width: 360px;
-    font-size: 16px;
-    background: #fff;
-    color: #141414;
-    border: 0;
+  height: 36px;
+  width: 100%;
+  max-width: 360px;
+  font-size: 16px;
+  background: #fff;
+  color: #141414;
+  border: 0;
 }
 
 .swiper__buttons {
-    display: none;
-    z-index: 50;
-    transform: translateY(-12px);
+  display: none;
+  z-index: 50;
+  transform: translateY(-12px);
 }
 
 @media (min-width: 768px) {
-    .swiper {
-        margin-bottom: 32px;
-    }
+  .swiper {
+    margin-bottom: 32px;
+  }
 
-    .swiper-slide {
-        max-height: 682px;
-    }
+  .swiper-slide {
+    max-height: 682px;
+  }
 
-    .swiper__banner {
-        width: calc(100% - 64px);
-        padding: 180px 32px 32px;
-        box-sizing: inherit;
-    }
+  .swiper__banner {
+    width: calc(100% - 64px);
+    padding: 180px 32px 32px;
+    box-sizing: inherit;
+  }
 
-    .swiper__date {
-        font-size: 20px;
-    }
+  .swiper__date {
+    font-size: 20px;
+  }
 
-    .swiper__tagline {
-        color: #ffffff;
-        font-size: 20px;
-    }
+  .swiper__tagline {
+    color: #ffffff;
+    font-size: 20px;
+  }
 
-    .swiper__title {
-        font-size: 64px;
-    }
+  .swiper__title {
+    font-size: 64px;
+  }
 
-    .swiper__button {
-        height: 64px;
-        max-width: 256px;
-        font-size: 24px;
-    }
+  .swiper__button {
+    height: 64px;
+    max-width: 256px;
+    font-size: 24px;
+  }
 
-    .swiper__button-prev {
-        width: 68px;
-        height: 48px;
-        border: 1px solid #e7e7e7;
-        border-radius: 24px 0 0 24px;
-        display: flex;
-        cursor: pointer;
-    }
+  .swiper__button-prev {
+    width: 68px;
+    height: 48px;
+    border: 1px solid #e7e7e7;
+    border-radius: 24px 0 0 24px;
+    display: flex;
+    cursor: pointer;
+  }
 
-    .swiper__button-next {
-        width: 68px;
-        height: 48px;
-        border: 1px solid #e7e7e7;
-        border-radius: 0 24px 24px 0;
-        display: flex;
-        cursor: pointer;
-    }
+  .swiper__button-next {
+    width: 68px;
+    height: 48px;
+    border: 1px solid #e7e7e7;
+    border-radius: 0 24px 24px 0;
+    display: flex;
+    cursor: pointer;
+  }
 
-    .swiper__buttons {
-        display: flex;
-        margin-left: auto;
-        margin-right: 32px;
-    }
+  .swiper__buttons {
+    display: flex;
+    margin-left: auto;
+    margin-right: 32px;
+  }
 
-    .swiper__arrow {
-        margin: auto;
-        font-size: 28px;
-        color: #141414;
-        opacity: 0.5;
-        cursor: pointer;
-    }
+  .swiper__arrow {
+    margin: auto;
+    font-size: 28px;
+    color: #141414;
+    opacity: 0.5;
+    cursor: pointer;
+  }
 }
