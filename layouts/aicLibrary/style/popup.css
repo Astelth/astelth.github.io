@@ -1,0 +1,67 @@
+.popup {
+  background-color: #f63;
+  height: 100vh;
+  overflow: hidden;
+}
+.popup__wrapper {
+  background: top / 150% no-repeat url("../img/eye.png");
+  height: 120vh;
+  rotate: -5deg;
+}
+.popup__inner {
+  rotate: 5deg;
+  transform: translateX(4.9%);
+}
+.popup__banner {
+  padding: 16px;
+}
+.popup__cloud {
+  border-radius: 22px;
+  background: #ffffff;
+  width: fit-content;
+  opacity: 1;
+}
+.popup__tagline {
+  flex-shrink: 0;
+  color: #141414;
+  border-radius: 22px;
+  display: inline-block;
+  padding: 5px 16px;
+  backdrop-filter: blur(4px);
+  filter: unset;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+.popup__row {
+  display: flex;
+  justify-content: space-between;
+}
+.popup__close {
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.popup__title {
+  color: #141414;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 36px;
+  letter-spacing: -0.32px;
+}
+
+@media screen and (min-width: 768px) {
+  .popup {
+    background-color: #f63;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .popup__wrapper {
+    background: left top 20% / 100% no-repeat url("../img/eye.png");
+    height: 120vh;
+    rotate: -5deg;
+  }
+}

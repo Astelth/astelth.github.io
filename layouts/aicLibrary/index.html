@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style/setting.css" />
     <link rel="stylesheet" href="style/preview.css" />
     <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/popup.css" />
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js" defer></script>
     <title>aic</title>
@@ -440,7 +441,10 @@
                 value="all"
                 class="setting__filter-input"
               />
-              <label for="filterAll0" class="setting__filter-label setting__filter-label_all">
+              <label
+                for="filterAll0"
+                class="setting__filter-label setting__filter-label_all"
+              >
                 <span class="setting__filter-item">сбросить всё</span>
               </label>
               <button class="setting__button">Применить</button>
@@ -769,6 +773,64 @@
             </div>
             <div class="footer__item">
               <a href="#" class="i-link footer__link">публичная оферта</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="popup__wrapper">
+          <div class="popup__inner">
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div
+                    class="popup__banner"
+                    style="
+                      background: center / 180% no-repeat url('img/eye.png'),
+                        #f63 100%;
+                    "
+                  >
+                  <div class="popup__row">
+                    <div class="popup__cloud">
+                      <spam class="popup__tagline">подписка aic.библиотека</spam>
+                    </div>
+                    <div class="popup__close">
+                      <span class="icon-close popup__icon-close"></span>
+                    </div>
+                  </div>
+                    <div class="popup__content">
+                      <div class="popup__title">
+                        зарегистрируйтесь до 20 октября и получите скидку 50% на подписку aic.библиотека
+                      </div>
+                      <button class="popup__button">читать</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="popup__banner"
+                    style="
+                      background: center / 180% no-repeat url('img/eye.png'),
+                        #f63 100%;
+                    "
+                  >
+                    <div class="popup__content">
+                      <div class="popup__row">
+                        <div class="popup__date">15.03.23</div>
+                        <div class="popup__tagline">исследование ↗</div>
+                      </div>
+                      <div class="popup__title">
+                        future banking 2.0: каким может быть банк через 5-10 лет
+                      </div>
+                      <button class="popup__button">читать</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
