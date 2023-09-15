@@ -16,6 +16,18 @@ var swiper = new Swiper(".mySwiper", {
     mousewheel: true,
     keyboard: true,
   });
+  var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper__button-next2",
+      prevEl: ".swiper__button-prev2",
+    },
+    pagination: {
+      el: ".swiper-pagination2",
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
 
   const filter = document.querySelectorAll('.setting__filter');
   const triangle = document.querySelectorAll('.setting__filter-triangle');

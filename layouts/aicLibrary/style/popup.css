@@ -64,53 +64,71 @@
 }
 .popup__button {
   width: 316px;
-height: 64px;
-flex-shrink: 0;
-background: #FFF;
-color: #141414;
-text-align: center;
-font-size: 18px;
-font-style: normal;
-font-weight: 450;
-line-height: 24px;
-margin: 0 auto;
-border: 0;
+  height: 64px;
+  flex-shrink: 0;
+  background: #fff;
+  color: #141414;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+  margin: 0 auto;
+  border: 0;
 }
 .popup__form {
   padding: 9px 32px 30px;
   display: flex;
-flex-direction: column;
-align-items: center;
-gap: 32px;
-border-radius: 32px 32px 0px 0px;
-background: #FFF;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  border-radius: 32px 32px 0px 0px;
+  background: #fff;
 }
-.popup__drag {width: 40px;
+.popup__drag {
+  width: 40px;
   height: 3px;
   flex-shrink: 0;
   border-radius: 200px;
   opacity: 0.2;
-  background: #141414;}
-  .popup__button_color_black {
-    background: #141414;
-    color: #ffffff;
-  }
+  background: #141414;
+  margin-bottom: 20px;
+}
+.popup__button_color_black {
+  background: #141414;
+  color: #ffffff;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  width: 100%;
+  max-width: 316px;
+}
 
-  .popup__input {
-    border: 0;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: 24px;
-  }
-  .popup__input:placeholder {
-    border: 0;color: rgba(20, 20, 20, 0.50);
-  }
-  .popup__cell {
-    padding-bottom: 9px;
-    border-bottom: 1px solid rgba(20, 20, 20, 0.50);
-    width: 100%;
-  }
+.popup__input {
+  border: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+}
+.popup__input:placeholder {
+  border: 0;
+  color: rgba(20, 20, 20, 0.5);
+}
+.popup__cell {
+  padding-bottom: 9px;
+  border-bottom: 1px solid rgba(20, 20, 20, 0.5);
+  width: 100%;
+}
+.popup__info {
+  color: rgba(20, 20, 20, 0.5);
+  text-align: center;
+  font-variant-numeric: slashed-zero;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 18px;
+}
 @media screen and (min-width: 768px) {
   .popup {
     background-color: #f63;
