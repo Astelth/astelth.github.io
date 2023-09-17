@@ -25,10 +25,13 @@
     font-feature-settings: 'clig' off, 'liga' off;
 }
 
-.i-link:hover {
-    color: rgba(20, 20, 20, 0.50);
-}
-
 .i-link_menu {
     color: rgba(20, 20, 20, 0.30);
+}
+
+@media screen and (min-width: 768px) {
+    .i-link:hover {
+        color: rgba(20, 20, 20, 0.50);
+    }
+
 }

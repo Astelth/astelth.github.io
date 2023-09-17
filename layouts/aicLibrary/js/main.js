@@ -3,6 +3,7 @@ function burgerClick() {
     document.querySelector('.burger').classList.toggle('burger_active');
     document.querySelector('.mobile').classList.toggle('mobile_active');
     document.querySelector('.top').classList.toggle('top_active');
+    document.querySelector('.popup_top').classList.toggle('popup_hidden');
 }
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,

@@ -3,27 +3,70 @@
   height: 100vh;
   overflow: hidden;
 }
+
+.popup_top {
+  height: auto;
+  background-color: #fff;
+
+}
+
+.popup_top .popup__banner {
+  padding: 17px 20px 10px;
+  row-gap: 15px;
+  background: left -120% top 50% / 120% no-repeat url('../img/eye.png'), #f63 20%;
+}
+
+.popup_top .popup__title {
+  color: #fff;
+  font-size: 18px;
+  max-width: 222px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 22px;
+}
+
+.popup_top .popup__button {
+  margin: inherit;
+  color: #141414;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+  padding: 5px 20px;
+  width: 120px;
+  height: inherit;
+}
+
+.popup_hidden {
+  display: none;
+}
+
 .popup__wrapper {
   background: top / 150% no-repeat url("../img/eye.png");
   height: 120vh;
   rotate: -5deg;
 }
+
 .popup__inner {
   rotate: 5deg;
   transform: translateX(4.9%);
 }
+
 .popup__banner {
   padding: 36px 16px 0;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
 }
+
 .popup__cloud {
   border-radius: 22px;
   background: #ffffff;
   width: fit-content;
   opacity: 1;
 }
+
 .popup__tagline {
   flex-shrink: 0;
   color: #141414;
@@ -37,15 +80,18 @@
   font-weight: 400;
   text-transform: lowercase;
 }
+
 .popup__row {
   display: flex;
   justify-content: space-between;
 }
+
 .popup__close {
   font-size: 24px;
   color: #ffffff;
   cursor: pointer;
 }
+
 .popup__content {
   display: flex;
   flex-direction: column;
@@ -53,6 +99,7 @@
   min-height: 60vh;
   padding-bottom: 36px;
 }
+
 .popup__title {
   color: #141414;
   font-feature-settings: "clig" off, "liga" off;
@@ -62,6 +109,7 @@
   line-height: 36px;
   letter-spacing: -0.32px;
 }
+
 .popup__button {
   width: 316px;
   height: 64px;
@@ -76,6 +124,7 @@
   margin: 0 auto;
   border: 0;
 }
+
 .popup__form {
   padding: 9px 32px 30px;
   display: flex;
@@ -85,6 +134,7 @@
   border-radius: 32px 32px 0px 0px;
   background: #fff;
 }
+
 .popup__drag {
   width: 40px;
   height: 3px;
@@ -94,6 +144,7 @@
   background: #141414;
   margin-bottom: 20px;
 }
+
 .popup__button_color_black {
   background: #141414;
   color: #ffffff;
@@ -110,15 +161,18 @@
   font-weight: 450;
   line-height: 24px;
 }
+
 .popup__input:placeholder {
   border: 0;
   color: rgba(20, 20, 20, 0.5);
 }
+
 .popup__cell {
   padding-bottom: 9px;
   border-bottom: 1px solid rgba(20, 20, 20, 0.5);
   width: 100%;
 }
+
 .popup__info {
   color: rgba(20, 20, 20, 0.5);
   text-align: center;
@@ -129,12 +183,17 @@
   font-weight: 450;
   line-height: 18px;
 }
+
 @media screen and (min-width: 768px) {
   .popup {
     background-color: #f63;
     height: 100vh;
     overflow: hidden;
   }
+  .popup_top {
+    display: none;
+  }
+
   .popup__wrapper {
     background: left top 20% / 100% no-repeat url("../img/eye.png");
     height: 120vh;
