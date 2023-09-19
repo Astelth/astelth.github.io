@@ -1,37 +1,44 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .body {
-    font-family: 'Suisse Intl', 'Suisse Intl Regular', sans-serif;
-    max-width: 1600px;
-    margin: 0 auto;
+  font-family: "Suisse Intl", "Suisse Intl Regular", sans-serif;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .i-button {
-    cursor: pointer;
-    padding: 16px;
+  cursor: pointer;
+  padding: 16px;
 }
 
 .i-button_orange {
-    background: center / contain no-repeat url('../img/Rectangle9194.png');
+  background: center / contain no-repeat url("../img/Rectangle9194.png");
 }
 
 .i-link {
-    text-decoration: none;
-    color: #000000;
-    font-feature-settings: 'clig' off, 'liga' off;
+  text-decoration: none;
+  color: inherit;
+  font-feature-settings: "clig" off, "liga" off;
 }
 
 .i-link_menu {
-    color: rgba(20, 20, 20, 0.30);
+  color: rgba(20, 20, 20, 0.3);
 }
-
+.i-tag {
+  color: rgba(20, 20, 20, 0.5);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
-    .i-link:hover {
-        color: rgba(20, 20, 20, 0.50);
-    }
-
+  .i-link:hover {
+    color: rgba(20, 20, 20, 0.5);
+  }
 }
