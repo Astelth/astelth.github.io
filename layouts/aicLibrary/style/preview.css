@@ -86,15 +86,6 @@
   line-height: 24px;
 }
 
-.preview__tag_long {
-  color: #f63;
-  font-feature-settings: "clig" off, "liga" off;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: 24px;
-}
-
 .preview__date {
   color: rgba(20, 20, 20, 0.5);
   text-align: right;
@@ -292,9 +283,9 @@
     column-gap: 16px;
     padding-bottom: 96px;
   }
-
   .preview__item {
     max-width: 448px;
+    padding-top: 242px;
   }
 
   .preview__item_box {
@@ -304,14 +295,29 @@
   }
   .preview__item_long {
     max-width: inherit;
+    row-gap: 12px;
   }
-  .preview__picture {
+  .preview__picture-wrapper {
     margin-bottom: 16px;
-    transform: translateY(-150px);
+    transform: translateY(-516px);
+    margin-bottom: -492px;
+    max-height: 480px;
+    overflow: hidden;
   }
 
   .preview__title {
     line-height: 140%;
+  }
+  .preview__title_long {
+    color: #fff;
+    font-variant-numeric: slashed-zero;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: -0.8px;
+    text-transform: lowercase;
+    padding-left: 64px;
+    max-width: 993px;
   }
 
   .preview__short {
@@ -325,21 +331,38 @@
     border-bottom: 2px solid rgba(20, 20, 20, 0.1);
     padding-bottom: 14px;
   }
-
+  .preview__inner_long {
+    padding-left: 64px;
+    padding-bottom: 0;
+    margin-bottom: -12px;
+  }
   .preview__tag {
     font-size: 16px;
     line-height: 22px;
   }
 
-  .preview__date {
-    font-size: 16px;
-    line-height: 22px;
+  .preview__tag_long {
+    color: #fff;
+    text-transform: lowercase;
   }
 
+  .preview__date {
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 22px;
+  }
+  .preview__date_long {
+    color: rgba(255, 255, 255, 0.5);
+  }
   .preview__control-mobile {
     display: none;
   }
-
+  .preview__column {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 12px;
+    border-top: 1px solid #141414;
+  }
   .preview__control-desktop {
     display: flex;
     justify-content: center;
@@ -369,5 +392,14 @@
 
   .preview__control-item_active {
     color: #141414;
+  }
+  .preview__value {
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 32px;
+    cursor: pointer;
+  }
+  .preview__value:hover {
+    color: rgba(20, 20, 20, 0.5);
   }
 }
