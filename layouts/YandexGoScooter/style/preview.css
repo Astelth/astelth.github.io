@@ -1,3 +1,5 @@
+.preview {
+}
 .preview_top {
   background: linear-gradient(
       0deg,
@@ -13,6 +15,7 @@
     );
   padding: 32px 0 25px;
   overflow: hidden;
+  margin-bottom: -72px;
 }
 .preview__inner {
   padding: 0 32px;
@@ -36,6 +39,9 @@
 .preview__item_container {
   position: relative;
 }
+.preview__item_steps {
+  display: none;
+}
 .preview__list {
   display: flex;
   flex-direction: column;
@@ -53,6 +59,17 @@
   position: absolute;
   left: 73px;
   top: 143px;
+}
+.preview__picture_3 {
+  width: 150px;position: absolute; z-index: 13;right: -48px;top: -64px;
+}
+.preview__picture_4 {display: none;}
+  .preview__picture_5 {
+display: none;
+}
+.preview__picture_step {
+  max-width: 100%;
+  border-radius: 24px;
 }
 .preview__title {
   max-width: 240px;
@@ -111,9 +128,10 @@
 }
 .preview__button_top {
   position: fixed;
+  z-index: 90;
   bottom: 20px;
   left: 32px;
-  width: calc(100% - 64px);
+  width: calc(100vw - 64px);
 }
 .preview__subtitle {
   leading-trim: both;
@@ -128,8 +146,34 @@
   margin: auto 0;
   text-align: center;
 }
+.preview__image_step {
+  border-radius: 24px;
+  margin-bottom: 24px;
+}
 .preview__note {
   margin: auto 0;
+}
+.preview__swiper-pagination {
+display: none;
+}
+.preview__swiper-buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
+}
+  .preview__swiper-button-prev {
+  cursor: pointer;padding:8px;width: 48px;height: 48px; box-shadow: none;font-size: 24px;display: flex;
+}
+.preview__swiper-button-next {
+  cursor: pointer;padding: 8px;width: 48px;height: 48px; box-shadow: none;font-size: 24px;display: flex;
+}
+.preview__item_slider {
+  width: calc(100% + 32px);
+    transform: translateX(-16px);
+    position: relative;
+}
+.preview__arrow {
+  margin: auto;
 }
 @media screen and (min-width: 1280px) {
   .preview_top {
@@ -141,5 +185,17 @@
   }
   .preview__inner {
     padding: 0 75px 0 243px;
+  }
+  .preview__item_steps {
+    display: flex;
+  }
+  .preview__item_slider {
+    display: none;
+  }
+  .preview__image_step {
+    transform: rotate(3deg);
+  }
+  .preview__button_top {
+    position: inherit;
   }
 }

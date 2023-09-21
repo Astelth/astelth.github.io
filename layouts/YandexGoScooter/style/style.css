@@ -7,6 +7,10 @@
 .body {
   font-family: "YS Text", "Yandex Sans Text", sans-serif;
   color: #21201F;
+  display: flex;
+  flex-direction: column;
+  row-gap: 72px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1280px) {
