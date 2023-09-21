@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "YS Text", "Yandex Sans Text", sans-serif;
+  color: #21201F;
+}
+
+@media screen and (min-width: 1280px) {
+  .i-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .i-inner {
+    padding: 0 75px 0 243px;
+  }
+}
