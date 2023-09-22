@@ -1,4 +1,23 @@
 @font-face {
+    font-family: 'YS Text';
+    src: url('../fonts/text-regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'YS Text';
+    src: url('../fonts/text-black.woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'YS Text';
+    src: url('../fonts//text-medium.woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Yandex Sans Text';
     src: url('../fonts/YandexSansText-Thin.eot');
     src: local('../fonts/Yandex Sans Text Thin'), local('../fonts/YandexSansText-Thin'),
