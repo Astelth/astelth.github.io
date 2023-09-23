@@ -44,3 +44,7 @@ const arr = document.querySelectorAll('.pre-animation-state');
 arr.forEach(el => {
   observer.observe(el);
 });
+
+function openLink() {
+  window.open('https://go.yandex/ru_ru/lp/rides/scooter');
+}
