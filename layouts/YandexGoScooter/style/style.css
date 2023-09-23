@@ -15,7 +15,21 @@
 .i-link {
   color: inherit;
 }
+.pre-animation-state {
+    display: inline-block;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform .8s, opacity .6s;
+}
+
+.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 @media screen and (min-width: 1280px) {
-
+  .i-link:hover {
+    color: #21201F;
+  }
 }
