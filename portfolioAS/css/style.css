@@ -296,8 +296,7 @@ a {
 }
 
 .contacts__input {
-    width: 180px;
-    height: 42px;
+    padding: 8px 16px;
     border-radius: 21px;
     background: #070707;
     color: #fff;
