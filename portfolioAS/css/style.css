@@ -39,13 +39,14 @@
 .home__name {
     font-weight: 600;
     color: #070707;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
 }
 
 .home__whois {
     display: flex;
     flex-direction: column;
+    font-size: 12px;
     justify-content: space-between;
 }
 
@@ -56,7 +57,7 @@
 
 .home__photo {
     width: 100%;
-    background: url("../img/photo_2020.jpg");
+    background: url("/portfolioAS/img/photo_2020.jpg");
     height: calc((100vw - 24px) * 1.47);
     background-size: cover;
     margin-bottom: 32px;
@@ -398,6 +399,10 @@ a {
         font-size: 24px;
         line-height: 28px;
     }
+    
+    .home__whois {
+    font-size: 12px;
+    }
 
     .home__link {
         font-size: 14px;
@@ -413,13 +418,16 @@ a {
         font-size: 28px;
         line-height: 32px;
     }
-
+    
+    .home__whois {
+    font-size: 16px;
+    }
     .home__photo {
         width: 100%;
         height: calc((100vw - 48px) * 0.58);
         max-height: 712px;
         margin-bottom: 64px;
-        background: url("../img/photo_2019.jpg");
+        background: url("/portfolioAS/img/photo_2019.jpg");
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -476,7 +484,8 @@ a {
 
     .home__whois {
         text-align: center;
-    }
+    font-size: 20px;
+}
 
     .about__title,
     .skills__title,
