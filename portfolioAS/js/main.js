@@ -67,3 +67,99 @@ const arr = document.querySelectorAll('.pre-animation');
 arr.forEach(el => {
     observer.observe(el);
 });
+
+var list = [
+  " ",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "0",
+  "q",
+  "w",
+  "e",
+  "r",
+  "t",
+  "y",
+  "u",
+  "i",
+  "p",
+  "n",
+  "m",
+  "a",
+  "s",
+  "d",
+  "f",
+  "g",
+  "h",
+  "j",
+  "k",
+  "z",
+  "x",
+  "c",
+  "v",
+  "b",
+  "Q",
+  "W",
+  "E",
+  "R",
+  "T",
+  "Y",
+  "U",
+  "I",
+  "P",
+  "A",
+  "S",
+  "D",
+  "F",
+  "G",
+  "H",
+  "J",
+  "K",
+  "L",
+  "Z",
+  "X",
+  "C",
+  "V",
+  "B",
+  "N",
+  "M",
+  "[",
+  "]",
+  "<",
+  ">",
+  "!",
+  "@",
+  "#",
+  "$",
+  "%",
+  "^",
+  "&",
+  "(",
+  ")",
+  "-",
+  "+",
+  "=",
+  "{",
+  "}"
+];
+
+let currentPassword = document.querySelector("#generator");
+
+function generation() {
+  for (let i = 1; i < 100; i++) {
+    var x = window.setTimeout(randomX(), 300);
+  }
+//  currentPassword.value = "Hello, world";
+//  alert(randomX());
+}
+
+function randomX() {
+  var y = list[Math.floor(Math.random() * 76) + 1];
+  currentPassword.textContent = list[Math.floor(Math.random() * 76) + 1];
+}
