@@ -1,0 +1,8 @@
+.hello {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.ass {
+    max-width: 624px;
+}
