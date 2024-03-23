@@ -6,3 +6,8 @@
 .ass {
     max-width: 624px;
 }
+
+.image {
+    max-width: 200px;
+    margin: 0 auto;
+}

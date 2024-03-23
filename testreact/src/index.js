@@ -9,8 +9,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div className='grid'>
-    <Hello title="Здравствуй, жопа, Новый год! Приходи на ёлку!" />
-    <App />
+      <Hello title="Здравствуй, жопа, Новый год! Приходи на ёлку!" className='hello' />
+      <App className='app' />
     </div>
   </React.StrictMode>
 );
