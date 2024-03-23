@@ -1,6 +1,9 @@
 .hello {
     background-color: var(--black);
     color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .ass {
@@ -10,4 +13,25 @@
 .image {
     max-width: 200px;
     margin: 0 auto;
+}
+.title {
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+}
+@media screen and (min-width:768px) {
+    .hello {
+        gap: 24px;
+    }
+    .title {
+        font-size: 24px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .hello {
+        gap: 32px;
+    }
+    .title {
+        font-size: 32px;
+    }
 }
