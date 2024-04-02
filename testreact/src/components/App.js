@@ -1,6 +1,5 @@
 import logo from '../img/logo.svg'
 import './App.css';
-import Hello from './hello';
 import React from 'react';
 
 class App extends React.Component {
