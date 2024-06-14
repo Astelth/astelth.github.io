@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
+import Image from "./components/Image";
+import Logo from "./img/logo.png"
 
 // ReactDOM.render(<div>
 //     <h1>Hello world</h1>
@@ -17,6 +19,7 @@ class App extends React.Component {
             <input placeholder={this.helpText}
                 onClick={this.inputClick} onMouseEnter={this.mouseOver} />
             <p>{this.helpText === "Help text!!!" ? "Yes" : "No"}</p>
+            <Image image={Logo} />
         </div>)
     }
     inputClick() { console.log('Clicked') };
