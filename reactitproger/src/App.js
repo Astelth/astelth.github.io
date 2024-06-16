@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Image from "./components/Image";
-import Logo from "./img/logo.png"
+import Logo from "./img/logo.png";
 
 // ReactDOM.render(<div>
 //     <h1>Hello world</h1>
@@ -15,9 +15,8 @@ class App extends React.Component {
         this.state = {
             helpText: 'Help text!!!',
             userData: ''
-        }
-
-        this.inputClick = this.inputClick.bind(this)
+        };
+        this.inputClick = this.inputClick.bind(this);
     }
 
     render() {
@@ -35,8 +34,8 @@ class App extends React.Component {
     }
     inputClick() {
         console.log('Clicked');
-        this.setState({ helpText: 'Changed' })
-        //this.state.helpText === this.state.helpTextDefault ? this.state.helpText = 'Changed' : this.state.helpText = this.state.helpTextDefault;
+    //    this.setState({ helpText: 'Changed' })
+        this.state.helpText === 'Help text!!!' ? this.setState({ helpText: 'Changed' }) : this.setState({ helpText: 'Help text!!!' });
     };
     mouseOver() { console.log('Mouse over') };
 }
