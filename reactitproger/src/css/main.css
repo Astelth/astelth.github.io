@@ -17,3 +17,7 @@ body {
     max-width: 32px;
     max-height: 32px;
 }
+
+.button {
+    padding: 8px 16px;
+}

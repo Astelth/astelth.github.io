@@ -6,4 +6,8 @@ const Button = (props) => {
         )
 }
 
+Button.defaultProps = {
+    text: 'Кнопка',
+}
+
 export default Button;

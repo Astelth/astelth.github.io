@@ -5,8 +5,12 @@ class Header extends React.Component {
     render() {
         return (
             <div>
-            <header className="header">{ this.props.title }</header>
-            <Button text='привет' />
+                <header className="header">
+                    {this.props.title}
+                    <Button />
+                    <Button text='button' />
+                    <Button />
+                </header>
             </div>
         )
     }
