@@ -17,7 +17,11 @@ class App extends React.Component {
             userData: ''
         };
         this.inputClick = this.inputClick.bind(this);
-    }
+    };
+
+    componentDidUpdate(prevProp) {
+        this.state.helpText !== 'Help text!!!' ? console.log('Some') : console.log('ne Some');
+    };
 
     render() {
         return (<div classname="name">
@@ -34,7 +38,7 @@ class App extends React.Component {
     }
     inputClick() {
         console.log('Clicked');
-    //    this.setState({ helpText: 'Changed' })
+        //    this.setState({ helpText: 'Changed' })
         this.state.helpText === 'Help text!!!' ? this.setState({ helpText: 'Changed' }) : this.setState({ helpText: 'Help text!!!' });
     };
     mouseOver() { console.log('Mouse over') };
