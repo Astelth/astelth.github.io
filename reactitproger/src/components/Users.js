@@ -1,6 +1,8 @@
 import React from "react";
+import User from "./User";
 
 class Users extends React.Component {
+    /* статичный массив
     users = [
         {
             id: 1,
@@ -26,24 +28,22 @@ class Users extends React.Component {
             age: 25,
             isHappy: true
         }
-    ]
+    ] */
     render() {
-        if(this.users.length>0)
-        return (
-            <div>
-                {this.users.map((el)=>(<div className='user' key={el.id}>
-                    <h3>{el.firstname} {el.lastname}</h3>
-                    <p>{el.bio}</p>
-                    <b>{el.isHappy ? 'Счастлив :)' : 'Не особо :(' }</b>
-                </div>))}
-            </div>
-        )
+        if (this.props.users.length > 0)
+            return (
+                <div>
+                    {this.props.users.map((el) => (
+                        <User key={el.id} user = {el} />
+                    ))}
+                </div>
+            )
         else
-        return (
-            <div className='user'>
+            return (
+                <div className='user'>
                     <h3>Пользователей нет</h3>
                 </div>
-        )
+            )
     }
 }
 
