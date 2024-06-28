@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+main {
+    margin: 50px 100px;
+    width: 50%;
+    float: left;
+}
+
+aside {
+    width: 20%;
+    margin-top: 50px;
+    margin-left: 5%;
+    float: left;
+}
+
+.header {
+    background-color: #222;
+    padding: 25px 100px;
+    font-weight: 600;
+}
+
+main .user {
+    margin-bottom: 50px;
+    background-color: #3e8fa0;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.button {
+    padding: 8px 16px;
+}
+
+.delete-icon,
+.edit-icon {
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 24px;
+    color: aqua;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    float: right;
+}
+
+.delete-icon:hover,
+.edit-icon:hover {
+    opacity: 0.5;
+}
+
+.user-name {
+    display: inline-block;
+}
+
+form input:not([type="checkbox"]),
+form textarea,
+form button {
+    width: 90%;
+    padding: 15px 5%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+    border: 0;
+    background-color: #222;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+}
+
+form input[type="checkbox"] {
+    margin: 10px;
+}
+
+form button {
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+form button:hover {
+    transform: scale(1.1);
+}
+
+.user form {
+    margin-top: 20px;
+}
+
+.user form input,
+.user form textarea,
+.user form button {
+    background-color: #134b57;
+}
+
+.user form button:hover {
+    transform: scale(1.01);
+}
+
+.avatar {
+    max-width: 64px;
+    max-height: 64px;
+}
